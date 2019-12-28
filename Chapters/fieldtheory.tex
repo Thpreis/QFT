@@ -1,0 +1,334 @@
+\chapter{Things to investigate and understand - TO DO}
+\section{Applications of QFT}
+\begin{enumerate}
+	\item Can study metals (\todo{Fermi Liquid theory}) and superconductors (\todo{like Higgs mechanism}) 
+	\item QFT also arises in boiling water, look at the system in a phase diagram: You find point at $374^° C$ for steam, which in its vicinity can be described by the $3D$ Ising model. \emph{Phase transitions are described by QFT}.
+	\item Quantum gravity with holographic correspondence $\Rightarrow$ Quantumgravity in $d$ dimension $=$ QFT (large $N$ $SU(N)$ gauge theories) in $d-1$ dimensions.
+\end{enumerate}
+\begin{mybox}{Why is QFT appearing in all of these places ?}
+	If we have a system where 
+	\begin{equation*}
+		\text{Fluctuations (Quantum, thermal,..) } + \text{ Locality (in space, time)}
+	\end{equation*}
+describe the system, then it will very likely be described by QFT.
+\end{mybox}
+\chapter{Relativistic Theory and its tensor structure}
+We use metric signature $(-,+,+,+)$ such that $\partial_\mu = (\partial_0,\vec{\nabla}), \partial^\mu=(\partial_0,-\vec{\nabla})$ and
+\begin{equation}
+\partial_\mu \partial^\mu = \partial_0 \partial^0 + \partial_i \partial^i = \eta^{00} \partial_0 \partial_0 + \eta^{ii} \partial_i \partial_i = \partial^2_0 - \vec{\nabla}^2.
+\end{equation}
+We write $\phi(p)=\mathcal{F}[\phi(x)]$ for the Fourier transform of $\phi(x)$, i.e.  
+\begin{align}
+\phi(p) &= \mathcal{F}[\phi(x)] (p) := \int \md^d x \phi(x) e^{ipx} \\
+\phi(x) &= \mathcal{F}^{-1}[\phi(p)](x) := \int \frac{\md^d x}{(2 \pi)^2} \phi(p) e^{-ipx}.
+\end{align}
+The Delta distribution is the inverse Fourier transform  of the constant function $\phi(p) \equiv 1$
+\begin{equation}
+\delta (x-y) =  \int \frac{\md^d p}{(2 \pi)^d} e^{-i p(x-y)}.
+\end{equation}
+This $\delta(x)$ is the only function we do not use the Fourier notation for, i.e. $\delta(p)$ is not the
+Fourier transform of $\delta(x)$ (which is $\mathcal{F}[\delta(x)](p) ≡ 1$) but the same function with argument $p$, i.e.
+sometimes we write
+\begin{equation}
+\int \md^d x e^{i x(p-q)} = (2 \pi)^d \delta(q-p) = (2 \pi)^d \delta(p-q),
+\end{equation}
+which is just a relabelling of $q \leftrightarrow x$ and $p \leftrightarrow y$.\\
+The (infinite) volume of spacetime can then be written in terms of the Delta function as
+\begin{equation}
+\mathrm{vol}\mR^{1,d-1} = \int_{\mR^{1,d-1}} \md^d x = (2 \pi)^d \delta(0).
+\end{equation} 
+To motivate looking into classical field theory on our search for a fundamental theory, we begin with the realization that the Schrödinger equation
+\begin{equation}
+\label{eq:schroedingereq}
+i\partial_t \psi(x) = - \left[- \frac{1}{2m} \nabla^2 + V(x)\right]\psi(x)
+\end{equation}
+is linear in $\partial_0$ but quadratic in $\partial_i$ and therefore not Lorentz forminvariant, i.e. it must fail for
+high energies. A warning: this motivation of abandoning the Schödinger equation will end in a plot
+twist: we will eventually understand that the Schrödinger equation in its most general form
+\begin{equation}
+i \partial_t \ket{\psi} = H \ket{\psi}
+\end{equation}
+is really fundamental and can in fact be Lorentz forminvariant if the Hamiltonian transforms like
+a $0$-component because then
+\begin{equation}
+i \partial_0 \ket{\psi} = P^0 \ket{\psi}.
+\end{equation}
+Indeed in quantum field theory it is true that $H = P^0$ where $P^\mu$ is the momentum operator, the
+collection of charges associated to spacetime translation invariance, and $\ket{\psi}$ are tensor products
+of scalars, vectors and spinors under unitary representations. A more physical perspective of why
+the Schrödinger equation in the form of \ref{eq:schroedingereq} must fail is the fact that its Greens function for $V = 0$ does not vanish for spacelike $(x − y)^2 < 0$, such that it describes superluminal propagation.
+
+
+The first aim of this section will be to extend Lagrangian point mechanics to fields and to discuss which physical quantities necessarily arise in a translation- and Lorentz invariant Lagrangian theory. We will find the Energy momentum tensor and angular momentum tensor.
+The second aim of this section will be to find a procedure which allows us to discuss all possible
+Lorentz invariant classical equations of motion. For this we will make use of the group theory of
+Lorentztransformations and its representation theory. We will classify all representations of the
+Lorentzgroup and interpret them physically by introducing the idea of spinors. With the help of
+these representations we will be able to construct Lorentzscalars by means other than the already
+known contraction of $4$-vectors, which will be left over as the special case of the fundamental representation. Eventually we will be able to discuss physics by constructing Lagrangians out of all
+possible Lorentzscalars obtained in the spinor language and discussing their implied equations of
+motion. As a reaffirming byproduct we will completely recover Maxwell’s electrodynamics.
+
+\section{The Principle of Relativity}
+\begin{mybox}{Postulate}
+	Laws of nature are the same for all observers
+	at different positions and times, facing different directions or moving at different velocities.
+\end{mybox}
+\section{Lorentz invariant integrals}
+\begin{mybox}{}
+	\begin{align}
+		&\md^4 p \rightarrow \det \Lambda \md^4 p = \md^4 p \\
+		& \theta(p^0) \rightarrow \theta (\Lambda^0_{\;\mu} p^\mu) = \theta(p^0) \\
+		&\int \pmeasure \frac{1}{2 E_p} (\dots) |_{p^0 = E_p}  \\
+		&= \int \frac{\md^4 p}{(2 \pi)^4} (\dots) 2 \pi \delta(p^2-m^2) \theta(p^0) \mathrm{\,is\,invariant\,under\,L^\uparrow_+}\nonumber \\
+		& 2 E_p \delta(\vec{p}-\vec{q}) = \int \md p^0 \delta(p^2-m^2)\theta(p^0) \mathrm{\,is\,invariant\,under\,L^\uparrow_+}
+	\end{align}
+\end{mybox}
+Some useful identities:
+\begin{align}
+	\delta(x) &= \int \frac{\md^4 p}{(2 \pi)^4} e^{-ipx} \\
+	\delta(\vec{x}) &= \int \pmeasure e^{-i \vec{p}\cdot\vec{x}} \\
+	\theta(x^0) &= i \lim_{\epsilon \rightarrow 0} \int \frac{\md p^0}{2 \pi} \frac{1}{p^0+i\epsilon} e^{-ip^0 x^0}. 
+\end{align}
+
+\section{Lagrangian formalism}
+\begin{mybox}{Euler-Lagrange equations}
+	The equations of motion of a field $\phi(x)$ are given by the Euler-Lagrange equations of a lorentzinvariant Lagrange density $\mL = \mL(\phi,\partial^\mu\phi)$per independent field $\phi$:
+	\begin{align}
+	\label{eq:eulerlagrange}
+	\frac{\partial \mathcal{L}\left(\phi(x),\partial_{\mu}\phi(x)\right)}{\partial \phi(x)} &= \partial_{\mu} \left(\frac{\partial \mathcal{L}(\phi(x),\partial_{\mu} \phi(x))}{\partial (\partial_{\mu} \phi(x))}\right),\\
+	\frac{\delta S}{\delta \phi^i(x)} &= \frac{\partial \mathcal{L}}{\partial \phi^i(x)} - \partial_{\mu} \frac{\partial \mathcal{L}}{\partial(\partial_{\mu} \phi^i)} \stackrel{!}{=}0,
+	\end{align}
+	
+	with $\partial \phi \equiv \partial_{\nu}\phi(x^{\mu})$.\\
+	The Lagrangian equations \ref{eq:eulerlagrange} are equivalent to the Hamiltonian principle
+	\begin{equation}
+		\frac{\delta S[\phi]}{\delta \phi(x)} = 0 \; \mathrm{with} \; S[\phi] = \int \md^4 x \mL.
+	\end{equation}
+\end{mybox}
+Note that the derivation of the EL eqns \ref{eq:eulerlagrange} is as follows:
+\begin{align}
+	\delta S = \delta \int \md^4 x \mL &= \int \md^4 x \left(\frac{\partial \mL}{\partial \phi} \delta \phi + \frac{\partial \mL}{\partial(\partial_\mu \phi)} \delta \partial_\mu \phi\right)\\
+	&\stackrel{PI}{=} \int \md^4 x \left(\frac{\partial \mL}{\partial \phi} - \partial_\mu \frac{\partial \mL}{\partial(\partial\mu \phi)}\right) \delta \phi \\
+	\Leftrightarrow \frac{\delta S}{\delta \phi} &= \frac{\partial \mL}{\partial \phi} - \partial_\mu \frac{\partial \mL}{\partial(\partial_\mu \phi)}.
+\end{align}
+Note further that the assumption of vanishing boundary terms for the Least Action Principle does not hold in general for non-trivial space-times. However, in these notes we are only discussing QFTs embedded in a Minkowskian spacetime where this assumption is valid.
+
+\subsection{Noether's theorem and symmetries}
+\label{subsec:noethersymmetries}
+A \emph{symmetry} is a field transformation by which $\mathcal{L}$ changes at most by a total derivative such that the action stays invariant. This ensures that the equations of motion are also invariant.\\
+\begin{mybox}{}
+	Every continuous transformation of a field
+	\begin{equation}
+		\phi \rightarrow \phi + \epsilon \delta \phi + \mathcal{O}(\epsilon^2)
+	\end{equation}
+	induces a change in the Lagrangian
+	\begin{equation}
+		\mL \rightarrow \mL + \epsilon \delta \mL + \mathcal{O}(\epsilon^2) \; \mathrm{with} \; \delta\mL = \frac{\partial \mL}{\partial \phi} \delta \phi + \frac{\partial \mL}{\partial(\partial_\mu \phi)} \delta(\partial_\mu \phi).
+	\end{equation}
+	A transformation that leaves the Euler-Lagrange equations of motion \ref{eq:eulerlagrange} invariant induces a change of the form $\delta \mL = \partial_\mu F^\mu$ and is called a symmetry.	
+\end{mybox}
+\begin{mybox}{Noether's theorem}
+	Every continuous symmetry in the above sense gives rise to a Noether current $j^{\mu}(x)$ 
+	\begin{equation}
+		j^\mu = \frac{\partial \mL}{\partial(\partial_\mu \phi)} \delta \phi - F^\mu \; \mathrm{with}\; \delta \mL =: \partial_\mu F^\mu
+	\end{equation}
+	such that it is conserved on-shell, i.e.
+	\begin{equation}
+	\partial_\mu j^\mu = \left(\partial_\mu \frac{\partial \mL}{\partial(\partial_\mu \phi)} - \frac{\partial \mL}{\partial \phi}\right) \delta \phi,
+	\end{equation}
+	or
+	\begin{equation}
+	\partial_{\mu} j^{\mu}(x) = 0 \quad \Leftrightarrow \quad \frac{\partial j^0}{\partial t} + \vec{\nabla}\cdot \vec{j} = 0.
+	\end{equation}
+	Lemma: Every continuous symmetry whose current $j^\mu$ obeys
+	\begin{equation}
+	\label{eq:conditionNoether}
+		j^i \stackrel{\abs{\vec{x}} \rightarrow\infty}{\longrightarrow} 0
+	\end{equation}
+	sufficiently fast enough gives rise to a locally conserved (time conserved in a fixed reference frame), i.e. locally conserved charge $Q$
+	\begin{equation}
+		\frac{\md Q}{\md t} = 0 \; \mathrm{with}\; Q = \int \md^3 j^0.
+	\end{equation}
+\end{mybox}
+The condition \ref{eq:conditionNoether} can be violated in the presence of massive scalars that induce long range forces by spontaneously broken symmetries.\\
+\\
+This conserved current can be constructed for a continuous symmetry via
+\begin{align}
+\partial^{\mu} &= \frac{\partial \mathcal{L}}{\partial(\partial_{\mu}\phi)} X - F^{\mu}, \\
+j^{\mu} &= \sum_i  \frac{\partial \mathcal{L}}{\partial(\partial_{\mu} \phi^i)} \delta \phi^i - F^{\mu}
+\end{align}
+with the tansformaiton in $\phi$ and $\mathcal{L}$:
+\begin{align}
+\phi &\rightarrow \phi + \epsilon \delta \phi \quad \Rightarrow \quad \delta \phi =X(\phi,\partial_{\mu}\phi) \\
+\mathcal{L} & \rightarrow \mathcal{L}+\epsilon \delta \mathcal{L} \quad \Rightarrow \quad \delta \mathcal{L}=\partial_{\mu}F^{\mu}\\
+\Rightarrow \partial \mathcal{L} &= \partial_{\mu} \left[\frac{\partial \mathcal{L}}{\partial(\partial_{\mu}\phi)} \partial \phi \right] + \left[\frac{\partial \mathcal{L}}{\partial \phi} - \partial_{\mu} \frac{\partial \mathcal{L}}{\partial(\partial_{\mu}\phi)}\right] \delta \phi.
+\end{align}
+\begin{mybox}{Symmetry}
+	$\delta \phi$ is a symmetry if the Lagrangian changes by a total derivative:
+	\begin{equation}
+	\mathcal{L} \rightarrow \mathcal{L}'=\mathcal{L} \; \Rightarrow \; F^{\mu} = \mathrm{constant} =0, \mathrm{since} \;\delta\mathcal{L}=\partial_{\mu}F^{\mu}.
+	\end{equation}
+\end{mybox}
+Every continuous symmetry whose associated Noether current satisfies $j^i(t,\vec{x}) \rightarrow0$ sufficiently fast for $|\vec{x}|\rightarrow\infty$ gives rise to a \emph{conserved charge} $Q$ 
+\begin{align}
+ \label{eq:conservationNoether}
+Q&=\int_{\mR^3} \md^3 x \; j^0 (t,\vec{x})\\
+\frac{\md Q}{\md t} &= \int_{\mR^3} \md^3x \;  \partial_t j^0(t,\vec{x}) = -\int_{\mR^3} \md^3x \; \partial_i j^i(t,\vec{x}) = 0 
+\end{align}
+Therefore, any charge leaving the volume $V$ must be accounted for by a flow of the current $\vec{j}$ out of the volume:
+\begin{equation}
+\frac{\md Q_V}{\md t} \stackrel{\frac{\md V}{\md t}=0}{=} -\int_V \md V \vec{\nabla}\cdot \vec{j} = - \int_{\partial V} \vec{j}\cdot \md \vec{s},
+\end{equation}
+which reflects \emph{local charge conservation}. This holds in any local field theory.
+\\
+\\
+A generalization to symmetries with multiple parameters is
+
+\begin{align}
+	\phi& \rightarrow \phi + \epsilon^\nu \delta \phi_\nu \\
+	\mL&\rightarrow \mL + \epsilon^\nu \delta \mL_\nu 
+\end{align}
+\begin{equation}
+		\partial_\mu (j^\mu)^\nu = \frac{\partial \mL}{\partial (\partial_\mu \phi)} \delta \phi^\nu - F^{\mu \nu} \; \mathrm{with}\, \delta \mL_\mu =: \partial_\mu(F^\mu)_\nu.\label{eq:generalNoether}
+\end{equation}
+
+Proof of the general formula \ref{eq:generalNoether}:
+\begin{align*}
+	&\delta \mL_\nu = \frac{\partial \mL}{\partial \phi} \delta \phi_\nu + \frac{\partial \mL}{\partial(\partial_\mu \phi)} \delta(\partial_\mu \phi)_\nu \\
+	&=\frac{\partial \mL}{\partial \phi} \delta \phi_\nu + \frac{\partial \mL}{\partial(\partial_\mu \phi)} \delta(\partial_\mu \phi)_\nu + \partial_\mu \frac{\partial \mL}{\partial(\partial_\mu \phi)} \delta \phi_\nu - \partial_\mu \frac{\partial \mL}{\partial(\partial \phi)} \delta \phi_\nu \\
+	&\Leftrightarrow \left(\frac{\partial \mL}{\partial \phi} - \partial_\mu \frac{\partial \mL}{\partial(\partial_\mu \phi)}\right) \delta \phi_\nu = \delta \mL_\nu - \frac{\partial \mL}{\partial(\partial_\mu \phi)} \partial_\mu \delta \phi_\nu - \partial_\mu \frac{\partial \mL}{\partial(\partial_\mu \phi)} \delta \phi_\nu \\
+	&= \delta \mL_\nu - \partial_\mu \left(\frac{\partial \mL}{\partial(\partial_\mu \phi)} \delta \phi_\nu\right) \\
+	&= \partial_\mu \left((F^\mu)_\nu - \frac{\partial \mL}{\partial(\partial_\mu \phi)} \delta \phi_\nu \right).
+\end{align*}
+Proof of the conservation \ref{eq:conservationNoether}:
+\begin{align*}
+	0&= \partial_\mu j^\mu \\
+	\Leftrightarrow 0 &= \int \md^3 x \partial_\mu j^\mu = \int \md^3(\partial_0 j^0 + \partial_i j^i) = \frac{\md}{\md t} \int \md^3 x j^0 - \int \md^3 x \vec{\nabla} \cdot \vec{j}.
+\end{align*}
+But the integral over the spatial derivative vanishes by Gauss' law if $\vec{j}$ vanishes at infinity
+\begin{align*}
+	\int_{\mR^3} \md^3 x \vec{\nabla}\cdot \vec{j} &= \int_{\partial\mR^3} \md^2s \vec{n}\cdot \vec{j} \stackrel{\ref{eq:conditionNoether}}{=}0 \\
+	\Rightarrow \frac{\md}{\md t} \int& \md^3 x j^0 =0.
+\end{align*}
+
+\subsubsection{Energy-momentum tensor}
+The global spacetime translation transformation gives rise to a conserved current in every component of the transformation. This yields the \emph{canonical energy-momentum tensor}, the conserved Noether current associated with spacetime translations:
+\begin{mybox}{Energy-momentum tensor}
+	\begin{equation}
+	T^{\mu \nu} = \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)} \partial^{\nu} \phi - \eta^{\mu \nu} \mathcal{L},
+	\end{equation}
+	with
+	\begin{equation}
+	\partial_{\mu} T^{\mu \nu} = 0 \qquad \mathrm{on-shell}.
+	\end{equation}
+\end{mybox}
+\begin{mybox}{}
+	The currents $(j^\mu)_\nu$ induced by a global space-time translation
+	\begin{align}
+		\phi(x) & \rightarrow \phi(x-\epsilon) = \phi(x) - \epsilon^\nu \partial_\nu \phi(x) + \mathcal{O}(\epsilon^2)\\
+		\mL & \rightarrow \mL -\epsilon^\mu \partial_\nu (\delta^\nu_\mu \mL) + \mathcal{\epsilon^2}
+	\end{align}
+	are compactly written as the so-called energy momentum tensor
+	\begin{equation}
+	\label{eq:QFTcanonicalenergytensor}
+		T^{\mu\nu} := (j^\mu)^\nu = \frac{\partial \mL}{\partial(\partial_\mu \phi)} \partial^\nu \phi - \eta^{\mu\nu} \mL,
+	\end{equation}
+	where $\mL$ is the on-shell Lagrangian. The implied charges $(Q)^\mu =: P^\mu$ are
+	\begin{equation}
+	\label{eq:fourmomentumNoether}
+		\frac{\md}{\md t} P^\mu = 0 \; \mathrm{with} \; P^\mu := \int \md^3 x T^{0 \mu}
+	\end{equation}
+	and can be identified with the $4$-momentum, i.e. $4$-momentum is locally conserved if global space-time translation is a symmetry. $T^{\mu\nu}$ is conserved on-shell in its first index, ilel 
+	\begin{equation}
+		\partial_\mu T^{\mu \nu} = 0.
+	\end{equation}
+	These $4$ equations are invariant under a redefinition of $T^{\mu\nu}$ in the form of 
+	\begin{equation}
+	\label{eq:BelinfanteEnergytensor}
+		\tilde{T}^{\mu\nu} = T^{\mu\nu} + \partial_\sigma K^{\sigma \mu \nu}
+	\end{equation}
+	with arbitrary gauge $K^{\sigma \mu \nu} = - K^{\mu \sigma \nu}$.\\
+	The energy momentum tensor symmetrized in this way is sometimes called the \emph{Belinfante} tensor.
+\end{mybox}
+\ref{eq:BelinfanteEnergytensor} is used to symmetrize $T^{\mu\nu}$. The canonical derivation via \ref{eq:BelinfanteEnergytensor} usually does not lead to a symmetric energy momentum tensor. A symmetrization is necessary before $T^{\mu\nu}$ can be used as the left hand side of Einstein's field equations since its right side is symmetric. Compare the exploration of the canonical and least action energy momentum tensor in the GR chapter.\\
+\marginpar{This ambiguity in $T^{\mu\nu}$ can lead to conformal theories with non-vanishing $T^\mu_\mu$.}
+In a Hamiltonian formalism the $0$-component of the $4$-momentum defined by \ref{eq:fourmomentumNoether} can be identified with the Hamiltonian.
+
+
+ The canonical derivation via
+The conserved charges then are 
+\begin{enumerate}
+	\item Energy 
+	\begin{equation}
+	H=E= \int_{\mR^3} \md^3x \; T^{00}
+	\end{equation}
+	associated with \emph{time translation invariance}.
+	\item Spatial momentum 
+	\begin{equation}
+	P^i = \int_{\mR^3} \md^3x \; T^{0i}
+	\end{equation}
+	associated with \emph{spatial translation invariance}. $\Rightarrow$ Conserved 4-momentum.
+	\item E.g. for the free scalar field 
+	\begin{align}
+	P^{\mu} &= \int_{\mR^3} \md^3 x \; T^{0 \mu}, \qquad \frac{\md P^{\mu}}{\md t}=0 \\
+	E&= \int_{\mR^3} \md^3x \left[\frac{1}{2} \dot{\phi}^2 + \frac{1}{2}(\vec{\nabla})^2 +\frac{1}{2} m^2 \phi^2\right]\\
+	\vec{p}&= - \int_{\mR^3} \md^3 x \; (\dot{\phi} \vec{\nabla} \phi).
+	\end{align}
+\end{enumerate}
+
+
+
+
+
+\subsection{Canonical angular momentum tensor and centre of energy}
+Infinitesimal Lorentz transformation
+\begin{align}
+\phi(x) &\rightarrow \phi(\Lambda^{-1} x) = \phi(x) - \omega^\mu_\nu x^\nu \partial_\mu \phi(x) \; \mathrm{with} \; \omega_{\mu \nu} = - \omega_{\nu\mu}\\
+\mL &\rightarrow \mL - \omega^\mu_\nu x^\nu \partial_\mu \mL
+\end{align}
+leads to the angular momentum tensor
+\begin{equation}
+	\mJ^{\mu\nu\rho} := (j^\mu)^{\nu \rho} 
+\end{equation}
+with the angular momentum
+\begin{equation}
+	J_i := \epsilon_{ijk} \mJ^{0jk}.
+\end{equation}
+
+
+
+\section{Hamiltonian formalism}
+For a given Lagrangian density, we define the Hamiltonian density $\mathcal{H}$ as the Legendre transform
+\begin{equation}
+	\mH(\pi,\phi):= \phi \partial_0 \phi - \mL \; \mathrm{with} \; \phi(x):= \frac{\partial \mL}{\partial(\partial_0 \phi)}
+\end{equation}
+with the canonical conjugated momentum density $\pi(x)$. The Hamiltonian $H$ then simply is
+\begin{equation}
+	H:= \int \md^3 x \mH.
+\end{equation}
+These definitions coincide with the definitions of the energy momentum tensor, such that
+\begin{equation}
+	\mH=T^00, \qquad H=P^0.
+\end{equation}
+The connection between the interaction Hamiltonian and the Lagrangian is
+\begin{equation}
+	\label{eq:interactingHamiltonian}
+	H_{int} = - \int \md^3 x \mL_{int},
+	\end{equation}
+	which can be seen by
+	\begin{align*}
+		H_{int}& = H-H_0 = \int \md^3 \mH - \int \md^3x \mH_0\\
+		&= \int \md^3 x (\pi \partial_0 \phi -\mL) - \int \md^3 x(\pi \partial_0 \phi-\mL_0) \\
+		&= -\int \md^3x (\mL-\mL_0) = - \int \md^3 x \mL_{int}.
+	\end{align*}
+
+
+\begin{mybox}{Hamiltonian equations}
+The Lagrange equations are equivalent to the Hamiltonian equations
+\begin{align}
+	\label{eq:Hamiltoneq}
+	\dot{\phi}&= +\frac{\partial \mH}{\partial \pi} - \partial^\mu \frac{\partial \mH}{\partial(\partial^\mu \pi)}\\
+	\dot{\pi} &= - \frac{\partial \mH}{\partial \phi} + \partial^\mu \frac{\partial \mH}{\partial(\partial^\mu \phi)}.
+\end{align}
+\end{mybox}

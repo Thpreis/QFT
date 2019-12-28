@@ -1,0 +1,180 @@
+\chapter{Thermal equilibrium quantum field theory}
+\section{Imaginary time formalism}
+\begin{mybox}{}
+Matsubara's trick
+\begin{equation}
+	e^{-\beta H} = e^{-i (-i\beta) H} 
+\end{equation}
+which brings one to the \emph{imaginary time generating functional} integrating over periodic functions $\phi(\beta)=\phi(0)$
+\begin{equation}
+	Z[J] = \tr e^{-\beta H + J\cdot \Phi} = \oint \mD \phi e^{-S_\beta [\phi] + J\cdot \Phi}
+\end{equation}
+with imaginary time action
+\begin{equation}
+	S_\beta[\Phi] = \int_0^\beta \md^4 x \left[\half \partial^\mu \Phi \partial_\mu \Phi + V(\Phi)\right]
+\end{equation}
+and
+\begin{equation}
+	J \cdot \Phi := \int_0^\beta \md x^0 \int \md^3 x J(x) \Phi(\vec{x}).
+\end{equation}
+\end{mybox}
+\section{Kubo-Martin-Schwinger periodicity and Matsubara frequencies}
+\begin{mybox}{}
+	KMS conditions reads
+	\begin{equation}
+		\phi(t_0-i\beta,\vec{x})=\phi(t_0,\vec{x})=: \phi_0(\vec{x})
+	\end{equation}
+with periodicity
+\begin{equation}
+	\expval{\dots \phi(t-i\beta,\vec{x})\dots  } = \expval{\dots \phi(t,\vec{x}) \dots}.
+\end{equation}
+Since correlation functions are periodic, they have a Fourier series representation, i.e.
+\begin{align}
+G(\omega,\vec{p}) &= \int \md t e^{-i \omega t} G(t,\vec{p}) = \int \md t e^{-i \omega t} \sum_{n=-\infty}^{\infty} e^{i \omega_n} t f_n(\vec{p}) \\
+&= \sum_{n=-\infty}^\infty (2 \pi) \delta(\omega-\omega_n) f_n(\vec{p}) \nonumber \\
+\text{with   } f_n(\vec{p})&= T \int_0^\beta \md t G(t,\vec{p}) e^{i \omega_n t} 
+\end{align}
+such that their Fourier transforms are zero almost everywhere expect at the Matsubara frequencies 
+\begin{equation}
+	\omega_n = 2\pi n T.
+\end{equation}
+In other words
+\begin{equation}
+	G(t,\vec{p}) = \int \frac{\md \omega}{2 \pi} e^{i \omega t} G(\omega,\vec{p}) = \sum_{n=-\infty}^\infty e^{i \omega_n t} G(\omega_n,\vec{p})
+\end{equation}
+with
+\begin{equation}
+	G(\omega_n,\vec{p}) = \int_0^\beta \md t e^{-i \omega_n t} G(t,\vec{p}) = \frac{1}{\omega^2_n+\abs{\vec{p}}^2+V^{\prime \prime}(\phi)}
+\end{equation}
+such that for free theory
+\begin{equation}
+	G(t=0,\vec{p}) = \sum_{n=-\infty} \frac{1}{\omega^2_n+E^2\vp} = \frac{1}{2E\vp} \coth \frac{\beta E\vp}{2} = \frac{1}{E\vp} \left[n_B(E\vp) + \half\right].
+\end{equation}
+\end{mybox}
+Generally, vacuum QFT can be obtained from thermal QFT by the replacement
+\begin{equation}
+	T\sum_n \int \pmeasure \rightarrow \int \frac{\md^4p}{(2 \pi)^4}.
+\end{equation}
+Note that the result for $G(t=0,\vec{p})$ is very similar to the energy of the harmonic oscillator in quantum mechanics
+\begin{equation}
+E = \frac{\epsilon}{2} \coth \frac{\beta \epsilon}{2}.
+\end{equation}
+\section{Matsubara sums and thermal distributions}
+\begin{mybox}{Bosonic Matsubara sums and Bose-Einstein distribution}
+	\begin{equation}
+	T \sum_{n=-\infty}^\infty  f(2 n \pi T) = i \oint \md z f(z) \left[n_B(iz) + \half \right] 
+	\end{equation}
+	with 
+	\begin{equation}
+		n_B(\omega) = \frac{1}{e^{\beta \omega} -1}.
+	\end{equation}
+\end{mybox}
+\begin{mybox}{Fermionic Matsubara sum and Fermi-Dirac distribution}
+	\begin{equation}
+		T \sum_{n=-\infty}^\infty f((2n+1) \pi T) = i \oint \md f(z) \left[n_F(iz) - \half \right]
+	\end{equation}
+	with 
+	\begin{equation}
+		n_F(\omega) = \frac{1}{e^{\beta \omega} +1}.
+	\end{equation}
+\end{mybox}
+
+\section{Fluctuation dissipation relation}
+\begin{mybox}{}
+	Bosonic
+	\begin{equation}
+		F(p) = -i \left(\half + \frac{1}{e^{\beta p^0} -1}\right) \rho(p) 
+	\end{equation}
+	and fermionic
+	\begin{equation}
+		F(p) = -i \left(\half - \frac{1}{e^{\beta p^0} +1}\right)\rho(p).
+	\end{equation}
+\end{mybox}
+\section{Divergence theorem}
+\begin{mybox}{}
+	\begin{equation}
+	\text{QFT at } T>0 \text{ has the same UV divergencies as at } T=0.
+	\end{equation}
+\end{mybox}
+\section{TO DO- Phase structure}
+Euclidean field theory in this section
+\subsection{Chemical potential and density}
+\begin{mybox}{}
+	Chemical potential is introduced as the current of particle number
+	\begin{equation}
+	S[\Phi] \rightarrow S[\Phi;\mu] = S[\Phi] - \mu Ns
+	\end{equation}
+	e.g. for fermionic theories
+	\begin{equation}
+		S[\bar{\psi},\psi;\mu] = S[\bar{\psi},\psi] - \mu \int_x \bar{\psi}\gamma^0 \psi
+	\end{equation}
+	the grand canonical potential
+	\begin{equation}
+		\Omega (T,\mu) := \Gamma[\varphi;T,\mu] |_{\varphi_{eom}}
+	\end{equation}
+	such that 
+	\begin{equation}
+		N= \frac{\partial \Gamma[\Phi]}{\partial \mu} |_{\Phi=\Phi_{eom}}
+	\end{equation}
+	density
+	\begin{equation}
+		n_\psi(\vec{p}) = \frac{1}{V_3} \int \frac{\md p^0}{2 \pi} \frac{\delta \Omega}{\delta \mu} |_{T=0}
+	\end{equation}
+	such that the density in the free theory reads
+	\begin{equation}
+		n(\vec{p}) = - \int \frac{\md p^0}{2 \pi} \tr \gamma^0 G(p;\mu) = 4i \frac{\md p^0}{2 \pi} \frac{p^0+i \mu}{(p^0+i\mu)^2+E\vp} = 2 \theta(\mu^2-E^2\vp)
+	\end{equation}
+	and the total particle number in the free theory is
+	\begin{equation}
+		N(\mu) = \int \pmeasure n(\vec{p}) = \frac{\pi}{3} (\mu^2-m^2)^{3/2} \theta(\mu^2-m^2).
+	\end{equation}
+\end{mybox}
+
+\subsection{Pole structure and silver blaze property}
+\begin{mybox}{}
+	The fermionic propagator
+	\begin{equation}
+		G(p;\mu) = \frac{-i \slash{\tilde{p}} +m}{\vec{p}^2+m^2} \text{ with } \slash{\vec{p}} := \gamma^0 (p_0 +i \mu) + \vec{\gamma} \cdot \vec{p}
+	\end{equation}
+	has $4$ poles
+	\begin{equation}
+		p^0 = -i (\mu \pm E\vp) \text{ and } p^0 = - i (-\mu \pm E\vp).
+	\end{equation}
+	The silver blaze property is
+	\begin{equation}
+		\text{Correlation functions } G(\tilde{p}_1,\dots,\tilde{p}_n;\mu) \text{ have no explicit } \mu \text{ dependency for } \mu < \epsilon\vp.
+	\end{equation}
+
+\end{mybox}
+
+\subsection{Pressure}
+\begin{mybox}{}
+	Free energy $F=\Omega V$ gives the pressure
+	\begin{equation}
+		p:= - \frac{F}{V} = - \Gamma[\Phi_{eom}]
+	\end{equation}
+	which at $1$-loop gives the Stefan Boltzmann law for $m=0$
+	\begin{align}
+		p(T)-p(0) &= -\frac{T}{2} \sum_n \int_p \ln(\omega^2_n + E\vp) \\
+		&=-\frac{T}{2 \pi^2} \int_0^\infty \md p p^2\ln(1-e^{-\beta E\vp}) \stackrel{m\rightarrow0}{\longrightarrow} \frac{\pi^2 T^4}{90}.
+	\end{align}
+\end{mybox}
+\subsection{Free energy and thermodynamic potentials}
+\begin{mybox}{}
+Free energy
+\begin{equation}
+	F= T\Gamma[\Phi_{eom}] + \mu N-T(\Phi_{eom}\cdot J)
+\end{equation}
+in a homogeneous setting
+\begin{align}
+	J=\frac{j}{T} &\Rightarrow U(\varphi)=\frac{T}{V} \Gamma \\
+	E&=U-T\frac{\partial U}{\partial T}-\mu \frac{\partial U}{\partial \mu}\\
+	S&= - \frac{\partial U}{\partial T} + \frac{j}{T}\varphi, 
+\end{align}
+such that density and pressure in a homogeneous setting are
+\begin{equation}
+	n=-\frac{\partial U}{\partial \mu} = \frac{N}{V},\; p=-U=\frac{T}{V} \Gamma.
+\end{equation}
+\end{mybox}
+
+

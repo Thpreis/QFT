@@ -1,0 +1,123 @@
+\RequirePackage{silence} % :-\
+    \WarningFilter{scrreprt}{Usage of package `titlesec'}
+    %\WarningFilter{scrreprt}{Activating an ugly workaround}
+    \WarningFilter{titlesec}{Non standard sectioning command detected}
+\documentclass[ twoside,openright,titlepage,numbers=noenddot,%1headlines,
+                headinclude,footinclude,cleardoublepage=empty,abstract=on,
+                BCOR=5mm,paper=a4,fontsize=11pt
+                ]{scrreprt}
+
+%********************************************************************
+% Note: Make all your adjustments in here
+%*******************************************************
+\input{classicthesis-config}
+\setlength{\parindent}{0pt}
+\usepackage[most]{tcolorbox}
+\newtcolorbox{mybox}[1]{%
+	tikznode boxed title,
+	enhanced,
+	arc=0mm,
+	interior style={white},
+	attach boxed title to top center= {yshift=-\tcboxedtitleheight/2},
+	fonttitle=\bfseries,
+	colbacktitle=white,coltitle=black,
+	boxed title style={size=normal,colframe=white,boxrule=0pt},
+	title={#1}}
+\newcommand{\mR}{\mathbb{R}}
+\newcommand{\mJ}{\mathcal{J}}
+\newcommand{\mM}{\mathcal{M}}
+\newcommand{\md}{\mathrm{d}}
+\newcommand{\tr}{\mathrm{Tr}}
+\newcommand{\pmeasure}{\frac{\md^3 p}{(2 \pi)^3}}
+ \usepackage{physics}
+ \newcommand{\half}{\frac{1}{2}}
+ \newcommand{\mL}{\mathcal{L}}
+ \newcommand{\mV}{\mathcal{V}}
+ \newcommand{\normord}[1]{\vcentcolon\mathrel{#1}\vcentcolon}
+ \newcommand{\mh}{\mathsf{h}}
+ \providecommand{\vcentcolon}{\mathrel{\mathop{:}}}
+ \usepackage{simplewick}
+ \usepackage[compat=1.1.0]{tikz-feynman}
+ \newcommand{\mg}{\mathcal{g}}
+ \usepackage{slashed}
+ \newcommand{\munu}{_{\mu \nu}}
+ \newcommand{\mG}{\mathcal{G}}
+ \usepackage{savesym}
+  \savesymbol{eth}
+   \savesymbol{digamma}
+    \savesymbol{backepsilon}
+ \usepackage{amssymb}
+ \newcommand{\mH}{\mathcal{H}}
+ \newcommand{\mI}{\mathbb{I}}
+\newcommand{\mO}{\mathcal{O}}
+\usepackage{mathdots}
+ \restoresymbol{ams}{eth}
+  \restoresymbol{ams}{digamma}
+   \restoresymbol{ams}{backepsilon}
+   \newcommand{\mD}{\mathcal{D}}
+\newcommand{\mA}{\mathcal{A}}
+\newcommand{\mF}{\mathcal{F}}
+\newcommand{\vp}{_{\vec{p}}}
+\newcommand{\vz}{_{\vec{0}}}
+\newcommand{\mK}{\mathcal{K}}
+ 
+	%********************************************************************
+% Bibliographies
+%*******************************************************
+\addbibresource{Bibliography.bib}
+\addbibresource[label=ownpubs]{AMiede_Publications.bib}
+%-----------------------------------------
+%My packages
+%------------------------------------------
+\usepackage[hyperref]{ntheorem}
+\newtheorem{statements}{Statements}[chapter]
+\usepackage{todonotes}
+\usepackage{tikz}
+\usepackage{youngtab}
+\usepackage{young}
+\usepackage{ytableau}
+\usetikzlibrary{3d,calc,shapes.geometric}
+\usepackage[makeroom]{cancel}
+
+
+
+%********************************************************************
+% Hyphenation
+%*******************************************************
+%\hyphenation{put special hyphenation here}
+
+% ********************************************************************
+% GO!GO!GO! MOVE IT!
+%*******************************************************
+\begin{document}
+\frenchspacing
+\raggedbottom
+\selectlanguage{british} % american ngerman
+%\renewcommand*{\bibname}{new name}
+%\setbibpreamble{}
+\pagenumbering{roman}
+\pagestyle{plain}
+%********************************************************************
+% Frontmatter
+%*******************************************************
+
+\include{FrontBackmatter/Titlepage}
+\cleardoublepage\include{FrontBackmatter/Contents}
+%********************************************************************
+% Mainmatter
+%*******************************************************
+\cleardoublepage
+\pagestyle{scrheadings}
+\pagenumbering{arabic}
+\listoftodos
+\include{Chapters/fieldtheory}
+\include{Chapters/groupsLorentz}
+\include{Chapters/canonicalQFT}
+\include{Chapters/advancedqft}
+\include{Chapters/thermaleqQFT}
+\include{Chapters/noneqQFT}
+\include{Chapters/curvedBackgroundQFT}
+\include{Chapters/ConformalFT}
+
+\end{document}
+% ********************************************************************

@@ -1,0 +1,1260 @@
+%************************************************
+\chapter{General Relativity}\label{ch:gr}
+
+\section{Introduction to General Relativity}
+The experimentally well-established \emph{principle of equivalence}, stating the equivalence of inertial and gravitational mass, is the heuristic guiding principle of GR and has the following forms:
+\begin{enumerate}
+	\item The weaker and less precise statement is that the motion of a test body in a gravitational field is independent of its mass and composition.
+	\item In a more precise form: In an arbitrary gravitational field no local non-gravitational experiment can distinguish a freely falling, non-rotating system from a uniformaly moving system in absence of the gravitational field $\rightarrow$ objects with different mass fall at the same speed under gravity.
+\end{enumerate}
+
+Where \emph{Freely falling frames of reference}:
+It must be possible to introduce local, non-rotating, freely-falling frames of reference in which gravity is locally "transformed away".
+The directions of motion of different freely-falling reference frames will generally not be parallel: E.g. Einstein elevators released at same height but different locations over Earth's surface.
+\marginpar{A manifold with a metrix which is not positive definite is called pseudo-Riemannian, or Lorentzian if the metric has the signature of the Minkowski metric.}
+\graffito{An outlook into the future of \texttt{classicthesis}.}
+\\
+General relativity keeps the light-cone structure of special relativity, even thought its rigidity is given up: the orientation of light cones can vary across space-time.
+
+
+
+\section{Differential Geometry}
+\label{sec:diffgeo}
+\subsection{Differentiable manifolds}
+
+
+\begin{mybox}{Manifolds}
+	An $n$-dimensional manifold $M$ is a topological Hausdorff space with a countable base, which is locally homeomorphic to $\mathbb{R}^n$. This means that for every point $p\in M$, an open neighbourhood $U$ of $p$ exists together with a homeomorphism $h$ which maps $U$  onto an open subset $U'$ of $\mathbb{R}^n$:
+	\[h: U \rightarrow U'.\]
+\end{mybox}
+\marginpar{$h$ is a specialisation of a map $\phi$ from one manifold $M$ to another manifold $N$, $\phi: M\rightarrow N$.}
+The homeomorphism $h$ is called a chart or a coordinate system. $U$ is the domain or the coordinate neighbourhood of the chart. The image $h(p)$ of a point $p \in M$ under the chart $h$ is expressed by the $n$ real numbers $(x^1, \dots, x^n)$, the coordinates of $p$ in the chart $h$.
+\\
+\begin{mybox}{Charts and atlases}
+	Charts are homeomorphisms from an $n$-dimension manifold $M$ into $\mathbb{R}^n$. A an atlas is a collection of charts whose domains cover $M$ completely.
+\end{mybox}
+The composition of charts $h_{\alpha} \circ h^{-1}_{\beta}$ with an overlapping domain $U_{\alpha} \cap U_{\beta} \neq \emptyset$ exists and defines a map between two open sets $\mathbb{R}^n$ which describes the change of coordinates or a coordinate transform on the intersection of domain $U_{\alpha}$ and $U_{\beta}$.\\
+An atlas of a manifold is called \emph{differentiable} if the coordinate changes between all its charts are differentiable. A manifold, combined with a differentiable atlas, is called \emph{differentiable manifold}.
+\begin{mybox}{Example coordinate system}
+	A chart $h$, or a coordinate system, is a homeomorphism from \[D \subset M$ to $U \subset \mathbb{R}^n$, $h:D\rightarrow U, p \mapsto h(p)=(x_1,\dots,x_n)\],
+	i.e. it assigns an n-tupel of coordinates $\{x_i\}$ to a point $p\in D$. E.g.
+	\[(\theta, \varphi)  \in S^2\mapsto \begin{pmatrix}
+	sin\theta cos\varphi \\
+	sin\theta sin\varphi\\
+	cos\theta
+	\end{pmatrix} \in \mathbb{R}^3 \]
+	embedded in $\mathbb{R}^3$.
+\end{mybox}
+
+\subsection{The tangent space}
+On a curved manifold, a vector space structure does not exist because it is not clear how vectors are different points on the manifold should be added. However, it still makes sense to define vectors locally in terms of infinitesimal displacements within a sufficiently small neighbourhood of a point $p$, which are "tangential" to the manifold at $p$. This leads to the concept of the \emph{tangential space} of a manifold, whose elements are tangential vectors, or directional derivatives of functions.
+\begin{mybox}{Tangent space}
+Generally, the tangent space $T_p M$ of a differentiable manifold $M$ at a point $p$ is the set of derivations of $\mathcal{F}(p)$, where $\mathcal{F}:=\{f \in C^{\infty} | f:M \rightarrow \mathbb{R}\}$. A derivation $v$ is a map from $\mathcal{F}(p)$ into $\mathbb(R)$,
+\begin{equation}
+	v: \mathcal{F}(p) \rightarrow \mathbb{R},
+\end{equation} 
+which is linear,
+\[v(\lambda f + \mu g) = \lambda v(f) + \mu v(g),  \quad f,g\in \mathcal{F}(p); \mu, \lambda \in \mathbb{R}, \]
+and satisfies the Leibniz rule
+\[v(fg) = v(f) g + f v(g)\].
+
+\end{mybox}
+\marginline{The derivation of a constant function vanishes.}
+Together with the real numbers $\mathbb{R}$ and their addition and multiplication laws, $T_pM$ does indeed have the structure of a vector space, with $v \in T_p M$.
+\\
+\begin{mybox}{Coordinates basis of $T_pM$}
+The basis $\{e_i\} $, which is often simply denoted as $\{\frac{\partial}{\partial x^i}\}$ is called a coordinate bassis of $T_pM$. Vectors $v\in T_p M$ can thus be written as 
+\begin{equation}
+	v = v^i e_i = v^i \partial_i.
+\end{equation}
+\end{mybox}
+If we choose a different chart, the two different coordinates bases are related by the Jacobian matrix of the coordinate change:
+\begin{equation}
+	e_i = \mJ^{' \, j}_i e^{'_j}, \qquad \mJ^{'\, j}_i = \frac{\partial x^{'\, j }}{\partial x^i}, \qquad \mJ^{' i }_{\quad j} = (\mJ^{'\, j}_i )^{-1}.
+\end{equation}
+Repeating the construction of a tangent space at another point $q\in M$, we obtain a tangent space $T_p M$ which cannot be identified in any way with the tangent space $T_p M$ given only the structure of a differentiable manifold that we have so far. The \emph{tangent bundle} of a differentiable manifold is a manifold which assembles all tangent vectors in $M$. As a set, it is given by the disjunct union of the tangent spaces of $M$.\\
+Consequently, a vector field is defined as a map $v:p\mapsto v_p$ which assigns a tangent vector $v_p \in T_p M$ to every point $p\in M$. If we apply a vector field $v$ to a $C^{\infty}$ function $f$, its result $(v(f))(p)$ is a number for each point $p$. IN a local coordinate neighbourhood we have $v=v^i \partial_i$, such that 
+\begin{equation}
+	(v(f))(p) = v^i (p) \partial_i f(p),
+\end{equation} 
+and thus it is called the derivative of $f$ w.r.t. the vector field $v$.
+
+\subsubsection{tangent vectors}
+There exists a geometrical meaning to tangent vectors as "infinitesimal displacements" on the manifold. Introduce a one-parameter group of diffeomorphisms $\gamma_t, t\in \mR$, as a $C^{\infty}$ map
+\begin{equation}
+	\gamma_t:\mR \times M \rightarrow M,
+\end{equation}
+such that $\gamma_t$ maps, for $t$ fixed, points $p\in M$ to other points $q \in M$ in a differentiable way (e.g. $\gamma_t$ rotates $S^2$ around $\vec{e}_z$ by angle $t$). Now associate a vector field $v$ to $\gamma_t$: For fixed $p\in M$, the map $\gamma_t:\mR \rightarrow M$ is a curve which passes through $p$ at $t=0$. This curve is called an orbit of $\gamma_t$. Then, we assign to $p$ the tangent vector $v_p$ to this curve at $t=0$. Repeating this oepration for all points $p \in M$ defines a vector field $v$ on $M$ which is associated with $\gamma_t$ and can be considered as the infinitesimal generator of the transformations $\gamma_t$. Conversely, given a vector field $v$ on $M$ we can construct curves through all points $p\in M$ whose tangent vectors are $v_{p_0}$:
+\begin{equation}
+\frac{\md x^i }{\md t} = v^i (x^1, \dots, x^n).
+\end{equation}
+Thus, tangent vectors can be identified with infinitesimal transformations of the manifold.
+\begin{mybox}{tangent vector example}
+	A curve's $\gamma(t)$ tangent vector is given by 
+	\begin{equation}
+	 \dot{\gamma}(t) = \frac{\md}{\md t} \gamma(t) = \dot{\gamma}^{\vartheta} \partial_{\vartheta} + \dot{\gamma}^{\varphi} \partial_{\varphi} \; \in T_p M,
+	\end{equation}
+	for $\gamma(t) = (\vartheta(t), \varphi(t))^T$
+	\begin{equation}
+	\rightarrow \md f(\dot{\gamma}) = \dot{\gamma}(f)(t) = \dot{\gamma}(t) \cdot f = \dot{\gamma}^{\vartheta} \partial_{\vartheta}f + \dot{\gamma}^{\varphi} \partial_{\varphi} f.
+	\end{equation}
+\end{mybox}
+
+\subsection{Dual vectors and tensor}
+\marginpar{Differential of $f \in \mathcal{F}$ is a dual vector as $\md f: RM \rightarrow \mR$,$\md f(v)=v(f) = v^i \partial_i f$.}
+The dual vector space $T^*M: TM \rightarrow \mR$ is the set of linear maps from $TM$ into $\mR$, has a vector space structure and its elements are called dual vectors.
+\begin{mybox}{Dual vectors}
+	Dual vectors map vectors to the real numbers. If $\{\partial_i\}$ is a coordinate basis of $TM$, the dual basis of $T^*M$ is given by the coordinate differentials $\{\md x^i \}$. Dual vectors can thus be written as \begin{equation}
+	w=w_i \md x^i.
+	\end{equation}
+\end{mybox}
+The dual vector $\md f$ is defined such that $\md f(v) = v(f)$ for any vector $v$. This operation means: A dual vector is a map from a vector space to $\mR$. Thus, $\md f$ maps a vector $v$ to a real number. A vector $v$ is defined as a map from a function space to the real numbers assigning values to the directional derivative of the function $f$ along $v$, Thus, the dual vector $\md f$ applied to the vector $v$ is (as real number) equal to the vector applied to the function $f$ giving the value of the directional derivative of $f$ along $v$.\\
+Since $\md f$ is a dual vector, it can be decomposed into the dual basis 
+\begin{equation}
+	\{\md \vartheta, \md \varphi \}, \mathrm{ for} f(\vartheta, \varphi), \quad \md f = \md f_{\vartheta} \md \vartheta + \md f_{\varphi} \md \varphi.
+\end{equation}
+Its components are obtained by applying $\md f$ to the two basis vectors $\{\partial_{\vartheta},\partial_{\varphi}\}$ of the tangent space since this returns the values of the directional derivatives in $\vartheta$ and $\varphi$ direction. Since the two basis vectors of the dual and tangent space form an orthonormal basis each, one can make use of the property 
+\begin{equation}
+	\md x^i(\partial_j) = \delta^i_j
+\end{equation}
+Thus,
+\begin{align}
+	\md f(\partial_{\vartheta}) &= \partial_{\vartheta} f = \md f_{\vartheta} \md \theta(\partial_{\vartheta})\\
+	\md f(\partial_{\varphi}) &= \md f_{\varphi} \md \varphi(\partial_{\varphi}) = \partial_{\varphi} f.
+\end{align}
+\marginpar{tensor-$(0,1)=$ dual vector
+tensor-$(1,0)=$ tangent vector.}
+\begin{mybox}{Tensors}
+	Tensors of ranks $(r,s)$ are multilinear maps of $r$ dual vectors and $s$ vectors into the real numbers:
+	\begin{equation}
+	T:\underbrace{T^*M\times \dots \times T^*M}_{r} \times \underbrace{TM\times \dots \times TM}_{s} \rightarrow \mR.
+	\end{equation}
+	The set of tensors $\mathcal{T}^r_s$ of rank $(r,s)$ forms a vector space of $\md=n^{r+s}$.
+\end{mybox}
+Construct a basis for $(r,s)$ tensors out of basis for the tangent space and basis of the dual spacevia tensor products:
+\begin{equation}
+t=t^{i_1 \dots i_r}_{j_1 \dots j_s}  \quad (\partial_{i_1} \otimes \dots \otimes \partial_{i_r})\otimes (\md x^{j_1} \otimes \dots \otimes \md x^{j_s}).
+\end{equation}
+Tensor components transform as their bases do:
+\begin{equation}
+t^{' i}_j = \mathcal{J}^{'i}_k \mathcal{J}^l_k \quad t^k_l.
+\end{equation}
+\begin{mybox}{Contraction}
+	The contraction $C^i_j t$ of a tensor of rank $(r,s)$ is a map which reduces both $r$ and $s$ by unity 
+	\begin{equation}
+	C^i_j t: \mathcal{T}^r_s \rightarrow \mathcal{T}^{r-1}_{s-1}, \qquad C^i_j t= t(\dots, e^{*k} =\md x^k, \dots, e_k=\partial_k, \dots),
+	\end{equation}
+	where $\{e_k\}$ and $\{e^{*k}\}$ are bases of the tangent space and dual space, respectively, and the summation of all $1\leq k \leq n$ is implied. The basis vector $e^{*k}$ and $e_k$ are inserted as the i-th and j-th arguments of the tensor t.\\
+	E.g. for $v \in TM$, $w \in T^*M$, $t = v \otimes w$ tensor of rank $(1,1)$, its contraction yields a $(0,0)$ tensor:
+	\begin{align*}
+	Ct &= \md x^k (v) w(\partial_k) = v^k w_k = (w_j \md x^j)(v^i \partial_i) \\
+	&= w_j v^i \md x^j (\partial_i) = w_j v^i \partial_i x^j = w_j v^i \delta^i_j.
+	\end{align*}
+\end{mybox}
+\subsection{Metric}
+\begin{mybox}{The metric}
+	A \emph{metric} is a rank-$(0,2)$ tensor field
+	\begin{equation}
+	g TM \times TM \rightarrow \mR, g(v,w) =: <v,w>,
+	\end{equation}
+	which is symmetric and non-degenerate, but not necessarily positive. In a coordinate basis, the metric can be written in components 
+	\begin{equation}
+	g = g_{i j } \md x^i \otimes \md x^j = \mathrm{ a \, tensor, here}\, \md x^i\; \mathrm{ are\, dual\, basis \,elements}
+	\end{equation}
+	The \emph{line element} $\md s$ is the metric applied to an infinitesiaml distance vector $\md x$:
+	\begin{equation}
+\md s^2 = g(\md x, \md x) = g_{ij} \md x^i \md x^j \in \mR, \qquad \md x= \md x^k \partial_k.
+	\end{equation}
+\end{mybox}
+
+Given a coordinate basis $\{e_i\}$, the metric can always be chosen such that $g(e_i, e:j)=\pm \delta^i_j$.
+
+\subsection{Connections and covariant derivatives:}
+The curvature of a spacetime can be characterized by taking a vector at some point and parallel transporting it along a curve on the spacetime. An affine connection is a rule which describes how to legitimately move a vector along a curve on the manifold without changing its direction.\\
+There is a close correspondence between the curvature of a manifold and the transport of vectors along curves. Curvature can be defined from the misalignment of vectors after transport along closed curves. We have to introduce ways for transporting vectors along curves, to shift vectors from one point to another on the manifold, hence to compare vectors which are elements of tangent spaces at two different points.
+\begin{mybox}{Connection}
+	A connection $\nabla$ generalises the directional derivative of objects on a manifold. The directional derivative of a vector $y$ in the direction of the vector $v$ is the vector $\nabla_v y$. A connection $\nabla$ on a smooth manifold is a map that takes a pair consisting of a vector (field) $X$ and a $(p,q)$-tensor field $T$ and sends them to a $(p,q)$ tensor (field) $\nabla_X T$ satisfying the following properties:
+	\begin{align}
+	i)\;	\nabla_X f &= X f, \quad f\in C^{\infty}(M) \\
+	ii)\;	\nabla_X(T+S) &= \nabla_X T + \nabla_X S \\
+		&\quad for \quad T,S \in \mathcal{T}^p_q \nonumber \\
+	iii)\;	 \nabla_X (\underbrace{T(w,Y)}_{\in C^{\infty}(M),  T\in \mathcal{T}^1_1}) &= (\nabla_X T)(w,Y) \nonumber \\
+		&+ T(\nabla_Xw,Y) + T(w,\nabla_XY)\\
+	iv)\;	\nabla_{f X+Z} T &= f \nabla_X T + \nabla_Z T, \quad f \in C^{\infty}(M).
+		\end{align}
+\end{mybox}
+\begin{mybox}{Christoffel symbols}
+	In a local coordinate basis $\{e_i\}$, we can describe the linear connection by its action on the basis vectors,
+	\begin{equation}
+		\nabla_{\partial_i} (\partial_j) = \Gamma^k_{ij} \partial_k,
+	\end{equation}
+	\begin{equation}
+		(\nabla_{\partial_i} \md x^j)(\partial_k) = - \Gamma^j_{ik}
+	\end{equation}
+	\begin{equation}
+		\nabla_{\partial_i} \md x^j = - \Gamma^j_{ik} \md x^k.
+	\end{equation}
+	where the $\md^3$ numbers $\Gamma^k_{ij}$ are called the \emph{Christoffel symbols} or \emph{connection coefficients} of the connection $\nabla$ in the given chart. The Christoffel symbols are not the components of a tensor.
+\end{mybox}
+The Christoffel symbols are highly chart-dependent, on $(U,x) \in \mathcal{A}$: $\Gamma$s are, w.r.t. the chart, the $(dimM)^3$ many functions
+\begin{equation}
+	\Gamma^i_{(x), \, j k} : U \rightarrow \mR, p \mapsto \left(\md x^i \left(\nabla_{\frac{\partial}{\partial x^k}} \frac{\partial}{\partial x^j}\right)\right)(p)
+\end{equation}
+The components of different covariant derivatives of tensors is computed as follows:
+"For each index up, you do vector rule $i)$ and you keep the other indices on the $T$ untouched. For each index down, you apply covector rule $ii)$ and you keep the other indices on $T$ untouched." For example:
+\begin{enumerate}
+	\item For a vector field 
+	\begin{equation}
+		(\nabla_X Y)^i = \underbrace{x^m\left(\frac{\partial}{\partial x^m} Y^i \right)}_{=X(Y^i)} + \Gamma^i_{nm} Y^n X^m
+	\end{equation}
+	More generally for the covariant derivative of a vector $y$
+	\begin{equation}
+		\nabla y:T^*M \times TM \rightarrow \mR, \nabla y(w,v) = w(\nabla_v y),,
+	\end{equation}
+	or in components
+	\begin{equation}
+		( \nabla y)^i_j = \nabla y (\md x^i, \partial_j)= \partial_j y^i + \Gamma^i_{jk} y^k.
+	\end{equation}
+	\item For a covector field
+	\begin{equation}
+		(\nabla_X w)_i = X(w_i) - \Gamma^j_{i m} w_j X^m
+	\end{equation}
+	\item For a $(1,2)$ tensor field $T$
+	\begin{equation}
+		(\nabla_X T)^i_{jk} = X(T^i_{jk}) + \Gamma^i_{sm} T^s_{jk}X^m - \Gamma^s_{jm} T^i_{sk} X^m - \Gamma^s_{km} T^i_{js} X^m.
+	\end{equation}
+\end{enumerate}
+By means of an exponential map, so-called \emph{normal coordinates} can always be introduced locally in which the Christoffel symbols of a symmetric connection all vanish.\\
+A symmetric connection has at most $1/2 d^2 (d+1)$ unique coefficients.\\
+The covariant derivative commutes with contractions.\\
+\\
+Change of coefficient function under change of chart
+\begin{align*}
+	(U \cap V,x) &\rightarrow (U\cap V,y), \quad (U,x), (V,y) \in \mathcal{A} \quad U\cap V \neq \emptyset \nonumber \\
+	\Gamma^i_{(y) \; jk} &= \md y^i \left( \nabla_{\frac{\partial}{\partial y^k}} \frac{\partial}{\partial y^j}\right) = \frac{\partial y^i}{\partial x^q} \md x^q \left(\nabla_{\frac{\partial x^p}{\partial y^k}\frac{\partial}{\partial x^p}}  \frac{\partial x^s}{\partial y^j} \frac{\partial}{\partial x^s}\right) \nonumber \\
+	&=\dots = \frac{\partial y^i}{\partial x^q}  \frac{\partial x^s}{\partial y^j} \frac{\partial x^p}{\partial y^k} \Gamma^q_{(x) \; sp}  + \frac{\partial y^i}{\partial x^q} \frac{\partial^2 x^q}{\partial y^k \partial y^j}. \nonumber
+\end{align*}
+This additional term may not vanish for non-linear transformation, where second derivatives do not vanish.
+
+\subsection{Geodesics}
+Geodesics represent the paths of particles with no proper acceleration, the physical acceleration experienced by an object (i.e. acceleration relative to a free-fall, Gravity does \emph{not} cause proper acceleration since gravity acts upon the inertial observer), their motion satisfying the geodesic equations. Because the particles are subject to no proper acceleration, the geodesics generally represent the straightest path between two points in a curved spacetime.
+More formally, a geodesic is a curve which extremizes (not minimizes necessarily) the length functional $L=\int \md s$. That is, imagine a path parametrized by $\lambda$, $x^{\mu} (\lambda)$. Then
+\begin{equation}
+	\md s = \sqrt{g_{\mu \nu} \frac{\md x^{\mu}}{\md \lambda} \frac{\md x^{\nu}}{\md \lambda}} \md \lambda.
+\end{equation}
+
+\begin{mybox}{curves and tangent vectors}
+	A curve \gamma is defined as a map from some interval $I \subset \mR$ to the manifold,\begin{equation}
+		\gamma: I \rightarrow M, \quad t \mapsto \gamma(t).
+	\end{equation}
+	Its tangent vector is $\dot{\gamma}(t) \in TM$.\\
+	For example on $S^2$, 
+	\begin{equation}
+	\dot{\gamma} = \dot{x}^i \partial_i = \dot{\gamma}^{\vartheta} \partial_{\vartheta} + \dot{\gamma}^{\varphi} \partial_{\varphi}, \quad i\in {\vartheta, \varphi}.
+	\end{equation}
+	Where the curve vector is given by 
+	\begin{equation}
+		\gamma (t) = (\vartheta(t), \varphi(t))^T.
+	\end{equation}
+\end{mybox}
+A vector $v$ is said to be \emph{parallel transported} along $\gamma$ if
+\begin{equation}
+	\nabla_{\dot{\gamma}} v = 0.
+\end{equation}
+
+\begin{mybox}{Geodesic curve and geodesic equation}
+	A \emph{geodesic curve} is defined as a curve whose tangent vector is parallel transported along $\gamma$ (\emph{autoparallel})	
+	\begin{equation}
+	\nabla_{\dot{\gamma}} \dot{\gamma} = 0.
+	\end{equation}
+	In a local coordinate system, e.g. $\ddot{x}^1 = \vartheta$, this equation is equivalent to the \emph{geodesic equation}
+	
+	\begin{equation}
+	\ddot{x}^k + \Gamma^k_{ij} \dot{x}^i \dot{x}^j = 0.
+	\end{equation}
+	
+	$x(\lambda)$ is a geodesic if it satisfies the geodesic equation 
+	\begin{equation}
+		\frac{\md^2 x^{\mu}}{\md \lambda^2} + \Gamma^{\mu}_{\rho \sigma} \frac{\md x^{\rho}}{\md \lambda} \frac{\md x^{\sigma}}{\md \lambda} = 0.
+	\end{equation}
+	This is only true if $\lambda$ is an affine parameter, i.e. if it is related to the proper time via
+	\begin{equation}
+		\lambda = a \tau +b, \quad \lambda = \tau \; \mathrm{ for \; timelike} \; \md s^2 < 0.
+	\end{equation}
+	The physical reason why geodesic are so important is:
+	\begin{statements}
+		In Gr, test bodies move along geodesics.
+	\end{statements}
+Of the bodies are massless, these geodesics will be lightlike $\md s^2=0$, and if they are massive, the geodesics will be timelike $\md s^2 < 0$.
+For massive test particles, the geodesics on which they move are curves of \emph{maximum} proper time.
+	In flat Euclidean space, geodesic are straight lines, i.e. $\ddot{x}^k =0$.
+	\end{mybox}
+Newtonian physics said "particles move along straight lines $\ddot{x} =0$, until forces knock them off $\ddot{x} = F/m$." Gravity was one force among many. Now, in GR, gravity is represented by the curvature of spacetime, \emph{not} by a force. From GR POV, "particles move along geodesics, until forces knock them off".
+\begin{statements}
+	Since inertial systems are freely falling systems where gravity is absent, gravity does not count as a force.
+\end{statements}
+If you consider the motion of particles under the influence of forces other than gravity, then they will not move along geodesics. You can still use the geodesic equation to describe their motions, but you have to add a force term to the RHS. In that sense, the geodesic equation is like the curved-space expression for $F =ma=0$.
+The covariant derivative of a tensor field is generally defined as
+\begin{align*}
+	&\nabla : \mathcal{T}^r_s \rightarrow \mathcal{T}^r_{s+1}, (\nabla t) (w_1, \dots, w_r,v_1,\dots,v_s,v_{s+1}) \\
+	&= (\nabla_{v_{s+1}} t)(w_1, \dots,w_r,v_1,\dots,v_s) \\
+	(\nabla_x t)(w_1, \dots, w_r,v_1,\dots,v_s) &= \underbrace{ xt(w_1,\dots,w_r,v_1,\dots, v_s)}_{= \nabla_x \left[t(w_1,\dots ,w_r,v_1,\dots,v_s)\right]} - t(\nabla_x w_1,\dots,w_r,v_1,\dots,v_s) \\
+	&-\dots- t(w_1,\dots,w_r,v_1,\dots,\nabla_x v_s).
+\end{align*}
+
+\subsection{Curvature}
+\begin{mybox}{Torsion}
+	The torsion $t$ maps two vector field $x$ and $y$ into another vector field 
+	\begin{equation}
+		T:TM \times TM \rightarrow TM, (x,y) \mapsto T(x,y) = \nabla_x y - \nabla_y x - [x,y].
+	\end{equation}
+	The torsion vanishes if and only if the connection is symmetric.
+\end{mybox}{Torsion}
+ON a manifold $(M,g)$, a symmetric connection can always be uniquely defined by requiring that $\nabla g=0, \nabla_{\sigma} g_{\mu \nu} =0, \nabla_{\sigma} g^{\mu \nu}=0$. This is the \emph{Levi-Civita, or Riemannian} connection, whose Christoffel symbols are
+\begin{equation}
+	\Gamma^i_{jk} = 1/2 g^{ia} \left(\partial_j g_{ak} + \partial_k g_{j a}\ - \partial_a g_{jk} \right).
+\end{equation}
+From now on, we shall assume that we are working with a Levi-Civita connectin whose torsion vanishes.
+\begin{mybox}{Curvature and Curvature tensor}
+	The curvature $\bar{R}$ maps three vector field $x,y$ and $v$ into a vector field,
+	\begin{align}
+		\bar{R}:TM\times TM \times TM &\rightarrow TM,\\
+		 (x,y,z) \mapsto \bar{R}(x,y) v &= \nabla_x(\nabla_y v) - \nabla_y(\nabla_x v) \nabla_{[x,y]} v.
+	\end{align} 
+Since the covariant derivatives $\nabla_x$ and $\nabla_y$ represent the infinitesimal parallel transports along the integral curves of the vector fields $x$ and $y$, the curvature $\bar{R}$ directly quantifies the change of the vector $v$ when it is parallel-transported around an infinitesimal, closed loop.
+\\
+The \emph{curvature of Riemann tensor} $\bar{R} \in \mathcal{T}^1_3$ is given by 
+\begin{equation}
+\bar{R}:T^*M\times TM \times TM \times TM \rightarrow \mR, (w,x,y,z) \mapsto w[\bar{R}(x,y)z].
+\end{equation}
+Its components are 
+\begin{align}
+\bar{R}^i_{\; j k l} &= \md x^i [\bar{R}(\partial_k, \partial_l) \partial_j] \\
+							&= \partial_k \Gamma^i_{jl} - \partial_l \Gamma^i_{jk} + \Gamma^a_{jl} \Gamma^i_{ak} - \Gamma^a_{jk} \Gamma^i_{al}.
+\end{align}
+The Riemann tensor is antisymmetric, i.e. $i=j => \bar{R}=0$ and obeys $3$ further symmetries 
+\begin{align}
+	\bar{R}_{ijkl} & -\bar{R}_{jikl} =\bar{R}_{jilk} \\
+	\bar{R}_{ijkl} &= \bar{R}_{klij}
+\end{align}
+such that it only has $21$ independent components.\\
+All of the components of $\bar{R}^{\sigma}_{\mu \alpha \beta}$ vanish if and only if the space is flat. Operationally, "flat" means that there exists a global coordinate system in which the metric components are everywhere constant.
+\end{mybox}
+\begin{mybox}{Ricci tensor}
+	The symmetric \emph{Ricci tensor} $R$ is the contraction $C^1_3 \bar{R}$ of the curvature tensor$\bar{R}$. Its components are 
+	\begin{equation}
+		R_{jl} = \bar{R}^i_{jil} = \partial_i \Gamma^i_{lj} - \partial_l \Gamma^i_{ij} + \Gamma^m_{lj} \Gamma^i_{im} - \Gamma^m_{ij} \Gamma^i_{lm}.
+	\end{equation}
+	For a symmetric connection with a vanishing torsion, the \emph{Bianchi identities} reduce to 
+	\begin{equation}
+		\sum_{(x,y,z) \mathrm{cyclic}} \bar{R}(x,y)z = 0, \quad \underbrace{\sum_{(x,y,z) \mathrm{cyclic perm.}} \nabla_x \bar{R}(y,z) }_{\bar{R}^i_{j [kl,m]}}=0.
+	\end{equation}
+	The contracted Ricci tensor yields the \emph{Ricci scalar}
+	\begin{equation}
+	 \mathcal{R} = R^i_i = tr(R).
+	\end{equation}
+	The \emph{contracted Bianchi identitiy} then reads
+	\begin{equation}
+		\left[R^i_j -\frac{\mathcal{R}}{2} \delta^i_j\right]_{ji} = 0.
+	\end{equation}
+\end{mybox}
+The symmetric \emph{Einstein tensor} is given by
+\begin{equation}
+G_{ij} = R_{ij}  \frac{\mathcal{R}}{2} g_{ij},
+\end{equation}
+which has vanishing divergence by the contracted Bianchi identity $\nabla \cdot G = 0$ $\leftrightarrow$ $G^i_{jji} =0$.
+
+\subsection{The Lie derivative}
+Another important tensorial derivative is the \emph{Lie derivative}, which is independent of the metric. Whereas the covariant derivative required an affine connection to allow comparison between vectors at different points, the Lie derivative uses a congruence from a vector field to achieve the same purpose. In GR, a congruence is the set of integral curves of a vector field in a $4-d$ manifold.\\
+The idea of Lie dragging a function along a congruence leads to the definition of the Lie derivative, wehre the dragged function is compared with the value of the original function at a given point. It is defined as 
+\begin{equation}
+\mathcal{L}_x :\mathcal{T}^r_s \rightarrow \mathcal{T}^r_s,
+\end{equation}
+where $x$ is the vector field along whose congruence the Lie derivative is taken.\\
+The Lie derivative of a scalar is just the directional derivative.\\
+\\
+A differentiable curve $\gamma_t(p)$ defined at every point $p \in M$ defines a diffeomorphic map $\phi_t:M\rightarrow M$. Of $\dot{\gamma}_t=v$ for a vector field $v \in TM$, $\phi_t$ is called the \emph{flow} of $v$ \leftrightarrow If a tangent vector defined by 
+\begin{equation}
+	(\dot{\gamma}(t))(f) = \frac{\md }{\md t} (f \circ \gamma) (t)
+\end{equation}
+suffices $\dot{\gamma}=v$, then $\gamma$ is called an \emph{integral curve} of $v$.
+If this is true for all curves $\gamma$ obtained from $\gamma_t$ by specifying $\gamma(0)$, the result is called flow of v.
+\begin{mybox}{Pull-back}
+	Let now $M$ and $N$ be two manifolds and $\phi: M\rightarrow N$ a map from $M$ onto $N$. A function $f$ defined at a point $q\in N$ can be defined at a point $p\in M$ with $q=\phi(p)$ by 
+	\begin{equation}
+		\phi^* f : M\rightarrow \mR ,\; (\phi^* f)(p) := (f \circ \phi)(p) = f[\phi(p)].
+	\end{equation}
+	The map $\phi^*$ "pulls" function $f$ on $N$ "back" to $M$.
+\end{mybox}
+\begin{mybox}{push-forward}
+	Similarly for vectors: $\phi_*:T_pM \rightarrow T_q N$, $v$ $\mapsto \phi_* v=v \circ \phi^*$ such that $(\phi_* v)(f) = v(\phi^* f) = v(f \circ \phi)$, where $q=\phi(p)$.\\
+	The map $\phi_*$ "pushes" vectors from the tangent space of $M$ in $p$ to the tangent space of $N$ in $q$.
+\end{mybox}
+Equivalently extended
+\begin{enumerate}
+	\item Dual vectors: 
+	\begin{equation}
+		\phi^*:T^*_q M \rightarrow T^*_p M, \; w \mapsto \phi^* w = w \circ \phi_*,
+	\end{equation}
+	such that $(\phi^* w)(v) = w(\phi_* v) = w(v \circ \phi^*)$.
+	\item Tensors:\\
+	 		Pull-back \begin{equation}
+	 		 \phi^*: \mathcal{T}^r_s(N) \rightarrow \mathcal{T}^r_s(M),
+	 		\end{equation}
+	 		push forward
+	 		\begin{equation}
+	 			\phi_*:\mathcal{T}^r_s(M) \rightarrow \mathcal{T}^r_s(N).
+	 		\end{equation}
+\end{enumerate}
+The important point is that if $\phi^*:M\rightarrow M$ is a diffeomorphism and $T$ is a tensor field $M$, then $\phi^*T$ can be compared to $T$.\marginpar{If $\phi$ is a diffeomorphism $\phi_* = (\phi^*)^{-1}$.}\\
+\\
+Symmetry transformations:\\
+If $\phi^*T=T, \phi^*$ is a symmetry transformation of $T$ because $T$ stays the same even though it was "moved" by $\phi^*$. If the tensor field is the metric $g$, such a symmetry transformation of $g$ is called an \emph{isometry}.
+\begin{mybox}{Lie derivative}
+	While the covariant derivative determines how vectors and tensors change when moved across a given manifold, the Lie derivative determines how these objects change upon transformations of the manifold itself.\\
+	Let now $v$ be a vector field on $M$ and $\gamma_t$ be the flow of $v$. Then, for an arbitrary tensor $T\in \mathcal{T}^r_s$, the expression 
+	\begin{equation}
+		\mathcal{L}_v T := \lim_{t \rightarrow 0} \frac{\gamma^*_t T-T}{t}
+	\end{equation}
+	is called \emph{Lie derivative} of the tensor $T$ w.r.t. $v$.\\
+	The Lie derivative of a rank-$(0,2)$ tensor $T$ along the vector field $v$ with flow $\phi_t$ has the components
+	\begin{equation}
+		\left(\mathcal{L}_v T\right)_{ij} =  \lim_{t \rightarrow 0} \left(\frac{\gamma^*_t T-T}{t}\right)_{ij} = v^k \partial_k T_{ij} + \partial_i v^k T_{kj} + \partial_j v^k T_{ik}
+	\end{equation}
+	where $\phi^*_t T$ is the pull-back of $T$ with $\phi_t$.
+\end{mybox}
+The tensor $T$ on the manifold after the transformation $\gamma_t$ of the manifold is pulled back to the manifold $\gamma^*_t T$ before the transformation, where it can be compared to $T$.\\
+\\
+The Lie derivative has the following properties:
+\begin{enumerate}
+	\item Linear \begin{equation}
+		\mathcal{L}_x(y+z) = \mathcal{L}_x y + \mathcal{L}_x z,
+	\end{equation}
+	\item Leibniz rule 
+	\begin{equation}
+		\mathcal{L}_x(y \otimes z) = \mathcal{L}_x y \otimes z +y \otimes \mathcal{L}_x z,
+	\end{equation}
+	\item commutes with contraction,
+	\item \begin{equation}
+		\mathcal{L}_{x+y} = \mathcal{L}_x + \mathcal{L}_y,
+	\end{equation}
+	\item \begin{equation}
+			\mathcal{L}_{\lambda x} = \lambda \mathcal{L}_x,
+	\end{equation}
+	\item 
+	\begin{equation}
+		\mathcal{L}_{[x,y]} = [\mathcal{L}_x,\mathcal{L}_y] = \mathcal{L}_x \circ \mathcal{L}_y - \mathcal{L}_y \circ \mathcal{L}_x,
+	\end{equation}
+	\item For function $f$,
+	\begin{equation}
+		\mathcal{L}_v f = v(f) = \md f(v),
+	\end{equation}
+	\item commutation of
+	\begin{equation}
+		\mathcal{L}_v \md f = \md \mathcal{L}_v f,
+	\end{equation}
+	\item The Lie derivative of vector $x$ is commutation
+	\begin{equation}
+		\mathcal{L}_v x = [v,x],
+	\end{equation}
+	\item For a dual vector $w$ and vector $v$,
+	\begin{equation}
+		\left(\mathcal{L}_x w\right)(v) = x[w(v)]-w([x,v]),
+	\end{equation}
+	\item \begin{equation}
+		[x,y]=0 \Rightarrow \quad \mathcal{L}_x \circ \mathcal{L}_y = \mathcal{L}_y \circ \mathcal{L}_x,
+	\end{equation}
+	\item 
+	\begin{align}
+		t\in \mathcal{T}^0_r \Rightarrow (\mathcal{L}_x t)(v_1, \dots,v_r) &= x(t(v_1,\dots,v_r))\nonumber \\
+		& - \sum_{i=1}^r t(v_1,\dots,[x,v_i],\dots,v_r) \\
+		\mathrm{e.g.} \, g \in \mathcal{T}^0_2:\; (\mathcal{L}_x g)(v_1,v_2) &= x[g(v_1,v_2)] \nonumber \\
+		&-g([x,v_1],v_2) \nonumber \\
+		&- g(v,[x,v_2]) \; for \; v_1,v_2 \in TM.
+	\end{align}
+\item The Lie derivative of the basis and dual basis reads
+\begin{align}
+	\mathcal{L}_v \md x^i &= \md v(x^i) = \md v^i = \partial_j v^i \md x^j, \\
+	\mathcal{L}_v \partial_i &= [v,\partial_i] = -(\partial_i v^j) \partial_j.
+\end{align}
+\end{enumerate}
+\subsection{Killing vector fields:}
+\begin{mybox}{Killing vector field}
+	A Killing vector field $K$ is a vector field along which the Lie derivative of the metric vanishes,
+	\begin{equation}
+		\mathcal{L}_K g = 0.
+	\end{equation}
+	This implies that the flow of a Killing vector field defines a symmetry transformation of the metric, i.e. an \emph{isometry}.
+	This implies the Killing equation
+	\begin{equation}
+		\nabla_i K_j + \nabla_j K_i =0.
+	\end{equation}
+\end{mybox}
+Conservation laws from Killing vector fields:\\
+Freely-falling particles and light rays both follow geodesics. For $\gamma$ a geodesic, then the projection of a Killing vector K on the tangent to the geodesic $\dot{\gamma}$ is constant along the geodesic,
+\begin{equation}
+\nabla_{\dot{\gamma}} \langle \dot{\gamma},K\rangle = 0.
+\end{equation}
+The constancy of $\langle \dot{\gamma},K\rangle$ along the geodesics means that each Killing vector field gives rise to a conserved quantity for freely-falling particles and light rays. Since a Killing vector field generates an isometry, this shows that 
+\begin{statements}
+	Symmetry transformations of the metric give rise to conservation laws.
+\end{statements}
+
+Killing fields are the infinitesimal generators of isometries; that is, flows generated by Killing fields are continuous isometries of the manifold  $\Leftrightarrow$ The flow generates a symmetry, in the sense that moving each point on an object the same distance in the direction of the Killing vector will not distort distances on the object.\\
+E.g., in a \emph{static configuration}, in which nothing changes with time, the time vector will be a Killing vector, and thus the Killing field will point in the direction of forward motion in time.
+
+\subsection{Differential forms}
+Differential $p$-forms are totally antisymmetric tensors of rank $(0,p)$.\\
+The \emph{exterior product} $\wedge$ is defined by 
+\begin{equation}
+\wedge:\bigwedge^p \times \bigwedge^q \rightarrow \bigwedge^{p+q}, (\omega, \eta) \mapsto \omega \wedge \eta = \frac{(p+q)!}{p!q!} \mathcal{A}(\omega\otimes \eta),
+\end{equation}
+where $\mathcal{A}$ is the alternation operator
+\begin{equation}
+	(\mathcal{A}t)(v_1,\dots,v_p) = \frac{1}{p!} \sum_{\pi} \mathrm{sgn}(\pi) t(v_{\pi(1)}, \dots, v_{\pi(p)}).
+\end{equation}
+On the vector space $\bigwedge$ of differential forms, the wedge product defines an \emph{associative, skew-commutative Grassman algebra},
+\begin{equation}
+	\omega \wedge \eta = (-1)^{pq} \eta \wedge \omega, \quad \omega \in \bigwedge^p, \eta \in \bigwedge^q.
+\end{equation}
+A basis for the $p$-forms is $\md x^{i_1} \wedge \dots \wedge \md x^{i_p}$, which shows that
+\begin{equation}
+	\dim{\bigwedge^p} = 
+	\begin{pmatrix}
+	n\\
+	p
+	\end{pmatrix}
+i \leq i_1 < \dots < i_p \leq n,
+\end{equation}
+where $\{\md x^i\}$ has $i\in \{1,\dots,n\}$ basis of $V^*$.\\
+\\
+The \emph{interior product} $i_v$ is defined by 
+\begin{equation}
+	i:TM\times \bigwedge^p \rightarrow \bigwedge^{p-1}, (v,w) \mapsto i_v(w) =w(v,\dots) \Leftrightarrow (i_v w)_{i_2 \dots i_p} = v^j w_{j i_2 \dots i_p}.
+\end{equation}
+The \emph{exterior derivative} turns $p$-forms $w$ into $(p+1)$-forms $\md w$,
+\begin{equation}
+	\md : \bigwedge^p \rightarrow \bigwedge^{p+1}, \quad \omega \mapsto \md \omega = (p+1) \mathcal{A}(\nabla \omega).
+\end{equation}
+Due to the symmetry of the Levi-Civita connection, the components of the exterior derivative are given by partial derivatives,
+\begin{equation}
+	(\md \omega)_{i_1,\dots,i_{p+1}} = (p+1) \partial_{[i_1} \omega_{i_2 \dots i_{p+1}]}.
+\end{equation}
+Equivalently with a use of basis,
+\begin{align}
+	\omega &= \omega_{i_1 \dots i_p} \md x^{i_1} \wedge \dots \wedge \md x^{i_p}, \\
+	\md \omega &= \md \omega_{i_1 \dots i_p} \wedge \md x^{i_1} \wedge \dots \wedge \md x^{i_p},
+\end{align}
+where the differentials are wedged from the left.\\
+\\
+The  \emph{Hodge star operator} turns a $p$-form into an $(n-p)$- form,
+\begin{equation}
+	*:\bigwedge^p \rightarrow \bigwedge^{n-p}, \omega \mapsto * \omega.
+\end{equation}
+If $\{\md x^i\}$ is the basis of the dual space $T^*_p M$, then
+\begin{equation}
+	*(\md x^{i_1} \wedge \dots \wedge \md x^{i_p}) = \frac{\sqrt{|g|}}{(n-p)!} \epsilon^{i_1 \dots i_p}_{i_{p+1} \dots i_n} \md x^{i_{p+1}} \wedge \dots \wedge \md x^{i_n},
+\end{equation}
+where the Levi-Civita tensor is only covariantly defined, i.e. $\epsilon_{i_1 \dots i_p} = \pm 1$ and indices have to be pushed up by $g^{\mu \nu} = (g_{\mu \nu})^{-1}$.\\
+For the orthonormal basis $\{e^i\}$ of $TM$,
+\begin{equation}
+	*(e^{i_1} \wedge\dots \wedge e^{i_p}) = e^{i_{p+1}} \wedge \dots \wedge e^{i_n}.
+\end{equation}
+The \emph{codifferential} is a differentiation lowering the order of a $p$-form by one,
+\begin{equation}
+	\delta:\bigwedge^p \rightarrow \bigwedge^{p-1},\; \omega \mapsto \delta \omega = \mathrm{sgn} (-1)^{n(p+1)} (*\md *)(\omega).
+\end{equation}
+It generalises the divergence:
+\begin{equation}
+	(\delta \omega)^{i_1 \dots i_{p-1}} = \frac{1}{\sqrt{|g|}} \partial_k \left(\sqrt{|g|} \omega_{k i_1 \dots i_{p-1}}\right).
+\end{equation}
+\subsection{Integrals}
+The \emph{canonical volume form} on a pseudo-Riemannian manifold $(M,g)$ is defined by
+\begin{equation}
+	\eta = \sqrt{|g|} \md x^1 \wedge \dots \wedge \md x^n \quad \in \bigwedge^n.
+\end{equation}
+The integration of $n$-forms $\omega=f(x_1,\dots,x_n) \md x^1 \wedge \dots \wedge \md x^n$ over domains $D\subset M$ is coordinate independent and defined by
+\begin{equation}
+	\int_D \omega = \int_D f(x_1, \dots, x_n) \md x^1 \wedge \dots \wedge \md x^n.
+\end{equation}
+$\Rightarrow$ Functions $f$ are integrated by means of the canonical volume form,
+\begin{equation}
+	\int_D f \eta =\int_D f \sqrt{|g|} \md x^1 \wedge \dots \wedge \md x^n.
+\end{equation}
+\begin{mybox}{Stokes' theorem}
+	Let $M$ be an $n$-dimensional manifold and the region $D\subset M$ have a smooth boundary $\partial D$ such that $\bar{D} = D \cup \partial D$ is compact. Then, for every $(n-1)$-form $\omega$, we have 
+	\begin{equation}
+		\int_D \md \omega = \int_{\partial D} \omega.
+	\end{equation}
+
+\end{mybox}
+
+\begin{mybox}{Gauss' theorem}
+	Likewise, for a vector field $X\in TM$ on $M$ and $x^{\flat}$ the 1-form belonging to this vector field:
+	\begin{equation}
+	\int_D \delta x^{\flat} \eta = \in_{\delta D} *x^{\flat}.
+	\end{equation}
+\end{mybox}
+
+The musical operators used here are isomorphisms between the tangent spaces of a manifold and their dual spaces given by the metric
+\begin{equation}
+	\flat : TM \rightarrow T^*M, v \mapsto v^{\flat}, v^{\flat}_i =g_{ij} v^j,
+\end{equation}
+and similarly by the inverse of the metric,
+\begin{equation}
+	\#:T^*M \rightarrow TM, \omega \mapsto \omega^{\#}, \; (\omega^{\#})^i = g^{ij} \omega_j.
+\end{equation}
+Like $\flat$ lowers a note by a semitone in music, the $\flat$ operator lowers the index of vector components and thus turns then into dual vector components.. Analogously, $\#$ raises notes by semitones in music, and indices of dual-vector components.
+
+
+
+
+
+
+
+
+
+
+
+\section{Physical laws in external gravitational fields}
+\subsection{Motion of particles}
+Parametrize the trajectory of a particle as a curve $\gamma(\tau)$ with $\md x = \dot{\gamma} \md \tau$. The free action of a particle, with $\md \tau c = \md s$, is
+\begin{equation}
+S = - mc^2 \int_a^b \md \tau = -mc \int_a^b \sqrt{-g(\dot{\gamma},\dot{\gamma}) \md \tau} = -mc \int_a^b \sqrt{-\langle \dot{\gamma}, \dot{\gamma} \rangle}.
+\end{equation}
+The negative sign under the root comes about since the curve has to be timelike.
+\begin{mybox}{Motion of freely falling particles}
+	The trajectories extremizing this action are geodesic curves. Freely falling particles thus follow geodesics of the space-time.
+\end{mybox}
+This comes about since the extermization of the action given above results in the geodesic equation.\\
+Note, if you define $c \md \tau = \sqrt{-\md s^2} \Rightarrow \rangle u,u \rangle = -c^2$,\\
+but if you define $\md \tau = \sqrt{-\md s^2} \rightarrow \langle u,u \rangle = -1$.
+$\md s^2$ is invariant under transformations generally, since we are only performing isometric transformations.
+
+
+
+
+
+\subsection{Motion of light}
+\marginpar{Ambiguities may occur when second derivatives are around, start substitution at beginning not at the end}
+\begin{mybox}{Porting physical laws into general relativity}
+	In the presence of a gravitational field, the physical laws of special realtivity are changed simply by substituting the covariant derivative for the partial derivative, $\partial \rightarrow \nabla$, by raising indices with $g^{\mu \nu}$ instead of $\eta^{\mu \nu}$ and by lowering them with $g_{\mu \nu}$ instead of $\eta_{\mu \nu}$, and by replacing the motion of free particles along straight lines by the motion along geodesics.\\
+	Note however that covariant derivatives do not (generally) commute.
+\end{mybox}
+For example,\\
+in a Lorenz gauge, the inhomogeneous electromagnetic wave equation in a curved spacetime reads
+\begin{equation}
+	\nabla_{\nu} \nabla^{\nu} A^{\mu} - R^{\mu}_{\nu} A^{\nu} = - \frac{4 \pi}{c} j^{\mu}.
+\end{equation}
+\begin{mybox}{Light rays in a curved space-time}
+	In the limit of geometrical optics, Maxwell's equations imply that light rays follow \emph{null geodesics}:
+	\begin{equation}
+		k^{\nu} \nabla_{\nu} k^{\mu} = 0 \quad \mathrm{or} \quad \nabla_k k = 0, \, \mathrm{with} \quad k^{\nu } k_{\nu} = 0 \, \mathrm{ lightlike}.
+	\end{equation}
+	Hence, equally 
+	\begin{equation}
+		k^{\nu} \partial_{\nu} k^{\mu} + \Gamma^{\mu}_{\nu \lambda} k^{\nu} k^{\lambda} =0,
+	\end{equation}
+	for null geodesics and $k = (w/c, |\vec{k}|)^T$ is the wave four-vector with $\langle k,k \rangle =0$ and thus $w = c | \vec{k}|$.
+\end{mybox}
+It furthermore holds that the polarization vector of an electromagnetic waves $e^{\mu}$ is parallel-transported along light rays:
+\begin{equation}
+	k^{\nu} \nabla_{\nu} e^{\mu} =0 \quad \mathrm{or} \quad \nabla_{k} e = 0.
+\end{equation}
+
+
+
+
+
+
+
+\subsection{Energy-momentum "conservation"}
+
+Contracted Christoffel symbols:\\
+Cramer rule 
+\begin{equation}
+	\frac{\partial \det{A}}{\partial A_{ji}} =  (A^{-1})_{ij} \det{A} \; \Rightarrow \; \frac{\partial g}{\partial g_{\mu \nu}} = g g^{\mu \nu}
+\end{equation}
+for $g = \det{g_{\mu \nu}}$. The contracted Christoffel symbols then read
+\begin{equation}
+	\Gamma^{\mu}_{\mu \lambda} = \frac{1}{2 g} \partial_{\lambda} g = \frac{1}{\sqrt{-g} } \partial_{\lambda} \sqrt{-g},
+\end{equation}
+with $g g^{\mu \nu} \partial_{\lambda} g_{\mu \nu} = 2 g \Gamma^{\mu}_{\mu \lambda}$.\\
+The covariant divergence of a vector then reads
+\begin{equation}
+	\nabla_{\mu} v^{\mu} = \frac{1}{\sqrt{-g}} \partial_{\mu} \left(\sqrt{-g} v^{\mu} \right).
+\end{equation}
+For a $(2,0)$-tensor, its divergence reads
+\begin{equation}
+	\nabla_{\nu} A^{\mu \nu} = \frac{1}{\sqrt{-g}} \partial_{\nu} \left(\sqrt{-g} A^{\mu \nu}\right) + \Gamma^{\mu}_{\alpha \nu} A^{\alpha \nu}.
+\end{equation}
+$\Rightarrow$ Tensor divergences:\\
+If the tensor $A^{\mu \nu}$ is antisymmetric, the second term $\Gamma^{\mu}_{\alpha \nu} A^{\alpha \nu}$ vanishes because then the symmetric $\Gamma^{\mu}_{\alpha \nu}$ is contracted with the antisymmetric $A^{\alpha \nu}$. If $A^{\mu \nu}$ is symmetric, however, this final term remains, with important consequences.\\
+Consequences:
+\begin{enumerate}
+\item 	It implies that $\nabla_{\mu} \nabla_{\nu} F^{\mu \nu} = 0 = \underbrace{\frac{4 \pi}{c} \nabla_{\mu} j^{\mu}}_{\mathrm{Maxwell}}$. This is the \emph{continuity} equation of the electric four-current, implying charge conservation. The antisymmetry of $F^{\mu \nu}$ is necessary for charge conservation.
+	\item When you take gravity into account, the total energy of any closed universe is exactly zero
+	\begin{mybox}{Energy non-conservation}
+		Energy is not generally conserved in general relativity. This is not surprising because energy can now be exchanged with the gravitational field. Mathematically this is due to $T^{\mu \nu}$ being symmetric.
+	\end{mybox}
+\item $\nabla \cdot G = 0 \Rightarrow \nabla^{\mu} T_{\mu \nu} =0$ energy-momentum conservation, but be \emph{careful}. This is a \emph{local} relation, if we e,g, integrate the density $\rho$ over a space-like hyper surface, the corresponding quantity is not constant with time. In general relativity, there is no global notion of energy conservation.\\
+$\Rightarrow \nabla_{\nu} T^{\mu \nu}=0$ expresses local conservation, and the appearance of the covariant derivative allows this equation to account for the transfer of energy back and forth between matter and the gravitational field.
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+\section{Einstein's Field equations}
+\subsection{The physical meaning of curvature}
+\begin{mybox}{Equation of geodesic derivation}
+	The separation vector $\eta$ between neighbouring geodesics obeys the equation 
+	\begin{equation}
+		\nabla^2_u \eta = \bar{R}(u,\eta)u.
+	\end{equation}
+	This is called the \emph{equation of geodesic deviation} because it describes directly how the separation between neighbouring geodesics evolves along the geodesics according to the curvature.
+\end{mybox}
+$u,v$ being tangent vectors of the geodesic. E.g. on $S^2$ 
+\begin{figure}
+	\centering 
+	\includegraphics[width=0.7 \textwidth]{gfx/Geodesicdeviation.png}
+\end{figure}
+\begin{equation}
+	\frac{\md ^2 \eta^{\varphi}}{\md \vartheta^2} = \bar{R}^{\varphi}_{\vartheta \vartheta i} \eta^i.
+\end{equation}
+\begin{mybox}{Tidal field and curvature}
+	The curvature represents the gravitational tidal field, describing the relative acceleration of freely-falling test bodies, with the GR $\leftrightarrow$ Newtonian correspondences
+	\begin{equation}
+		\bar{R}^i_{0j0} \leftrightarrow \frac{\partial_i \partial_j \Phi}{c^2}, \qquad R_{\mu \nu} u^{\mu} u^{\nu} \leftrightarrow \frac{\vec{\nabla}^2 \Phi}{c^2}.
+	\end{equation}
+\end{mybox}
+
+\subsection{Einstein's field equations}
+\marginpar{10 $2^{nd}$ order coupled, non-linear (since $G=G[g]$ and $T=T[g]$), partial differential equations for the metric.}
+By heuristic derivation with $\Lambda=0$,
+\begin{equation}
+	G=\frac{8 \pi \mathcal{G}}{c^4} T \quad \Leftrightarrow \quad R=\frac{8 \pi \mathcal{G}}{c^4} \left(T-\frac{1}{2} g \mathrm{Tr}T\right).
+\end{equation}
+Einstein's field equations are \emph{unique} as stated by Lovelock, i.e. $G$ must be of the form $G=\kappa T+\Lambda g$, with $\kappa$ and $\Lambda$ constants. The correct Newtonian limit then requires $\kappa = \frac{8 \pi \mathcal{G}}{c^4}$, and $\Lambda$ is the "cosmological constant".
+
+\subsection{Lagrangian formalism}
+\marginpar{Lorentz-covariance $\Rightarrow$ scalar $\Rightarrow$ $\mathcal{R}$. All $\mathcal{R}^n$ are allowed, but $n=1$ is the simplest.}
+\marginpar{Introduce normal coordinates where $\Gamma=0$, then arrive at tensor equality ($\partial \rightarrow \nabla$) to have generality of frame again.}
+The remarkable uniqueness of $\mathcal{D}[g]$ shown by Lovelock indicates that a Lagrangian formulation of GR should be possible starting from a scalar constructed from $\mathcal{D}$, or rather $\mathrm{Tr}\mathcal{D} \propto \mathcal{R} \Rightarrow$
+\begin{equation}
+	S_{\mathrm{EH}} [g] = \int_{D\subset M} \mathcal{R}[g] \eta = \int_D \mathcal{R}[g] \sqrt{-g} \md^4 x.
+\end{equation}
+Einstein's vacuum equations, 
+\begin{equation}
+	G - \Lambda g=0,
+\end{equation}
+follow from the variational principle
+\marginpar{Variation is performed w.r.t $g$, later also $\delta g$, since $\delta \psi$ yields \emph{matter field equations}. This is frame independent since $\delta \mathcal{J}$ as $\mathcal{J}[g] = \mathcal{J}$.}
+\begin{equation}
+	\delta \int_D \left(\mathcal{R}+2 \Lambda\right) \eta = 0.
+\end{equation}
+The complete equations are obtained by coupling gravity/geometry and matter.\\
+Ignored possible boundary since $\delta g$ only inside $D$, include Gibbons-Hawking-York boundary term for manifold with boundary.
+
+
+
+\subsection{The energy-momentum tensor, the matter sector}
+In order to include matter (sum of all matter particles and the non-gravitational energy) into the field equations, we assume that the (scalar or tensor) matter fields $\psi$ have $\mathcal{L}=\mathcal{L}(\psi,\nabla \psi,g)$. The field equations are determined by variation of the action w.r.t. the fields. Similarly, one can vary $S$ w.r.t. $g_{\mu \nu}$ and implicitly through $\nabla \psi, \eta$. 
+\begin{mybox}{Energy-momentum tensor}
+	It is possible to write the variation of the action w.r.t. the metric in the form
+	\begin{equation}
+		\delta \int \mathcal{L} \eta = -\frac{1}{2} \int_D T_{\mu \nu} \delta g^{\mu \nu} \eta.
+	\end{equation}
+	If there are no implicit dependencies on the metric, the components of the energy-momentum tensor are
+	\begin{equation}
+		T_{\mu \nu} = -2 \frac{\partial \mathcal{L}}{\partial g^{\mu \nu}} + \mathcal{L} g_{\mu \nu}.
+	\end{equation}
+\end{mybox}
+Include matter now via the \emph{minimal coupling scheme} to acquire the full GR action:
+\begin{equation}
+	S_{\mathrm{GR}} = S_{\mathrm{EH}} + \int_D \alpha \mathcal{L} \eta,
+\end{equation}
+with $\alpha$ a coupling constant to be determined by experiment
+\begin{align}
+	\Rightarrow &\delta \int_D \left(\mathcal{R} + 2 \Lambda+\frac{16  \pi \mathcal{G}}{c^4} \mathcal{L}\right) \eta = 0,\\
+	\Leftrightarrow &G_{\mu \nu} = \frac{8 \pi \mathcal{G}}{c^4} T_{\mu \nu} + \Lambda g_{\mu \nu}.
+\end{align}
+This shows that the cosmological constant be considered as part of the energy-momentum tensor
+\begin{equation}
+	T_{\mu \nu} \rightarrow T_{\mu \nu} +T^{\Lambda}_{\mu \nu}, \quad T^{\Lambda}_{\mu \nu} = \frac{\Lambda c^4}{8 \pi \mathcal{G}} g_{\mu \nu}.
+\end{equation}
+
+
+
+
+\section{Weak Gravitational Fields}
+\subsection{Linearised theory of gravity}
+\marginpar{Excellently satisfied in the solar system or galaxy cluster with high $\Phi \Rightarrow$ Pull indices up and down with $\eta_{\mu \nu}$ and not $g_{\mu\nu}$ to remain leading order $\mathcal{O}(h^2)$.}
+Study solutions for the field equations in the case of an almost Minkowskian metric, i.e with small perturbation
+\begin{equation}
+	g_{\mu \nu} = \eta_{\mu \nu} + h_{\mu \nu}, 
+\end{equation}
+with $|h_{\mu \nu}|\ll 1$, this is a coordinate dependent condition, can be violated in other system. 
+
+\subsubsection{Gauge transformations in general relativity}
+\begin{mybox}{Diffeomorphism invariance}
+	Let $\phi$ be a diffeomorphism of $M$, such that $\phi:M\rightarrow N$ in diffemorphic way. Since $\phi$ is then bijective and smoothly differentiable and has a smoothly differentiable inverse, $M$ and $N$ can be considered as indistinguishable abstract manifolds. The manifolds $M$ and $N$ then represent the same physical space-time. In particular, the metric $g$ on $M$ is then physically equivalent to the pulled-back metric $\phi^* g$. The diffeomorphism invariance is a fundamental property of GR.\\
+	\\
+	This implies that coordinate systems don't have a physical significance.
+\end{mybox}
+The formulation of the diffeomorphism invariance in the tutorials goes as follows:\\
+It is an invariance under the change of coordinates describing the same manifold, this is a \emph{gauge freedom}. This is a subtle difference to the above definition !\\
+There, the gauge freedom is due to the fact that physical objects can be described by different manifolds that are connected by diffeomorphism so that two different geometrical objects describe the same physical quantity.\\
+\\
+It has the following equivalent interpretations or implications:\\
+\begin{enumerate}
+	\item The theory is free of prior geometry and there is no preferred coordinate system for spacetime. Nothing is given to us ahead, since $g$ is a dynamical field.
+	\item Possible that two purportedly distinct configurations (of matter and metric) are actually "the same" in GR, related by $\phi$.
+	\item Invariance of the form of physical laws under arbitrary differentiable coordinate transformations. The essential idea is that coordinates do not exist \emph{a priori} in nature, but are only artifices used in describing nature, and hence should play no role in the formulation of fundamental physical laws.
+	\item Active POV: $g\rightarrow \phi^* g$ leaves the physics invariant vs. \\
+	Passive POV: diffeomorphism invariance $\Leftrightarrow$ coordinate invariance.
+	\item Diffeomorphism invariance $\Rightarrow$ invariance under specific class of gauge transformations:\\
+	Let $\phi_t$ represent local flow of $f$ of vector field $v$, then
+	\begin{equation}
+		g \rightarrow \phi^* g = g + t \mathcal{L}_v g + \mathcal{O}(t^2).
+	\end{equation}
+\end{enumerate}
+\subsubsection{Continue with analysis of linearised theory of gravity}
+Hence, the weak metric perturbation $h_{\mu \nu}$ admits the gauge transformation
+\begin{equation}
+	h_{\mu \nu} \rightarrow h_{\mu \nu} + \partial_{\mu} \xi_{\nu} + \partial_{\nu} \xi_{\mu},
+\end{equation}
+where $\xi=vt$. This is the \emph{gauge class}. One can change $h_{\mu \nu}$ in this way without violating physical laws, this is the \emph{gauge freedom} as described above for the lecture definition of diffeomorphism invariance.
+\begin{mybox}{Gauge theories}
+	A gauge theory represents each physically distinct configuration of the system as an equivalence class of detailed local field configurations. Any two detailed configuration in the same equivalence class are related by a gauge transformation, as e.g. above.
+\end{mybox}
+Substituting 
+\begin{equation}
+	\gamma_{\mu \nu} = h_{\mu \nu} - \frac{1}{2} \eta_{\mu \nu} \underbrace{h^a_a}_{:= h}
+\end{equation}
+and enforcing the \emph{Hilbert gauge condition}
+\begin{equation}
+	\partial_{\mu} \gamma_{\mu \nu} = 0,
+\end{equation}
+in order to have gauge invariance made physical $\Leftrightarrow$ coping with redundant degrees of freedom due to the gauge invariance, to find the linearised field equations as
+\begin{equation}
+	\square \gamma^{\mu \nu} = \partial_{\alpha} \partial^{\alpha} \gamma^{\mu \nu}=-\frac{16 \pi \mathcal{G}}{c^4} T^{\mu \nu}.
+\end{equation}
+The Hilbert gauge condition $\partial_{\mu} \gamma^{\mu \nu}$ remains preserved under the above gauge transformation if $\xi^{\mu}$ satisfies the d'Alembert equation $\square \xi^{\mu}=0$ and $2 \partial_{\mu}\xi^{\mu}=\gamma^a_a$ at the same time.\\
+We can use the QED solution (its retarded Green's function) here since both theories are mediated by massless bosons (otherwise Yukawa cut-off $\frac{1}{|x-x'|} \mapsto \frac{1}{|x-x'|} e^{- |x-x'|\lambda}$). \\
+Formally being identical to the Maxwell equations, these equations can therefore be solved using the retarded Green's function of Maxwell electrodynamics. Thus, similar to electrodynamics, the metric perturbation consists of the field generated by the source plus wave-like vacuum solution propagating \emph{at} the speed of light, i.e. \emph{gravitational waves} with $v=c$.
+
+\subsection{Nearly Newtonian gravity}
+Now one can insert all kinds of specific sources into $T_{\mu \nu}$ to determine the metric, since $T_{\mu \nu}$ determines $\gamma_{\mu \nu}$.\\
+In the non-relativistic case $T_{00} \gg |T_{0j}| \; \& \; T_{00} \gg |T_{ij}|$, we recover the \emph{Newtonian approximation} of the metric.
+\begin{mybox}{Newtonian limit}
+	In the Newtonian limit (non-relativistic limit +weak gravitational field+instantaneous propagation of perturbations), the weakly perturbed metric of a mass $M$ has the line element
+	\begin{align}
+		\md s^2 &= - \left(1+ \frac{2 \Phi}{c^2}\right) c^2 \md t^2 + \left(1-\frac{2 \Phi}{c^2}\right) \md \vec{x}^2,
+		\Leftrightarrow \md s^2 &=-\left(1 - \frac{2 \mathcal{G}M}{r c^2}\right) c^2 \md t^2 + \left(1+\frac{2 \mathcal{G}M}{r c^2}\right) \md \vec{x}^2\\
+		\Rightarrow (g_{\mu \nu) &= (\eta_{\mu \nu}) - \frac{2 \Phi}{c^2} \mathcal{I}_{4\times 4}.
+	\end{align}
+\end{mybox}
+
+Thus, the full theory has space-time curvature \emph{and} not only spatial curvature.\\
+Conclusions:
+\begin{enumerate}
+	\item Light follows null geodesics $\md s^2=0 \Rightarrow$ velocity of light in gravitational field is less than $c$:
+	\begin{equation}
+	\frac{\md \vec{x}^2}{\md t^2} = c^2 \frac{\left(1+\frac{2 \Phi}{c^2}\right)}{\left(1-\frac{2 \Phi}{c^2}\right)} =: (c')^2 \; \Rightarrow \; c' = \frac{c}{n}, n \approxeq 1-\frac{2 \Phi}{c^2}.
+	\end{equation}
+	\begin{mybox}{Gravitational Lensing}
+		A weak gravitational field with Newtonian gravitational potential $\Phi$ has the effective index of refraction
+		\begin{equation}
+		n = 1- \frac{2 \Phi}{c^2} \geq 1, 
+		\end{equation}
+		$\Rightarrow$ optically denser medium than vacuum\\
+		$\Rightarrow$ Light deflection, light rays are bent in a gravitational field.
+	\end{mybox}
+	\item Clocks go 
+\end{enumerate}
+
+
+
+
+
+
+
+\section{Black Holes}
+\subsection{Schwarzschild Black Holes}
+A Schwarzschild black hole or \emph{static} black hole is a black hole that has neither electric charge nor angular momentum. A Schwarzschild black hole is described by the Schwarzschild metric, and cannot be distinguished form any other Schwarzschild black hole except by its mass. The Schwarzschild black hole is characterized by a surrounding spherical boundary, called the event horizon, which is situated at the Schwarzschild radius. The boundary is not a physical surface, and if a person fell through the event horizon (before being torn apart by tidal forces), they would not notice any physical surface at that position; it is a mathematical surface defining black hole properties. Any non-rotating and non-charged mass that is smaller than its Schwarzschild radius forms a black hole.\\
+\\
+The \emph{coordinate singularity} at $r=R_s$ divides the Schwarzschild coordinates in two disconnected patches. The exterior Schwarzschild solution with $r>R_s$ is the one that is related to the gravitational fields of stars and planets. The interior Schwarzschild solution with $0 \leq 0 < R_s$, which contains the singularity at $r=0$, is completely separated from the outer patch by the coordinate singularity at $r=R_s$. Using \emph{different coordinates}, one can relate the two patches as the singularity at $r=R_s$ vanishes.\\
+The case $r=0$ is different. If one asks that the solution be valid for all $r$ one runs into a \emph{physical singularity}, or \emph{gravitational singularity} at the origin. This singularity is independent of coordinates as one can check from tensor invariants. At $r=0$ the curvature becomes infinite, indicating the presence of a singularity. At this point the metric, and spacetime, itself is no long well-defined.\\
+\\
+The solution, i.e. the Schwarzschild black hole, for $r>0$ has bizarre properties. For $r<R_s$, the Schwarzschild radial coordinate $r$ becomes timelike and the time coordinate $t$ becomes spacelike. A curve at constant $r$ is no longer a possible world line of a particle or observer, not even if a force is exerted to try to keep it there. This occurs because spacetime has been curved so much that the direction of case and effect (the particle's future light cone) points into the singularity. The event horizon represents the point past which no light can no longer escape the gravitational field. Any physical object whose radius $R$ becomes $R \leq R_s$ will undergo gravitational collapse and become a black hole.
+\subsubsection{The coordinate singularity at $r=2m$}
+Consider an observer freely-falling into the centre of the black hole along a radial orbit (i.e $\dot{\phi} =0 \Rightarrow L=0$). From the e.o.m.
+\begin{equation}
+	\left(\frac{\md r}{\md \tau}\right)^2 + \left(1-\frac{2m}{r}\right) = E^2,
+\end{equation}
+one finds that the centre $r=0$ is reached after the \emph{finite proper time} (time measured by a clock moving along the same world line with the observer/test particle)
+\begin{equation}
+	\tau_0 = \pi \sqrt{\frac{R^3}{8 m} < \infty}.
+\end{equation}
+This indicates that the observer falls freely from it rest at $r=R$ within finite time "through" the singularity at $r=2m$ without encountering a problem.\\
+In contrast to this observation, switch to the \emph{time coordinate} $t$ (measured by a stationary clock located infinitely far from the massive body).
+The free-fall coordinate time to the centre of a black hole solving the e.o.m. with $t$ instead of $\tau$ and using the tortoise radius, we find
+\begin{equation}
+	r = 2m+r_0 e^{-\frac{t}{2m}},
+\end{equation}
+showing that the Schwarzschild radius is only reached after \emph{infinitely} long coordinate time. \\
+\\
+The \emph{tortoise coordinate} is defined as 
+\begin{equation}
+	r'= r- 2 m \ln{\left|\frac{r}{2m} -1\right|},
+\end{equation}
+and it approaches $-\infty$  as $r\rightarrow 2m$. When some probe (such as a light ray or an observer) approaches a black hole event horizon, its Schwarzschild time coordinate grows infinite. The outgoing null rays in this coordinate system have an infinite change in $t$ on travelling out from the horizon. The tortoise coordinate is intended to grow infinite at the appropriate rate such as to cancel out this singular behaviour in coordinate systems constructed from it.\\ \\
+The increase in the time coordinate to infinity as one approaches the event horizon is why information could never be received back from any probe that is sent through such an event horizon. This is despite the fact that the probe itself can nonetheless travel past the horizon. It is also why the space-time metric of the black hole, when expressed in Schwarzschild coordinates, becomes singular at the horizon - and thereby fails to be able to fully chart the trajectory of an infalling probe.
+\\
+\\ For radial light rays one finds 
+\begin{equation}
+	\frac{\md r}{\md t} = \pm \left(1\frac{2m}{r}\right), 
+\end{equation}
+suggesting that the light cones become infinitely narrow as $r \rightarrow 2m +$.
+\\
+\\
+Problems on the horizon:\\
+These  results appear confusing: While a freely falling observer reaches the Schwarzschild radius and even the centre of the Schwarzschild spacetime after finite proper time, the coordinate time becomes infinite even for reaching the Schwarzschild radius, and the flattening of the light cones as one approaches the Schwarzschild radius is entirely unwanted because causality cannot be assessed when the light cone degenerates to a line.
+\\
+\\
+In coordinate time, the astronaut never reaches $r=R_s \Rightarrow$ shows that something is wrong with $r=2m \Rightarrow$ coordinate singularity.
+$G_{\mu \nu}, R^a_b, \mathcal{R}$ are all defined at $r=R_s \Rightarrow$ not a prolem of the spacetime but of our choice of coordinates, i.e. of the Schwarzschild tetrad.
+
+\subsubsection{The Kruskal continuation}
+The Kruskal-Szekeres coordinates are a coordinate system for the Schwarzschild geometry for a black hole. These coordinates have the advantage that they cover the entire spacetime manifold of the maximally extended Schwarzschild solution and are well-behaved everywhere outside the physical singularity. These are coordinates in which the light-cone stays Minkowskian like $X$ all the time by construction, independent of motion.
+\marginpar{The light cone itself is invariant, but in some coordinates you may not see this properly.}
+\begin{mybox}{Kruskal coordinates}
+	The Kruskal coordinates $(t,r) \mapsto (v,u)$ are constructed such that the light cones remain the same everywhere:
+	\begin{equation}
+		g = -f^2(u,v) (\md v^2 -\md u^2) + r^2 \md \Omega^2,
+	\end{equation}
+	such that for a light ray
+	\begin{equation}
+		\md s= 0 \quad \Rightarrow \quad \left(\frac{\md u}{\md v}\right)^2 =1 \; \Leftrightarrow \; \mathrm{Minkowskian \; lightcone.}
+	\end{equation}
+	Solving the resulting equations and applying physical boundary conditions of our Schwarzschild spacetime yields
+	\begin{align}
+		u &= \sqrt{\frac{r}{2m} -1 } e^{\frac{r}{4m}} \cosh{\frac{t}{4m}}, \\
+		v &= \sqrt{\frac{r}{2m} -1} e^{\frac{r}{4m}} \sinh{\frac{t}{4m}}, \\
+		f^2 &= \frac{32 m^3}{r} e^{- \frac{r}{2m}}.
+	\end{align}
+\end{mybox}
+Coordinate transformation recipe:\\
+\begin{equation}
+	(t,r,\vartheta\varphi) \mapsto (v,u,\vartheta,\varphi) \, \Rightarrow \, (\mathcal{J}^{\alpha}_{\beta}) = \begin{pmatrix}
+	\partial_t v & \partial_tu & 0&0\\
+	\partial_r v & \partial_r u &0&0 \\
+	0&0&1&0\\
+	0&0&0&1\\
+	\end{pmatrix}
+\end{equation}
+with $(\tilde{\mathcal{J}} ) = \frac{\partial(v,u)}{\partial (t,r)}$. Then the new metric reads
+\begin{equation}
+	\tilde{g} = \mathrm{diag}\left(-f^2,f^2,r^2,r^2 \sin^2\vartheta\right),
+\end{equation}
+and is transformed into the metric in original coordinates by
+
+\begin{equation}
+	g = \mathcal{J} \tilde{g} \mathcal{J}^T.
+\end{equation}
+
+\subsubsection{Physical meaning of the Kruskal coordinates}
+We can maximally extend the Kruskal coordinates to $r \in [0,\infty)$ by $\sqrt{\frac{r}{2m} -1} \mapsto\sqrt{|\frac{r}{2m} -1|}$ due to many sign choices along the way of the derivation.\\
+A static observer inside the Schwarzschild radius is also not possible anymore, since the radial-coordinate becomes time-like at $r<R_s \Rightarrow$ global Killing vector field is lost.\\
+\begin{mybox}{Non-static interior of the Schwarzschild horizon}
+	The Killing vector field $K=\partial_t$ for the Schwarzschild spacetime outside $r=2m$ become space-like for $r<2m$, which means that the spacetime cannot be static anymore inside the Schwarzschild radius.
+\end{mybox}
+Domains of the the Kruskal spacetime:\\
+The exterior of the Schwarzschild radius corresponds to the domain $u>0, |v| < u$, and its interior is bounded in the $(u,v)$-plane by the lines $u>0,|v| =u$, and $v^2- u^2 =1$, compare \ref{fig:Schwarzschildbh}. ON figure \ref{fig:Schwarzschildbh}:
+\begin{enumerate}
+	\item hyperbolic lines $=r$ constant,
+	\item straight lines $=t$ constant at $r=2m$. 
+	\item Lines  of constant $r,t$ meet $\Rightarrow$ reflects that coordinate time $t \rightarrow \infty$ at $r=2m$
+	\item (I) Everything outside $r>2m$, our world
+	\item (II) everything inside $r<2m$, dark blue line represents the true singularity
+	\item Beyond green bold line is "white hole". Can't keep anything for itself, light in IV has to escape. White hole would thus violate thermodynamics, the $2^{nd}$ coverage of the Kruskal coordinates is thus \emph{not physical}.
+\end{enumerate}
+\begin{figure}[h]
+	\label{fig:Schwarzschildbh}
+	\centering
+	\includegraphics[width=0.8\textwidth]{gfx/fig10-2.pdf}
+	\caption{\itshape Schwarzschild black hole in Kruskal coordinates, regions I \& II are double-covered by regions III \& IV.}
+\end{figure}
+Radial light rays propagate according to $\md s^2 =0$ or $\md v = \md u$, i.e. they are straight diagonal lines in the $(u,v)$ plane. This shows that light rays can propagate freely into the region $r<2m$, but there is no causal connection from within $r<2m$ to the outside.
+
+\subsubsection{Eddington-Finkelstein coordinates}
+In general relativity, Eddington–Finkelstein coordinates are a pair of coordinate systems for a Schwarzschild geometry (i.e. a spherically symmetric black hole) which are adapted to radial null geodesics. Null geodesics are the worldlines of photons; radial ones are those that are moving directly towards or away from the central mass. In these coordinate systems, outward (inward) traveling radial light rays (which each follow a null geodesic) define the surfaces of constant "time", while the radial coordinate is the usual area coordinate so that the surfaces of rotation symmetry have an area of $4\pi r^2$. One advantage of this coordinate system is that it shows that the apparent singularity at the Schwarzschild radius is only a coordinate singularity and is not a true physical singularity. \\
+\\
+We perform the coordinate transform to the tortoise time
+\begin{equation}
+	(r,\vartheta,\varphi), t \mapsto t', \; t = t' - 2 m \ln{\left[\pm \frac{r}{2m} \mp 1 \right]} \; \Rightarrow \; \left\{\begin{array}{lr}
+	\mathrm{upper \, sign}, & \text{for } r\geq 2m\\
+	\mathrm{lower \, sign}, & \text{for } r < 2m\\
+	\end{array}\right\},
+\end{equation}
+which yields the (factorizable) line element in Eddington-Finkelstein coordinates
+\begin{equation}
+	\md s^2 = -\left[\left(1-\frac{2m}{r} \right) \md t' - \left(1+\frac{2m}{r}\right) \md r)\right] (\md t'+ \md r) + r^2 \md \Omega^2,
+\end{equation}
+where the metric acquires off-diagonal elements such that it no longer
+depends on $t'$ and $r$ separately.\\
+\\
+\begin{mybox}{Light cones in Eddington-Finkelstein coordinates}
+	For radial light rays we have $\md \Omega^2 = 0, \md s =0$ implying that $\md r = - \md t'$.
+	Light cones in Eddington-Finkelstein coordinates are thus defined either by
+	\begin{equation}
+	\label{eq:edfinklightcone}
+	\frac{\md r}{\md t} = -1 \; \Rightarrow r = -t'+ const.
+	\end{equation}
+or by
+\begin{equation}
+	\frac{\md r}{\md t'} = \frac{r-2m}{r+2m}
+\end{equation}
+This shows that $\md r /\md t' \rightarrow −1$ for $r \rightarrow0, \md r/\md t' = 0$ for $r = 2m$, and
+	$\md r/\md t'= 1$ for $r \rightarrow \infty$. Due to the vanishing derivative of $r$ with respect
+	to $t'$ at $r = 2m$, geodesics cannot cross the Schwarzschild radius from
+	inside, but they can from outside because of \ref{eq:edfinklightcone}.\\
+	Thus, at at $r=R_s$, the light cone changes as $x \mapsto + \Rightarrow$ light ray doesn't propagate any more at $r=R_s$ in the sense that they wrap around the black hole infinitely. As $r \rightarrow 2m + \rightarrow 0+$, causality hence changes.
+\end{mybox}
+
+\todo{Include figure of eddington finkelstein lightcones}
+\subsubsection{Redshift approaching the Schwarzschild radius}
+Suppose a light-emitting source (e.g. an astronaut with a torch) is falling
+towards a (Schwarzschild) black hole, what does a distant observer at rest far away from the black hole see?
+The astronauts' and observers' four velocity $v,u$ define local time directions. The local frequency projected out depends on the frame of either observer or astronaut. The redshift of the light from the
+torch as seen by the observer is
+\begin{equation}
+	1+z = \frac{\nu_{em}}{\nu_{obs}} = \frac{\langle k,v\rangle}{\langle k,u\rangle}.
+\end{equation}
+The calculation is performed with the used of the retarded time $\md t_ret = \md t - \frac{\md r}{1-\frac{2m}{r}}$, which runs on the lightcone from astronaut to observer. Radial light rays in this coordinate cannot have a time dependence : $k \propto \partial_r$. Be careful when you read of metric components from the line element, since in the line element you get off-diagonal contributions twice ! Take half their contribution, since 
+\begin{equation*}
+	(\md x)^T g(\md x) = \md s^2 = (\md x)^T \begin{pmatrix}
+	g_{00} &g_{ij}\\
+	g_{ji} & g_{aa} \\
+	\end{pmatrix}
+	(\md x),
+	\qquad g_{ij} \dot{x}^i \dot{x}^j + g_{ji} \dot{x}^j \dot{x}^i=2 g_{ij} \dot{x}^i \dot{x}^j.
+\end{equation*}
+\\
+A calculation shows that the astronaut’s redshift
+\begin{equation}
+	1+z = e^{\frac{t}{2m} -2}
+\end{equation}
+grows exponentially to infinity as she approaches the Schwarzschild radius. This resolves the apparent contradiction that, while the astronaut has
+long reached the singularity as measured by his own watch, the distant
+observer never even sees him reach the Schwarzschild radius: The signal
+of the astronaut’s passing the Schwarzschild radius is infinitely delayed
+and thus never reaches the distant observer.\\
+The astronaut is in free fall, there is no gravity. She reaches $r=0$ instantly without delay. Observer never sees astronaut arriving at $r=R_s$, since the signal of astronaut is infinitely delayed as it is infinitely redshifted and since she reaches $r=R_s$ only at $t= \infty$ from our POV.
+Paradox is not there. Signal simply never reaches the observer, even though the astronaut already entered $r< R_s$. For us it only occurs at $t=\infty$ as seen from our watch outside of black hole.
+
+
+\subsection{Charged, Rotating Black Holes}
+\subsubsection{The Reissner-Nordström solution}
+The Reissner–Nordström metric is a static solution to the Einstein field equations, which corresponds to the gravitational field of a charged, non-rotating, spherically symmetric body of mass M. First, we consider a static, axially-symmetric solution of Einstein’s
+equations in the presence of an electromagnetic charge $q$ at the origin of
+the Schwarzschild coordinates, i.e. at $ r = 0$. The electromagnetic field
+will then also be static and axially symmetric. The axial symmetry implies that the charge won't move, hence no $B$-field is generated an the spatial symmetry of the Schwarzschild solution is retained. We can therefore simply add the energy-momentum tensor due to the presence of the charge to the vacuum Einstein field equations for the Schwarzschild black hole. Due to the radial symmetry, the only non-vanishing component of the Faraday form is $F_{01}  = \frac{q}{r^2}$, such that the energy-momentum tensor of the electromagnetic field is readily available in the Schwarzschild tetrad. Note that the Faraday form suffices the homogeneous and inhomogeneous (in vacuum) Maxwell equation by construction.
+\begin{mybox}{Reissner-Nordström solution}
+	Defining
+	\begin{equation}
+		\Delta := r^2 -2mr + \frac{\mathcal{G} q^2}{c^4},
+	\end{equation}
+	we thus obtain the line element for the metric of a charged Schwarzschild black hole,
+	\begin{equation}
+		\md s^2 = \frac{- \Delta}{r^2} \md t^2 + \frac{r^2 \md r^2}{\Delta} + r^2 \md \Omega^2.
+	\end{equation}
+	This is the \emph{Reissner-Nordström solution}.
+\end{mybox}
+Of course, for $q = 0$, the Reissner-Nordström solution returns to the
+Schwarzschild solution.
+\todo{homework: set up $\mathcal{L}$, identify $V(r)$ and check what happens}
+Although charged black holes with $r_q \ll  r$, with $r_q := \frac{\mathcal{G} q^2}{c^4}$ is a characteristic length scale, are similar to the Schwarzschild black hole, they have two horizons: the event horizon and an internal \emph{Cauchy horizon}. In physics, a Cauchy horizon is a light-like boundary of the domain of validity of a Cauchy problem (a particular boundary value problem of the theory of partial differential equations). One side of the horizon contains closed space-like geodesics and the other side contains closed time-like geodesics. The simplest example is the internal horizon of a Reissner–Nordström black hole. As with the Schwarzschild metric, the event horizons for the spacetime are located where the metric component $g^{rr}$ diverges; that is, where
+\begin{equation}
+	0 = \frac{1}{g^{rr}} = 1- \frac{r_s}{r} + \frac{r^2_q}{r^2}, \quad r_{\pm} = \frac{1}{2} \left( r_s \pm   \sqrt{r^2_s - 4r^2_q}\right).
+\end{equation}
+These concentric event horizons become degenerate for $2 r_q = r_s$, which corresponds to an extremal black hole. Black holes with $2r_q > r_s$ can not exist in nature because if the charge is greater than the mass there can be no physical event horizon (the term under the square root becomes negative). Objects with a charge greater than their mass can exist in nature, but they can not collapse down to a black hole, and if they could, they would display a naked singularity.
+
+\subsubsection{Kerr-Newmann solution}
+The Kerr–Newman metric is the most general asymptotically flat, stationary solution of the Einstein equations in general relativity that describes the spacetime geometry in the region surrounding an electrically charged, rotating mass. It generalizes the Kerr metric (the Kerr metric or Kerr geometry describes the geometry of empty spacetime around a rotating uncharged axially-symmetric black hole with a quasispherical event horizon. ) by taking into account the field energy of an electromagnetic field, in addition to describing rotation. It is one of a large number of various different electrovacuum solutions, that is, of solutions to the Einstein equations which account for the field energy of an electromagnetic field. Such solutions do not include any electric charges other than that associated with the gravitational field, and are thus termed vacuum solutions.\\
+\\
+In presence of angular momentum, we expect the spherical symmetry
+of the Schwarzschild solution to be broken. Instead, we expect that
+the solution must be \emph{axisymmetric}, with the axis fixed by the angular
+momentum. Moreover, we seek to find a stationary solution.
+Then, the group $\mR \times SO(2)$ must be an isometry of the metric, where
+$\mR$ represents the stationariness (can not be static since it is rotating) and $SO(2)$ the (two-dimensional) rotations
+about the symmetry axis. Expressing these symmetries, there must be a
+time-like Killing vector field $k$ and another Killing vector field $m$ which
+is tangential to the orbits of $SO(2)$. We therefore have one Killing field for the stationariness and one for the axial symmetry.
+These two Killing vector fields span the tangent spaces of the two-dimensional sub manifolds which are the orbits of $\mR \times SO(2)$, i.e. cylinders.
+We can choose adapted coordinates $t$ and $\varphi$ such that $k = \partial_t$ and $m = \partial_{\varphi}$ .
+Then, the metric $^{(4)} g$ of four-dimensional space-time can be decomposed as
+\begin{equation}
+	^{(4)} g = g_{ab} (x^i) \md x^a \otimes \md x^b + g_{ij} (x^k) \md x^i \otimes \md x^j,
+\end{equation}
+where indices $a,b=0,1$ indicate the coordinates on the orbits of
+$\mR \times SO(2)$, and indices $i, j, k = 2, 3$ the others. Note that, due to the
+symmetry imposed, the remaining metric coefficients can only depend
+on the coordinates $x^i$ .\\
+\\
+A stationary, axi-symmetric space-time $(M, g)$ can thus be foliated into
+$M =  \Sigma \times \Gamma$, where $\Sigma \cong \mR \times SO(2)$ is diffeomorphic to the orbits of $\mR \times SO(2)$, and
+the metric coefficients in adapted coordinates can only depend on the coordinates of $\Gamma$.
+\\
+\begin{figure}
+		\centering
+		\includegraphics[width=0.7\textwidth]{gfx/KerrNewmannSpacetime.jpg}
+		\caption{\itshape Foliation of spacetime for the Kerr-Newmann solution.}
+\end{figure}
+We write
+\begin{equation}
+^{(4)}g = \sigma + g,
+\end{equation}
+where 
+\begin{equation}
+	\sigma = \sigma_{ab} (x^i) \md x^a \otimes \md x^b .
+\end{equation}
+The coefficients $\sigma_{ab}$ are scalar products of the two Killing vector fields $k$ and $m$,
+\begin{equation}
+	(\sigma_{ab}) = 
+	\begin{pmatrix}
+	-\langle k,k \rangle & \langle k, m \rangle\\
+	\langle k,m \rangle & \langle m, m\rangle\\
+	\end{pmatrix}, \quad \rho := \sqrt{-\det{\sigma}}.
+\end{equation}\\
+\\
+Define the following auxilliary quantities
+\begin{align*}
+	\Delta & := r^2- 2mr + Q^2 +a^2, \quad \rho^2 := r^2 +a^2 \cos^2 \vartheta ,\\
+	\Sigma^2 &:= (r^2+a^2)^2 -a^2 \Delta \sin^2 \vartheta, \\
+	Q^2 &:= \frac{\mathcal{G}q^2}{c^4}, \quad a:= \frac{L}{Mc} = \frac{\mathcal{G}L}{m c^3}, \; [a]=[Q]=\mathrm{length}.	
+\end{align*}
+one finds the following.
+\begin{mybox}{Kerr-Newmann solution}
+	With these definitions, we can write the coefficients of the metric for a
+	charged, rotating black hole in the form
+	\begin{align}
+		g_{tt} &=-1 + \frac{2mr -Q^2}{\rho^2} = g_{00, \mathrm{Schwarzschild}} |_{L,Q =0}\\
+		g_{t\varphi} &= -\frac{2mr-Q^2}{\rho^2} s \sin^2\vartheta \\
+		g_{\varphi \varphi} &= \frac{\Sigma^2}{\rho^2} \sin^2\vartheta, \quad g_{rr} = \frac{\rho^2}{\Delta}, \quad g_{\vartheta \vartheta} = \rho^2.
+	\end{align}
+Notice how $t,\varphi$ are coupled here in $g_{t \varphi}$, since we chose adapted coordinates $(t,\varphi)$. They will have to point into direction of the Killing vector fields $k,m$ together, i.e. they describe screws in the cylinder.
+\begin{align}
+ g_{\mathrm{Kerr-Newmann}} |_{Q=0} &= g_{\mathrm{Kerr}}, \\
+  g_{\mathrm{Kerr-Newmann}} |_{L=0} &= g_{\mathrm{Reissner-Nordström}}.
+\end{align}
+\end{mybox}
+
+Any Kerr–Newman source has its rotation axis aligned with its magnetic axis. Thus, a Kerr–Newman source is different from commonly observed astronomical bodies, for which there is a substantial angle between the rotation axis and the magnetic moment. Specifically, neither the Sun, nor any of the planets in the Solar system have magnetic fields aligned with the spin axis. Thus, while the Kerr solution describes the gravitational field of the Sun and planets, the magnetic fields arise by a different process.\\
+\\
+The vector potential of the rotating,
+charged black hole is given by the 1-form
+\begin{equation}
+	A = - \frac{q r}{\rho^2} (\md t - a \sin^2\vartheta \md \phi), \quad F=\md A.
+\end{equation} 
+In the limit of large $r$, i.e. $a \ll r$, the
+electric field thus becomes that of a point charge q at the origin, and the
+magnetic field has a characteristic dipolar structure. From the non-vanishing (magnetic) field components
+\begin{equation}
+	E_r = F(e_r,e_t)=\frac{q}{r^2}, \; B_r = F(e_{\vartheta}, e_{\varphi}) = \frac{2qa}{r^3} \cos \vartheta,\; B_{\vartheta} = F(e_{\vartheta}, e_r) = \frac{q a}{r^3} \sin \vartheta,
+	\end{equation}
+	 one can read of the magnetic dipole moment for a sphere.
+	 \begin{mybox}{Magnetic dipole moment of a charged, rotating black hole}
+	 The magnetic dipole moment of a charged, rotating black holes has the
+	 modulus
+\begin{equation}
+	\mu = qa =2 \frac{qL}{2 Mc},
+\end{equation}
+	 showing that its gyromagnetic moment is g = 2.
+	 \end{mybox}
+ \vspace{1cm}
+ Interesting properties:
+ \begin{enumerate}
+\item 	Since the metric coefficient satisfy the following relations w.r.t. to the symmetries of the system expressed by the two Killing vector fields in adapted coordinates
+	\begin{equation}
+	g_{tt} = \langle k,k\rangle,\quad g_{\varphi,t} = \langle m, k\rangle, \quad g_{\varphi \varphi} = \langle m,m \rangle,
+	\end{equation}
+	they have an invariant meaning, which will be discussed in the following. Consider an observer on a circular orbit in equatorial plane, i.e. $\vec{L}_{BH} \parallel \vec{L}_O$, of the black hole orbiting with a uniform angular velocity $\omega$ (as seen by a distant observer). Since the black hole is rotating, the rotational direction, whether observer rotates with or against the black hole, matters a lot due to the \emph{drag of spacetime} induced by the black hole. At which radius does the four velocity of the observer become light-like $u =c?, \Leftrightarrow \langle u, u \rangle =0?$
+	\begin{equation}
+		\Leftrightarrow w_{\pm} = \Omega \pm \sqrt{\Omega^2 - \frac{g_{tt}}{t_{\varphi \varphi}}}.
+	\end{equation}
+	Note that freely-falling test particles on
+	radial orbits have zero angular momentum and thus
+	$\Omega$ is the frequency an observer will have on a circular orbit around the black hole if she has no angular momentum, i.e. the angular velocity solely due to the frame drag of the spacetime by the black hole. This is found by
+	\begin{equation}
+		0 = \langle u,m\rangle \quad \Rightarrow \quad \Omega := -\frac{g_{t\varphi}}{g_{\varphi \varphi}}.
+	\end{equation}
+	This shows that $\Omega$ is the angular
+	velocity of a test particle falling freely towards the black hole on a radial
+	orbit. How can a particle falling freely
+	on a radial orbit have an angular
+	velocity ? It has by the frame drag of the black hole.
+	\begin{mybox}{Static limit in the Kerr spacetime}
+		The minimum angular velocity $\omega_-$ vanishes if and only if
+		$g_{tt} = \langle k, k \rangle = 0$, i.e. if the Killing vector field $k$ turns light-like.
+		From the metric component, this is equivalent to
+		\begin{equation}
+			g_{tt} = 0 \; \Rightarrow \; r_0 = m + \sqrt{m^2 - Q^2 -a^2 \cos^2\vartheta}.
+		\end{equation}
+		The radius $r_0$ marks the static limit of Kerr space-time: for an observer
+		at this radius to remain static with respect to observers at infinity
+		(i.e. with respect to the “fixed stars”), she would have to move with the
+		speed of light. At smaller radii, observers cannot remain static against
+		the drag of the rotating black hole.
+		If yout get close, even if $u=c$ against the drag of the black hole, you will be seen from outside as falling onto black hole.
+	\end{mybox}
+	 	\item For an observer at rest far away from the black hole and an astronaut sending signals, the redshift tends to infinity as the source approaches the static limit.
+	 	\item At which radius for a distant observer doesn't it matter any more whether you orbit with or against the black hole, since frame dragging is so dominant that you are pulled away with $v=c$ anyway ? This is given by $\omega_- = \omega_+ \Leftrightarrow \Delta=0$, which describes another spherical hyper surface and a \emph{true} horizon
+	 \begin{equation}
+	 	r_H = m + \sqrt{m^2-Q^2- a^2}.
+	 \end{equation}
+	 The hypersurface H is rotating with the constant angular velocity
+	 \begin{equation}
+	 	\Omega_H = \Omega(r_H) = \frac{a^2}{r^2_H+a^2},
+	 \end{equation}
+	 like a solid body.
+	 \begin{figure}[h]
+	 	\centering
+	 	\includegraphics[width=0.7 \textwidth]{gfx/ergosphere.pdf}
+	 \end{figure}
+	 In the pink are between the two limits, one can in principle still escape from the black hole but can not be stationary against the outside world. The ergosphere is a region located outside a rotating black hole's outer event horizon. The ergosphere touches the event horizon at the poles of a rotating black hole and extends to a greater radius at the equator.  The equatorial (maximal) radius of an ergosphere corresponds to the Schwarzschild radius of a non-rotating black hole; the polar (minimal) radius can be as little as half the Schwarzschild radius (the radius of a non-rotating black hole) in the case that the black hole is rotating maximally (at higher rotation rates the black hole could not have formed). \\
+	 \\
+	 As a black hole rotates, it twists spacetime in the direction of the rotation at a speed that decreases with distance from the event horizon. This process is known as the Lense–Thirring effect or frame-dragging Because of this dragging effect, an object within the ergosphere cannot appear stationary with respect to an outside observer at a great distance unless that object were to move at faster than the speed of light (an impossibility) with respect to the local spacetime. The speed necessary for such an object to appear stationary decreases at points further out from the event horizon, until at some distance the required speed is that of the speed of light. The set of all such points defines the ergosphere surface, called ergosurface. The outer surface of the ergosphere is called the static surface or static limit. This is because world lines change from being time-like outside the static limit to being space-like inside it. It is the speed of light that arbitrarily defines the ergosphere surface. Such a surface would appear as an oblate that is coincident with the event horizon at the pole of rotation, but at a greater distance from the event horizon at the equator. Outside this surface, space is still dragged, but at a lesser rate.
+	 
+	 \item Since the hypersurface $H$ is defined by the condition $∆ = 0$, its normal
+	 vectors are given by
+	 \begin{equation}
+	 	\mathrm{grad} \Delta = \md \Delta^{\#}, \quad \md \Delta = 2(r-m) \md r.
+	 \end{equation}
+Thus, the norm of the normal vectors is 
+\begin{equation}
+ 	\langle \mathrm{grad} \Delta, \mathrm{grad} \Delta \rangle = 4 g^{rr} (r-m)^2 \propto \Delta = 0
+\end{equation}
+on the hypersurface, showing that $H$ is a \emph{null hypersurface}. Because of this fact, the tangent space to
+the null hypersurface $H$ at any of its points is orthogonal to a null vector,
+and hence it does not contain time-like vectors.
+\begin{mybox}{Killing horizon and ergosphere}
+	The surface $H$ is called a \emph{Killing horizon}. The hypersurface defined
+	by the static limit is time-like, which means that it can be crossed in
+	both directions, in contrast to the horizon $H$. The region in between
+	the static limit and the Killing horizon is the ergosphere, in which $k$ is
+	space-like and no observer can be prevented from following the rotation
+	of the black hole.
+\end{mybox}
+Associated to a Killing horizon is a geometrical quantity known as surface gravity, $\kappa$ . If the surface gravity vanishes, then the Killing horizon is said to be degenerate. The temperature of \emph{Hawking radiation} is related to the surface gravity $\kappa c^2$, $T_H=\frac {\hbar c\kappa }{2\pi k_{B}}$.
+\item Formally, the Kerr solution is singular where $∆ = 0$, but this is a coordinate singularity.
+\item Motion around Kerr-Newmann black hole:
+\end{enumerate}
+	
+	

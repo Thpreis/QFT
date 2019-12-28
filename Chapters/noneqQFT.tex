@@ -1,0 +1,326 @@
+
+\chapter{Non-equilibrium QFT}
+\label{ch:noneqQFT}
+
+\section{Kinetic equations for initial dynamics}
+Kinetic equations are able to describe settings where the dynamics of enormous amounts of particles are relevant. Rather than focusing on ’a few’, say $1 − 10^4$ , asymptotic particle products, i.e. the
+computation of S-matrix elements, a kinetic description is able to keep track of out-of-equilibrium details
+of what is happening before ’final states’ form. This is achieved by distribution functions $f (X, \vec{p} )$, which give the occupation of phase space
+$(\vec{X},\vec{p})$ of arbitrarily many, $N (X^0 ) = \int \md^3 X \int \md^3 p f (X, \vec{p} )$, particles at time $X^0$. This is necessary, for example, if one is interested in the dynamics \emph{during} a collision event as opposed
+to just the few asymptotic products which are measured in the detectors on the outside of colliders \emph{at
+the end} of a collision. High energy collisions initially cause a region of plasma with massive fields and
+occupations up to the energy scale of the primary collision. Such a far-from-equilibrium system has to
+transport huge amounts of occupations in a distribution function in order to bring it into the form of
+the equilibrium Bose or Fermi distribution. Under certain circumstances this motion of occupations can be described by kinetic theory in terms of secondary
+collisions between the constituents of the plasma. The asymptotic end products leave the collision as the
+plasma expands and equilibrates via secondary collisions. In fact, in a beautiful analogy to cosmology, all matter in the universe can be understood as the asymptotic product of a collision, the big bang,
+followed by expansion, i.e. inflation, of the resulting plasma.
+\subsection{Spectrum of a theory}
+How many species of particles contribute to a kinetic description is decided by the so called \emph{spectral function} $\rho(X, p)$ of the theory. Each particle species corresponds to a peak in the energy dependence
+of a spectral function and the lifetime of the particle is encoded in the width of this peak. Fundamentally,
+spectral functions are part of the two-point functions or ’propagators’ of a quantum field theory. The exact
+computation of the spectral functions of even the simplest theories in equilibrium with no occupations, i.e.
+vacuum, is currently an open problem. In fact, the proof that the vacuum spectral function of Yang-Mills
+theory has no continuum of states near vanishing energy, i.e. is ’gapped’, is one of the millenium problems. Ultimately any bound state can be understood in terms of spectral functions and the periodic tables
+of nuclides and elements could be seen as a phenomenological approach to the spectral functions of the
+standard model. One of many assumptions of kinetic theory is that energy peaks of spectral functions
+can be exaggerated to delta peaks. These peaks can correspond to fundamental particles or to emergent
+degrees of freedom such as bound states. This ’quasiparticle picture’ reduces the dynamics of the system to
+the ’hopping’ of occupations due to collisions: a change in momentum of a particle corresponds to hopping
+along the momentum $(\vec{p})$ direction of one energy $(p^0 )$ peak, while a change in particle species corresponds
+to hopping between, say, fermion and photon peaks. Each particle species is assigned a distribution
+function and a kinetic equation that keeps track of these occupations. For example, a scattering $ee \rightarrow \gamma$
+removes two fermions from the fermion peaks and puts a photon on the photon peak. The details of
+this ’moving of occupations’, i.e. how exactly the distribution functions change due to a scattering, are
+encoded in collision terms, which couple the kinetic equations to each other in a non-linear fashion. For
+situations with spectral functions that can not be approximated by delta peaks, the concept of particles is
+no longer useful to describe the dynamics and a kinetic description breaks down. In such settings, it is simply not possible to capture ’many body dynamics’ with the concept of particle motion. In this case,
+conventional kinetic theory is not sufficient to describe the out of equilibrium situation during a primary
+collision. The next best description, usually called ’transport theory’, extends the concept of the classical
+phase space to off-shell energies $p^0$ by allowing momentum transfer between a continuum of states. These
+off-shell occupations are kept track of by so called \emph{statistical propagators} $F (X, p)$ or \emph{off-shell distribution
+functions} $f (X, p)$. In a derivation from nonequilibrium quantum field theory, one can chose to stop at
+transport equations and to not rely on a particle concept. \\
+\\
+\textcolor{red}{
+Historically, a particle picture had been the center of intuition in the development of quantum field theory.
+Exploring the validity of kinetic theory in the context of quantum field theory also means exploring the
+validity of these historical concepts. A particle focused interpretation of quantum field theory has been
+driven both by experiment and theory. Experimentally, the particle idea is tailored around colliders,
+which are constructed to test quantum field theory in terms of particle degrees of freedom. On the
+theoretical side, perturbation theory around free theory facilitates a particle picture because the spectral
+functions of free quantum field theories are always delta peaks. In fact, the first formulation of a quantum
+field theory was in terms of a collection of quantized harmonic, i.e. free, oscillators. Generations of
+development of experiment and theory have brought to light that our desire to extend our intuition about
+bowling balls to build fundamental truths had blinded us. Our understanding of quantum field theory
+has since expanded drastically to out of equilibrium situations and non-perturbative methods.}
+\section{Reduction to vacuum QFT}
+The
+initial conditions for all correlation functions are contained in the definition of the average
+\begin{equation}
+	\langle O(x)\rangle  := Tr \{ρ D (t_0 )O(x)\}
+\end{equation}
+via the density matrix $\rho_D(t_0)$. The defining properties
+\begin{equation}
+	\rho^\dagger_D= \rho_D,\quad \tr\rho_D=1,\quad \expval{\rho_D}\leq 1
+\end{equation}
+allow for its interpretation as a probability distribution functional of correlation functions. The choice
+of the initial condition decides over the complexity of the system. An immense reduction of complexity
+is commonly assumed in thermal theory, $\rho_D \propto e^{ −\beta H}$ , and vacuum theory, $\rho_D \propto \ket{\Omega}\bra{\Omega}$, which is just
+thermal theory at zero temperature $\beta = 1/T \rightarrow \infty$. Such choices of $\rho_D$ as a functional of the Hamiltonian
+imply a complete loss of dependence on the initial time $t_0$ and a reduction of complexity in all correlation
+functions via
+\begin{align}
+	\tr \{e^{ −\beta H} \mO (x)\} &= const.\\
+	\tr\{e^{-\beta H} \mO(x_1) \mO(x_2) \} &= g(x_1-g_x2) \\
+	&\dots 
+\end{align}
+by virtue of the commutator
+\begin{equation}
+[e^{-\beta H}, P^\mu] =0
+\end{equation}
+for the translation generator $P^\mu$ and the Hamiltonian $H = P^0$ . Nonequilibrium theory does not possess
+this invariance and no such reduction of complexity occurs because in general
+\begin{equation}
+	[\rho_D(t_0),P^\mu] \neq 0.
+\end{equation}
+Therefore, nonequilibrium theory is the top of a hierarchy of reduction of complexity
+\begin{equation}
+	\label{eq:reductionQFT}
+	\rho_D(t_0) \stackrel{thermalization}{\longrightarrow}\frac{e^{-\beta H}}{\tr e^{-\beta H}} \stackrel{\beta \rightarrow\infty}{\longrightarrow} \ket{\Omega}\bra{\Omega}
+\end{equation}
+where all the open questions about \emph{thermalization}, such as \textcolor{red}{the emergence of an arrow of time and
+dissipation from time reversal evolution}, are hidden in the first step. Most textbook calculations of
+scattering probabilities are formulated in terms of S-matrix elements which are objects of vacuum theory.
+Such scattering probabilities also appear in the collision terms of kinetic theory, however accompanied by
+dynamical equations for phase-space distribution functions $f(X,\vec{p})$,i.e.
+\begin{equation}
+	\partial_{X^0} f + \vec{v}\cdot \vec{\nabla}_X f- \vec{\nabla}_XV \cdot \vec{\nabla}_p f = C[f].
+\end{equation}
+Such Boltzmann equations describe the drifting in phasespace $\partial_{X^0} f +\vec{v}\cdot \vec{\nabla}_Xf$ in the presence of an "external force" or "Vlasov term" - $\vec{\nabla}_X V\cdot \vec{\nabla}_p f$ and collisions $C[f]$.Kinetic equations automatically describe
+thermalization and become trivial in equilibrium since their left and right hand sides vanish identically
+for thermal Bose- or Fermi-distributions $f=f_{eq}$.\\
+\\
+In general, the density matrix includes nonvanishing initial conditions for all correlation functions
+$\rho_D\propto e^{if[\Phi]}$ via arbitrary $f[\Phi]$. An initial condition is called \emph{Gaussian} if $f[\Phi]$ is quadratic such that
+only one and two point functions, i.e. fields and propagators have non-trivial initial conditions. In some
+physical situations, e.g. immediately after cosmological inflation, Gaussian initial conditions can be
+justified immediately by the central limit theorem, which states that a superposition of independent
+random variables is generically Gaussian. In thermal equilibrium, $\rho_D \propto e^{-\beta H}$, Gaussian initial conditions
+imply a quadratic Hamiltonian, i.e. free theory, such that interesting physics only arise in a combination
+with out-of-equilibrium scenarios. Given the success of a plethora of effective descriptions from classical
+mechanics, kinetic theory, hydrodynamics to quantum mechanics and Gibbs’ thermodynamics and many
+more, we are faced with the reality that \textcolor{red}{there has to exist some mechanism that provides a reduction of
+sensitivity to the details of initial conditions}. Clearly, to evolve a system in time, we don’t usually have to
+specify an infinity of correlation functions with increasingly many variables. In fact, this would make a
+physical description impossible in practice. Natural science, as we know it, could not exist. Instead of
+infinitely many correlation functions, classical mechanics only requires you to specify the geometry of the
+problem and the initial position and velocity of the shapes; kinetic theory only requires you to specify
+an initial distribution function of phase space, which we will show is part of the propagators. Quantum
+mechanics only requires you to specify an initial wave function, which is enough for some one or few
+particle problems. In a stretch of the term, even vacuum quantum field theory, which requires only the
+specification of asymptotic states, is ’effective’ in the sense that it relies on a reduction of complexity
+and its validity and success is not a priori clear. \textcolor{red}{Any effective description obtains part of its power from
+the practicability of obtaining its initial conditions experimentally. To derive an effective description
+from the first principles of nonequilibrium quantum field theory means to somehow incorporate a loss of
+sensitivity on initial conditions. How this loss of sensitivity occurs is a central question in nonequilibrium
+quantum field theory.} In a derivation of kinetic theory we will achieve this loss of sensitivity mainly by
+employing the ’late time limit’. Of course, this is not a mechanism, but rather an uncontrolled forceful
+way to obtain such insensitivity. It is however no more forceful than say assuming thermal equilibrium,
+as vacuum theory does, and much less forceful than simply taking for granted the validity of a kinetic
+description.
+
+\section{Non-equilibrium QFT formalism -  TODO}
+\todo{look gregor $thesis_for_thimo_v420$ page $9$ for statistical propagator definition etc.}
+
+\section{Classical statistical theory from noneq QFT - TODO}
+We
+will briefly address two other theories which are contained in quantum nonequilibrium theory, classical
+statistical theory and hydrodynamics, to demonstrate the power and usefulness of nonequilibrium QFT.\\
+It is instructive to understand how classical descriptions emerge in a
+nonequilibrium setting. Interestingly, this is possible in a controlled and systematic way by ’classical
+statistical reweighting’  sometimes referred to as ’truncated Wigner approximation’ in the
+context of scalar theories. One first integrates out the fermionic degrees of freedom which are never
+classical via
+\begin{equation}
+\label{eq:rewheigtedPI}
+	\int \mD \mathcal{A} \mD \bar{\psi}\mD \psi e^{i S[\mathcal{A}, \bar{\psi},\psi]} =: \int \mD \mathcal{A} e^{i S^{eff}[\mathcal{A}]}
+\end{equation}
+to obtain an effective action of QED
+\begin{equation}
+	S^{eff}[\mathcal{A}] = S[\mathcal{A}] - i \tr_C\ln(\Delta^{-1}_0[\mathcal{A}]) \equiv \int_{x,C} \left[-\frac{1}{4} \mathcal{F}\munu \mathcal{F}^{\mu\nu} - i \tr(\ln(\Delta^{-1}_0[\mathcal{A}] (x,x)))\right].
+\end{equation}
+Because fermions have no self interactions, the pathintegral in \ref{eq:rewheigtedPI} is Gaussian in the fermionic fields and the effective action can be obtained exactly. Next, one introduces the separate field degrees of freedom 
+\begin{equation}
+	\mathcal{A}^\mu(x) = \theta_C(x^0) \mathcal{A}^\mu_+(x) + \theta_C(-x^0) \mathcal{A}^\mu_-(x)
+\end{equation}
+and changes variables to a "classical field" $\bar{A}$ and a "quantum field" $B$ via
+\begin{equation}
+	\mA^\mu(x) = \bar{A}^\mu(x) + \half B^\mu(x) sgn_C(x^0).
+\end{equation}
+In this way, one can systematically expand the effective action in powers of $B$, by expanding the logarithm in the effective action
+\begin{equation}
+	\tr_C\ln(\Delta^{-1}_C[\bar{A}+ \half B sgn]) = \sum_{n=1}^{\infty} (-1)^{n+1} \frac{(ie)^n}{n 2^n} \tr_C \{(\Delta_0[\bar{A}] \slashed{B} sgn)^n\},
+\end{equation}
+where we have dropped the zeroth order in $B$ since it vanishes under the Keldysh trace. The quantum and classical fields get their names from the fact that at linear order in $B$, the \emph{classical statistical} equations of motion emerge from
+\begin{equation}
+	\frac{\delta S^{eff}}{\delta B}|_{\bar{A}=A_{cl}} = 0,
+\end{equation}
+where the effective action is the classical statistical action
+\begin{equation}
+	S^{cl}[\bar{A},B] = \int_{t_0}^{\infty} \md x^0 \int \md^3x B_\nu(\partial_\mu \bar{\mF}^{\mu\nu} - \bar{j}^\nu) \,\mathrm{with\,} \bar{j}^\mu = \frac{e}{2} \tr\{\gamma^\mu \Delta_0[\bar{A}] (x,x)\}
+\end{equation}
+and $\bar{\mF}^{\mu\nu} = \partial^\mu \bar{A}^{\nu} - \partial^\nu \bar{A}^\mu$. Similarly, the classical statistical expectation values $\expval{\dots}_{cl}$ of the Martin-Siggia-Rose formalism emerge at the linear order in $B$ via
+\begin{equation}
+	\expval{\dots} = \expval{\dots}_{cl} + \mO(B).
+\end{equation}
+The name "rewheighting" can now be understood as the change of the weight of expectation values
+\begin{equation}
+	\expval{\dots} = \expval{\dots e^{i\Delta S}}_{cl} \quad \mathrm{with}\; \Delta S=S^{eff}-S^{cl}.
+\end{equation}
+With this, one can expand $e^{i\Delta S}$ in powers of $B$ to systematically provide quantum corrections to the classical statistical theory. This is similar to the standard rewheighting of perturbation theory w.r.t. the free action $S_0$
+\begin{equation}
+	\expval{\dots} =: \expval{\dots e^{i S^{int}}}_0 \quad \mathrm{with}\; S^{int}=S-S_0,
+\end{equation}
+which corresponds to an expansion of the exponential $e^{i S^{int}}$ in powers of the coupling. By comparing classical and exact self energies one finds that the classical statistical theory captures the exact quantum evolution whenever 
+\begin{equation}
+	F^2 \gg \rho^2.
+\end{equation}
+For details on a derivation of classical statistical theory at the example of scalar $\phi^4$ theory, where no complications due to fermions arise, see Berges noneq. notes cold atoms to cosmology.\\
+Importantly, for large classical fields
+\begin{equation}
+	\expval{\bar{A}} \propto \frac{1}{e}\qquad \expval{B}\propto e
+\end{equation}
+one can identify an expansion in $B$ with a coupling expansion and physically justify the truncation at linear order by the smallness of $e$. This recovers, from first principles, the fact that large occupations behave classically. At higher orders in $B$ no mapping to a classical theory exists. Nevertheless an expansion in $B$ systematically gives quantum corrections to the classical statistical theory via $\mO(B) = \mO(\hbar)$.
+
+
+
+
+
+
+
+
+
+\section{Hydrodynamics from noneq QFT}
+Besides kinetic theory, hydrodynamics has proven itself as a powerful effective
+nonequilibrium theory. At the centre of this description is the energy momentum tensor. Its exact
+microscopic form can be obtained in a 2PI description as
+\begin{equation}
+	T^{\mu\nu} [\mathcal{A},D,\Delta](x) = 2 \frac{\delta \Gamma [\mathcal{A},D,\Delta]}{\delta g\munu} |_{g=\eta}.
+\end{equation}
+Systems with translation invariant dynamics adhere to the conservation of energy and momentum
+\begin{equation}
+	\partial_\mu T^{\mu \nu} =0.
+\end{equation}
+Typically, systems for which the entirety of the microscopic dynamics (i.e. the eom of the statistical propagators for the different particle species involved) can be reduced to the mere
+effect of the conservation of $T\munu$ are called hydrodynamic. Derivations of hydrodynamics
+commonly choose the degrees of freedom of kinetic theory or even take kinetic theory as an intermediate
+step. Indeed, kinetic theory can be used to prepare initial conditions as hydrodynamics takes over the
+description towards thermalization. Even though kinetic theory also describes thermalization,
+hydrodynamics carries less redundant information, as details of the kinetic description become irrelevant
+to the conservation of the energy momentum tensor. This can be understood in the language of moments
+of the statistical propagator
+\begin{equation}
+M^{\mu_1 \dots \mu_k}_k := \int_p p^{\mu_1} \dots p^{\mu_k} F(X,p) .
+\end{equation}
+The first moment is the number density and the second moment is commonly identified with an energy
+momentum tensor. Applying a Kadanoff-Baym ansatz with free spectral functions to these moments reduces them to specific kinetic moments and one
+can go from a kinetic to a hydrodynamic description with this approach. In this way, kinetic equations
+can be phrased as an infinite tower of equations for the moments $M_1 , M_2 , M_3$ etc. and it becomes clear
+that hydrodynamics truncate this tower after $M_2$ . A hydrodynamic
+description requires that only a few moments $M_n$ contribute to the dynamics which can only be valid in
+the presence of a separation of scales.\\
+\\
+To apply hydrodynamics to the energy momentum tensor of a microscopic theory, a common approach is to expand $T\munu$ around the form of an ideal fluid with velocity field $u^\mu$ , energy $e$ and pressure $p$, i.e.
+\begin{equation}
+	T^{\mu \nu} = e u^\mu u^\nu + p(e) (\eta^{\mu \nu} +  u^\mu u^\nu ) + \Pi^{\mu \nu}.
+\end{equation}
+Such an expansion comes with additional assumptions, most notably the existence of an equation of state
+$p(e)$. The non-ideal part $\Pi$ can be approached via a ’hydrodynamic gradient expansion’. Even though
+conceptually unnecessary, the range of validity of hydrodynamics is then commonly identified with the
+range of validity of this expansion, e.g. in the case of heavy ion collisions the smallness of
+\begin{equation}
+	\frac{\eta/s}{\tau T} \stackrel{!}{\ll} 1
+\end{equation}
+with shear viscosity $η$, entropy density $s$, proper time $\tau$ and effective temperature $T$ . An interesting
+connection of hydrodynamics to AdS/CFT correspondence arises here from the conjectured lower
+bound of $\eta/s\geq \frac{1}{4 \pi}$.
+
+
+\section{Distribution functions}
+In thermal equilibrium, $\rho_D \propto e^{−\beta H}$ , the
+Fourier transforms with respect to $(x − y)$ of statistical propagators and spectral functions are related by
+the famous Kubo-Martin-Schwinger (KMS) relations or fluctuation-dissipation theorems
+\begin{align}
+	F^{\mu\nu}_{eq}(p) &= -i [\half +f_B(p^0)]\rho^{\mu\nu}_{eq}(p) \\
+	F_{\Psi,eq} (p) &= -i[\half - f_F(p^0)]\rho_{\Psi,eq}(p)
+\end{align}
+with Bose-and Fermi-distributions
+\begin{equation}
+	f_B(p^0) = \frac{1}{e^{\beta p^0} -1},\qquad f_F (p^0)= \frac{1}{e^{\beta p^0}+1}.
+\end{equation}
+This reflects the fact that in thermal equilibrium all distributions are homogeneous and isotropic. It also
+allows us to highlight another key property of nonequilibrium theory: it is not possible to completely
+describe a nonequilibrium system in terms of just one kind of propagator per field species. Instead multiple
+independent two-point functions exist per field species, which are only related to eachother in equilibrium
+or if one assumes the validity of an asymptotic in-out state formulation which factorizes the upper and
+lower branches of the Keldysh contour.\\
+\\
+Another limit where distribution functions arise is the limit of zero coupling. In this case of free
+theory, distribution functions arise as occupation numbers
+\begin{equation}
+	n(\vec{p}) \expval{a^\dagger(\vec{p}) a(\vec{p})},
+\end{equation}
+with the ladder operator $a$ by which the free vacuum $\ket{0}$ is defined as
+\begin{equation}
+	a(\vec{p})\ket{0} =0 \quad \forall \, \vec{p}.
+\end{equation}
+In fact, in the absence of conserved currents, free theories are the only theories that have well defined
+occupation numbers as opposed to distribution functions. Of course systems without interactions can not
+thermalize and the intuition obtained from such systems has to be taken with great care when applied
+to interacting theories. Nevertheless, in the presence of nearly free spectral functions, free perturbation
+theory is a useful tool to obtain intuition for interacting systems.
+
+
+
+
+\section{Geodesic equation from Quantum Field Theory}
+\todo{Look into: the geodesics are just the characteristics of the field equation}
+Classical trajectories are characteristic curves of
+collisionless transport equations. Let us explore this statement at the example of the Vlasov equation
+\begin{equation}
+\label{eq:vlasoveq}
+	\left[p_\mu \frac{\partial}{\partial X_\mu} -e p_\mu \mF^{\mu \nu} (X) \frac{\partial}{\partial p^\nu}\right] f_\Psi(X,p)=0.
+\end{equation}
+If we interpret $X$ and $p$ as trajectories in a phase space $X(\tau)$ and $p(\tau)$, then the curves along which $f_\psi$ is constant in proper time $\tau$, the characteristic curves of \ref{eq:vlasoveq}, are the classical trajectories
+\marginpar{Pauli principle: $f_\Psi \leq 1$.}
+\begin{equation}
+\label{eq:Lorentzgeodesic}
+	\frac{\md}{\md \tau} f_\Psi(X(\tau),p(\tau)) =0\; \Leftrightarrow \; \frac{\md p_\mu}{\md \tau} = e \mF\munu(X) \frac{\md X^\nu}{\md \tau} \; \mathrm{with} \;p_\mu=\frac{\md X_\mu}{\md \tau}.
+\end{equation}
+This can be seen by applying the chain rule to $\frac{\md f_\Psi}{\md \tau}$ and comparing coefficients with \ref{eq:vlasoveq}. Of course, this Lorentz equation \ref{eq:Lorentzgeodesic} is more commonly obtained without kinetic theory as a geodesic equation by variational principle of a classical action in relativistic point-mechanics. However its interpretation in terms of kinetic theory is quite intuitive:\\
+\textcolor{red}{the characteristic curves are curves of constant particle number, such that they naturally trace the motion of a particle.} This intimate relation between trajectories and
+kinetic theory means that a derivation of kinetic theory from first principles automatically provides a
+derivation of geodesic equations and the Newtonian force concept from field theory. Even in the presence
+of collisions, trajectories can be obtained numerically by this method of characteristics. This connection between a field and trajectory description had been sought for, e.g. by
+Einstein and Rosen who wrote in the context of general relativity in 1935: ”One of the imperfections of
+the original relativistic theory of gravitation was that as a field theory it was not complete; it introduced
+the independent postulate that the law of motion of a particle is given by the equation of the geodesic.
+A complete field theory knows only fields and not the concepts of particle and motion. For these must
+not exist independently of the field but are to be treated as part of it. On the basis of the description
+of a particle without singularity one has the possibility of a logically more satisfactory treatment of the
+combined problem: The problem of the field and that of motion coincide.”
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
