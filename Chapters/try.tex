@@ -1,0 +1,65 @@
+
+\subsection{Representations of the Lorentz group $SO(1,3)$}
+
+
+
+
+
+
+
+E.g. Rotation (spatial) by angle $\alpha$ around an axis $\vec{n}$:
+\begin{align*}
+	\omega_{ij} &= \alpha \epsilon_{ijk} n^k \qquad \vec{n} = (1,0,0)^T\\
+	\Rightarrow 	w_{\rho \sigma} &=
+	\begin{pmatrix}
+		0&0&0&0\\
+		0&0&0&0 \\
+		0&0&0&\alpha \\
+		0&0&-\alpha &0\\
+	\end{pmatrix}
+	\Rightarrow \; \Lambda^{\mu}_{\nu} = \delta^{\mu}_{¸\nu} + \omega^{\mu}_{\nu} = 
+	\begin{pmatrix}
+		1 &0&0&0\\
+		0&1&0&0 \\
+		0&0&1&\alpha \\
+		0&0&-\alpha &1 \\
+	\end{pmatrix}
+\end{align*}
+For an infinitesimal rotation $\Lambda^{\mu}_{\nu} \in SO(1,3)$. Thus not infinitesimmaly
+\begin{equation}
+\Lambda^{\mu}_{\nu} = 
+\begin{pmatrix}
+1&0&0&0\\
+0&1&0&0 \\
+0&0& \cos \alpha & -\sin \alpha \\
+0&0& \sin\alpha & \cos \alpha
+\end{pmatrix}
+\end{equation}
+
+
+\subsection{The Poincare group and associated Lie algebra}
+\begin{mybox}{Poincaré algebra}
+	The Poincaré algebra is given by
+	\begin{align}
+		[J^{\mu \nu} , J^{\rho \sigma}] &= i \left( \eta^{\nu \rho} J^{\mu \sigma} - \eta^{\mu\rho} J^{\nu\sigma} +\eta^{\mu \sigma} J^{\nu\rho} -\eta^{\nu\sigma} J^{\mu\rho} \right)\\
+		[P^\mu,J^{ \rho \sigma}]&= -i \left(\eta^{\mu \rho} P^\sigma - \eta^{\mu \sigma} P^\rho\right)\\
+		[P^\mu,P^\nu]&=0.
+	\end{align}
+	The fundamental representation of the Lorentz group is
+	\begin{equation}
+	\Lambda^\mu_{\;\nu} =e^{i \half \omega_{\alpha \beta} (J^{\alpha \beta})^\mu_{\;\nu}}, \quad \mathrm{with}\; (J^{\alpha \beta})^\mu_{\;\nu} = i (\delta^\alpha_\mu \delta^\beta_\nu -\delta^\beta_\mu \delta^\alpha_\nu ).
+	\end{equation}
+\end{mybox}
+Note that the commutator relations of the Poincaréalgebra, together with $P^0 ≡ H$, immediately
+imply that momentum, angular momentum, and energy are conserved in the sense of QM
+\begin{equation}
+[\vec{P},H]=[\vec{J},H] = [H,H] =0.
+\end{equation}
+Note that 
+\begin{equation}
+J^{\mu\nu}= i(x^\mu \partial^\nu - x^\nu \partial^\mu )
+\end{equation}
+and $(J^{\alpha \beta} )^{\mu\nu}$ is the antisymmetrized metric, i.e.
+\begin{equation}
+(J^{\alpha \beta})^{\mu \nu} = i \eta^{\mu [\alpha}\eta^{\beta]\nu}.
+\end{equation}

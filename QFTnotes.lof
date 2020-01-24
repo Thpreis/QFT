@@ -36,54 +36,58 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.7}{\ignorespaces \itshape Lie groups relation.\relax }}{44}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces \itshape Double cover of the group, need to rotate by $4\mitpi $ to get back to the origin.\relax }}{56}{figure.caption.15}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces \itshape Double cover of the group, need to rotate by $4\mitpi $ to get back to the origin.\relax }}{57}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \itshape Integration contour for Feynman propagator of the real scalar field.\relax }}{87}{figure.caption.21}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \itshape Integration contour for Feynman propagator of the real scalar field.\relax }}{89}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \itshape Retarded contour.\relax }}{89}{figure.caption.23}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \itshape Retarded contour.\relax }}{91}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces \itshape Advanced contour.\relax }}{90}{figure.caption.24}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \itshape Advanced contour.\relax }}{92}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces \itshape Typical spectrum in the interacting theory.\relax }}{98}{figure.caption.26}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \itshape Typical spectrum in the interacting theory.\relax }}{100}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces \itshape Particle spectrum with respect to the mass.\relax }}{104}{figure.caption.27}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \itshape Particle spectrum with respect to the mass.\relax }}{106}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces \itshape Disconnected diagram\relax }}{112}{figure.4.6}
-\defcounter {refsection}{0}\relax 
-\ttl@tocsep 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces \itshape Diverging integrals in QED appearing higher than tree level.\relax }}{168}{figure.caption.39}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces \itshape Definition of the vertex function, summing up all loop corrections.\relax }}{170}{figure.caption.40}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces \itshape How to perform integral in the renormalization procedure by a Wick rotation.\relax }}{171}{figure.caption.41}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \itshape Disconnected diagram\relax }}{114}{figure.4.6}
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Fermion and Anti-fermion annihilation processes in YM\relax }}{272}{figure.caption.55}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces \itshape Diverging integrals in QED appearing higher than tree level.\relax }}{174}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Ghost loops\relax }}{273}{figure.caption.56}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \itshape Definition of the vertex function, summing up all loop corrections.\relax }}{176}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces YM self-energy renormalization\relax }}{277}{figure.caption.57}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \itshape How to perform integral in the renormalization procedure by a Wick rotation.\relax }}{177}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces \relax }}{278}{figure.caption.58}
+\ttl@tocsep 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces \relax }}{279}{figure.caption.59}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Fermion and Anti-fermion annihilation processes in YM\relax }}{278}{figure.caption.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Running coupling of QCD\relax }}{283}{figure.caption.60}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Ghost loops\relax }}{279}{figure.caption.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces \relax }}{285}{figure.caption.61}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces YM self-energy renormalization\relax }}{283}{figure.caption.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Parton scattering process\relax }}{286}{figure.caption.62}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces \relax }}{284}{figure.caption.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces \relax }}{302}{figure.caption.69}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces \relax }}{285}{figure.caption.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces \relax }}{303}{figure.caption.70}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Running coupling of QCD\relax }}{289}{figure.caption.60}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces \relax }}{291}{figure.caption.61}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Parton scattering process\relax }}{292}{figure.caption.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.9}{\ignorespaces \relax }}{308}{figure.caption.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.10}{\ignorespaces \relax }}{309}{figure.caption.70}
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
+\defcounter {refsection}{0}\relax 
+\ttl@tocsep 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.1}{\ignorespaces \relax }}{363}{figure.caption.86}

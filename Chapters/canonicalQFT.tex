@@ -881,6 +881,7 @@ It is not trivial to assume Lorentz invariance of time independent Schrödinger 
 \end{align}
 The Heisenberg operators obey \emph{equal-time} canonical commutation relations:
 \begin{align}
+	\label{eq:canonicalQFTequaltimecommutationrel}
 	[\phi(t,\vec{x}),\Pi(t,\vec{y})]&= i \delta^{(3)}_D (\vec{x}-\vec{y}),\\
 	[\phi(t,\vec{x}), \phi(t,\vec{y})] &= 0 = [\Pi(t,\vec{x}) ,\Pi(t,\vec{y})], \quad \phi(x)=e^{i H_s t} \phi_s(\vec{x}) e^{- iH_s t}.
 \end{align}
@@ -2741,6 +2742,141 @@ for $p_i$ incoming particles and
 	\sum_{j=1}^{M} q_j = (\sqrt{s},0,0,0)^T
 \end{equation}
 for $q_j$ outgoing particles.
+
+
+
+\section{Chain of reasoning for perturbative QFT calculations}
+How does the reasoning 
+\begin{equation}
+	\text{ Theory  } \mL(\{\phi_i \}) \longrightarrow \md \Gamma, \md \sigma \text{ Experiment}
+\end{equation}
+work ?
+
+\subsection{First Step: The S-matrix and scattering amplitude}
+Considering $2$ to $n$ scattering $p_a+p_b \rightarrow p_1+\dots +p_n$, the differential cross section looks like:
+\begin{equation}
+\label{eq:crosssection}
+	\md \sigma = \underbrace{\frac{1}{4 \sqrt{(p_a \cdot p_b)^2 -m^2_a m^2_b}}}_{\text{flux factor}} \abs{M_{fi}}^2 \underbrace{\frac{1}{S_{\{n\}}}}_{\text{Symmetry factor}} \underbrace{\md \Phi_n(p_1 ,\dots ,p_n; p_a+p_b)}_{\text{LIPS}}.
+\end{equation}
+The decay width for $1$ to $n$ decay $p_a \rightarrow p_1+\dots+ p_n$ is given by
+\begin{equation}
+	\label{eq:decaywidth}
+	\md \Gamma = \frac{1}{2 E_a(\vec{p}_a)} \abs{M_{fi}}^2 \frac{1}{S_{\{n\}}} \md \Phi_n(p_1,\dots,p_n;p_a)
+\end{equation}
+with the \emph{Lorentz invariant phase space } (LIPS)  element
+\begin{equation}
+	\label{eq:lorentzinvps}
+	\md \Phi_n(p_1,\dots,p_n;Q) = \prod_{i=1}^{n} [\md p_i] \underbrace{(2\pi)^4\delta^{(4)} \left(\sum_{j=1}^{n} p_j - Q\right)}_{\text{overall energy-momentum conservation}}
+\end{equation}
+with
+\begin{equation}
+	[\md p] \equiv \frac{\md^4 p}{(2 \pi)^4} (2 \pi) \underbrace{\delta^{(4)}(p^2-m^2) \theta(p^0)}_{\text{mass-shell}}= \frac{\md^3 p}{(2\pi)^3} \frac{1}{2 E(\vec{p})}.
+\end{equation}
+The scattering amplitude is obtained from Feynman diagrams down the line.
+
+
+
+\subsection{Second Step: From S-matrix to correlators}
+\subsubsection{The S-Matrix}
+The S-matrix is given by Dyson' s formula \ref{eq:dysonformula} in the interaction picture, i.e. it corresponds to the time evolution operator from $t\rightarrow -\infty$ ("in-state") to $t\rightarrow + \infty$ ("out"-state). It can be decomposed into a trivial and a connected part
+\begin{align}
+S_{fi} &=\bra{f}S\ket{i} = \bra{f}\mI+i T\ket{i} \nonumber =\underbrace{\braket{f}{i}}_{\text{no scattering}} \\
+&+\underbrace{(2 \pi)^4 \delta^{(4)} (p_i -p_f)}_{4-\text{momentum conservation}} \underbrace{i M_{fi}}_{\text{scattering amplitude}}.
+\end{align}
+\subsubsection{Correlators}
+The connected part of the S-matrix, i.e. the scattering amplitude, can then be related to correlators of the interacting theory via the LSZ formula \ref{eq:lszformula}, such that
+\begin{align}
+	&i M^{n\rightarrow m} (p_1,\dots,p_n \rightarrow p^\prime_1,\dots,p^\prime_m) = \prod_{i=1}^{n}  f^{\Phi_i}_{in}(p_i) \sqrt{Z_{\Phi_i}} \prod_{j=1}^m f^{\Phi^\prime_{out}(p^\prime_j)}_{out}(p^\prime_j) \sqrt{Z_{\Phi^\prime_j}} \\
+	&\times G^{\Phi_1,\dots,\Phi_n; \Phi^\prime_1,\dots,\Phi^\prime_m}(p_1,\dots,p_n;-p^\prime_1,\dots,p^\prime_m) |_{\text{on-shell}} 
+\end{align}
+where we 
+\begin{enumerate}
+	\item have to take the $(n+m)$-correlator for $n$ to $m$ scattering
+	\item truncate/amputate external legs and replace by $1$-particle wave functions
+	\begin{equation}
+		f^\phi_{in/out} = 1,\; f^{\psi}_{in/out} = \frac{u(p)}{\bar{u}(p^\prime)}, \; f^{\bar{ \psi}}_{in/out} = \frac{v(p)}{\bar{p}(p^\prime)}, \; f^{A_\mu}_{in/out} = \frac{\epsilon_{\mu}(p)}{\epsilon^*_\mu(p)}
+	\end{equation}
+	\item and put external momenta on mass shell
+	\begin{equation*}
+		p^2_i=m^2_i,\qquad (p^\prime_j)^2= (m^\prime)^2_j. 
+	\end{equation*}
+\end{enumerate}
+Thus, we go from the S-matrix and scattering amplitude via the LSZ reduction to full $n$-point correlation functions.
+
+
+\subsection{Describe full correlators by perturbation theory of fundamental building blocks}
+
+
+
+\subsubsection{Perturbation theory for $n$-point functions $G^{\Phi_1\dots \Phi_n}$}
+In order to perform perturbation theory, we separate the free and interacting contribution by implementing
+\begin{equation*}
+	\mL = \mL_0+\mL_{int}
+\end{equation*}
+where we separate the interaction term in order to extract coupling constants. Now we perturb around the free theory, which is bi-linear in $\Phi$. The reason for this is that our action is quadratic in the field, such that the solution of the free theory is given by propagators, i.e. $2$-pt. functions. Then, the fundamental building blocks of our theory are the $1PI$ diagrams, which are the two-pt. functions in the interacting theory.
+
+
+\subsubsection{Diagrammatic representation}
+As we established above, you can split the interacting contributions into two-point functions and interactions between them. This is easier if we give these building blocks a diagrammatic representation
+
+\begin{equation*}
+	2-\text{point functions, i.e. free theory} \stackrel{\text{Feynman diagrams}}{\leftrightarrow} \feynmandiagram{a--[momentum=\(p\)] b}; \text{propagators} 
+\end{equation*}
+and 
+\begin{equation*}
+\mL_{int} \text{ interactions} \stackrel{\text{Feynman diagrams}}{\leftrightarrow} \feynmandiagram{a--v[dot]--b,c--v}; \text{vertices}	
+\end{equation*}
+
+\subsubsection{Elementary building blocks}
+The vertex-functions $\Gamma^{\Phi_1 \dots \Phi_n}=$ $1PI$ graphs. We can express the full quantum theory by considering all possible $1PI$ diagrams.
+\\
+\\
+We can therefore decompose the full $n$-point correlators 
+\begin{equation*}
+	G^{\Phi_1 \dots \Phi_n} \longrightarrow G^{\Phi_1 \Phi_2 }_0 \& \text{ interaction vertex}
+\end{equation*}
+into the fundamental building blocks of propagators (two-point function of the free theory) and interaction vertices between these two-pt. functions.
+
+
+
+
+
+
+\subsection{From diagrammatic description to theory}
+In the last or first step we can find the Feynman rules from the Lagrangian of a theory by calculating the propagator via the Green's function approach
+\begin{equation}
+ \mD D_F(x-y) = -i \delta(x-y)
+\end{equation}
+and looking at the interaction parts of the Lagrangian and writing down the vertices by multiplying them with $i$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
