@@ -1887,11 +1887,328 @@ In QFT, and especially in QED, the interacting theory leads to infinite quantiti
 \end{enumerate}
 
 
+\subsection{Second example for on-shell renormalization --phi 4 theory renormalized}
+\label{subsec:renormalizationPhi4}
+$\phi^4$ theory is perturbatively renormalizable in $d=4$ because 
+\begin{equation}
+[\lambda]=0.
+\end{equation}
+\subsubsection{Superficially divergent amplitudes in $d=4$}
+Superficial degree of divergence is 
+\begin{equation}
+D=4-E \Rightarrow\; E\leq 4 \text{ are divergent amplitudes},
+\end{equation}
+such that amplitudes with $E\leq 4$ are superficially divergent.
+\begin{align}
+	&E=0 \Rightarrow D=4: \quad (\text{vacuum energy})\\
+	&[E=1 \Rightarrow D=3 \quad (\text{tadpole})]\\
+	&E=2 \Rightarrow D=2: \quad D_F(p^2) \; (\text{propagator})\\
+	&[E=3 \Rightarrow D=1 \quad (\phi^3 \text{ vertex})]\\
+	&E=4 \Rightarrow D=0: \quad \mM_4(s,t,u) (\phi^4 \text{ vertex}).
+\end{align}
+Amplitudes with odd numbers of $\phi$ vanish by $Z_2$ symmetry $\phi \rightarrow - \phi$ and eliminate the divergence of $E=1$ and $E=3$ so we are left with $3$ divergent amplitudes.
+\subsubsection{Renormalization conditions and renormalized perturbation theory}
+
+\begin{mybox}{Example of how to renormalize via counterterms}
+	The renormalization conditions are
+	\begin{align}
+		D_F(p^2) = \frac{i}{p^2-m^2-M^2(p^2)} &\stackrel{!}{=} \frac{i}{p^2-m^2} + (\text{regular})\\
+		\mM_4(4m^2,0,0) \stackrel{!}{=} -i\lambda.
+	\end{align}
+	Introduce the notation
+	\begin{equation}
+	\phi := \frac{\phi_0}{\sqrt{Z}},\; \delta_\phi:= Z-1,\; \delta_m:= m^2_0 Z-m^2,\; \delta_\lambda:= \lambda_0 Z^2-\lambda
+	\end{equation}
+	to rewrite the Lagrangian in terms of a renormalized Lagrangian $\mL_r$ and counter terms
+	\begin{equation}
+	\mL = \mL_r+\frac{\delta_\phi}{2} (\partial \phi)^2 - \frac{\delta_m}{2} \phi^2 - \frac{\delta_\lambda}{4!} \phi^4
+	\end{equation}
+	such that we get new vertices at order $\lambda$:
+	\begin{align}
+		\expval{ \prod_{i=1}^{2}\phi(x_i) \int \md^4  \left(\frac{\delta_\phi}{2} (\partial \phi)^2 - \frac{\delta_m}{2} \phi^2\right)} &\leftrightarrow i(p^2\delta_\phi -\delta_m) \\
+		\expval{ \prod_{i=1}^4 \phi(x_i) \int \md^4x \frac{-\delta_\lambda}{4!}\phi^4 (x) } &\leftrightarrow -i \delta_{\lambda}.
+	\end{align}
+	Note that the proapgator renormalization condition in terms of scalar self-energy $M^2(p^2)$ is
+	\begin{equation}
+	M^2(m^2) \stackrel{!}{=}0 \text{  and  } \frac{\md}{\md p^2}M^2(m^2) \stackrel{!}{=}0.
+	\end{equation}
+\end{mybox}
+Introduction of counterterms explicitly:
+\begin{align*}
+	\mL &= \half (\partial \phi_0)^2 -\half m^2_0 \phi^2_0 - \frac{\lambda_0}{4!} \phi^4 \\
+	&= \half \partial(\sqrt{Z}\phi)^2-\half m^2_0(\sqrt{Z}\phi)^2 - \frac{\lambda_0}{4!}(\sqrt{Z} \phi)^4 \\
+	&= \half Z(\partial \phi)^2 - \half Z m^2_0 \phi^2 - \frac{\lambda_0}{4!} Z^2 \phi^4 \\
+	&= [\half Z(\partial \phi)^2+\half (\partial \phi)^2-\half (\partial \phi)^2] \\
+	&-[\half Zm^2_0 \phi^2+\half m^2 \phi^2-\half m^2\phi^2] \\
+	&- [\frac{\lambda_0}{4!}Z^2\phi^4 + \frac{\lambda}{4!} \phi^4-\frac{\lambda}{4!}\phi^4 ]\\
+	&= \mL_r + [\half Z(\partial \phi)^2-\half(\partial \phi)^2]\\
+	&-[\half Z m^2_0 \phi^2-\half m^2\phi^2] - [\frac{\lambda_0}{4!} Z^2 \phi^4 -\frac{\lambda}{4!} \phi^4] \\
+	&=\mL_r + \half [Z-1] (\partial \phi)^2 - \half [Zm^2_0-m^2] \phi^2-\frac{1}{4!} [\lambda_0 Z^2-\lambda] \phi^4\\
+	&= \mL_r+ \frac{\delta_\phi}{2} (\partial \phi)^2 -\frac{\delta_m}{2} \phi^2 - \frac{\delta_\lambda}{4!}\phi^4 \qquad \blacksquare
+\end{align*}
+\subsubsection{Explicit renormalization analysis of $\phi^4$}
+\label{subsubsec:phifourrenormalization}
+We have, as exemplified above
+\begin{align*}
+	\mL_{\phi^4} &= \half (\partial \phi_0)^2-\frac{m^2_0}{2} -\frac{\lambda_0}{4!} \phi^4_0 \\
+	&= \half (\partial \phi)^2-\frac{m^2}{2}\phi^2-\frac{\lambda}{4!}\phi^4 + \frac{\delta_Z}{2} (\partial \phi)^2 -\frac{\delta_m}{2} \phi^2 -\frac{\delta_\lambda}{4!} \phi^4\\
+	&=\mL_r +  \frac{\delta_Z}{2} (\partial \phi)^2 -\frac{\delta_m}{2} \phi^2 -\frac{\delta_\lambda}{4!} \phi^4 
+\end{align*}
+where we split the divergent Lagrangian into two contributions. The first only contains finite so-called \emph{renormalized quantities} with values as they would be measured in experiment. The second part absorbs all divergences in so-called \emph{counterterms}. These are for $\phi^4$:
+\begin{align*}
+	\phi &= \phi_0 Z^{-\half} \text{ wavefunction renormalization}\\
+	\feynmandiagram{a--[fermion]b}; &= \frac{i}{p^2-m^2+i \epsilon},\\
+	\feynmandiagram[horizontal=a to b]{a--[fermion] c [crossed dot] --[fermion] b};&= i (p^2 \delta_Z-\delta_m),\\
+	\feynmandiagram{a--v[dot]--b, c--v--d};&=- i \lambda,\\
+	\feynmandiagram{a--v[crossed dot] --b, c--v--d}; &=-i \delta_\lambda.
+\end{align*}
+In this theory we have
+\begin{equation}
+D=4L-2P,\; L=P-V+1 \; \text{use Euler } 4 V=2 P+E \; \Rightarrow D=4-E.
+\end{equation}
+Thus, $\lambda \phi^4$ theory is renormalizable, also seen by $[\lambda]=0$ vanishing mass-dimension.\\
+The superficially divergent diagrams are
+\begin{enumerate}
+	\item $\feynmandiagram{a[blob]};\quad D=4$,
+	\item $\feynmandiagram{a--b[blob]}; \quad D=3$,
+	\item $\feynmandiagram{a--c[blob]--b};\quad D=2$,
+	\item $\feynmandiagram{a--c[blob]--b, d--c}; \quad D=1$
+	\item $\feynmandiagram{a--v[blob]--b, d--v--e};\quad D=0$.
+\end{enumerate}
+Since $\mL_{\phi^4}$ is invariant under Paritiy transformation (\textbf{always check for symmetries !}), all diagrams with an odd number of external lines vanish: $2\&4)=0$. \\
+Why are we tasked with renormalizing the propagator and the vertex ?\\
+The vacuum diagram can be trivially absorbed in the vacuum energy density $V_0$, an additional degree of freedom of any Lagrangian, which we did not write down explicitly, since the absolute energy scale is meaningless in a theory without gravity. Thus, propagator and vertex are the only fundamental divergences in $\phi^4$-theory . All others are due to diagrams containing those two as subdiagrams.\\
+\\
+$s,t,u$-channel have identical contributions with $s=p^2=(p_1+p_2)^2$, $u=p^2=(p_1-p_4)^2$, $t=p^2=(p_1-p_3)^2$
+\begin{align}
+	(-i \lambda)^2 i V(p^2) &:= \frac{(-i \lambda)^2}{2} \int \frac{\md^d k}{(2 \pi)^d} \frac{i}{k^2-m^2+i\epsilon} \frac{i}{(p+k)^2-m^2+i\epsilon} \\
+	&\equiv \feynmandiagram [layered layout, horizontal=i_1 to f_1] [edges=fermion] {
+		{i1, i2} -- a -- [half left, momentum=\(k\)] b -- [half left, momentum=\(k-p\)] a,
+		b -- {f1, f2},
+	};;.
+\end{align}
+Now we fix some energy scale $s_0,u_0,t_0$ and insert it into the $1$-loop amplitude to remove the divergences.
+\todo{Finish this treatment}
+\\
+\\
+If we were to consider the propagator to second loop order, we would have to look at
+\begin{align}
+	-i M^2(p^2) |_{\mO(\lambda^2)} &= \feynmandiagram{a -- c [particle=$1PI$]--b}; \\
+	&= \feynmandiagram{a--v--b,v--[loop] v};+ \feynmandiagram[horizontal=v to w]{a--v--w--v, v--[half left] w, w--[half left] v, w--b}; \\
+	&+\feynmandiagram[horizontal=a to b]{a --v[crossed dot] --b, v--[half left,loop] v};+\feynmandiagram{a--v[crossed dot]--b[particle=$\delta^{1-loop}_Z$]}; 
+	\\
+	&+ \feynmandiagram{a--v[crossed dot]--b[ particle=$\delta^{2-loop}_Z$]};. 
+\end{align}
+In general, one can simply write down the diagrams via the Feynman rules and then impose the renormalization conditions on them to identify the counter-terms From this, one can already extract the form of the propagator or transition amplitude. Afterwards, one can do the dimensional reg. calculation in order to explicitly find divergences and hide it in the counterterms.
+\\
+\\
+Note that we can write 
+\begin{equation}
+\feynmandiagram[horizontal=a to b]{a--v[crossed dot] --b, v--[half left] v};= \left[	\feynmandiagram[horizontal=a to b]{a--v --b, v--[loop] v};\right]_{\lambda \rightarrow \delta_\lambda}.
+\end{equation}
+
+
+\subsection{Third example of on-shell renormalization - YM renormalized}
+\label{subsec:renormalizationYM}
+Strictly speaking, the renormalization of YM should happen before QCD as QCD is only a special case of YM theory. As this treatment is only very crude, it is has more pedagogical value for the reader to follow the renormalization of QCD to get a sense of the logic behind on-shell renormalization. If this is a first read through, I would therefore recommend to jump to \ref{subsec:renormalizationqcd} to get the idea and come back to \ref{subsec:renormalizationYM} after that. This treatment is more a collection of important results.\\
+YM theory is power-counting renormalizable since $[g]=0$.\\
+We start from the bare gauge-fixed Lagrangian
+\begin{align*}
+	\mL &= - \frac{1}{4} \left(\partial_\mu A^a_{0\;\nu} - \partial_\nu A^a_{0 \; \mu} \right)^2 - \frac{1}{2 \xi_0} (\partial A^a_0)^2 + \bar{\psi}_0 (i \slashed{\partial} - m_0) \psi_0 \\
+	& - \bar{c}_c \partial_\mu \partial^\mu c_0 - g_0 A_{0\mu} \bar{\psi}_0 \gamma^\mu T^a \psi_0 + g_0 f^{abc} (\partial_\mu A^a_{0\nu}) A^{b\mu}_0 A^{c \nu}_0 \\
+	&-\frac{1}{4} g^2_0 f^{abc} f^{ade} A^{\mu b}_0 A^{\nu c}_0 A^d_{\mu 0} A^e_{\nu 0} + g_0 \bar{c}_0 f^{abc} \partial^\mu A^b_{0 \mu} c^c_0
+\end{align*}
+and we perform field strength renormalizations
+\begin{equation}
+A_0 = \sqrt{Z_3}A, \; \xi_0=Z_3 \xi, \; \psi_0= \sqrt{Z_2}\psi, \; \stackrel{(-)}{c}_0 = \sqrt{Z^c_2} \stackrel{(-)}{c}.
+\end{equation}
+This gives eight counterterms - not all independent:
+\begin{align*}
+	\delta_2 &=Z_2 -1, \; \delta_3 = Z_3-1, \; \delta^{(c)} = Z^{(c)}_2 -1, \; \delta_m = Z_2 m_0 -m,\\
+	\delta_1 &= \frac{g_0}{g} Z_2 \sqrt{Z_3}-1, \delta^{cubic}_1 = \frac{g_0}{g} Z^{3/2}_3-1,\\
+	\delta^{quartic}_1 &= \frac{g_0}{g}Z^2_3-1, \; \delta^{(c)}_1 = \frac{g_0}{g} Z^c_2 \sqrt{Z_3}-1.
+\end{align*}
+Note: Due to renormalization of $\xi_0$, the kinetic counterterm for $A_\mu$ becomes independent of $\xi$
+\begin{equation*}
+	-\frac{1}{4} \delta_3 ( \partial_\mu A_\nu - \partial_\nu A_\mu)^2.
+\end{equation*}
+Thus, among others, we have the counterterms
+\begin{align}
+	\feynmandiagram[horizontal=a to b]{a [particle=$A$] -- [gluon] c [crossed dot] --[gluon] b [particle=$b$]};
+	&= -i (k^2 \eta^{\mu \nu} - k^\mu k^\nu) \delta^{ab} \delta_3 \\
+	\feynmandiagram[horizontal=a to b]{a [particle=$i$] --[anti fermion] c [crossed dot] -- [anti fermion] b [particle=$j$]};
+	&= i \gamma^\mu p_\mu \delta_2 \delta_{ij} \\
+	\feynmandiagram[horizontal=a to b]{a -- [fermion] v [crossed dot] -- [anti fermion] b, c [particle=${(\mu,a)}$] --[boson] v};
+	&= -ig T^a \gamma^\mu \delta_1
+\end{align}
+and in addition those for $A^3,A^4, \bar{c} A c+\bar{c} c$ $\& \psi$-mass.+
+\\
+\\
+Our Aim is to extract the $1$-loop $\beta$-function for $g$.\\
+Since $\beta(g)$ is sensitive only to UV-divergences, we can henceforth set $m=0$. As in QED, we extract $\beta(g)$ from the Callen-Symancyk equation for the $3$-point function $\expval{A\bar{\psi} \psi}$ as
+\begin{equation}
+\beta(g) = g \mu \frac{\partial}{\partial \mu} \left(-\delta_1 + \delta_2 + \half \delta_3\right) \quad \text{at $1$-loop}.
+\end{equation}
+We therefore only need the $mu$-dependence of $\delta_1,\delta_2,\delta_3$. We will see that after cancellations all divergences are of the form 
+$\frac{\Gamma(2-\frac{\md}{2})}{\Delta^{2-\frac{\md}{2}} }$ in dimensional regularization with $\Delta$ some $p^2$-invariant. We can identify
+\begin{equation}
+\mu^2 = \Delta
+\end{equation}
+by choice of renormalization conditions and extract only the divergences of $\delta_i$ for $\beta(g)$.
 
 
 
+\subsubsection{Preliminaries in Group Theory}
+Given a representation $R$ with $T^a_R \equiv (T^a_R)_{ij}$, $i,j=1,\dots,\dim R$, i.e. a matrix representation, of a Lie algebra $Lie(H)$ with dimension $\dim H$, the \emph{second Casimir} $C_2(R)$ is defined via 
+\begin{equation}
+\sum_a T^a_R T^a_R = T^a_R T^a_R= C_2(R) \cdot \mI.
+\end{equation}
+If we normalize the $T^a_R$ such that
+\begin{equation}
+\tr T^a_R T^b_R = \underbrace{C(R)}_{\text{normalization group factor}} \delta^{ab}
+\end{equation}
+then
+\begin{equation}
+\dim(R) C_2 (R) = C(R) \cdot \dim(H).
+\end{equation}
+Consider the examples
+\begin{enumerate}
+	\item Let $R=f$ be the fundamental representation of $SU(N)$ normalized such that\begin{equation}
+	\tr(T^a_f T^b_f) = \half \delta^{ab} \quad \Rightarrow \quad C(f) = \half.
+	\end{equation}
+	Then 
+	\begin{equation}
+	C_2(f) = \half \frac{\dim(SU(N)) }{\dim(f)} = \half \frac{N^2-1}{N}.
+	\end{equation}
+	\item Let $R=Ad$ be the adjoint representation of $H$, defined such that 
+	\begin{equation}
+	(T^b_{Ad})_{ac} = i f^{abc} \quad \Rightarrow \quad C(H) := C(Ad)
+	\end{equation}
+	computable via
+	\begin{align*}
+		C(H)\delta^{ab} &= \tr(T^a_{Ad} T^b_{Ad})= -f^{dac} f^{cbd},\quad C(H) \delta^{ab} = f^{acd} f^{bcd} \\
+		C_2(H) \delta^{ab} &= (T^a_{Ad})_{bc} (T^a_{Ad})_{cd} = f^{cab} f^{cae} \\
+		\Rightarrow \quad C(H) & = C_2(H),
+	\end{align*}
+	also follows since $\dim(Ad)=\dim(H)$. For example, $H=SU(N)$ gives us 
+	\begin{equation*}
+		C(SU(N)) = N.
+	\end{equation*}
+\end{enumerate}
 
-\subsection{Another Example for On-shell renormalization -- QCD renormalized}
+
+
+\subsubsection{Computation of $\delta_3$}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{gfx/YMpictures/YMselfenergy}
+	\caption{YM self-energy renormalization}
+	\label{fig:ymselfenergy}
+\end{figure}
+As in QED, \begin{equation}
+q^\mu \Pi\munu(q)=0,
+\end{equation}
+which is a consequence of the Slavnov-Taylor identities. So we have
+\begin{equation*}
+	\Pi\munu(q)=i (q^2 \eta^{\mu \nu} - q^\mu q^\nu) \Pi(q^2).
+\end{equation*}
+Thus, compute the four diagrams $i)-iv)$ to find $\delta_3$:
+\begin{enumerate}
+	\item[i)] Choosing $\Delta:= -x(1-x)q^2$ with renormalization scale $\mu$, we find
+	\begin{equation}
+	\delta_3 |_{i)} = -\frac{g^2}{(4 \pi)^2} \frac{4}{3} C(R) \frac{\Gamma(2-\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}}}
+	\end{equation}
+	for a fermion in representation $R$.\\
+	\\
+	Note that the pure YM diagrams $ii)-iv)$ (pure in the sense that they do not appear in QED) are computed in Feynman gauge $\xi=1$.
+	\item[ii)] Contains two types of divergences, via dimensional Regularization:
+	\begin{enumerate}
+		\item $\Gamma(2-\frac{\md}{2})\times \dots \leftrightarrow$ corresponds to logarithmic divergences in $\md=4$.
+		\item $\Gamma(1-\frac{\md}{2})\times \dots \leftrightarrow$ corresponds to logarithmic divergence in $\md=2$, i.e. $\int \frac{\md^{\md} p}{(p^2)}$ and thus a quadratic divergence in $\md=4$.
+	\end{enumerate}
+	A quadratic divergence would indicate a renormalization of the gauge boson mass, which is forbidden by gauge invariance. This term must hence cancel against other contributions.
+	\item[iii)]
+	\begin{equation}
+	iii)= \left[A \cdot \Gamma(1-\frac{\md}{2}) + B\cdot \Gamma(2-\frac{\md}{2}) \right] C_2(H) \delta^{ab} 
+	\end{equation}
+	\item[iv)]
+	We get a $(-1)$ sign from Grassman fields in loop
+	\begin{align}
+		iv)&= (-1) \int \frac{\md^4p}{(2 \pi)^4} \frac{i}{p^2} \frac{i}{(p+q)^2} g^2 f^{dac} (p+q)^\mu f^{cbd} p^\nu \nonumber \\
+		&= C_2(H) \delta^{ab} \left[C \cdot \Gamma(1-\frac{\md}{2}) + D\cdot \Gamma(2-\frac{\md}{2})\right].
+	\end{align}
+\end{enumerate}
+The terms proportional to $\Gamma(1-\frac{\md}{2})$ of $ii)+iii)+iv)$ precisely cancel - as required by gauge invariance.
+\\
+Thus, the counterterm for $1)$ $n_f$ fermions in Representation $R_f+2)+3)+4)$ (with $\Delta= \mu^2$) is
+\begin{equation}
+\delta_3 = \frac{g^2}{(4 \pi)^2} \frac{\Gamma(2-\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}}} \left[\frac{5}{3} C_2(H) - \frac{4}{3} n_f C(R_f)\right].
+\end{equation}
+
+
+
+\subsubsection{Computation of $\delta_2$}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gfx/YMpictures/YMoneLoopDelta2}
+	\caption{}
+	\label{fig:ymoneloopdelta2}
+\end{figure}
+Since we only need the UV divergences, we set again $m=0$.
+\\The group theory factor is $T^a_R T^a_R = C_2(R) \cdot \mI$, thus
+\begin{align}
+	\ref{fig:ymoneloopdelta2} &= C_2(R)\mI  \times \left(\feynmandiagram[horizontal=a to b]{a--c--d--b, c--[boson, half left]d};\right)|_{QED} \\
+	&= C_2(R) \frac{i g^2}{(4 \pi)^{\frac{\md}{2}} } \slashed{p} \int_0^1 \md x (1-x)(\md -2 ) \frac{\Gamma(2-\frac{\md}{2})}{\Delta^{2-\frac{\md}{2}}}
+\end{align}
+with $\Delta=-x(1-x)p^2$.\\ 
+Identifying $\Delta=\mu^2$ yields
+\begin{equation}
+\delta_2 = - \frac{g^2}{(4 \pi)^2} \frac{\Gamma(2-\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}} } C_2(R).
+\end{equation}
+
+
+\subsubsection{Computation of $\delta_1$}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gfx/YMpictures/YMoneLoopDeltaOne}
+	\caption{}
+	\label{fig:ymoneloopdeltaone}
+\end{figure}
+Consider the two separate diagrams individually
+\begin{enumerate}
+	\item[i)] In QED the Ward identities imply $\delta_1 |_{QED} = \delta_2|_{QED}$. We can factorize the diagram into contributions from YM and QED similar interactions like the following with this identity
+	\begin{equation}
+	\delta_1 |_{i)} = \underbrace{- \frac{g^2}{(4 \pi)^2} \frac{\Gamma(2-\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}} }}_{= T^a_R \cdot ({i)}_{QED})} \left(C_2(R)-\half C_2(H)\right),
+	\end{equation}
+	where we used the results from our QED calculations and just included the group theory factor..
+	\item[ii)] Applying the same logic here, we find
+	\begin{equation}
+	\delta_1 |_{ii)} = -\frac{g^2}{(4 \pi)^2} \frac{\Gamma(2-\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}} } \frac{3}{2} C_2(H).
+	\end{equation}
+\end{enumerate}
+Altogether
+\begin{equation}
+\delta_1 = - \frac{g^2}{(4 \pi)^2} \frac{\Gamma(2-\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}}} \left[C_2(R)+C_2(H)\right].
+\end{equation}
+
+\subsubsection{YM  $\beta$-function at $1$-loop in $g$}
+The final result is found by noting that the divergencies vanish for the computation of the $\beta$-function since
+\begin{align*}
+	\mu \frac{\partial}{\partial \mu} \frac{\Gamma(2 -\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}} } &= (\md -4) \mu^{(\md-4)} \Gamma(2-\frac{\md}{2}) \\
+	&\stackrel{\md=4-\epsilon}{=} (-\epsilon) \mu^{-\epsilon} \left(\frac{2}{\epsilon} -\gamma + \mO(\epsilon)\right) \\
+	&\stackrel{\epsilon\rightarrow 0}{=} -2.
+\end{align*}
+\begin{mybox}{YM $\beta$ function to leading order in $\md=4$}
+	\begin{equation}
+	\label{eq:betafunctionYangMills}
+	\beta^{(1)}_{YM}(g) = - \frac{g^3}{(4 \pi)^2} \left[\frac{11}{3} C_2(H) - \frac{4}{3} n_f C(R_f)\right].
+	\end{equation}
+\end{mybox}
+
+
+
+\subsection{Fourth example for On-shell renormalization -- QCD renormalized}
 \label{subsec:renormalizationqcd}
 \subsubsection{Superficially divergent vertex functions in QCD}
 Again, the logic is to renormalize divergent $1PI$ graphs. To find these we employ again power-counting via SDOD \ref{eq:renormalizationSdodQCD} and will look at the explicit symmetries of the theory to nail down the graphs which are actually divergent.
@@ -2032,25 +2349,53 @@ Now we do perturbation theory around renormalized quantities to find the renorma
 Let $\hat{A}$ denote a renormalized quantity, then we find the following renormalized $1PI$ graphs and counterterms.
 For this we need that the dressed propagator now has the form 
 \bse 
-\feynmandiagram[horizontal=a to b]{a -- v[blob] -- b}; = \feynmandiagram{a--b}; + \feynmandiagram{a -- v [particle=$1PI$] }; + \feynmandiagram{a--v [crossed dot] --b}; + \dots 
+\feynmandiagram[horizontal=a to b]{a -- v[blob] -- b}; = \feynmandiagram{a--b}; + \feynmandiagram{a -- v [particle=$1PI$]--b }; + \feynmandiagram{a--v [crossed dot] --b}; + \dots 
 \ese 
 such that we rewrite the self-energies and vertex we find above with the counterterms introduced to deduce the renormalized self-energies and vertex.
 \begin{enumerate}
 	\item 
+	\begin{align*}
+		\feynmandiagram[horizontal=a to b]{a --[gluon] v [particle=$1PI$] -- [gluon] b}; &=-i \delta^{ab} \left(g\munu - \frac{k_\mu k_\nu}{k^2}\right) \left[k^2 + \underbrace{\Sigma^{AA}_T(k^2)+k^2 \delta Z_A}_{=: \hat{\Sigma}^{AA}_T(k^2) \text{ (II)} }\right] \\
+		&_ i \delta^{ab} \frac{k_\mu k_\nu}{k^2} \frac{1}{\xi} \left[k^2 + \underbrace{\xi \overbrace{\Sigma^{AA}_L(k^2)}^{=0 \text{ long. decouples}}+ k^2 (\delta Z_A-\delta Z_\xi)}_{=: \xi \hat{\Sigma}^{AA}_L(k^2) \text{ (1)} }\right]\\
+		(I)\Rightarrow \quad \delta Z_\xi &=  \delta Z_A \quad \Rightarrow \hat{\Sigma}^{AA}_L(k^2) \stackrel{!}{=0} \\
+		(2)\Rightarrow \quad \delta Z_A &= - \frac{\Sigma^{AA}_T}{k^2} |_{\bar{UV}} = - \Pi^{AA}_P |_{\bar{UV}} = - \frac{\alpha_s}{4 \pi} \frac{1}{\bar{ \epsilon}} \left[ \frac{4}{3} T_f N_f - \frac{5}{3} C_A\right] \\
+		\bar{\epsilon} &:= \frac{1}{\epsilon} - \gamma_E + \ln(4\pi).
+	\end{align*}
+\item 
+\begin{align*}
+	\feynmandiagram[horizontal=a  to b]{a --v [particle=$1PI$] -- b}; &= i \slashed{p} \left[1 + \underbrace{\Sigma^{q \bar{q}}_V (k^2) +\delta Z_q}_{=:\hat{\Sigma}^{q \bar{q}}_V(k^2) \text{ (3)}} \right]\\
+	(3)\Rightarrow \quad \delta Z_q &= - \Sigma^{q\bar{ q}}_V (k^2) |_{\bar{UV}} = - \frac{\alpha_s}{4 \pi} C_F \frac{1}{\bar{\epsilon}}.
+\end{align*}
+\item 
+\begin{align*}
+	\feynmandiagram[horizontal=a to b]{a --[gluon] v [particle=$1PI$] -- b, v--c}; &= -i g_s t^a \gamma_\mu - ig_s \underbrace{\left[\Lambda^a_\mu (p,\bar{p}) + t^a \gamma_\mu (\delta Z_{g_s} + \delta Z_q + \half \delta Z_A) \right]}_{=: \hat{\Lambda}^a_\mu(p,\bar{p}) \text{ (4)} }\\
+		(4) \Rightarrow \quad \delta Z_{g_s} &= \frac{\alpha_s}{4\pi} \frac{1}{\bar{\epsilon}} \left[ \frac{N_f}{3} - \frac{11}{6} C_A\right].
+\end{align*}
 \end{enumerate}
+\subsubsection{Running coupling and beta-function}
+First and foremost a warning, the concept of running coupling, renormalization scale and $\beta$-function has already been discussed in \ref{subsec:renormalizationqed}, but has not been generally defined. All of this comes after this section when we talk about renormalization flow in detail.\\
+With the counterterms known, we can now infer the $\beta$-function of QCD at one-loop. Note that the $\mu$-dependence introduced before is completely arbitrary. $\mu$ is normally called \emph{renormalization scale} and is discussed in more detail in the following \ref{eq:callansymanzik}. The arbitrariness of $\mu$ implies that explicit and implicit $\mu$-dependencies have to cancel.
+One can do an expansion of the $\beta$-function to all orders in perturbation theory
+      \be 
+      \beta(\alpha_s) := \frac{\md \ln \alpha_s}{\md \ln \mu^2} = - \sum_{n=1}^{\infty} \beta_{n-1} \left(\frac{\alpha_s}{2 \pi}\right)^n= - \beta_0 \frac{\alpha_s}{2\pi}- \dots
+      \ee 
+      where we find the first order result via
+      \bse 
+      \beta_0 = g_s \frac{\md Z^{(1)}_{g_s}}{\md g_s} = 2 \frac{g^2_s}{(4 \pi)^2},\quad Z_{gs} = \sum_{n=1}^{\infty} \frac{1}{\epsilon^n} Z^{(1)}_{g_s}
+      \ese  
+      to be 
+      \be 
+      \beta_0 = \frac{11}{6} C_A  - \frac{N_f}{3}.
+      \ee 
+      Note that $\beta_0 >0$ for $N_f \geq 16$, which is experimentally known. Therefore, $\alpha_s=\frac{g^2_s}{4 \pi}$ decreases for higher scales, this phenomenon is known as \emph{asymptotic freedom}.
+      This result is also derived in \ref{eq:betafunctionYangMills} and discussed in more detail in \ref{subsec:qcdrunningcoupling}.
+      
 
 
 
 
 
 
-
-
-
-
-
-
- 
 
 
 \subsection{Renormalization flow (Callan-Symanzik flow)}
@@ -2397,125 +2742,6 @@ Scalar mass of Yukawa theory is screening mass in Yukawa potential between two c
 \end{equation}
 which lead to the prediction of a scalar (the pion $\pi^0$) with a mass of $m_\phi \approx 200$ MeV mediating nuclear force.
 \todo{think about this}
-\subsection{Renormalization of phi 4 theory}
-$\phi^4$ theory is perturbatively renormalizable in $d=4$ because 
-\begin{equation}
-[\lambda]=0.
-\end{equation}
-\subsubsection{Superficially divergent amplitudes in $d=4$}
-Superficial degree of divergence is 
-\begin{equation}
-	D=4-E \Rightarrow\; E\leq 4 \text{ are divergent amplitudes},
-\end{equation}
-such that amplitudes with $E\leq 4$ are superficially divergent.
-\begin{align}
-	&E=0 \Rightarrow D=4: \quad (\text{vacuum energy})\\
-	&[E=1 \Rightarrow D=3 \quad (\text{tadpole})]\\
-	&E=2 \Rightarrow D=2: \quad D_F(p^2) \; (\text{propagator})\\
-	&[E=3 \Rightarrow D=1 \quad (\phi^3 \text{ vertex})]\\
-	&E=4 \Rightarrow D=0: \quad \mM_4(s,t,u) (\phi^4 \text{ vertex}).
-\end{align}
-Amplitudes with odd numbers of $\phi$ vanish by $Z_2$ symmetry $\phi \rightarrow - \phi$ and eliminate the divergence of $E=1$ and $E=3$ so we are left with $3$ divergent amplitudes.
-\subsubsection{Renormalization conditions and renormalized perturbation theory}
-
-\begin{mybox}{Example of how to renormalize via counterterms}
-The renormalization conditions are
-\begin{align}
-	D_F(p^2) = \frac{i}{p^2-m^2-M^2(p^2)} &\stackrel{!}{=} \frac{i}{p^2-m^2} + (\text{regular})\\
-	\mM_4(4m^2,0,0) \stackrel{!}{=} -i\lambda.
-\end{align}
-Introduce the notation
-\begin{equation}
-	\phi := \frac{\phi_0}{\sqrt{Z}},\; \delta_\phi:= Z-1,\; \delta_m:= m^2_0 Z-m^2,\; \delta_\lambda:= \lambda_0 Z^2-\lambda
-\end{equation}
-to rewrite the Lagrangian in terms of a renormalized Lagrangian $\mL_r$ and counter terms
-\begin{equation}
-\mL = \mL_r+\frac{\delta_\phi}{2} (\partial \phi)^2 - \frac{\delta_m}{2} \phi^2 - \frac{\delta_\lambda}{4!} \phi^4
-\end{equation}
-such that we get new vertices at order $\lambda$:
-\begin{align}
-	\expval{ \prod_{i=1}^{2}\phi(x_i) \int \md^4  \left(\frac{\delta_\phi}{2} (\partial \phi)^2 - \frac{\delta_m}{2} \phi^2\right)} &\leftrightarrow i(p^2\delta_\phi -\delta_m) \\
-	\expval{ \prod_{i=1}^4 \phi(x_i) \int \md^4x \frac{-\delta_\lambda}{4!}\phi^4 (x) } &\leftrightarrow -i \delta_{\lambda}.
-\end{align}
-Note that the proapgator renormalization condition in terms of scalar self-energy $M^2(p^2)$ is
-\begin{equation}
-	M^2(m^2) \stackrel{!}{=}0 \text{  and  } \frac{\md}{\md p^2}M^2(m^2) \stackrel{!}{=}0.
-\end{equation}
-\end{mybox}
-Introduction of counterterms explicitly:
-\begin{align*}
-	\mL &= \half (\partial \phi_0)^2 -\half m^2_0 \phi^2_0 - \frac{\lambda_0}{4!} \phi^4 \\
-	&= \half \partial(\sqrt{Z}\phi)^2-\half m^2_0(\sqrt{Z}\phi)^2 - \frac{\lambda_0}{4!}(\sqrt{Z} \phi)^4 \\
-	&= \half Z(\partial \phi)^2 - \half Z m^2_0 \phi^2 - \frac{\lambda_0}{4!} Z^2 \phi^4 \\
-	&= [\half Z(\partial \phi)^2+\half (\partial \phi)^2-\half (\partial \phi)^2] \\
-	&-[\half Zm^2_0 \phi^2+\half m^2 \phi^2-\half m^2\phi^2] \\
-	&- [\frac{\lambda_0}{4!}Z^2\phi^4 + \frac{\lambda}{4!} \phi^4-\frac{\lambda}{4!}\phi^4 ]\\
-	&= \mL_r + [\half Z(\partial \phi)^2-\half(\partial \phi)^2]\\
-	&-[\half Z m^2_0 \phi^2-\half m^2\phi^2] - [\frac{\lambda_0}{4!} Z^2 \phi^4 -\frac{\lambda}{4!} \phi^4] \\
-	&=\mL_r + \half [Z-1] (\partial \phi)^2 - \half [Zm^2_0-m^2] \phi^2-\frac{1}{4!} [\lambda_0 Z^2-\lambda] \phi^4\\
-	&= \mL_r+ \frac{\delta_\phi}{2} (\partial \phi)^2 -\frac{\delta_m}{2} \phi^2 - \frac{\delta_\lambda}{4!}\phi^4 \qquad \blacksquare
-\end{align*}
-\subsubsection{Explicit renormalization analysis of $\phi^4$}
-\label{subsubsec:phifourrenormalization}
-We have, as exemplified above
-\begin{align*}
-	\mL_{\phi^4} &= \half (\partial \phi_0)^2-\frac{m^2_0}{2} -\frac{\lambda_0}{4!} \phi^4_0 \\
-	&= \half (\partial \phi)^2-\frac{m^2}{2}\phi^2-\frac{\lambda}{4!}\phi^4 + \frac{\delta_Z}{2} (\partial \phi)^2 -\frac{\delta_m}{2} \phi^2 -\frac{\delta_\lambda}{4!} \phi^4\\
-	&=\mL_r +  \frac{\delta_Z}{2} (\partial \phi)^2 -\frac{\delta_m}{2} \phi^2 -\frac{\delta_\lambda}{4!} \phi^4 
-\end{align*}
-where we split the divergent Lagrangian into two contributions. The first only contains finite so-called \emph{renormalized quantities} with values as they would be measured in experiment. The second part absorbs all divergences in so-called \emph{counterterms}. These are for $\phi^4$:
-\begin{align*}
-	\phi &= \phi_0 Z^{-\half} \text{ wavefunction renormalization}\\
-	\feynmandiagram{a--[fermion]b}; &= \frac{i}{p^2-m^2+i \epsilon},\\
-	\feynmandiagram[horizontal=a to b]{a--[fermion] c [crossed dot] --[fermion] b};&= i (p^2 \delta_Z-\delta_m),\\
-	\feynmandiagram{a--v[dot]--b, c--v--d};&=- i \lambda,\\
-	\feynmandiagram{a--v[crossed dot] --b, c--v--d}; &=-i \delta_\lambda.
-\end{align*}
-In this theory we have
-\begin{equation}
-	D=4L-2P,\; L=P-V+1 \; \text{use Euler } 4 V=2 P+E \; \Rightarrow D=4-E.
-\end{equation}
-Thus, $\lambda \phi^4$ theory is renormalizable, also seen by $[\lambda]=0$ vanishing mass-dimension.\\
-The superficially divergent diagrams are
-\begin{enumerate}
-	\item $\feynmandiagram{a[blob]};\quad D=4$,
-	\item $\feynmandiagram{a--b[blob]}; \quad D=3$,
-	\item $\feynmandiagram{a--c[blob]--b};\quad D=2$,
-	\item $\feynmandiagram{a--c[blob]--b, d--c}; \quad D=1$
-	\item $\feynmandiagram{a--v[blob]--b, d--v--e};\quad D=0$.
-\end{enumerate}
-Since $\mL_{\phi^4}$ is invariant under Paritiy transformation (\textbf{always check for symmetries !}), all diagrams with an odd number of external lines vanish: $2\&4)=0$. \\
-Why are we tasked with renormalizing the propagator and the vertex ?\\
-The vacuum diagram can be trivially absorbed in the vacuum energy density $V_0$, an additional degree of freedom of any Lagrangian, which we did not write down explicitly, since the absolute energy scale is meaningless in a theory without gravity. Thus, propagator and vertex are the only fundamental divergences in $\phi^4$-theory . All others are due to diagrams containing those two as subdiagrams.\\
-\\
-$s,t,u$-channel have identical contributions with $s=p^2=(p_1+p_2)^2$, $u=p^2=(p_1-p_4)^2$, $t=p^2=(p_1-p_3)^2$
-\begin{align}
-	(-i \lambda)^2 i V(p^2) &:= \frac{(-i \lambda)^2}{2} \int \frac{\md^d k}{(2 \pi)^d} \frac{i}{k^2-m^2+i\epsilon} \frac{i}{(p+k)^2-m^2+i\epsilon} \\
-	&\equiv \feynmandiagram [layered layout, horizontal=i_1 to f_1] [edges=fermion] {
-		{i1, i2} -- a -- [half left, momentum=\(k\)] b -- [half left, momentum=\(k-p\)] a,
-		b -- {f1, f2},
-	};;.
-\end{align}
-Now we fix some energy scale $s_0,u_0,t_0$ and insert it into the $1$-loop amplitude to remove the divergences.
-\todo{Finish this treatment}
-\\
-\\
-If we were to consider the propagator to second loop order, we would have to look at
-\begin{align}
--i M^2(p^2) |_{\mO(\lambda^2)} &= \feynmandiagram{a -- c [particle=$1PI$]--b}; \\
-&= \feynmandiagram{a--v--b,v--[loop] v};+ \feynmandiagram[horizontal=v to w]{a--v--w--v, v--[half left] w, w--[half left] v, w--b}; \\
-&+\feynmandiagram[horizontal=a to b]{a --v[crossed dot] --b, v--[half left,loop] v};+\feynmandiagram{a--v[crossed dot]--b[particle=$\delta^{1-loop}_Z$]}; 
-\\
-&+ \feynmandiagram{a--v[crossed dot]--b[ particle=$\delta^{2-loop}_Z$]};. 
-\end{align}
-In general, one can simply write down the diagrams via the Feynman rules and then impose the renormalization conditions on them to identify the counter-terms From this, one can already extract the form of the propagator or transition amplitude. Afterwards, one can do the dimensional reg. calculation in order to explicitly find divergences and hide it in the counterterms.
-\\
-\\
-Note that we can write 
-\begin{equation}
-	\feynmandiagram[horizontal=a to b]{a--v[crossed dot] --b, v--[half left] v};= \left[	\feynmandiagram[horizontal=a to b]{a--v --b, v--[loop] v};\right]_{\lambda \rightarrow \delta_\lambda}.
-\end{equation}
-
 
 
 
@@ -3504,200 +3730,12 @@ as a $4$-vertex with $\sigma=\rho$ and $d=c$.
 
 
 
-
-\subsection{$1$-Loop renormalization of YM-theory and Beta-function}
-YM theory is power-counting renormalizable since $[g]=0$.\\
-We start from the bare gauge-fixed Lagrangian
-\begin{align*}
-	\mL &= - \frac{1}{4} \left(\partial_\mu A^a_{0\;\nu} - \partial_\nu A^a_{0 \; \mu} \right)^2 - \frac{1}{2 \xi_0} (\partial A^a_0)^2 + \bar{\psi}_0 (i \slashed{\partial} - m_0) \psi_0 \\
-	& - \bar{c}_c \partial_\mu \partial^\mu c_0 - g_0 A_{0\mu} \bar{\psi}_0 \gamma^\mu T^a \psi_0 + g_0 f^{abc} (\partial_\mu A^a_{0\nu}) A^{b\mu}_0 A^{c \nu}_0 \\
-	&-\frac{1}{4} g^2_0 f^{abc} f^{ade} A^{\mu b}_0 A^{\nu c}_0 A^d_{\mu 0} A^e_{\nu 0} + g_0 \bar{c}_0 f^{abc} \partial^\mu A^b_{0 \mu} c^c_0
-\end{align*}
-and we perform field strength renormalizations
-\begin{equation}
-	A_0 = \sqrt{Z_3}A, \; \xi_0=Z_3 \xi, \; \psi_0= \sqrt{Z_2}\psi, \; \stackrel{(-)}{c}_0 = \sqrt{Z^c_2} \stackrel{(-)}{c}.
-\end{equation}
-This gives eight counterterms - not all independent:
-\begin{align*}
-	\delta_2 &=Z_2 -1, \; \delta_3 = Z_3-1, \; \delta^{(c)} = Z^{(c)}_2 -1, \; \delta_m = Z_2 m_0 -m,\\
-	 \delta_1 &= \frac{g_0}{g} Z_2 \sqrt{Z_3}-1, \delta^{cubic}_1 = \frac{g_0}{g} Z^{3/2}_3-1,\\
-	  \delta^{quartic}_1 &= \frac{g_0}{g}Z^2_3-1, \; \delta^{(c)}_1 = \frac{g_0}{g} Z^c_2 \sqrt{Z_3}-1.
-\end{align*}
-Note: Due to renormalization of $\xi_0$, the kinetic counterterm for $A_\mu$ becomes independent of $\xi$
-\begin{equation*}
-	-\frac{1}{4} \delta_3 ( \partial_\mu A_\nu - \partial_\nu A_\mu)^2.
-\end{equation*}
-Thus, among others, we have the counterterms
-\begin{align}
-	\feynmandiagram[horizontal=a to b]{a [particle=$A$] -- [gluon] c [crossed dot] --[gluon] b [particle=$b$]};
-	&= -i (k^2 \eta^{\mu \nu} - k^\mu k^\nu) \delta^{ab} \delta_3 \\
-	\feynmandiagram[horizontal=a to b]{a [particle=$i$] --[anti fermion] c [crossed dot] -- [anti fermion] b [particle=$j$]};
-	&= i \gamma^\mu p_\mu \delta_2 \delta_{ij} \\
-	\feynmandiagram[horizontal=a to b]{a -- [fermion] v [crossed dot] -- [anti fermion] b, c [particle=${(\mu,a)}$] --[boson] v};
-	&= -ig T^a \gamma^\mu \delta_1
-\end{align}
-and in addition those for $A^3,A^4, \bar{c} A c+\bar{c} c$ $\& \psi$-mass.+
-\\
-\\
-Our Aim is to extract the $1$-loop $\beta$-function for $g$.\\
-Since $\beta(g)$ is sensitive only to UV-divergences, we can henceforth set $m=0$. As in QED, we extract $\beta(g)$ from the Callen-Symancyk equation for the $3$-point function $\expval{A\bar{\psi} \psi}$ as
-\begin{equation}
-\beta(g) = g \mu \frac{\partial}{\partial \mu} \left(-\delta_1 + \delta_2 + \half \delta_3\right) \quad \text{at $1$-loop}.
-\end{equation}
-We therefore only need the $mu$-dependence of $\delta_1,\delta_2,\delta_3$. We will see that after cancellations all divergences are of the form 
-$\frac{\Gamma(2-\frac{\md}{2})}{\Delta^{2-\frac{\md}{2}} }$ in dimensional regularization with $\Delta$ some $p^2$-invariant. We can identify
-\begin{equation}
-	\mu^2 = \Delta
-\end{equation}
-by choice of renormalization conditions and extract only the divergences of $\delta_i$ for $\beta(g)$.
-
-
-
- \subsubsection{Preliminaries in Group Theory}
-Given a representation $R$ with $T^a_R \equiv (T^a_R)_{ij}$, $i,j=1,\dots,\dim R$, i.e. a matrix representation, of a Lie algebra $Lie(H)$ with dimension $\dim H$, the \emph{second Casimir} $C_2(R)$ is defined via 
-\begin{equation}
-	\sum_a T^a_R T^a_R = T^a_R T^a_R= C_2(R) \cdot \mI.
-\end{equation}
-If we normalize the $T^a_R$ such that
-\begin{equation}
-	\tr T^a_R T^b_R = \underbrace{C(R)}_{\text{normalization group factor}} \delta^{ab}
-\end{equation}
-then
-\begin{equation}
-	\dim(R) C_2 (R) = C(R) \cdot \dim(H).
-\end{equation}
-Consider the examples
-\begin{enumerate}
-	\item Let $R=f$ be the fundamental representation of $SU(N)$ normalized such that\begin{equation}
-		\tr(T^a_f T^b_f) = \half \delta^{ab} \quad \Rightarrow \quad C(f) = \half.
-	\end{equation}
-	Then 
-	\begin{equation}
-		C_2(f) = \half \frac{\dim(SU(N)) }{\dim(f)} = \half \frac{N^2-1}{N}.
-	\end{equation}
-	\item Let $R=Ad$ be the adjoint representation of $H$, defined such that 
-	\begin{equation}
-		(T^b_{Ad})_{ac} = i f^{abc} \quad \Rightarrow \quad C(H) := C(Ad)
-	\end{equation}
-	computable via
-	\begin{align*}
-		C(H)\delta^{ab} &= \tr(T^a_{Ad} T^b_{Ad})= -f^{dac} f^{cbd},\quad C(H) \delta^{ab} = f^{acd} f^{bcd} \\
-		 C_2(H) \delta^{ab} &= (T^a_{Ad})_{bc} (T^a_{Ad})_{cd} = f^{cab} f^{cae} \\
-		\Rightarrow \quad C(H) & = C_2(H),
-	\end{align*}
-also follows since $\dim(Ad)=\dim(H)$. For example, $H=SU(N)$ gives us 
-\begin{equation*}
-	C(SU(N)) = N.
-\end{equation*}
-\end{enumerate}
-
-
-
-\subsubsection{Computation of $\delta_3$}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.5\linewidth]{gfx/YMpictures/YMselfenergy}
-	\caption{YM self-energy renormalization}
-	\label{fig:ymselfenergy}
-\end{figure}
-As in QED, \begin{equation}
-	q^\mu \Pi\munu(q)=0,
-\end{equation}
-which is a consequence of the Slavnov-Taylor identities. So we have
-\begin{equation*}
-	\Pi\munu(q)=i (q^2 \eta^{\mu \nu} - q^\mu q^\nu) \Pi(q^2).
-\end{equation*}
-Thus, compute the four diagrams $i)-iv)$ to find $\delta_3$:
-\begin{enumerate}
-	\item[i)] Choosing $\Delta:= -x(1-x)q^2$ with renormalization scale $\mu$, we find
-	\begin{equation}
-		\delta_3 |_{i)} = -\frac{g^2}{(4 \pi)^2} \frac{4}{3} C(R) \frac{\Gamma(2-\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}}}
-	\end{equation}
-	for a fermion in representation $R$.\\
-	\\
-	Note that the pure YM diagrams $ii)-iv)$ (pure in the sense that they do not appear in QED) are computed in Feynman gauge $\xi=1$.
-	\item[ii)] Contains two types of divergences, via dimensional Regularization:
-	\begin{enumerate}
-		\item $\Gamma(2-\frac{\md}{2})\times \dots \leftrightarrow$ corresponds to logarithmic divergences in $\md=4$.
-		\item $\Gamma(1-\frac{\md}{2})\times \dots \leftrightarrow$ corresponds to logarithmic divergence in $\md=2$, i.e. $\int \frac{\md^{\md} p}{(p^2)}$ and thus a quadratic divergence in $\md=4$.
-	\end{enumerate}
-A quadratic divergence would indicate a renormalization of the gauge boson mass, which is forbidden by gauge invariance. This term must hence cancel against other contributions.
-\item[iii)]
-\begin{equation}
-	iii)= \left[A \cdot \Gamma(1-\frac{\md}{2}) + B\cdot \Gamma(2-\frac{\md}{2}) \right] C_2(H) \delta^{ab} 
-\end{equation}
-\item[iv)]
-We get a $(-1)$ sign from Grassman fields in loop
-\begin{align}
-	iv)&= (-1) \int \frac{\md^4p}{(2 \pi)^4} \frac{i}{p^2} \frac{i}{(p+q)^2} g^2 f^{dac} (p+q)^\mu f^{cbd} p^\nu \nonumber \\
-	&= C_2(H) \delta^{ab} \left[C \cdot \Gamma(1-\frac{\md}{2}) + D\cdot \Gamma(2-\frac{\md}{2})\right].
-\end{align}
-\end{enumerate}
-The terms proportional to $\Gamma(1-\frac{\md}{2})$ of $ii)+iii)+iv)$ precisely cancel - as required by gauge invariance.
-\\
-Thus, the counterterm for $1)$ $n_f$ fermions in Representation $R_f+2)+3)+4)$ (with $\Delta= \mu^2$) is
-\begin{equation}
-	\delta_3 = \frac{g^2}{(4 \pi)^2} \frac{\Gamma(2-\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}}} \left[\frac{5}{3} C_2(H) - \frac{4}{3} n_f C(R_f)\right].
-\end{equation}
-
-
-
- \subsubsection{Computation of $\delta_2$}
- 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{gfx/YMpictures/YMoneLoopDelta2}
-	\caption{}
-	\label{fig:ymoneloopdelta2}
-\end{figure}
- Since we only need the UV divergences, we set again $m=0$.
- \\The group theory factor is $T^a_R T^a_R = C_2(R) \cdot \mI$, thus
- \begin{align}
- 	\ref{fig:ymoneloopdelta2} &= C_2(R)\mI  \times \left(\feynmandiagram[horizontal=a to b]{a--c--d--b, c--[boson, half left]d};\right)|_{QED} \\
- 	&= C_2(R) \frac{i g^2}{(4 \pi)^{\frac{\md}{2}} } \slashed{p} \int_0^1 \md x (1-x)(\md -2 ) \frac{\Gamma(2-\frac{\md}{2})}{\Delta^{2-\frac{\md}{2}}}
- \end{align}
-with $\Delta=-x(1-x)p^2$.\\ 
-Identifying $\Delta=\mu^2$ yields
-\begin{equation}
-	\delta_2 = - \frac{g^2}{(4 \pi)^2} \frac{\Gamma(2-\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}} } C_2(R).
-\end{equation}
-
-
-\subsubsection{Computation of $\delta_1$}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{gfx/YMpictures/YMoneLoopDeltaOne}
-	\caption{}
-	\label{fig:ymoneloopdeltaone}
-\end{figure}
-Consider the two separate diagrams individually
-\begin{enumerate}
-	\item[i)] In QED the Ward identities imply $\delta_1 |_{QED} = \delta_2|_{QED}$. We can factorize the diagram into contributions from YM and QED similar interactions like the following with this identity
-	\begin{equation}
-		\delta_1 |_{i)} = \underbrace{- \frac{g^2}{(4 \pi)^2} \frac{\Gamma(2-\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}} }}_{= T^a_R \cdot ({i)}_{QED})} \left(C_2(R)-\half C_2(H)\right),
-	\end{equation}
-	where we used the results from our QED calculations and just included the group theory factor..
-	\item[ii)] Applying the same logic here, we find
-	\begin{equation}
-		\delta_1 |_{ii)} = -\frac{g^2}{(4 \pi)^2} \frac{\Gamma(2-\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}} } \frac{3}{2} C_2(H).
-	\end{equation}
-\end{enumerate}
-Altogether
- \begin{equation}
- 	\delta_1 = - \frac{g^2}{(4 \pi)^2} \frac{\Gamma(2-\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}}} \left[C_2(R)+C_2(H)\right].
- \end{equation}
- 
- \subsubsection{YM  $\beta$-function at $1$-loop in $g$}
-The final result is found by noting that the divergencies vanish for the computation of the $\beta$-function since
-\begin{align*}
-	\mu \frac{\partial}{\partial \mu} \frac{\Gamma(2 -\frac{\md}{2})}{(\mu^2)^{2-\frac{\md}{2}} } &= (\md -4) \mu^{(\md-4)} \Gamma(2-\frac{\md}{2}) \\
-	&\stackrel{\md=4-\epsilon}{=} (-\epsilon) \mu^{-\epsilon} \left(\frac{2}{\epsilon} -\gamma + \mO(\epsilon)\right) \\
-	&\stackrel{\epsilon\rightarrow 0}{=} -2.
-\end{align*}
+\subsection{Running coupling in YM}
+\subsubsection{YM  $\beta$-function at $1$-loop in $g$}
+As derived in \ref{subsec:renormalizationYM}, we state again the YM beta function at one-loop order \ref{eq:betafunctionYangMills}.
 \begin{mybox}{YM $\beta$ function to leading order in $\md=4$}
 	\begin{equation}
-		\label{eq:betafunctionYangMills}
-		\beta^{(1)}_{YM}(g) = - \frac{g^3}{(4 \pi)^2} \left[\frac{11}{3} C_2(H) - \frac{4}{3} n_f C(R_f)\right].
+	\beta^{(1)}_{YM}(g) = - \frac{g^3}{(4 \pi)^2} \left[\frac{11}{3} C_2(H) - \frac{4}{3} n_f C(R_f)\right].
 	\end{equation}
 \end{mybox}
 \subsubsection{Crucial Implications}
@@ -3937,47 +3975,22 @@ Now, in order to find the Lagrangian of QCD in this way we do the following step
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\subsection{Renormalization of QCD}
-
-\subsubsection{Running coupling and $\beta$-function}
+\subsection{Running coupling and beta-function}
+\label{subsec:qcdrunningcoupling}
 Using our result for the $1$-loop YM beta function \ref{eq:betafunctionYangMills} we have
 \begin{equation}
-	\beta(g) = -\frac{g^3}{(4 \pi)^2} b_0+ \mO(g^5)
+	\beta(g) = -\frac{g^3}{(4 \pi)^2} \beta_0+ \mO(g^5)
 \end{equation}
 with
 \begin{equation}
-	b_0=\left(\frac{11}{3}\cdot 3 - \frac{2}{3} \cdot 6\right) = 7
+	\beta_0=\left(\frac{11}{3}\cdot 3 - \frac{2}{3} \cdot 6\right) = 7
 \end{equation}
-which comes from $N=3$ for $SU(3)$ and $n_f=6$ quarks being contained in our theory.\\
+which comes from $N=3$ for $SU(3)$ and $n_f=6$ quarks being contained in our theory.
 \begin{mybox}{QCD Running Coupling}
 	Note that $\alpha_s =\frac{g^2}{4 \pi}$ runs as
 	\begin{equation}
 		\label{eq:qcdrunningcoupling}
-		\alpha_s(\mu) = \frac{\alpha_s(\mu_0)}{1 + b_0 \frac{\alpha_s(\mu_0)}{2 \pi} \ln(\frac{\mu}{\mu_0})}.
+		\alpha_s(\mu) = \frac{\alpha_s(\mu_0)}{1 + \beta_0 \frac{\alpha_s(\mu_0)}{2 \pi} \ln(\frac{\mu}{\mu_0})}.
 	\end{equation}
 	Experimentally for $\mu_0\approx 91.2$ GeV (the mass of the $Z^0$-boson) we have $\alpha_s(\mu_0)\approx 0.118$.\\
 \end{mybox}
@@ -3990,24 +4003,20 @@ Define the strong scale $\Lambda_{QCD}$ such that at $1$ loop
 \end{equation}
 i.e. via
 \begin{equation*}
-	1+b_0 \frac{\alpha_s(\mu_0)}{2 \pi} \ln(\frac{\Lambda_{QCD}}{\mu_0}) =0.
+	1+\beta_0 \frac{\alpha_s(\mu_0)}{2 \pi} \ln(\frac{\Lambda_{QCD}}{\mu_0}) =0, \Leftrightarrow \; \Lambda_{QCD} \approx \mu_0 \exp \left[- \frac{1}{2 \beta_0 \frac{\alpha_s(\mu_0)}{2 \pi}}\right]
 \end{equation*}
-Then $\Lambda_{QCD} \approx 200$MeV and $\alpha_s$ runs as 
+with $\Lambda_{QCD}\approx 200$MeV experimentally, where $\Lambda_{QCD}$ is called the \emph{fundamental scale of QCD} which indicates \emph{hadronization}. Then we have
+\bse 
+\alpha_s(\mu^2) = \frac{2 \pi}{\beta_0 \ln(\frac{\mu}{\Lambda_{QCD}} )}
+\ese 
+$\alpha_s$ runs as 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{gfx/YMpictures/QCDrunningcoupling}
 	\caption{Running coupling of QCD}
 	\label{fig:qcdrunningcoupling}
 \end{figure}
-
-
-
-
-
-
-
-
-according to the perturbative analysis.
+according to the perturbative analysis. Note that everything below $\Lambda_{QCD}$ corresponds to \emph{confinement} and getting close to $\Lambda_{QCD}$ you should stop doing perturbation theory.
 \\
 Perturbation theory is valid only for processes at typical energies at $\geq 1$GeV; below that use non-perturbative methods (e.g. lattice QCD, a numerical approach to solve the path-integral due to Wilson) must be used, and they confirm that $\alpha_s$ becomes strong in the IR.
 \subsection{Phase structure}
