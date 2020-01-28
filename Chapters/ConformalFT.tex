@@ -570,6 +570,19 @@ in radial quantization.
 	In CFT, there is a one-to-one correspondence between states $\ket{\psi}\in \mH$ and local operators acting on $\mH$.
 \end{mybox}
 \todo{Look at Tong's notes for a more in-depth discussion}
+
+\begin{mybox}{State-operator Isomorphism}
+	\begin{equation}
+	\text{Local operators on the boundary }\leftrightarrow \text{ states on the interval}
+	\end{equation}
+	in pathintegral formalism
+	\begin{equation}
+	\Psi_{\mO} [\phi_b] = \int \mD \phi e^{i S[\phi]} \mO(0)|_{\phi(x)=\phi_b(x) \text{ for } x\in b}
+	\end{equation}
+	is Schrödinger wave functional that maps operator $\mO$ to state $\braket{\Omega}{\Psi}$.
+\end{mybox}
+
+
 What follows is a sketch or motivation of why that is so.\\
 First consider states in QM, i.e. $1$ particle in $1$ spatial dimension. States are equivalent to solutions of the Schrödinger equation, i.e. to Schrödinger-wave functions $\psi(x,t_0)$ at time $t_0$. An initial state is obtained for
 \bse 
@@ -693,7 +706,9 @@ Action of conformal symmetry on $\ket{\hat{ \mO}}$ is with $x=0$ and thus
  where $C_{\mO}(x,\partial_y)$ should be thought of as a power series in $\partial_y$ generating the descendants (not necessarily scalar, can dependent on different indices).\\
  This is convergent as long as there are no operators between $x$ and $0$.
  \end{mybox}
-The proof stems from the operator-state equivalence: You can expand the product of states via the completeness relation to a sum of states, i.e. a sum of operators
+The proof stems from the operator-state equivalence: You can expand the product of states via the completeness relation to a sum of states, i.e. a sum of operators. We have translation invariance, so we can simply put $0 \rightarrow x$ and expand the OPE to any other space-time point. In ordinary QFT, this expression is asymptotic and in general does not converge.\\
+Where the three-point coefficient is determined, $C_{\mO}$ only depends on the quantum numbers of $\mO$, i.e. $\mO_{\Delta,I}$ (it only depends on $\Delta$, Lorentz rep ..).\\
+
 \subsubsection{Consequence}
 This means that we can reduce an $n$-point function to a $(n-1)$-point function
 \bse 
@@ -722,7 +737,6 @@ E.g. for the LO term as $x\rightarrow 0$
 	&= \frac{1}{\abs{x}^{\Delta_1 +\Delta_2 -\Delta_3} \abs{z}^{2 \Delta_3} } = RHS \\
 	\Leftrightarrow \quad C_{\Delta_3}(x,\partial_y) &= \frac{1}{\abs{x}^{\Delta_1+\Delta_2-\Delta_3} } + \mO(NLO).
 \end{align*}
-
 
 
 
@@ -873,26 +887,135 @@ and therefore
  		\end{equation}
  		which converges absolutely and exponentially fast if there exists a ball around $\mO_i$ and $\mO_j$ with no other operator inside.
  	\end{mybox}
+ 	\section{Conformal blocks and the conformal bootstrap programme}
+ 	\subsection{CFT data - summary}
+ 	Any CFT is characterized by the \emph{spectrum} of local primary operators $\{\mO_{\Delta,I} \}$\footnote{$\Delta$ are the dilatation weights which can be non-integer, $I$ indicates the Lorentz rep}. Two-point functions are fixed up to a normalization (e.g. for scalars \ref{eq:cftCorrelatorTwoPoint}) and we can normalize the operators e.g.
+ 	\bse 
+ 	\mO \rightarrow \frac{\mO_\Delta(x)}{\sqrt{A}} \equiv \mO^\prime_{\Delta} (x) 
+ 	\ese  
+ 	such that the two-point functions are completely fixed 
+ 	\bse 
+ 	\expval{\mO^\prime_{\Delta}(x) \mO^\prime_{\Delta}(y)} = \frac{1}{\abs{x-y}^{2 \Delta}}. 
+ 	\ese 
+ 	\footnote{If more than one operator in the same conformal representation we can take linear combinations so they have zero two-point functions with each other.}
+ 	Three-point functions are fixed up to constant (at least where there are at least two scalars), compare \ref{eq:cftCorrelatorThreePoint}. The OPE in turn is fixed in terms of these three-point functions.
+ 	\begin{mybox}{}
+ 		We therefore call the set $\{\text{spectrum, OPE coeff.} \}$ the \emph{CFT data} 
+ 		\bse 
+ 		\{\mO_{\Delta,I}, C_{\mO_1 \mO_2 \mO_3} \}.
+ 		\ese 
+ 		With this data we can compute \emph{any} correlation function i.e. it completely determines the theory.
+ 	\end{mybox}
+Determination means here that we can reduce every $n$-point correlator to $(n-1)$-point correlators via \ref{eq:cftOPE}.
+\subsection{Consistency conditions on CFT data}
+ Does any set of random CFT data provide a good CFT, no it does not.
+ \subsubsection{Unitariy of CFT in more than two space-dimensions}
+ 	Unitarity imposes bounds on the allowed values of $\Delta$ (for given Lorentz rep). Apart from the identity operator with $\Delta =0$, we have the following bound for unitariy 
+ 	\be 
+ 	\Delta \geq \frac{D}{2}-1.
+ 	\ee 
+ 	This bound is obtained via radial quantization (conformal generators acting on state and its conjugate). Note that the free scalar saturates this bound.
+ 	Therefore, first of all the data has to satisfy unitarity bound.
+ 	
+ 	\subsubsection{Bound from four-point functions}
+ 	The existence of four-point functions puts an applicable bound on the theory.  Expand the four-point function via one OPE on $\phi_1 \phi_2$ and one OPE on $\phi_3 \phi_4$:
+ 	\begin{align*}
+ 	 \expval{\phi_1 (x_1) \phi_2(x_2) \phi_3(x_3) \phi_4(x_4)} &= \sum_{\mO} C_{12 \mO} C_{34\mO} \left[ C_{\mO}(x_{12},\partial_y) C_{\mO}(x_{34},\partial_z) \expval{\mO(y) \mO(z)} \right]_{y=x_2, z=x_4},
+ 	\end{align*}\footnote{Where the sum actually runs over $\mO, \mO^\prime$, but via orthonormalization as with \ref{eq:cftCorrelatorTwoPoint} we can reduce it to the same primary.}
+ 	where the object in brackets is teory independent and it depends only on dimension and Lorentz rep of $\Delta$. This object is called a  \emph{conformal partial wave} or \emph{conformal block} $P\times G_{\mO} (x_1 ,x_2 , x_3,x_4)$
+ 	\be 
+ 	\label{eq:cftConformalBlock}
+ 	\expval{\phi_1(x_1) \phi_2(x_2) \phi_3(x_3) \phi_4(x_4)} = P \sum_{\mO} C_{12\mO} C_{34\mO} G_{\mO}(x_1,x_2,x_3,x_4),
+ 	\ee 
+ 	where $P$ is the same as in \ref{eq:cftCorrelatorFourPoint}. Diagrammatically we write this as 
+ 	 	\bse 
+  	\expval{\phi_1(x_1) \phi_2(x_2) \phi_3(x_3) \phi_4(x_4)} = P \sum_{\mO} C_{12\mO} C_{34\mO} %\feynmandiagram[horizontal=a to b]{a [particle=$1$] --m -- [momentum=\(\mO\)] n -- b [particle=$4$], c[particle=$2$]--m, n--d[particle=$3$]};
+ 	\ese
+ 	\begin{mybox}{Crossing symmetry}
+ 	But we could instead to the $\phi_1, \phi_4$ and $\phi_2 \phi_3$ OPE to get an equivalent expression for the four-point function 
+ 	\be 
+ 	\label{eq:cftCrossingSymmetry}
+	\sum_{\mO} C_{12\mO} C_{34\mO}% \feynmandiagram[horizontal=a to b]{a [particle=$1$] --m --  momentum=\(\mO\)]n -- b [particle=$4$], c[particle=$2$]--m, n--d[particle=$3$]}; 
+ 	= \sum_{\mO} C_{14\mO} C_{23\mO} %\feynmandiagram[vertical=a to b]{a [particle=$1$] --m  -- [momentum=\(\mO\)]n -- b [particle=$3$], c[particle=$4$]--m, n--d[particle=$2$]};
+ 	\ee 
+ 	this is the key point. You perform an infinite sum on LHS over these known three-point coeffcients and it has to be equal to the infinite sum on the RHS. This is called a \emph{crossing symmetry} and gives us a very powerful constrain on allowed data, or OPE associativity.
+ 	\end{mybox} 
+ 	
+ 	\subsection{Conformal bootstrap}
+ 	\begin{mybox}{Key point}
+ 	Once we impose Four-point crossing symmetry, \emph{no new constraints} appear at higher points. 
+ 	\end{mybox}
+ Illustrate this pictorially. Consider a five-point function
+ \todo{Insert picture 1}
+ 	such that
+ 	\bse 
+ 	\expval{\phi_1 \dots \phi_5} = \sum_{\mO} C_{12\mO} C_{\mO} (x_{12},\partial_y) \expval{\mO(x_2) \phi_3\phi_4 \phi_5}.
+ 	\ese 
+ 	Now do $\phi_3 \phi_4$ OPE 
+ 	\todo{insert picture 2}
+ 	\bse 
+ 	.....
+ 	\ese
+ 	where we will now use \ref{eq:cftCrossingSymmetry} in the form of
+ 	\todo{insert picture 3}
+ 	which then gives us
+ 	\bse 
+ insert picture 4
+ 	\ese 
+ 	\begin{mybox}{}
+ 	We see that crossing at five points follows automatically from crossing at four points.
+ 	\end{mybox} 
+ In practice this is easier to do with scalars then with operators with spin. It might therefore be easier to look at five point correlators of scalars than four point correlators of spin-dependent objects.
+\begin{mybox}{Definition of CFT}
+ Define a CFT as the set of data satisfying OPE associativity.
+ \end{mybox}
+If this is satisfied, then your CFT is valid, no need to find the Lagrangian.
+ 	
+ 	
+ \subsubsection{This leads to the bootstrap programme}
+ 	This bootstrap programme is used to \emph{solve} some $2\md$ theories analtically in $1980$s (e.g. minimal models. finite number of primaries).
+ 	In $2008$, Rychkov started a programme known as the numerical bootstrap programme in higher dimensions. The idea here is to put numerical constraints on the space of theories by examining this crossing equation \ref{eq:cftCrossingSymmetry}.\\
+ 	What follows is a sketch of the idea.
+ 	\begin{enumerate}
+ 		\item First consider the crossing equation for four identical scalars of weight $\Delta$ as in \ref{eq:cftCrossingSymmetry}. Where the first diagram on LHS, i.e. the conformal block, is equal to\bse 
+ 		\frac{G_{\mO}(u,v)}{\abs{x_{12}}^{2 \Delta} \abs{x_{34}}^{2 \Delta}}  
+ 		\ese 
+ 		which is the prefactor $P$ in this case. 
+ 		\item So we get 
+ 		\be
+ 		\sum_{\mO} C^2_{\phi \phi \mO} \left[v^{2\Delta} G_{\mO} (u,v) - u^{2 \Delta} G_{\mO}(u,v)\right] = 0 \qquad \forall u,v,
+ 		\ee 
+ 		which is the sort of equation people play with numerically. The prefactors are positive. If you are given a random spectrum (i.e. the set of primaries you sum over), it may not be possible to solve this equation for any $C$. Why is that so ? Think of the function in square brackets as a vector. We are therefore asking for a sum of vectors with positive coefficients
+ 		\bse 
+ 		\sum \underbrace{c}_{c\geq 0} \vec{v} = 0
+ 		\ese 
+ 		which does not have a solution if all vectors live on one side of a plane. The vectors are the data you are given,\footnote{For more details look at Simmons-Duffin $1602.07982$, section $10.4$.} They find bumps in space which correspond to CFTs we already know, e.g. somewhere in operator-space a particular solution is the Ising model.
+ 	\end{enumerate}
+ 	
+ 	
+\footnote{Comment on how AdSCFT works: Weakly coupled gravity in AdS space is related to strongly coupled CFT. Can infer either CFT properties by doing calculations of weakly coupled gravity in AdS space and transferring the knowledge to CFT. Other way around doing numerical bootstrap on strongly coupled CFT to infer things on weakly coupled gravity in AdS space gives you a way to figure things out about quantum gravity.}
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
  	
  	
  	\section{Hilbert space of a CFT in $\md>2$}
  	
  	
- 	
- 	\section{State-operator Isomorphism}
- 	
- 	\begin{mybox}{}
- 		\begin{equation}
- 		\text{Local operators on the boundary }\leftrightarrow \text{ states on the interval}
- 		\end{equation}
- 		in pathintegral formalism
- 		\begin{equation}
- 		\Psi_{\mO} [\phi_b] = \int \mD \phi e^{i S[\phi]} \mO(0)|_{\phi(x)=\phi_b(x) \text{ for } x\in b}
- 		\end{equation}
- 		is Schrödinger wave functional that maps operator $\mO$ to state $\braket{\Omega}{\Psi}$.
- 	\end{mybox}
- 	
- 	
+
  	
  	
  	\section{Correlation functions of primary fields and CFT data}
@@ -920,25 +1043,7 @@ and therefore
  	
  	
  	
- 	\section{Unitarity of CFT in $\md=2$}
- 	\begin{mybox}{}
- 		A CFT is called \emph{unitary} if 
- 		\begin{equation}
- 		L^\dagger_m = L_{-m},
- 		\end{equation}
- 		which ensures that the Hamiltonian is hermitian and $e^{iH}$ is unitary. Necessary conditions are
- 		\begin{align}
- 			\text{non-negative central charge } C &\geq 0 \\
- 			\text{ non-negative conformal weights } h_i &\geq 0 \text{ for all primaries }\phi_i \\
- 			\text{there exists a primary $\phi$ with }h_\phi &=0, \text{ i.e. a vacuum}.
- 		\end{align}
- 	\end{mybox}
- 	
- 	\begin{equation}
- 	\text{ Unitariy $\Rightarrow$ if $h=0$ then $\phi(z)=$constant.}
- 	\end{equation}
- 	
- 	
+
  	
  	
  	
@@ -955,7 +1060,95 @@ and therefore
  	\end{equation}
  	The direction (scale invariance) $\Rightarrow T^\mu_\mu=0$ has only been proven in special cases.
  	
+ 	\section{CFT in $2 \md$ }
  	
+ \subsection{Introduction and motivation into string theory}
+ 	\subsubsection{Motivation}
+ 	
+ \begin{enumerate}
+ 	\item Can only solve theory in two-dimensions. Can only constrain theories of higher dimensions. Conformal symmetry in $2\md$ is much stronger !
+ 	\item Completely solvable (minimal models etc.) 
+ 	\item \emph{String theory} is a $2 \md$ CFT
+ \end{enumerate}
+\subsubsection{Quick intro to string theory}
+ Replace point particles with strings. 
+ \begin{enumerate} 
+ 	\item A relativistic particle fulfils the following. $x^\mu (\tau)$ maps $\mR \rightarrow \mathbb{M}^{1,\md-1}$, $\tau \mapsto x^\mu(\tau)$, where $\mu=(0,1,\dots,\md-1)$ such that 
+ \todo{insert picture 5}
+ \item A string $x^\mu(\sigma, \tau)$ maps \bse 
+ \mR^{1,1} \rightarrow \mathbb{M}^{1,\md -1},\quad (\tau,\sigma) \mapsto x^\mu(\tau,\sigma):
+ \ese 
+ \todo{insert picture 6}
+ where we now get a mapping to a world-sheet.
+ \end{enumerate} 
+Note that $\mR$ is called \emph{world-sheet}, $\mathbb{M}^{1,\md -1}$ is called the \emph{target space} and $x^\mu(\tau,\sigma)$ is a map from the world-sheet to target space. The index $\mu$ has nothing to do with Lorentz transformations, but basically labels the number of scalar fields we have. That is $\Phi^i(\tau,\sigma)$ is scalar field $i$.
+ 	\\
+ 	Let $\tau= x^0$, $\sigma=x^!$, world-sheet coordinates are $x^a$ and spacetime coordinates are $X^\mu$. We have an induced metric on the world-sheet 
+ 	\be
+ 	\label{eq:stringsMetricWorldsheet} 
+ 	h_{ab} = \partial_a X^\mu \partial_b X_\mu
+ 	\ee 
+ 	it is the pull-back of the target space (e.g. Minkwoskian) metric to the world-sheet\footnote{Will assume that the target space is flat}. It gives the lengths of curves on world-sheet embedded in space-time. Now we need an action to define the theory. The simplest possible action is found if we consider the relativistic particle. The action is simply the world-length or proper time along the line
+ 	
+ 	\be 
+ 	\label{eq:StringActionPointParticle}
+ 	S = - m \int \md \tau\sqrt{-\dot{X}^\mu \dot{X}_\mu}.
+ 	\ee 
+ 	The point-particle minimizes length (thinking in the Euclidean). We can generalize this now to the string.
+ 	\begin{mybox}{String action}
+ 		Make the string action proportional to the area of the world sheet. This is called the \emph{Nambu-Goto action}
+ 		\begin{equation}
+ 			\label{eq:stringNambuGotoAction}
+ 			S_{NG} = - \frac{1}{2 \pi \alpha^\prime } \int \md^2 x \sqrt{- \det h_{ab}}.
+ 		\end{equation}
+ 		In the Euclidean picture, this is just the area of the world sheet.
+ 	\end{mybox}
+ 	$\alpha^\prime$ is called \emph{Regge slope }\footnote{for historical reasons at it has been used early on to study QCD} and the tension of the string $T$ is called 
+ 	\be 
+ 	\label{eq:stringTension}
+ T=	\frac{1}{2 \pi \alpha^\prime}.
+ 	\ee
+ 	\footnote{We should htink more of a rubber band then a string, that is trying to shrink down to zero radius.}
+ 	Note that $[\alpha^\prime] = L^2$, which is why sometimes people call $\sqrt{\alpha^\prime}$ \emph{string length} (which does not give a good intuition).\\
+ As for the symmetries of \ref{eq:stringNambuGotoAction}, it is space-time Poincaré invariant and invariant under world-sheet reparametrization.
+ 	There is however a problem with \ref{eq:stringNambuGotoAction} as it includes square roots of $x$, namely that it is a complicated non-linear action. But there exists a simple quadratic action, the Polyakov action.\\
+ 	Introduce another fidl $\gamma_{ab}$, the intrinsic metric on the world-sheet. 
+ 	\begin{mybox}{Polyakov action}
+ 		\be 
+ 		\label{eq:stringPolyakovAction}
+ 		S = -\frac{1}{4 \pi \alpha^\prime} \int \md^2 x \sqrt{-\gamma} \gamma^{ab} \partial_a X^\mu \partial_b X_\mu,
+ 		\ee 
+ 		where $\gamma^{ab}$ is the inverse metric and $\gamma=\det(\gamma_{ab})$ $2 \times2$ determinant. This is Poincaré  invariant in $2\md$ and Weyl invariant, i.e. if you go to flat space it is just a $2 \md $ CFT.
+ 	\end{mybox}
+ 	From \ref{eq:eulerlagrange} for $\gamma$ 
+ 	\begin{align*}
+ 		\frac{\delta S}{\delta \gamma^{ab }} &=0= \partial_a X^\mu \partial_b X_\mu - \half \gamma_{ab} \gamma^{cd} \partial_c X^\mu \partial_d X_\mu \\
+ 		&= h_{ab} -\half \gamma_{ab} \gamma^{cd} h_{cd}\\
+ 		\sqrt{-\gamma} \gamma^{ab} & = \sqrt{-h} h^{ab}.
+ 	\end{align*}
+ 	 
+ 	 
+ 	 If you insert it back into \ref{eq:stringNambuGotoAction} you get \ref{eq:stringPolyakovAction}, i.e. the two actions are equivalent, but \ref{eq:stringPolyakovAction} is much nicer as it is quadratic in $X^\mu$. In fact, symmetries allow to fix $\gamma_{ab} = \eta_{ab}$.
+ 	
+ 	
+ 	
+ 	 	\subsection{Unitarity of CFT in $\md=2$}
+ 	\begin{mybox}{}
+ 		A CFT is called \emph{unitary} if 
+ 		\begin{equation}
+ 		L^\dagger_m = L_{-m},
+ 		\end{equation}
+ 		which ensures that the Hamiltonian is hermitian and $e^{iH}$ is unitary. Necessary conditions are
+ 		\begin{align}
+ 			\text{non-negative central charge } C &\geq 0 \\
+ 			\text{ non-negative conformal weights } h_i &\geq 0 \text{ for all primaries }\phi_i \\
+ 			\text{there exists a primary $\phi$ with }h_\phi &=0, \text{ i.e. a vacuum}.
+ 		\end{align}
+ 	\end{mybox}
+ 	
+ 	\begin{equation}
+ 	\text{ Unitariy $\Rightarrow$ if $h=0$ then $\phi(z)=$constant.}
+ 	\end{equation}
  	
  	
  	
