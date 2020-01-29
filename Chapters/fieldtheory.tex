@@ -92,6 +92,16 @@ Some useful identities:
 \end{align}
 
 \section{Lagrangian formalism}
+Why do we care about the Lagrangian formalism?\\
+The following is a motivation one will understand further if the reader is familiar with the concept of canonical quantization as described in the following.
+ Why do we enumerate possible theories by giving their Lagrangians rather than by writing down Hamiltonians? The reason for this is that it is
+only in the Lagrangian formalism (or more generally the action
+formalism) that symmetries imply the existence of Lie algebras of
+suitable quantum operators, and you need these Lie algebras to
+make sensible quantum theories. In particular, the S-matrix \ref{eq:tmatrix} will
+be Lorentz invariant if there is a set of $10$ sufficiently smooth operators satisfying the commutation relations of the inhomogeneous Lorentz group \ref{eq:lorentzgroupwhole}. It’s not trivial to write down a Hamiltonian that will give you a Lorentz invariant S-matrix — it’s not so easy
+to think of the Coulomb potential just on the basis of Lorentz invariance — but if you start with a Lorentz invariant Lagrangian
+density then, because of Noether’s theorem which is described in the following, the Lorentz invariance of the S- matrix is automatic.
 \begin{mybox}{Euler-Lagrange equations}
 	The equations of motion of a field $\phi(x)$ are given by the Euler-Lagrange equations of a lorentzinvariant Lagrange density $\mL = \mL(\phi,\partial^\mu\phi)$per independent field $\phi$:
 	\begin{align}

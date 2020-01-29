@@ -1272,7 +1272,9 @@ Replacing $S[\phi]$ by $\Gamma[\varphi]$ introduces $1PI$ amputated vertices and
 \end{mybox}
 
 
-
+\begin{mybox}{What is the physical picture ?}
+	In quantum field theory of point particles, the force between two particles is mediated by the exchange of virtual (or off-shell) particles. Associated with each force is a charge. Charged particles feel the force by coupling to or interacting with the particles that carry the force. The most familiar example is electrodynamics. The particles that feel the force carry electric charge. The electromagnetic force is mediated by the exchange of spin-1 photons. The photons themselves are uncharged and therefore do not directly couple to each other. The resulting field equations are linear. In QCD, a theory of the strong force built from a Yang-Mills gauge theory (the strong force is responsible for holding together nucleons and thereby the nucleus), the charge is called colour. The fundamental particles that feel the strong force are coloured quarks, and the particles that carry the force are called gluons. The gluons themselves are colour charged, hence, unlike the photon, they can directly interact with each other, and the resulting field equations are nonlinear. 
+\end{mybox}
 \newpage
 
 \section{Renormalization and effective field theory}
@@ -1291,40 +1293,31 @@ Methods $1-3$ are perturbative and we are free to pick our \emph{regularization}
 \item[$\bullet$] Dimensional regularization ($\md^d p \rightarrow \md^{d-\epsilon} p$)
 \item[$\bullet$] Pauli-Villars regularization ($k^2\rightarrow k^2-\mu^2$)
 \end{enumerate}
-while methods $4$ and $5$ come with their own regularization schemes.\\
+while methods $4$ and $5$ come with their own regularization schemes. The regularization schemes for perturbative renormalization are detailed in \ref{subsec:renormalizationRegSchemes}. The fourth and fifth method are discussed in their own chapters.\\
 \\
 Callan-Symanzik's method derives a flow equation from the demand for consistency of an arbitrary renormalization scheme.\\
 Wilson's method introduces a UV cut-off and applies the spin block renormalization idea as a transformation of Lagrangians where we are free to interpret theories with a finite cut-off as effective theories.\\
 The FRG finally introduces regularization at the non-perturbative level of the quantum action and is able to derive all correlation functions from flow equations.\\
 \\
+There have been two fundamental insights in the development of
+the renormalization group. One, due to Gell-Mann and Low, is
+that logarithms of energy that violate naive scaling and invalidate perturbation theory arise because of the way that renormalized coupling constants are defined, and that these logarithms
+can be avoided by renormalizing at a sliding energy scale. The
+second fundamental insight, due to Wilson, is that it’s very important in dealing with phenomena at a certain energy scale to
+integrate out the physics at much higher energy scales. These insights are conceptually not that different, because when you adopt the
+Gell-Mann–Low approach and define a renormalized coupling
+at a sliding scale and use renormalization theory to eliminate
+the infinities rather than an explicit cutoff, you are in effect integrating out the higher energy degrees of freedom — the integrals
+converge because after renormalization the integrand begins to
+fall off rapidly at the energy scale at which the coupling constant
+is defined. (This is true whether or not the theory is renormalizable in the power-counting sense.) So in other words instead of
+a sharp cut-off a la Wilson, you have a soft cut-off, but it’s a cut-off
+nonetheless and it serves the same purpose of integrating out the
+short distance degrees of freedom.
+\\
+\\
 An overarching result of all methods is that renormalizability is an emergent quality of quantum field theories that is a result of testing it experimentally in the IR, where non-renormalizable interactions are irrelevant. The tricky part is the distinction between \emph{perturbative renormalizability} (done by power counting degree of divergences and computation of anomalous dimensions in loop expansions) and \emph{non- perturbative} (read ’true’) \emph{renormalizability} (done by proving the existence of asymptotically save fixed points). For example QED and $\phi^4$-theory, even though perturbatively renormalizable by degree of divergence, are non- perturbatively non- renormalizable manifest by appearance of Landau poles in the UV. A well established result at this point is that QCD and YM theory are truly renormalizable by virtue of UV save fixed points and confinement preventing IR divergencies. A less established result of the FRG is that gravity also has a UV save fixed point and is thereby non-perturbatively renormalizable despite being perturbatively non-renormalizable.
 
-\subsection{The emergence of renormalizability}
-
-\begin{mybox}{}
-	Bare complex $\phi^4+\phi^6$ theory
-	\begin{align}
-		S[\phi] &= \int \md^d x \left[\partial_\mu \phi^\dagger \partial^\mu \phi + m^2_0(\Lambda) \phi^\dagger \phi \right.\\
-		&\left.\frac{1}{4} \lambda^{(4)}_0(\Lambda) (\phi^\dagger \phi)^2 + \frac{1}{6} \lambda^{(6)}_0(\Lambda)(\phi^\dagger \phi)^3 \right] \nonumber.
-	\end{align}
-The one-loop effective potential assuming constant $\phi^dagger(x)\phi(x)$$:=\rho(x)=const.=:\rho$
-\begin{align}
-	U(\rho) &= m^2_\Lambda \rho + \lambda_\Lambda \rho^2 + \Delta U^{(1)}(\rho) + \mO(\hbar^2)\\
-	\Delta U(\rho) &= \half \int \frac{\md^d q}{(2\pi)^d} \ln(q^2+m^2_\Lambda+3\lambda_\Lambda \rho).
-\end{align}
-Then the derivatives of the one-loop effective potential are given by, using the notation $U(\rho)\equiv U^{(1)}(\rho)$,$m_\lambda\equiv m_0(\Lambda)$, $\lambda_\Lambda\equiv \lambda^{(4)}_0(\Lambda)$, $\gamma_\Lambda\equiv \lambda^{(6)}_0(\Lambda)$
-\begin{align}
-	U^\prime(0) &= m^2_\Lambda + \frac{3}{2} \lambda_\Lambda \int \frac{\md^d q}{(2 \pi)^d} \frac{1}{q^2+m^2_\Lambda}\\
-	U^{\prime \prime}(0) &= \lambda_\Lambda - \frac{9}{2} \lambda^2_\Lambda \int \frac{\md^d q}{(2 \pi)^d} \frac{1}{(q^2+m^2_\Lambda)^2}\\
-	U^{\prime \prime \prime}(0) &= \gamma\Lambda + 27 \lambda^3_\Lambda \int \frac{\md^d q}{(2 \pi)^d} \frac{1}{(q^2+m^2_\Lambda)^3}
-\end{align}
-where we find a suppression of $\phi^6$ by quantum fluctuations
-\begin{equation}
-\frac{U^{\prime \prime \prime}(0)}{\lambda^{(6)}_0(\Lambda)} \propto \frac{\lambda^3_\Lambda \Lambda^2}{m^2_\Lambda}
-\end{equation}
-i.e. the contribution from the $\phi^6$ coupling in the action is completely dominated in the running of non-renormalizable couplings makes them irrelevant in the IR.
-\end{mybox}
-We will find other ways to understand this emergence of renormalizability: the beta function formalism for non-renormalizable coupling in chapter \todo{reference} and the Wilsonian flow of non-renormalizable couplings in chapter \todo{reference}.
 
 \subsection{Mass dimension}
 \begin{mybox}{Definition and calculation}
@@ -1618,102 +1611,26 @@ E.g. for $n=d=4$, we have $[\lambda_0 ] =0$ and $D=4-E$ independent of $L$ or $V
 
 \subsection{Renormalization theorem (BPHZ theorem)}
 \begin{mybox}{BPHZ in a nutshell}
-	If a theory is power-counting renormalizable, i.e. has a finite amount of superficially divergent amplitudes, all divergencies can be absorbed order by order in counter terms such that all physical amplitudes are finite.
-\end{mybox}
-\todo{delete the following ?}
-\begin{mybox}{BPHZ Theorem}
-	Ignore the issue of divergent subgraphs for a moment. Then if a theory is (power-counting)
-	renormalisable, at each order in perturbation theory only a finite number of divergent dia-
-	grams, parametrized by a finite number of divergent constants, appear. One can absorb these
-	divergences order by order in the counterterms of the renormalized Lagrangian such that all
+	If a theory is power-counting renormalizable, i.e. has a finite amount of superficially divergent amplitudes, at each order in perturbation theory only a finite number of divergent diagrams, parametrized by a finite number of divergent constants, appear. One can absorb these
+	divergences order by order in the counterterms introduced in the reparametrization of the Lagrangian such that all
 	physical amplitudes are finite.\\
-	\\
-	The counterterms create new Feynman diagrams relevant at the next order. These will cancel
-	the divergences of the divergent subdiagrams (if present) at the next order.\\
-	\\
+	This is because the counterterms create new Feynman diagrams relevant at the next order. These will cancel
+	the divergences of the divergent subdiagrams (if present) at the next order.\\	
 	All of this leads to a perturbative adjustment of a finite number of counterterms in the renormalised Lagrangian, and thus predictivity is maintained.
 \end{mybox}
-By the BPHZ theorem, (power counting) renormalizability is sufficient for a theory to maintain predictability. The non-trivial aspect of this theorem concerns the complete cancellation of divergent subdiagrams by counterterms of the previous loop order (example $\phi^4$ theory to $2$nd-loop renormalized).
 
-\subsection{An arsenal of identities}
-\subsubsection{Useful integrals for regularization scheme}
-\begin{enumerate}
-	\item Feynman parameter
-	\begin{align}
-		\frac{1}{A_1 \dots A_n} &= \int_0^1 \md X_1 \dots \md X_n \delta \left(\sum_i X_i -1\right) \frac{(n-1)!}{(X_1 A_1+\dots+X_nA_n)^n}\\
-		\frac{1}{AB^n} &=n \int_0^1 \md X \frac{(1-X)^{n-1}}{(XA-(1-X)B)^{n+1}}
-	\end{align}
-	Feynman parameter formula for $n=2$ ($A$ and $B$ will be functions o $p^2$)
-	\begin{equation}
-	\frac{1}{AB} = \int_0^1 \frac{\md X}{(XA+(1-X) B)^2}.
-	\end{equation}
-	\item Substitutions (loop integral over $p$) for $A=(p^2 \pm q^2)-m^2$ and $B=p^2-m^2$
-	\begin{equation}
-	\int \frac{\md^d p}{(2 \pi)^d} \frac{1}{p^2-m^2} \frac{1}{(p\pm q)^2-m^2} = \int_0^1 \md X \int \frac{\md^d P}{(2 \pi)^d} \frac{1}{(P^2-\Delta(X))^2}
-	\end{equation}
-	with $p\mapsto P:= p\pm Xq$ and $\Delta(X) := -X(1-X)q^2+m^2$,where we have used that 
-	\begin{equation}
-	X(p \pm q)^2 -m^2 +(1+X) (p^2-m^2) = (p\pm Xq)^2+X(1-X) q^2-m^2.
-	\end{equation}
-	\item Lorentz-covariance form
-	\begin{equation}
-	\int \frac{\md^d P}{(2 \pi)^d} P^\mu
-	\end{equation}
-	\item Some useful Minkowski integral
-	\begin{align}
-		\int \frac{\md^dP}{(2\pi) d} \frac{1}{(P^2-\Delta)^n} &= \frac{i (-1)^n}{(4\pi)^{d/2}} \frac{\Gamma(n-\frac{d}{2} )}{\Gamma(n)} \Delta^{\frac{d}{2} -n}\\
-		\int \frac{\md^dP}{(2\pi) d} \frac{P^2}{(P^2-\Delta)^n} &= \frac{i (-1)^{n-1}}{(4 \pi)^{d/2}} \frac{d}{2} \frac{\Gamma(n-\frac{d}{2} -1)}{\Gamma(n)} \Delta^{\frac{d}{2} +1-n} \\
-		\int \frac{\md^dP}{(2\pi) d} \frac{P^\mu P^\nu}{(P^2-\Delta)^n} &= \frac{i(-1)^{n-1}}{(4 \pi)^{d/2}} \frac{\eta^{\mu \nu}}{2} \frac{\Gamma(n-\frac{d}{2}-1)}{\Gamma(n)} \Delta^{\frac{d}{2} +1 -n}\\
-		\int \frac{\md^dP}{(2\pi) d} \frac{(P^2)^2}{(P^2-\Delta)^n} &= \frac{i(-1)^n}{(4 \pi)^{\frac{d}{2}}} \frac{d(d+2)}{4} \frac{\Gamma(n-\frac{d}{2} -2)}{\Gamma(n)} \Delta^{\frac{d}{2}+2-n} \\
-		\int \frac{\md^dP}{(2\pi) d} \frac{(P^2)^a}{(P^2-\Delta)^n} &= \frac{i(-1)^b}{(4 \pi)^\frac{d}{2}} \frac{\Gamma(b-a-\frac{d}{2}) \Gamma(a+\frac{d}{2})}{\Gamma(n) \Gamma(\frac{d}{2})} \Delta^{\frac{d}{2}+a-n}.
-	\end{align}
-To derive these integrals, use Wick rotation
-\begin{equation}
-	p^0 =: i p^0_E \Rightarrow \int \frac{\md^dP}{(2\pi) d} f(P^2) = i \int \frac{\md^dP_E}{(2\pi) d} f(\abs{\vec{P}_E}^2)
-\end{equation}
-with $p^2=-\abs{\vec{p}_E}^2=-\sum_{i=0}^{3} (p^i_E)^2$, and use also the spherical integral
-\begin{equation}
-	\int \md \Omega_d = \frac{2 \pi^\frac{d}{2}}{\Gamma(\frac{d}{2})} \text{ from } \md^d p_E = \md \Omega_d \md \abs{\vec{p}_E} \abs{\vec{p}_E}^{d-1}.
-\end{equation}
-\item Properties of the Gamma function
-\begin{align}
-	\Gamma(x) &= \int_0^\infty \md t t^{x-1} e^{-t} \\
-	\Gamma(x+1) &= x \Gamma(x) \\
-	\Gamma(x-1) &= \frac{\Gamma(x)}{x-1}\\
-	\Gamma(n) &= (n-1)!.
-\end{align}
-\item 
-\begin{align}
-	\int_0^1 \md X (1-X)^2 &=\frac{1}{3} \\
-	\int_0^1 \md X X(1-X)^2 &=\frac{1}{6}.
-\end{align}
-\end{enumerate}
-\subsubsection{A rule of thumb for regularization}
-The mass dimension of the prefactor of the $\frac{1}{\epsilon}$-divergence in dimensional regularization is the power of the  $\Lambda$ divergence in the cut-off regularization
-\begin{equation}
-\frac{a}{\epsilon} \leftrightarrow \Gamma^{[a]}.
-\end{equation}
-
-\subsubsection{Asymptotic behaviours useful in regularization schemes}
-\begin{enumerate}
-	\item Asymptotic behaviour soemtimes needed in cut-off regularization
-	\begin{equation}
-		\ln(1+x) = -\sum_{k=1}^\infty \frac{(-1)^k}{x^k} k = x-\frac{x^2}{2} + \frac{x^3}{3 } - \dots
-	\end{equation}
-	\item Asymptotic behaviour sometimes needed in dimensional regulaization
-	\begin{align}
-		\Gamma(\epsilon)& \propto \frac{1}{ \epsilon} - \gamma + \mO(\epsilon)\\
-		x^\epsilon &\propto 1+\epsilon \ln x + \mO( \epsilon^2)\\
-		\Gamma (\frac{\epsilon}{2}-1) &\propto -\frac{2}{\epsilon} e^{-\half \gamma \epsilon} (1+\frac{\epsilon}{2}) + \mO(\epsilon^2) \nonumber \\
-		&\propto -\frac{2}{\epsilon} + \gamma -1 + \mO(\epsilon)\\
-		\Gamma(\frac{\epsilon}{2}-2) &\propto \frac{1}{\epsilon} (1 + \frac{\epsilon}{4}) (1+\frac{\epsilon}{2}) (1 - \gamma \frac{\epsilon}{2}) + \mO(\epsilon)\\
-		\frac{\Gamma(\frac{\epsilon}{2} -1)}{\Delta^{\frac{\epsilon}{2}-1} } &\propto \Delta \left(-\frac{2}{\epsilon} + \gamma -1 +\ln \Delta\right) + \mO(\epsilon) \leftrightarrow \Lambda^{[\Delta]} = \Lambda^2 \\
-		\frac{\Gamma(\frac{\epsilon}{2})}{\Delta^{\frac{\epsilon}{2}}} &\propto \frac{2}{\epsilon} - \gamma - \ln \Delta + \mO(\epsilon) \leftrightarrow \ln \Lambda
-	\end{align}
-\end{enumerate}
+By the BPHZ theorem, (power counting) renormalizability is sufficient for a theory to maintain predictability. The non-trivial aspect of this theorem concerns the complete cancellation of divergent subdiagrams by counterterms of the previous loop order (example $\phi^4$ theory to $2$nd-loop renormalized). The proof is apparently very involved.\\
+\\
+There is another theorem by 't Hooft and Veltman, which states that infinities are governed by the same
+gauge symmetries as the terms in the Lagrangian. This was originally proven only for theories that are renormalizable in
+the old power-counting sense, but this theorem has only recently
+been extended to theories of the Yang–Mills or Einstein type
+with arbitrary numbers of complicated interactions that are not
+renormalizable in the power-counting sense.
 
 
 \subsection{A more in-depth look at regularization schemes}
+\label{subsec:renormalizationRegSchemes}
 \begin{mybox}{Regularization}
 	Regularization is the practice of isolating divergences. The three common methods in QFT are:
 	\begin{enumerate}
@@ -1724,9 +1641,11 @@ The mass dimension of the prefactor of the $\frac{1}{\epsilon}$-divergence in di
 	But for $\Lambda \rightarrow \infty$, the auxiliary diagram vanishes and we recover the actual process.
 	\end{enumerate}
 \end{mybox}
+\subsubsection{Dimensional regularization}
+\label{subsubsec:renormalizationDimReg}
 The \emph{dimensional regularization} can be used in the context of the following steps
 \begin{enumerate}
-	\item Transform momentum dependent integrand via \emph{Feynman parametrization}
+	\item The integrand of the loop integral contains a fraction of the form $\frac{1}{AB}$ with e.g. $A=(p-k)^2-\mu^2+i \epsilon$ and $B=k^2-m^2_0+i\epsilon$. Transform momentum dependent integrand via \emph{Feynman parametrization},  which is satisfied for any $A,B \in \mathbb{C}\ \{0\}$ 
 	\begin{equation}
 		\int_0^1 \md x \frac{1}{[xA+(1-x)B]^2} = \frac{1}{AB}.
 	\end{equation}
@@ -1735,10 +1654,24 @@ The \emph{dimensional regularization} can be used in the context of the followin
 		l:= (k \pm xp) \quad \Rightarrow \quad \md l=\md k.
 	\end{equation*}
 	\item Impose dimensional regularization by going over to $\md=4-\epsilon$ dimensions.
-	\item We now encounter loop-integrals of the typical form $\int \frac{\md^4 l}{(2 \pi)^4} \frac{1}{(l^2-\Delta +i \epsilon)^n}$, which can be easily solved by a \emph{Wick rotation} to Euclidean space (then $i\epsilon$ can be dropped since the poles are not met anymore)
+	\item We now encounter loop-integrals of the typical form $\int \frac{\md^4 l}{(2 \pi)^4} \frac{1}{(l^2-\Delta +i \epsilon)^n}$, which can be easily solved by a \emph{Wick rotation} to Euclidean space.	The $^0$ integral is in fact a complex contour integral along the real axis. The value of this integral is unchanged if we deform the contour without hitting any pole. Therefore we can rotate the contour by $90^°$ counter-clockwise to lie along the imaginary axis:
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{gfx/Wickrotation}
+		\caption{\itshape How to perform integral in the renormalization procedure by a Wick rotation.}
+		\label{fig:wickrotation}
+	\end{figure}
+
+	Introducing the Euclidean $4$-momentum $l_E = (l^0_E, \vec{l}_E)$ as 
 	\begin{equation}
-		l^0 = i l^0_E, \quad \vec{l}=\vec{l}_E \;\Rightarrow \frac{i}{l^2-m^2}=\frac{1}{l^2_E+m^2}.
+	l^0=i l^0_E, \; \vec{l}=\vec{l}_E \; \Rightarrow \; l^2=-l^2_E\equiv \; -i \sum_j (l^j_E)^2, \; \frac{i}{l^2-m^2}=\frac{1}{l^2_E+m^2}.
 	\end{equation}
+	We can write the integral as
+	\begin{equation}
+	\int \frac{\md^4 l}{(2 \pi)^4} \, \frac{1}{[l^2-\Delta+i\epsilon]^m} = (-1)^m i \int \frac{\md^4 l}{(2 \pi)^4} \, \frac{1}{[l^2_E+\Delta - i \epsilon]^m}.
+	\end{equation}
+	Since we won't need the $i\epsilon$ any longer we can omit it at this stage. We can now perform the integral as a spherical integral in $\mR^{\md}$.
+	
 	\item  Carry out the loop-integral in $\md$-dimensional spherical coordinates
 	\begin{equation}
 		\int \frac{\md^{\md}l_E}{(2\pi)^{\md}} = \int \md \Omega_{\md} \int_0^\infty \frac{\md l_E}{(2 \pi)^{\md}} l^{\md-1}_E
@@ -1767,12 +1700,103 @@ and write all variables with $x$ such that the Euler-Beta function can be substi
 \item Implement renormalization conditions.
 \end{enumerate}
 
+\subsection{An arsenal of identities}
+In this section, we collect all integrals and identities which one might find useful in the computation of loop integrals in regularization.
+\subsubsection{Useful integrals for regularization scheme}
+\begin{enumerate}
+	\item Feynman parameter
+	\begin{align}
+	\frac{1}{A_1 \dots A_n} &= \int_0^1 \md X_1 \dots \md X_n \delta \left(\sum_i X_i -1\right) \frac{(n-1)!}{(X_1 A_1+\dots+X_nA_n)^n}\\
+	\frac{1}{AB^n} &=n \int_0^1 \md X \frac{(1-X)^{n-1}}{(XA-(1-X)B)^{n+1}}
+	\end{align}
+	Feynman parameter formula for $n=2$ ($A$ and $B$ will be functions o $p^2$)
+	\begin{equation}
+	\frac{1}{AB} = \int_0^1 \frac{\md X}{(XA+(1-X) B)^2}.
+	\end{equation}
+	\item Substitutions (loop integral over $p$) for $A=(p^2 \pm q^2)-m^2$ and $B=p^2-m^2$
+	\begin{equation}
+	\int \frac{\md^d p}{(2 \pi)^d} \frac{1}{p^2-m^2} \frac{1}{(p\pm q)^2-m^2} = \int_0^1 \md X \int \frac{\md^d P}{(2 \pi)^d} \frac{1}{(P^2-\Delta(X))^2}
+	\end{equation}
+	with $p\mapsto P:= p\pm Xq$ and $\Delta(X) := -X(1-X)q^2+m^2$,where we have used that 
+	\begin{equation}
+	X(p \pm q)^2 -m^2 +(1+X) (p^2-m^2) = (p\pm Xq)^2+X(1-X) q^2-m^2.
+	\end{equation}
+	\item Lorentz-covariance form
+	\begin{equation}
+	\int \frac{\md^d P}{(2 \pi)^d} P^\mu
+	\end{equation}
+	\item Some useful Minkowski integral
+	\begin{align}
+	\int \frac{\md^dP}{(2\pi) d} \frac{1}{(P^2-\Delta)^n} &= \frac{i (-1)^n}{(4\pi)^{d/2}} \frac{\Gamma(n-\frac{d}{2} )}{\Gamma(n)} \Delta^{\frac{d}{2} -n}\\
+	\int \frac{\md^dP}{(2\pi) d} \frac{P^2}{(P^2-\Delta)^n} &= \frac{i (-1)^{n-1}}{(4 \pi)^{d/2}} \frac{d}{2} \frac{\Gamma(n-\frac{d}{2} -1)}{\Gamma(n)} \Delta^{\frac{d}{2} +1-n} \\
+	\int \frac{\md^dP}{(2\pi) d} \frac{P^\mu P^\nu}{(P^2-\Delta)^n} &= \frac{i(-1)^{n-1}}{(4 \pi)^{d/2}} \frac{\eta^{\mu \nu}}{2} \frac{\Gamma(n-\frac{d}{2}-1)}{\Gamma(n)} \Delta^{\frac{d}{2} +1 -n}\\
+	\int \frac{\md^dP}{(2\pi) d} \frac{(P^2)^2}{(P^2-\Delta)^n} &= \frac{i(-1)^n}{(4 \pi)^{\frac{d}{2}}} \frac{d(d+2)}{4} \frac{\Gamma(n-\frac{d}{2} -2)}{\Gamma(n)} \Delta^{\frac{d}{2}+2-n} \\
+	\int \frac{\md^dP}{(2\pi) d} \frac{(P^2)^a}{(P^2-\Delta)^n} &= \frac{i(-1)^b}{(4 \pi)^\frac{d}{2}} \frac{\Gamma(b-a-\frac{d}{2}) \Gamma(a+\frac{d}{2})}{\Gamma(n) \Gamma(\frac{d}{2})} \Delta^{\frac{d}{2}+a-n}.
+	\end{align}
+	To derive these integrals, use Wick rotation
+	\begin{equation}
+	p^0 =: i p^0_E \Rightarrow \int \frac{\md^dP}{(2\pi) d} f(P^2) = i \int \frac{\md^dP_E}{(2\pi) d} f(\abs{\vec{P}_E}^2)
+	\end{equation}
+	with $p^2=-\abs{\vec{p}_E}^2=-\sum_{i=0}^{3} (p^i_E)^2$, and use also the spherical integral
+	\begin{equation}
+	\int \md \Omega_d = \frac{2 \pi^\frac{d}{2}}{\Gamma(\frac{d}{2})} \text{ from } \md^d p_E = \md \Omega_d \md \abs{\vec{p}_E} \abs{\vec{p}_E}^{d-1}.
+	\end{equation}
+	\item Properties of the Gamma function
+	\begin{align}
+	\Gamma(x) &= \int_0^\infty \md t t^{x-1} e^{-t} \\
+	\Gamma(x+1) &= x \Gamma(x) \\
+	\Gamma(x-1) &= \frac{\Gamma(x)}{x-1}\\
+	\Gamma(n) &= (n-1)!.
+	\end{align}
+	\item 
+	\begin{align}
+	\int_0^1 \md X (1-X)^2 &=\frac{1}{3} \\
+	\int_0^1 \md X X(1-X)^2 &=\frac{1}{6}.
+	\end{align}
+\end{enumerate}
+\subsubsection{A rule of thumb for regularization}
+The mass dimension of the prefactor of the $\frac{1}{\epsilon}$-divergence in dimensional regularization is the power of the  $\Lambda$ divergence in the cut-off regularization
+\begin{equation}
+\frac{a}{\epsilon} \leftrightarrow \Gamma^{[a]}.
+\end{equation}
 
+\subsubsection{Asymptotic behaviours useful in regularization schemes}
+\begin{enumerate}
+	\item Asymptotic behaviour sometimes needed in cut-off regularization
+	\begin{equation}
+	\ln(1+x) = -\sum_{k=1}^\infty \frac{(-1)^k}{x^k} k = x-\frac{x^2}{2} + \frac{x^3}{3 } - \dots
+	\end{equation}
+	\item Asymptotic behaviour sometimes needed in dimensional regulaization
+	\begin{align}
+	\Gamma(\epsilon)& \propto \frac{1}{ \epsilon} - \gamma + \mO(\epsilon)\\
+	x^\epsilon &\propto 1+\epsilon \ln x + \mO( \epsilon^2)\\
+	\Gamma (\frac{\epsilon}{2}-1) &\propto -\frac{2}{\epsilon} e^{-\half \gamma \epsilon} (1+\frac{\epsilon}{2}) + \mO(\epsilon^2) \nonumber \\
+	&\propto -\frac{2}{\epsilon} + \gamma -1 + \mO(\epsilon)\\
+	\Gamma(\frac{\epsilon}{2}-2) &\propto \frac{1}{\epsilon} (1 + \frac{\epsilon}{4}) (1+\frac{\epsilon}{2}) (1 - \gamma \frac{\epsilon}{2}) + \mO(\epsilon)\\
+	\frac{\Gamma(\frac{\epsilon}{2} -1)}{\Delta^{\frac{\epsilon}{2}-1} } &\propto \Delta \left(-\frac{2}{\epsilon} + \gamma -1 +\ln \Delta\right) + \mO(\epsilon) \leftrightarrow \Lambda^{[\Delta]} = \Lambda^2 \\
+	\frac{\Gamma(\frac{\epsilon}{2})}{\Delta^{\frac{\epsilon}{2}}} &\propto \frac{2}{\epsilon} - \gamma - \ln \Delta + \mO(\epsilon) \leftrightarrow \ln \Lambda
+	\end{align}
+\end{enumerate}
 
 \subsection{Example of  On-shell (i.e. perturbative) renormalization -- QED renormalized}
 \label{subsec:renormalizationqed}
-As discussed before, the on-shell scheme entails the following. We separate divergent contributions in the Lagrangian by making a decomposition into bare (divergent) and physical (observable) parameters. The bare parameters are collected in counterterms, which are a way of reparametrizing the Lagrangian. In the end we will have an expression of a finite physical Lagrangian and a divergent counterterm Lagrangian. In order to find these counterterms we renormalize the divergent $1PI$ graphs. We are always only considering $1PI$ diagrams as they are the fundamental building blocks for every possible interaction. This is why we are always talking about \emph{self-energies}, which are just the $1PI$ resummed propagator for the respective fields. If the $1PI$ graphs are renormalized, everything we built out of them will be finite as well. Renormalization of these graphs entails renormalizing the divergent bare parameters by fixing them at a specific renormalization scale, which implicitly absorbs the divergence into an observable (i.e. the scale is an experimental input). So in the end we isolate the divergences into counterterms and fix the poles by absorbing them into experimental input (e.g. an input scale of the coupling at zero momentum, then you get the running of the coupling depending on this scale). \\
+As discussed before, the (perturbative) on-shell scheme entails the following. 
+In the process of this renormalization scheme, counterterms are generated to cancel the high energy or ultraviolet divergences that are encountered in the individual terms of the perturbation series. When the renormalization process is successful, the counterterms build a finite effective action that can be thought of as classical field theory that contains all of the quantum effects. The possible counterterms are consistent with the symmetries of the original bare action. In other words, internal symmetries can severely restrict the types of counterterms that can be generated and thereby limit the number of corresponding divergences. Hence, theories with more symmetry are generally more convergent.\\
+How does this work in practice ?\\
+We separate divergent contributions in the Lagrangian by making a decomposition into bare (divergent) and physical (observable) parameters. The bare parameters are collected in counterterms, which are a way of reparametrizing the Lagrangian. In the end we will have an expression of a finite physical Lagrangian and a divergent counterterm Lagrangian. In order to find these counterterms we renormalize the divergent $1PI$ graphs. We are always only considering $1PI$ diagrams as they are the fundamental building blocks for every possible interaction. This is why we are always talking about \emph{self-energies}, which are just the $1PI$ resummed propagator for the respective fields. If the $1PI$ graphs are renormalized, everything we built out of them will be finite as well. Renormalization of these graphs entails renormalizing the divergent bare parameters by fixing them at a specific renormalization scale, which implicitly absorbs the divergence into an observable (i.e. the scale is an experimental input). So in the end we isolate the divergences into counterterms and fix the poles by absorbing them into experimental input (e.g. an input scale of the coupling at zero momentum, then you get the running of the coupling depending on this scale). \\
 In order to find these divergent $1PI$ graphs, we will employ power counting in the theory and then consider the superficially divergent graphs explicitly in terms of symmetries of the theory to figure out whether they indeed are divergent.
+\\
+\\
+Up to this point we've only calculated interactions at leading order, i.e. tree level Feynman diagrams. We will now turn towards loop corrections of QED, thus higher orders in the perturbation theory, which typically give infinity. We will use the dimensional regularization scheme to isolate these infinities.\\
+\\
+Higher order terms display diagrams with closed loops, which imply the presence of diverging integrals, such as \ref{fig:divergingintegralsqed}.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gfx/DivergingIntegralsQED}
+	\caption{\itshape Diverging integrals in QED appearing higher than tree level.}
+	\label{fig:divergingintegralsqed}
+\end{figure}
+A theory is renormalizable, thus meaningful after renormalization, if the number of diverging diagrams is finite. The reason for this is that to get observables renormalized one needs a finite number of constants to maintain the predictive value of the theory untouched.
 \subsubsection{The UV problems of QED}
 Since $[e]=0$, QED is renormalizable with seven superficially (four actually) divergent diagrams. These are the following, where we used QED's SDOD \ref{eq:renormalizationSdodQED}.
 \begin{enumerate}
@@ -1806,6 +1830,101 @@ The other diagrams vanish as follows:
 	$\rightarrow$ As far as the UV divergences are concerned it suffices to consider the diagram 2., because the contribution of 1. is easily absorbed into the vacuum energy term.
 	\item By dimensional analysis it is found that all diagrams of 2. are logarithmically divergent.
 \end{enumerate}
+
+\subsubsection{Corrections to the fermion propagator}
+Taking QED interactions into account the Feynman propagator $S_F(x-y)= \feynmandiagram[horizontal=a to b]{a [particle=y]-- [fermion] b [particle=x] };$ is corrected like
+\begin{align}
+\expval{\hat{T}\{\psi(x) \bar{\psi}(y)\}}{\Omega} &=
+\feynmandiagram[horizontal=a to b]{a [particle=y] --c-- [fermion] b[particle=x]}; 
++ \feynmandiagram[horizontal=a to b]{a [particle=y]--c--[fermion] d--b [particle=x], c--[boson, half left] d };\nonumber \\
+&	+\feynmandiagram[horizontal=a to b]{ a[particle=y] --c--[fermion] d -- e--f--[fermion] g--b[particle=x],
+	c--[half left, boson]g, d -- [half left, boson ]f   } ; \\
+&= 
+\feynmandiagram[horizontal=a to b]{a[particle=y] -- c [blob] -- b [particle=x] };.
+\end{align}
+
+\begin{mybox}{Electron self-energy}
+	Let 
+	\begin{equation}
+	\feynmandiagram[horizontal=a to b] {a [particle=A]--c [particle=$\left(1PI\right)$]--b[particle=B]  }; \equiv - i \sum(\slashed{p})_{AB}
+	\end{equation}
+	denote the amputated $1PI$ diagram. $\sum(\slashed{p})$ \emph{is called self-energy of the electron.}
+	$\Rightarrow$ 
+	\begin{align}
+	\expval{\hat{T}\{\psi(x) \bar{\psi}(y) \}}{\Omega} &= \feynmandiagram[horizontal=a to b]{a[particle=y] --c--[fermion] b[particle=x] };
+	+ \feynmandiagram[horizontal=a to b]{a--[fermion] c [particle=$\left(\sum\right)$]--[fermion] b  }; \nonumber \\
+	&+ \feynmandiagram[horizontal=a to b]{a --[fermion]c[particle=$\left(\sum\right)$ ]--[fermion] d[particle=$\left(\sum\right)$] --[fermion]b  }; + \dots
+	\end{align}
+\end{mybox}
+Where the full Feynman propagator for interacting QED theory takes the form (via Dyson resummation) 
+\begin{equation}
+\feynmandiagram[horizontal=a to b]{a [particle=y] --c [blob] -- b[particle=x]  };
+= \int \frac{\md^4 p}{(2 \pi)^4} e^{-i p\cdot (x-y)} \; \frac{i}{\gamma \cdot p-m_0 - \sum(\slashed{p})+i \epsilon }.
+\end{equation}
+
+
+
+\subsubsection{Corrections to the photon propagator}
+\begin{mybox}{Photon self-energy}
+	The Fourier transform of the photon propagator, denoted by $\feynmandiagram[horizontal=a to b]{a --[boson] c [blob] --[boson]b};$, can be derived via Dyson resummation from the $1PI$ diagram 
+	\begin{equation}
+	\feynmandiagram[horizontal=a to b]{a[particle=$\mu$] -- [boson] c -- [boson] b[particle=$\nu$] };
+	\equiv i \Pi^{\mu \nu} (q^2) = 
+	\end{equation}
+	which is the \emph{self-energy of the photon or vacuum polarization}.
+\end{mybox}
+Vacuum polarization describes the process in which a background electromagnetic field produces virtual electron-positron pairs that change the distribution of charges and currents that generated the original electromagnetic field. It is also referred to as the \emph{self-energy of the gauge boson(photon)}.\\
+\\
+These electron-positron pairs are, due to Heisenberg's uncertainty principle, created only for a constrained time, having duration inversely correlated with the amount of energy of the fluctuation. After this time the virtual particles annihilate each other. These short-lived pairs are called \emph{vacuum bubbles}. This is not measurable.\\
+On the other hand virtual pairs can also occur as a photon progress, as seen in \ref{fig:divergingintegralsqed}; the effect on other processes is measurable.\\
+$\Rightarrow$ Such charged pairs act as an electric dipole. In the presence of an electric field, e.g. the electromagnetic field around an electron, these particle-antiparticle pairs reposition themselves, thus partially counteracting the field.\\
+The field therefore will be weaker than would be expected if the vacuum were completely empty. This reorientation of the short-lived particle-antiparticle pairs is referred to as  \emph{vacuum polarization}.
+
+\subsubsection{Corrections to the interaction vertex}
+\begin{mybox}{Vertex function}
+	We define an effective vertex by summing up all loop-corrections. This is the \emph{vertex function} $\Gamma$, which describes the coupling between a photon and an electron beyond leading order, it is the one particle irreducible correlation function which involves $ \psi, \bar{\psi}$ and $A_{\mu}$:
+	
+\end{mybox}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{gfx/VertexFunctionQED}
+	\caption{\itshape Definition of the vertex function, summing up all loop corrections.}
+	\label{fig:vertexfunctionqed}
+\end{figure}
+We will compute these corrections to 1-loop order. The diagrams will exhibit:
+\begin{enumerate}
+	\item Ultraviolet (UV) divergences from integrating the momenta of particles in the loop up to infinity.
+	\item Infra-red (IR) divergences if the diagram contains massless particles (i.e. photons) running in the loop
+\end{enumerate}
+The general status of these divergences is as follows
+\begin{enumerate}
+	\item UV divergences require regularization of the integral and can be absorbed in a clever definition of the parameters via renormalization.
+	\item IR divergences in loop-diagrams cancel if physical observables are computed.
+\end{enumerate}
+
+
+
+\subsection{Self-energy of the electron at 1-loop}
+At 1-loop order the electron propagator takes the form 
+\begin{equation}
+\expval{\hat{T}\{\psi(x) \bar{\psi}(y)\}}{\Omega} =
+\feynmandiagram[horizontal=a to b]{a [particle=y] -- [fermion] c-- b [particle=y]};
++ \underbrace{\feynmandiagram[horizontal=a to b]{a[particle=y] --[fermion] c-- b[particle=x]}; }_{\stackrel{Feynman}{\Rightarrow} \int \frac{\md^4 p}{(2 \pi)^4} e^{-i p(x-y) } \cdot (I) }
+\end{equation}
+where according to the Feynman rules we have
+\begin{equation}
+(I) = \frac{i(\gamma \cdot p +m_0)}{p^2-m^2_0+i \epsilon} \left(-i \sum_2(\slashed{p})\right) \frac{i(\gamma \cdot p+m_0)}{p^2-m^2_0 +i\epsilon}.
+\end{equation}
+$\Rightarrow$ The amputated 1-loop contribution corresponds to omitting the two outer fermion propagators and is thus given by:
+\begin{equation}
+-i \sum_2(\slashed{p}) = (-i e)^2 \int \frac{\md^4 k}{(2 \pi)^4} \gamma^{\mu} \frac{i(\slashed{k}+m_0)}{k^2-m^2_0+i \epsilon} \gamma^{\nu} \frac{(-i \eta_{\mu \nu})}{(p-k)^2 + i \epsilon}.
+\end{equation}
+This integral has a IR-divergence near $k=0$ if $p\rightarrow0$. We will introduce a fictitious small photon mass $\mu$ to regulate the IR divergence:
+\begin{equation}
+\Rightarrow i \sum_2(\slashed{p}) = (-ie)^2 \int \frac{\md^4 k}{(2 \pi)^4} \gamma^{\mu} \frac{i (\slashed{k}+m_0)}{k^2-m^2_0 +i \epsilon} \gamma_{\mu} \frac{-i}{(p-k)^2-\mu^2+i \epsilon}.
+\end{equation}
+The evaluation of such typical momentum integrals proceeds as detailed in \ref{subsubsec:renormalizationDimReg}.
 
 \subsubsection{Explicit discussion of renormalized QED}
 We have four counterterms $\delta_{1,2,3,m}$ and four renormalization conditions at (at $1$-loop level). Applying the latter ones will thus give us the exact expressions of the counterterms.\\
@@ -2746,7 +2865,7 @@ which lead to the prediction of a scalar (the pion $\pi^0$) with a mass of $m_\p
 
 
 
-\subsubsection{Renormalization of quantum potential in Euclidean massles $\phi^4$}
+\subsubsection{An example of renormalization of quantum potential-- On the case of Euclidean massles $\phi^4$}
 \begin{mybox}{}
 	Euclidean $\phi^4$ quantum potential
 	\begin{equation}
@@ -2778,13 +2897,39 @@ Derivation:
 
 
 
+\subsection{The emergence of renormalizability}
+
+\begin{mybox}{}
+	Bare complex $\phi^4+\phi^6$ theory
+	\begin{align}
+	S[\phi] &= \int \md^d x \left[\partial_\mu \phi^\dagger \partial^\mu \phi + m^2_0(\Lambda) \phi^\dagger \phi \right.\\
+	&\left.\frac{1}{4} \lambda^{(4)}_0(\Lambda) (\phi^\dagger \phi)^2 + \frac{1}{6} \lambda^{(6)}_0(\Lambda)(\phi^\dagger \phi)^3 \right] \nonumber.
+	\end{align}
+	The one-loop effective potential assuming constant $\phi^\dagger(x)\phi(x)$$:=\rho(x)=const.=:\rho$
+	\begin{align}
+	U(\rho) &= m^2_\Lambda \rho + \lambda_\Lambda \rho^2 + \Delta U^{(1)}(\rho) + \mO(\hbar^2)\\
+	\Delta U(\rho) &= \half \int \frac{\md^d q}{(2\pi)^d} \ln(q^2+m^2_\Lambda+3\lambda_\Lambda \rho).
+	\end{align}
+	Then the derivatives of the one-loop effective potential are given by, using the notation $U(\rho)\equiv U^{(1)}(\rho)$,$m_\lambda\equiv m_0(\Lambda)$, $\lambda_\Lambda\equiv \lambda^{(4)}_0(\Lambda)$, $\gamma_\Lambda\equiv \lambda^{(6)}_0(\Lambda)$
+	\begin{align}
+	U^\prime(0) &= m^2_\Lambda + \frac{3}{2} \lambda_\Lambda \int \frac{\md^d q}{(2 \pi)^d} \frac{1}{q^2+m^2_\Lambda}\\
+	U^{\prime \prime}(0) &= \lambda_\Lambda - \frac{9}{2} \lambda^2_\Lambda \int \frac{\md^d q}{(2 \pi)^d} \frac{1}{(q^2+m^2_\Lambda)^2}\\
+	U^{\prime \prime \prime}(0) &= \gamma\Lambda + 27 \lambda^3_\Lambda \int \frac{\md^d q}{(2 \pi)^d} \frac{1}{(q^2+m^2_\Lambda)^3}
+	\end{align}
+	where we find a suppression of $\phi^6$ by quantum fluctuations
+	\begin{equation}
+	\frac{U^{\prime \prime \prime}(0)}{\lambda^{(6)}_0(\Lambda)} \propto \frac{\lambda^3_\Lambda \Lambda^2}{m^2_\Lambda}
+	\end{equation}
+	i.e. the contribution from the $\phi^6$ coupling in the action is completely dominated in the running of non-renormalizable couplings makes them irrelevant in the IR.
+\end{mybox}
+We have seen other ways to understand this emergence of renormalizability: the beta function formalism for non-renormalizable coupling and the Wilsonian flow of non-renormalizable couplings.
 
 
 
 
 
 
-\subsection{TODO Wilsonian effective field theory}
+\subsection{On the Wilsonian renormalization idea -- Wilsonian effective field theory}
 \subsubsection{Conceptual idea}
 The original understanding of renormalization was:
 \begin{enumerate}
@@ -2843,7 +2988,25 @@ Executing the high mode path integral
 is the essential step of the construction of $S_\Lambda$. The integration \ref{eq:reference4} gives rise to all possible interaction terms that are allowed by the symmetries of the original action. This includes non-local interactions at the scale of $\Delta x \propto \frac{1}{\Lambda}$ and non-renormalizable terms.
 	
 \end{mybox}
-
+\subsection{On the importance of effective field theories}
+As I have said, quantum field theories provide an expansion in
+powers of the energy of a process divided by some characteristic
+energy; for soft pions this characteristic energy is about a GeV;
+for superconductivity it’s the Debye frequency or temperature;
+for the standard model it’s $10^{15}$ to $10^{ 16}$GeV; and for gravitation it’s about $10^{ 18}$GeV. Any effective field theory loses its predictive power when the energy of the processes in question approaches the characteristic energy. Note that this characteristic energy is what Wilson thought of when introducing the Wilsonian cut-off, which tells us that the theory above this scale is not viable to describe the physics anymore. So what happen to the effective field theories of electroweak, strong, and gravitational interactions at energies of order $10^{ 15} – 10^{ 18}$ GeV? There are two (maybore more ?) plausible alternatives. One possibility is that the theory remains a quantum field theory, but one in which the finite or infinite number of renormalized couplings do not run off to infinity with increasing energy, but hit a fixed point of the renormalization group equations. One way that can happen is provided
+by asymptotic freedom in a renormalizable theory, where
+the fixed point is at zero coupling, but it’s possible to have more
+general fixed points with infinite numbers of non-zero nonrenormalizable couplings. Now, we don’t know how to calculate these
+non-zero fixed points very well, but one thing we know with fair
+certainty is that the trajectories that run into a fixed point in the
+ultraviolet limit form a finite dimensional subspace of the infinite dimensional space of all coupling constants.That means that
+the condition, that the trajectories hit a fixed point, is just as restrictive in a nice way as renormalizability used to be: \\
+It reduces
+the number of free coupling parameters to a finite number.\footnote{This is for example one approach to solving the quantization of GR. There are many people arguing for an asymptotic fixed UV safe point where the theory becomes stable, this has been computed to many order in the Ricci-scalar already and seems to hold. There are however opponents (e.g. Donoghue) to this approach who argue that the truncation of the perturtbative series is not well defined.}
+ The
+other possibility, which is a priori more likely, is
+that at very high energy we will run into really new physics, not
+describable in terms of a quantum field theory
 
 
 
@@ -4142,6 +4305,9 @@ At next-to-leading order, $P_f(\xi)$ is a function $P_f(\xi)\equiv P_f(\xi,Q)$ v
 
 \section{Standard Model of particle physics}
 \label{sec:sm}
+The present educated view of the standard model, and of general
+relativity, is that these are the leading terms in effective
+field theories.\\
 The Standard Model (SM) of particle physics is formulated as a Yang-Mills theory specified by the following data.
 The gauge group of the Standard Model is 
 \begin{equation}
@@ -4273,8 +4439,8 @@ where \footnote{A $0$ indicates the representation which sets everything to zero
 
  
  
- \section{Contents of the SM}
- \subsection{Gauge fields}
+ \subsection{Contents of the SM}
+ \subsubsection{Gauge fields}
  \begin{statements}
  	The number of gauge fields$=$ number of generators in Lie algebra of the corresponding gauge group.
  \end{statements}
@@ -4290,6 +4456,7 @@ We know that eg. $SU(N)$ has $N^2-1$ generators\footnote{Count the real degrees 
 \end{equation*}
 such that only $1$ generator is unbroken/left, i.e. the QED photon $A_\mu$. This generator is now massless but the other $3$ $W^+_\mu,W^-_\mu,Z^0$ are massive, by the Higgs mechanism, vector bosons carrying the weak interaction.
 \end{enumerate}
+For this we need the concept of \emph{Simple Lie groups}, which is described in the following.
 \subsubsection{Simple Lie groups}
 Consider theories invariant under $SU(N)$, which is a simple Lie group i.e. $SU(N) \neq G_1 \times G_2$. Note that $U(N)$ is a group but it is not a simple Lie group as it is isomorphic to $U(1)\times SU(N)$, which are both simple groups. \emph{Each simple group will have its own different gauge coupling} When we work with gauge theories, there is a unique coupling constant for each simple group:
 \begin{align*}
