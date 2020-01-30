@@ -210,13 +210,13 @@
 \BOOKMARK [0][]{chapter.9}{9\040Conformal\040QFT\040and\040scale\040invariance}{}% 210
 \BOOKMARK [1][-]{section.9.1}{9.1\040Introduction}{chapter.9}% 211
 \BOOKMARK [1][-]{section.9.2}{9.2\040Conformal\040transformations}{chapter.9}% 212
-\BOOKMARK [2][-]{subsection.9.2.1}{9.2.1\040Comment\040on\040GR\040}{section.9.2}% 213
-\BOOKMARK [2][-]{subsection.9.2.2}{9.2.2\040On\040symmetry}{section.9.2}% 214
-\BOOKMARK [1][-]{section.9.3}{9.3\040Classification\040of\040conformal\040transformations}{chapter.9}% 215
-\BOOKMARK [2][-]{subsection.9.3.1}{9.3.1\040The\040conformal\040group\040in\040greater\040or\040equal\040to\040three\040dimensions}{section.9.3}% 216
-\BOOKMARK [1][-]{section.9.4}{9.4\040Conformal\040transformations\040of\040\(classical\040fields\)}{chapter.9}% 217
-\BOOKMARK [2][-]{subsection.9.4.1}{9.4.1\040Examples\040of\040fields}{section.9.4}% 218
-\BOOKMARK [2][-]{subsection.9.4.2}{9.4.2\040Energy-Momentum\040tensor\040as\040a\040primary\040field\040in\040CFT,}{section.9.4}% 219
+\BOOKMARK [1][-]{section.9.3}{9.3 The conformal group – classification of conformal transformations}{chapter.9}% 213
+\BOOKMARK [2][-]{subsection.9.3.1}{9.3.1\040The\040conformal\040group\040in\040greater\040or\040equal\040to\040three\040dimensions}{section.9.3}% 214
+\BOOKMARK [2][-]{subsection.9.3.2}{9.3.2\040The\040conformal\040group\040in\040d=2}{section.9.3}% 215
+\BOOKMARK [1][-]{section.9.4}{9.4\040Conformal\040transformations\040of\040\(classical\040fields\)}{chapter.9}% 216
+\BOOKMARK [2][-]{subsection.9.4.1}{9.4.1\040Transformation\040behaviour\040in\040d>2}{section.9.4}% 217
+\BOOKMARK [2][-]{subsection.9.4.2}{9.4.2\040Transformation\040behaviour\040in\040d=2}{section.9.4}% 218
+\BOOKMARK [2][-]{subsection.9.4.3}{9.4.3\040Energy-Momentum\040tensor\040as\040a\040primary\040field\040in\040CFT}{section.9.4}% 219
 \BOOKMARK [1][-]{section.9.5}{9.5\040Correlation\040functions,\040the\040heart\040of\040CFT}{chapter.9}% 220
 \BOOKMARK [2][-]{subsection.9.5.1}{9.5.1\040Foreword}{section.9.5}% 221
 \BOOKMARK [2][-]{subsection.9.5.2}{9.5.2\040Primary\040and\040quasi-primary\040fields}{section.9.5}% 222

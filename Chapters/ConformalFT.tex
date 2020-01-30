@@ -34,7 +34,6 @@ The non-interacting nature makes these theories uninteresting from the QFT persp
 
 
 \section{Conformal transformations}
-
 \begin{mybox}{Conformal transformation}
 	A \emph{conformal transformation} (CT) is a diffeomorphism under which the metric scales by an overall spacetime dependent positive factor,
 i.e. for $\mR^{m,n}$ with $m+n=\md$ a conformal transformations is then a diffeomorpshim $x\rightarrow x^\prime(x)$ such that
@@ -63,7 +62,7 @@ Some useful and instructive identities in $\md$ spatial dimensions are
 \end{align}
 Technically, this is the origin why we must distinguish the cases $\md=2$ and $\md\geq 3$: \\
 For $\md=2$ the third equation is vacuous.
-\subsection{Comment on GR }
+\subsubsection{Comment on GR }
 Note that for theories including gravity, diffeomorphism invariance is already in place. Equation \ref{eq:ctKilling} can be read as an infiniteismal diffeomorphism
 \begin{align}
 	\delta X^\mu &= \epsilon^\nu \partial_\nu X^\mu = \epsilon^\mu \\
@@ -80,7 +79,7 @@ such that
 \end{equation*}
 but there is still a local rescaling since $\delta X^\mu \neq 0$.
 
-\subsection{On symmetry}
+\subsubsection{On symmetry}
 A conformal field theory (CFT) is a field theory that is invariant under \emph{infinitesimal} conformal transformations. In a theory of gravity (i.e. a diffeomorphism invariant theory), conformal invariance is a gauge symmetry. In a fixed background theory, conformal invariance is a global symmetry implying conserved currents.
 
 
@@ -89,8 +88,8 @@ A conformal field theory (CFT) is a field theory that is invariant under \emph{i
 
 
 
-\section{Classification of conformal transformations}
-\subsection[The conformal group in greater or equal to three dimensions]{The conformal group in $\md$ $\geq 3$}
+\section{The conformal group -- classification of conformal transformations}
+\subsection[The conformal group in greater or equal to three dimensions]{The conformal group in $\md>2$}
 The set of \emph{infinitesimal} conformal transformations can be deduced by finding the most general solution of the constraints \ref{eq:ctConstraints}.
 \begin{mybox}{Infinitesimal conformal transformations}
 Infinitesimal conformal transformations make up the conformal symmetry group, consisting of the Poincaré group, dilations and special conformal transformations
@@ -122,8 +121,113 @@ In particular, the conformal group depends on the topology of the space we consi
 \begin{mybox}{}
 The conformal group acting on $\mR^{n,m} \cup \infty$ is isomorphic to $SO(m+1,n+1)$.
 \end{mybox}
+\subsection{The conformal group in $\md=2$}
+\subsubsection{Derivings the conformal transformations in $2\md$}
+The space of conformal transformations is much bigger in two dimensions. Consider lightcone coordinates 
+\bse 
+x^{\pm} = \frac{1}{\sqrt{2}} (\sigma \pm \tau) 
+\ese 
+where $\sigma,\tau$ are the two coordinates of this space, reminiscient of the two-dimensional worldsheet coordinates introduced in String theory later on\footnote{String theory is a $2\md$ CFT, such that everything about CFTs in $\md=2$ is basically an application to String Theory}. The metric becomes 
+\bse 
+\md s^2 = \eta_{ab} \md \sigma^a \md \tau^2 = \md \sigma^2 - \md \tau^2 = 2 \md x^+ \md x^- = (\md x^+ \md x^-) \begin{pmatrix}
+	0 &1 \\
+	1 & 0 \\
+\end{pmatrix}
+\begin{pmatrix}
+	\md x^+ \\
+	\md x^- \\
+\end{pmatrix},
+\ese 
+where $\eta_{ab}=$diag$(1,-1)$ is the flat metric in two-dimensions $a,b=1,2$ and with the $2\times2$ matrix being the metric in lightcone coordinates. Consider a conformal transformation
+\bse 
+x^- \mapsto x^{\prime,-}(x^-) \quad x^+ \mapsto x^{\prime, +}(x^+) 
+\ese 
+with $x^{\prime,\pm}$ \emph{any} function $x^{\prime,\pm} (x^{\pm})$. In $\md>2$ this does not work, there we only have at most quadratic terms. Then
+\bse 
+2 \md x^{\prime +} \md x^{\prime,-} = 2 \frac{\partial x^{\prime -}}{\partial x^-} \frac{\partial x^{\prime +}}{\partial x^+} \md x^- \md x^+ 
+\ese 
+which is just a Weyl transformation, the metric is just scaling under this conformal transformation.\\
+We make the useful change in notation
+\be
+z = x^+ = \frac{1}{\sqrt{2}} (\sigma + \tau ),\quad \bar{z} = x^- = \frac{1}{\sqrt{2}} (\sigma-\tau).
+\ee 
+This describes several different cases for the underlying two-dimensional spacetime this parametrization is describing.
+\begin{enumerate}
+	\item Real Minkowski space, where $\sigma,\tau \in\mR$ such that $z,\bar{z}\in \mR$ and independent.
+	\item Complex Minkowski space, where $\sigma, \tau \in \mC$ such that $z,\z\in\mC$ and independent.
+	\item Real Euclidean (wick rotate $\tau\rightarrow i \tau$), where $z,\z \in \mC$ and $\z$ is the complex conjugate of $z$\footnote{This explains the notation.}. We usually consider this case. We end up with two disjoint conformal groups, as we will see in the following.
+\end{enumerate}
+Conformal transformations become meromorphic \footnote{depend on one complex variable but have poles, which we will see upon quantization, these poles have to be excluded} functions 
+\be 
+z^\prime  = f(z), \quad \z^\prime = \bar{f}(\z).
+\ee 
+Note that these are therefore diffeomorphisms but not the most general ones, as they only depend on one $x^+$ or $x^-$.
+\subsubsection{Witt Algebra}
+An infinitesimal conformal transformation looks like $z^\prime = z + \xi(z)$ and write $\xi(z)=\sum_n a_n z^{n+1}$. Conformal transformations are generated by 
+\bse 
+\xi(z) \frac{\partial }{\partial z} = \sum_n a_n z^{n+1} \partial_z \equiv - \sum_n a_n L_n
+\ese 
+with the \emph{generators of conformal transformations}
+\be 
+L_n = - z^{n+1} \partial_z 
+\ee
+\todo{Check whether this sign is correct}
+\begin{mybox}{Witt algebra}
+	Having found the generators of conformal transformations, we can derive the algebra of conformal transformations. We get two copies of this so-called \emph{Witt-algebra} due to complexification:
+	\be 
+	\label{eq:cftWittalgebra}
+	[L_n,L_m] = (n-m) L_{n+m},\quad \text{also} \quad [\bar{L}_n,\bar{L}_m] = (n-m) \bar{L}_{n+m}.
+	\ee
+\end{mybox}
+\subsubsection{Global subgroup - Möbius}
+Recall that for $\md>2$ conformal transformations were at most quadratic in $x$, here we have an infinite expansion. In $2\md$, the quadratic part corresponds to a subalgebra generated respectively by
+\bse 
+\{L_0,L_1,L_{-1} \}\quad \text{or} \quad \{\bar{L}_0,\bar{L}_1,\bar{L}_{-1} \}..
+\ese 
+This subalgebra is exactly the Möbius algebra $SL(2)$ which we see that the closure commutators exactly correspond to this
+\bse 
+\left\{ [L_{-1},L_1] = - 2 L_0, \; [L_0,L_1] = - L_1, \; [L_0, L_{-1}]=L_{-1}  \right\} = SL(2).
+\ese\footnote{Note that we have two copies due to $z,\z$, i.e. \bse 
+SO(2,2) = SL(2,\mR) \times SL(2,\mR).
+\ese
+We have seen something similar for $SO(3,1)=SL(2,\mC)\times \bar{SL}(2,\mC)$, i.e. the Lorentz group decomposing into two adjoint copies of the spin group, which is the respective double cover of $SU(2)_L$ and $SU(2)_R$. }
+These are the subset of transformations which are globally well-defined on the entire Riemann sphere, i.e. $n<-1, L_n$ is ill-defined at $z=0$ whereas for $n>1, L_n$ is ill-defined at $z=\infty$\footnote{We will see this again upon quantization in two dimensions, where these poles become problematic in the mode expansion of fields and have to be removed.}\\
+\begin{mybox}{Möbius group is the group of conformal transformations}
+	The generators of the Möbius group are explicitly the generators of the conformal group. We have 
+	\begin{enumerate}
+	\item Translations $P_\mu$ are generated by $\bar{L}_{-1}=- \partial_{\bar{z}}$ and $L_{-1}= - \partial_z$ respectively.
+	\item Dilatations plus rotations (the latter are $J\munu = J_{0i}$ as seen in \ref{eq:lorentzGeneratorRotationsBoosts}) are generated by $\bar{L}_0$ or $L_0$ respectively.
+	\item SCTs $K_\mu$ are generated by $L_1$ or $\bar{L}_1$ respectively.
+	\end{enumerate}
+\end{mybox}
+Note that finite transformations of this global sub-group, i.e. the Möbius group, are given by
+\bse 
+z \rightarrow \frac{az+b}{cz+d} \quad \text{with} \quad ad-bc=1
+\ese 
+which infinitesimmaly is obtained via $a=1+\alpha$, $d=1+\delta$, $b=\beta$, $c=\gamma$ and the constraint implies $\alpha=-\delta$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Conformal transformations of (classical fields)}
+\subsection{Transformation behaviour in $\md>2$}
 We want to find out in which representation fields transform under a transformation of the conformal group.
 \subsubsection{Local fields}
 The fundamental objects in a CFT are \emph{local} fields, where local means that $\phi=\phi(x^\mu)$, $x^\mu \in \mR^{1,3}$.\footnote{These become local operator under quantization.} Knowing all the operators (i.e. knowing their rep., i.e. their dimension) and their correlation functions amounts to solving the complete theory (for a CFT).\\
@@ -195,7 +299,7 @@ By taking coefficients of $b, a_\mu,  \sigma, \omega^{\mu \nu}$, we get te actio
 \end{align}
 \end{mybox}
 Note that not all local fields are primary, but all local fields can be written as a linear combination of primary fields and descendents of primaries via the OPE \ref{eq:cftOPE}.
-\subsection{Examples of fields}
+\subsubsection{Examples of fields}
 Consider a free, massless, complex scalar field theory. This is a CFT
 \bse 
 S =\int \md^d x \partial_\mu \phi \partial^\mu \phi^\dagger, \qquad [\phi]=\frac{\md -2}{2},
@@ -215,8 +319,52 @@ is a primary with dilatation weight
 \ese 
 This can be seen that by checking that this object has the correct $\delta_{K_\mu},\delta_D$ for a primary field.
 
+\subsection{Transformation behaviour in $\md=2$}
+\subsubsection{Specific transformation}
+In the following we will talk about the transformation behaviour of fields under conformal transformations in two dimensions, for this we define fields as $\phi(z,\z)$, \emph{chiral fields }as $\phi(z)$ and \emph{anti-chiral fields} as $\phi(\z)$. These fields now have a $z$- and a $\z$-weight, i.e. under a transformation $z\rightarrow \lambda z$ and $\z \rightarrow \bar{\lambda} \z$ we have
+\be 
+\label{eq:cfttrafoFieldtwod}
+\phi(z,\z) \rightarrow \phi^\prime(\lambda z, \bar{\lambda} \z) = \lambda^{-h} \lambda^{-\bar{h}} \phi(z,\z).
+\ee 
+This is a field of weight $(h,\bar{h})$.\\
+Note that this combines dilatations and rotations. We can see this by specifying $\lambda =r e^{i\theta}$, i.e. $\bar{\lambda}=r e^{-i\theta}$, then \ref{eq:cfttrafoFieldtwod} becomes
+\bse 
+\phi^\prime(\lambda z,\bar{\lambda}\z) = \underbrace{r^{-(h+\h)}}_{\text{dilatations}} \underbrace{e^{-i \theta(h-\bar{h}) } }_{\text{rotations}} \phi(z,\bar{z}) 
+\ese 
+such that the dilatation weight is $h+\h$ and of spin\footnote{Spin is meant here in the sense of a characteristic number labelling the transformation behaviour under transformation. This is the same idea as in \ref{subsec:repLorentzgroupPhysics}, where spin $\half$ objects transform as spinors and spin $0$ objects transform as vectors under rotations, spin is just an afterthought labelling the representation under trafo.} weight is $h-\h$.
+\subsubsection{Field transformation under a general conformal transformation}
+\begin{mybox}{Primary field}
+	A primary field of weight $(h,\h)$ transforms as in \ref{eq:cfttrafoFieldtwod} where
+	\be 
+	\label{eq:cftPrimaryfield2d}
+	\phi^\prime (f(z), \bar{f}(\z)) = (\partial_z f)^{-h} (\partial_{\bar{z}} \bar{f})^{-\h} \phi(z,\z),
+	\ee
+	which holds for non-scalar fields as well.
+\end{mybox}
+We can now deduce how fields transform under conformal transformations by restricting ourselves to $SL(2)$.\\
+Under an infinitesimal transformation $z\rightarrow z+\xi(z)$ $\z \rightarrow \z + \bar{\xi}(\z)$ 
+\be 
+\label{eq:cfttrafoinfinitesimal2d}
+\delta \phi = - h \frac{\partial \xi}{\partial z} \phi - \xi \frac{\partial \phi}{\partial z} - \h \frac{\partial \bar{\xi}}{\partial \z} \phi - \bar{\xi} \frac{\partial \phi}{\partial \z}.
+\ee 
+Note that the conformal group is much bigger (infinite dimensional really) than this sub-group, i.e. this requirement is much \emph{stronger} than in $\md>2.$
+\begin{mybox}{Quasi-Primary field}
+A \emph{quasi-primary field} of weight $h,\h$ transforms just as in \ref{eq:cfttrafoinfinitesimal2d} but only for transformations of Möbius group, i.e. trafo where $\xi(z)$ is \emph{quadratic in z}.\\
+A quasi-primary field is the equivalent of a primary field in higher dimensions.
+\end{mybox}
+In $2\md$, a single primary field will decompose into may quasi-primary fields.
 
-\subsection{Energy-Momentum tensor as a primary field in CFT,}
+
+
+
+
+
+
+
+
+
+
+\subsection{Energy-Momentum tensor as a primary field in CFT}
 
 $T^{\mu \nu}$ is a field in \emph{every} CFT. Simplest way to define it is\footnote{assuming there to exist a Lagrangian for the theory, otherwise it is just an operator transforming with dilatation weight and in a specific rep under Lorentz trafo} is by coupling the theory to gravity as seen in my GR note \todo{Maybe Merge at some point ?}
 \bse 
@@ -227,7 +375,7 @@ The usual definition of energy momentum tensor ensuring translation invariance o
 \delta S =: \int \md^d x \sqrt{-g} T^{\mu \nu} \delta g\munu \; \Leftrightarrow \; T^{\mu \nu} = \frac{1}{\sqrt{-g}} \frac{\delta S}{\delta g\munu }.
 \end{equation}
 
-\subsubsection{Properties of the Energy-Momentum tensor}
+\subsubsection{Properties of the Energy-Momentum tensor in $\md>2$}
 \begin{enumerate}
 	\item \begin{mybox}{Weyl invariance of the energy momentum tensor}
 		In CFT, we have invariance under $g\munu\rightarrow e^\lambda g\munu$ where
@@ -279,8 +427,11 @@ and from the tracelesness of the energy-momentum tensor. For example, the curren
 \{ j^\mu = T^{\mu \nu} \xi_\nu				\}.
 \ee 
 
-
-
+\subsubsection{Properties of the energy-momentum tensor in $\md=2$}
+As in $\md>2$, it holds that 
+\bse 
+\partial_\mu T^{\mu \nu} = 0 \quad \text{and} \quad T^\mu_\mu = 0.
+\ese 
 \section{Correlation functions, the heart of CFT}
 \subsection{Foreword}
 

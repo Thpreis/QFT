@@ -778,114 +778,132 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.2}{Conformal transformations}}{364}{section.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.1}{Comment on GR }}{365}{subsection.9.2.1}
+\contentsline {subsubsection}{\numberline {9.2.0.1}{Comment on GR }}{365}{subsubsection.9.2.0.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.2}{On symmetry}}{365}{subsection.9.2.2}
+\contentsline {subsubsection}{\numberline {9.2.0.2}{On symmetry}}{365}{subsubsection.9.2.0.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}{Classification of conformal transformations}}{365}{section.9.3}
+\contentsline {section}{\numberline {9.3}{The conformal group -- classification of conformal transformations}}{365}{section.9.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.3.1}{The conformal group in greater or equal to three dimensions}}{365}{subsection.9.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {9.3.1.1}{The special conformal transformations (SCT)}}{366}{subsubsection.9.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.4}{Conformal transformations of (classical fields)}}{366}{section.9.4}
+\contentsline {subsection}{\numberline {9.3.2}{The conformal group in $\mathrm {d}=2$}}{366}{subsection.9.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.4.0.1}{Local fields}}{366}{subsubsection.9.4.0.1}
+\contentsline {subsubsection}{\numberline {9.3.2.1}{Derivings the conformal transformations in $2\mathrm {d}$}}{366}{subsubsection.9.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.4.0.2}{Transformation behaviour of fields under the Lorentz group}}{367}{subsubsection.9.4.0.2}
+\contentsline {subsubsection}{\numberline {9.3.2.2}{Witt Algebra}}{367}{subsubsection.9.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.4.0.3}{Transformation behaviour of fields under Dilatations}}{367}{subsubsection.9.4.0.3}
+\contentsline {subsubsection}{\numberline {9.3.2.3}{Global subgroup - Möbius}}{368}{subsubsection.9.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.4.0.4}{Primary fields - useful for general conformal transformations}}{367}{subsubsection.9.4.0.4}
+\contentsline {section}{\numberline {9.4}{Conformal transformations of (classical fields)}}{369}{section.9.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4.1}{Examples of fields}}{368}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.1}{Transformation behaviour in $\mathrm {d}>2$}}{369}{subsection.9.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4.2}{Energy-Momentum tensor as a primary field in CFT,}}{369}{subsection.9.4.2}
+\contentsline {subsubsection}{\numberline {9.4.1.1}{Local fields}}{369}{subsubsection.9.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.4.2.1}{Properties of the Energy-Momentum tensor}}{369}{subsubsection.9.4.2.1}
+\contentsline {subsubsection}{\numberline {9.4.1.2}{Transformation behaviour of fields under the Lorentz group}}{369}{subsubsection.9.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.4.2.2}{Noether currents }}{370}{subsubsection.9.4.2.2}
+\contentsline {subsubsection}{\numberline {9.4.1.3}{Transformation behaviour of fields under Dilatations}}{369}{subsubsection.9.4.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.5}{Correlation functions, the heart of CFT}}{370}{section.9.5}
+\contentsline {subsubsection}{\numberline {9.4.1.4}{Primary fields - useful for general conformal transformations}}{370}{subsubsection.9.4.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5.1}{Foreword}}{370}{subsection.9.5.1}
+\contentsline {subsubsection}{\numberline {9.4.1.5}{Examples of fields}}{371}{subsubsection.9.4.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5.2}{Primary and quasi-primary fields}}{372}{subsection.9.5.2}
+\contentsline {subsection}{\numberline {9.4.2}{Transformation behaviour in $\mathrm {d}=2$}}{371}{subsection.9.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5.3}{The quantum theory, a first idea}}{373}{subsection.9.5.3}
+\contentsline {subsubsection}{\numberline {9.4.2.1}{Specific transformation}}{371}{subsubsection.9.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5.4}{Conformal symmetry of correlation functions}}{374}{subsection.9.5.4}
+\contentsline {subsubsection}{\numberline {9.4.2.2}{Field transformation under a general conformal transformation}}{372}{subsubsection.9.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.4.1}{Two-point functions of scalar operators}}{375}{subsubsection.9.5.4.1}
+\contentsline {subsection}{\numberline {9.4.3}{Energy-Momentum tensor as a primary field in CFT}}{372}{subsection.9.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.4.2}{Three-point functions of scalar operators}}{376}{subsubsection.9.5.4.2}
+\contentsline {subsubsection}{\numberline {9.4.3.1}{Properties of the Energy-Momentum tensor in $\mathrm {d}>2$}}{373}{subsubsection.9.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.4.3}{Four-point functions of scalar operators}}{376}{subsubsection.9.5.4.3}
+\contentsline {subsubsection}{\numberline {9.4.3.2}{Noether currents }}{374}{subsubsection.9.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.4.4}{Higher point functions ?}}{377}{subsubsection.9.5.4.4}
+\contentsline {subsubsection}{\numberline {9.4.3.3}{Properties of the energy-momentum tensor in $\mathrm {d}=2$}}{374}{subsubsection.9.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5.5}{Radial quantization and the operator-state correspondence}}{377}{subsection.9.5.5}
+\contentsline {section}{\numberline {9.5}{Correlation functions, the heart of CFT}}{374}{section.9.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.5.1}{Radial quantization motivation}}{377}{subsubsection.9.5.5.1}
+\contentsline {subsection}{\numberline {9.5.1}{Foreword}}{374}{subsection.9.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.5.2}{Operator-state correspondence}}{378}{subsubsection.9.5.5.2}
+\contentsline {subsection}{\numberline {9.5.2}{Primary and quasi-primary fields}}{376}{subsection.9.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5.6}{Correlators again, but under the aspect of operator-state correspondence}}{381}{subsection.9.5.6}
+\contentsline {subsection}{\numberline {9.5.3}{The quantum theory, a first idea}}{377}{subsection.9.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.6.1}{Two-point functions}}{381}{subsubsection.9.5.6.1}
+\contentsline {subsection}{\numberline {9.5.4}{Conformal symmetry of correlation functions}}{378}{subsection.9.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.6.2}{Three point function}}{381}{subsubsection.9.5.6.2}
+\contentsline {subsubsection}{\numberline {9.5.4.1}{Two-point functions of scalar operators}}{379}{subsubsection.9.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5.7}{The Operator Product Expansion OPE}}{381}{subsection.9.5.7}
+\contentsline {subsubsection}{\numberline {9.5.4.2}{Three-point functions of scalar operators}}{380}{subsubsection.9.5.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.7.1}{Consequence}}{382}{subsubsection.9.5.7.1}
+\contentsline {subsubsection}{\numberline {9.5.4.3}{Four-point functions of scalar operators}}{380}{subsubsection.9.5.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.7.2}{How to compute the generator of descendants}}{382}{subsubsection.9.5.7.2}
+\contentsline {subsubsection}{\numberline {9.5.4.4}{Higher point functions ?}}{381}{subsubsection.9.5.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5.8}{Mode Expansion}}{383}{subsection.9.5.8}
+\contentsline {subsection}{\numberline {9.5.5}{Radial quantization and the operator-state correspondence}}{381}{subsection.9.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.6}{Conformal Ward-Takahashi identities}}{383}{section.9.6}
+\contentsline {subsubsection}{\numberline {9.5.5.1}{Radial quantization motivation}}{381}{subsubsection.9.5.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.6.1}{General Ward-Takahashi identities}}{383}{subsection.9.6.1}
+\contentsline {subsubsection}{\numberline {9.5.5.2}{Operator-state correspondence}}{382}{subsubsection.9.5.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.6.1.1}{Quantum version of Noether's theorem}}{384}{subsubsection.9.6.1.1}
+\contentsline {subsection}{\numberline {9.5.6}{Correlators again, but under the aspect of operator-state correspondence}}{385}{subsection.9.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.6.1.2}{Ward-Takahashi identities}}{385}{subsubsection.9.6.1.2}
+\contentsline {subsubsection}{\numberline {9.5.6.1}{Two-point functions}}{385}{subsubsection.9.5.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.6.2}{Conformal Ward identities}}{386}{subsection.9.6.2}
+\contentsline {subsubsection}{\numberline {9.5.6.2}{Three point function}}{385}{subsubsection.9.5.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.7}{Wilson's OPE}}{386}{section.9.7}
+\contentsline {subsection}{\numberline {9.5.7}{The Operator Product Expansion OPE}}{385}{subsection.9.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.8}{Conformal blocks and the conformal bootstrap programme}}{387}{section.9.8}
+\contentsline {subsubsection}{\numberline {9.5.7.1}{Consequence}}{386}{subsubsection.9.5.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.8.1}{CFT data - summary}}{387}{subsection.9.8.1}
+\contentsline {subsubsection}{\numberline {9.5.7.2}{How to compute the generator of descendants}}{386}{subsubsection.9.5.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.8.2}{Consistency conditions on CFT data}}{387}{subsection.9.8.2}
+\contentsline {subsection}{\numberline {9.5.8}{Mode Expansion}}{387}{subsection.9.5.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.8.2.1}{Unitariy of CFT in more than two space-dimensions}}{387}{subsubsection.9.8.2.1}
+\contentsline {section}{\numberline {9.6}{Conformal Ward-Takahashi identities}}{387}{section.9.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.8.2.2}{Bound from four-point functions}}{388}{subsubsection.9.8.2.2}
+\contentsline {subsection}{\numberline {9.6.1}{General Ward-Takahashi identities}}{387}{subsection.9.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.8.3}{Conformal bootstrap}}{388}{subsection.9.8.3}
+\contentsline {subsubsection}{\numberline {9.6.1.1}{Quantum version of Noether's theorem}}{388}{subsubsection.9.6.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.8.3.1}{This leads to the bootstrap programme}}{389}{subsubsection.9.8.3.1}
+\contentsline {subsubsection}{\numberline {9.6.1.2}{Ward-Takahashi identities}}{389}{subsubsection.9.6.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.9}{Hilbert space of a CFT in $\mathrm {d}>2$}}{390}{section.9.9}
+\contentsline {subsection}{\numberline {9.6.2}{Conformal Ward identities}}{390}{subsection.9.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.10}{Correlation functions of primary fields and CFT data}}{390}{section.9.10}
+\contentsline {section}{\numberline {9.7}{Wilson's OPE}}{390}{section.9.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.11}{CFT and scale invariance (Zamolodchikov-Polchinski theorem)}}{391}{section.9.11}
+\contentsline {section}{\numberline {9.8}{Conformal blocks and the conformal bootstrap programme}}{391}{section.9.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.12}{CFT in $2 \mathrm {d}$ }}{391}{section.9.12}
+\contentsline {subsection}{\numberline {9.8.1}{CFT data - summary}}{391}{subsection.9.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.12.1}{Introduction and motivation into string theory}}{391}{subsection.9.12.1}
+\contentsline {subsection}{\numberline {9.8.2}{Consistency conditions on CFT data}}{391}{subsection.9.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.12.1.1}{Motivation}}{391}{subsubsection.9.12.1.1}
+\contentsline {subsubsection}{\numberline {9.8.2.1}{Unitariy of CFT in more than two space-dimensions}}{391}{subsubsection.9.8.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.12.1.2}{Quick intro to string theory}}{391}{subsubsection.9.12.1.2}
+\contentsline {subsubsection}{\numberline {9.8.2.2}{Bound from four-point functions}}{392}{subsubsection.9.8.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.12.2}{Unitarity of CFT in $\mathrm {d}=2$}}{393}{subsection.9.12.2}
+\contentsline {subsection}{\numberline {9.8.3}{Conformal bootstrap}}{392}{subsection.9.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}{Supersymmetry}}{395}{chapter.10}
+\contentsline {subsubsection}{\numberline {9.8.3.1}{This leads to the bootstrap programme}}{393}{subsubsection.9.8.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}{String Theory}}{397}{chapter.11}
+\contentsline {section}{\numberline {9.9}{Hilbert space of a CFT in $\mathrm {d}>2$}}{394}{section.9.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.10}{Correlation functions of primary fields and CFT data}}{394}{section.9.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.11}{CFT and scale invariance (Zamolodchikov-Polchinski theorem)}}{395}{section.9.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.12}{CFT in $2 \mathrm {d}$ }}{395}{section.9.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.12.1}{Introduction and motivation into string theory}}{395}{subsection.9.12.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {9.12.1.1}{Motivation}}{395}{subsubsection.9.12.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {9.12.1.2}{Quick intro to string theory}}{395}{subsubsection.9.12.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.12.2}{Unitarity of CFT in $\mathrm {d}=2$}}{397}{subsection.9.12.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}{Supersymmetry}}{399}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}{String Theory}}{401}{chapter.11}
