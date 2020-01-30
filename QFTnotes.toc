@@ -824,9 +824,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {9.4.3.3}{Properties of the energy-momentum tensor in $\mathrm {d}=2$}}{374}{subsubsection.9.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.5}{Correlation functions, the heart of CFT}}{374}{section.9.5}
+\contentsline {section}{\numberline {9.5}{Correlation functions, the heart of CFT}}{375}{section.9.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5.1}{Foreword}}{374}{subsection.9.5.1}
+\contentsline {subsection}{\numberline {9.5.1}{Foreword}}{375}{subsection.9.5.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.5.2}{Primary and quasi-primary fields}}{376}{subsection.9.5.2}
 \defcounter {refsection}{0}\relax 
@@ -842,7 +842,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {9.5.4.4}{Higher point functions ?}}{381}{subsubsection.9.5.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5.5}{Radial quantization and the operator-state correspondence}}{381}{subsection.9.5.5}
+\contentsline {subsection}{\numberline {9.5.5}{Radial quantization and the operator-state correspondence in $\mathrm {d}>2$}}{381}{subsection.9.5.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {9.5.5.1}{Radial quantization motivation}}{381}{subsubsection.9.5.5.1}
 \defcounter {refsection}{0}\relax 
@@ -854,56 +854,66 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {9.5.6.2}{Three point function}}{385}{subsubsection.9.5.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5.7}{The Operator Product Expansion OPE}}{385}{subsection.9.5.7}
+\contentsline {subsection}{\numberline {9.5.7}{Radial quantization and the operator-state correspondence in $\mathrm {d}=2$}}{386}{subsection.9.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.7.1}{Consequence}}{386}{subsubsection.9.5.7.1}
+\contentsline {subsubsection}{\numberline {9.5.7.1}{Radial quantization}}{386}{subsubsection.9.5.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.5.7.2}{How to compute the generator of descendants}}{386}{subsubsection.9.5.7.2}
+\contentsline {subsubsection}{\numberline {9.5.7.2}{Hermitian conjugation in $2\mathrm {d}$ radial quantization}}{386}{subsubsection.9.5.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5.8}{Mode Expansion}}{387}{subsection.9.5.8}
+\contentsline {subsubsection}{\numberline {9.5.7.3}{Mode expansion}}{386}{subsubsection.9.5.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.6}{Conformal Ward-Takahashi identities}}{387}{section.9.6}
+\contentsline {subsubsection}{\numberline {9.5.7.4}{Operator-state correspondence}}{386}{subsubsection.9.5.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.6.1}{General Ward-Takahashi identities}}{387}{subsection.9.6.1}
+\contentsline {subsection}{\numberline {9.5.8}{The Operator Product Expansion OPE}}{387}{subsection.9.5.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.6.1.1}{Quantum version of Noether's theorem}}{388}{subsubsection.9.6.1.1}
+\contentsline {subsubsection}{\numberline {9.5.8.1}{Consequence}}{387}{subsubsection.9.5.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.6.1.2}{Ward-Takahashi identities}}{389}{subsubsection.9.6.1.2}
+\contentsline {subsubsection}{\numberline {9.5.8.2}{How to compute the generator of descendants}}{388}{subsubsection.9.5.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.6.2}{Conformal Ward identities}}{390}{subsection.9.6.2}
+\contentsline {subsection}{\numberline {9.5.9}{Mode Expansion}}{388}{subsection.9.5.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.7}{Wilson's OPE}}{390}{section.9.7}
+\contentsline {section}{\numberline {9.6}{Conformal Ward-Takahashi identities}}{388}{section.9.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.8}{Conformal blocks and the conformal bootstrap programme}}{391}{section.9.8}
+\contentsline {subsection}{\numberline {9.6.1}{General Ward-Takahashi identities}}{389}{subsection.9.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.8.1}{CFT data - summary}}{391}{subsection.9.8.1}
+\contentsline {subsubsection}{\numberline {9.6.1.1}{Quantum version of Noether's theorem}}{389}{subsubsection.9.6.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.8.2}{Consistency conditions on CFT data}}{391}{subsection.9.8.2}
+\contentsline {subsubsection}{\numberline {9.6.1.2}{Ward-Takahashi identities}}{390}{subsubsection.9.6.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.8.2.1}{Unitariy of CFT in more than two space-dimensions}}{391}{subsubsection.9.8.2.1}
+\contentsline {subsection}{\numberline {9.6.2}{Conformal Ward identities}}{392}{subsection.9.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.8.2.2}{Bound from four-point functions}}{392}{subsubsection.9.8.2.2}
+\contentsline {section}{\numberline {9.7}{Wilson's OPE}}{392}{section.9.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.8.3}{Conformal bootstrap}}{392}{subsection.9.8.3}
+\contentsline {section}{\numberline {9.8}{Conformal blocks and the conformal bootstrap programme}}{392}{section.9.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.8.3.1}{This leads to the bootstrap programme}}{393}{subsubsection.9.8.3.1}
+\contentsline {subsection}{\numberline {9.8.1}{CFT data - summary}}{392}{subsection.9.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.9}{Hilbert space of a CFT in $\mathrm {d}>2$}}{394}{section.9.9}
+\contentsline {subsection}{\numberline {9.8.2}{Consistency conditions on CFT data}}{393}{subsection.9.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.10}{Correlation functions of primary fields and CFT data}}{394}{section.9.10}
+\contentsline {subsubsection}{\numberline {9.8.2.1}{Unitariy of CFT in more than two space-dimensions}}{393}{subsubsection.9.8.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.11}{CFT and scale invariance (Zamolodchikov-Polchinski theorem)}}{395}{section.9.11}
+\contentsline {subsubsection}{\numberline {9.8.2.2}{Bound from four-point functions}}{393}{subsubsection.9.8.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.12}{CFT in $2 \mathrm {d}$ }}{395}{section.9.12}
+\contentsline {subsection}{\numberline {9.8.3}{Conformal bootstrap}}{394}{subsection.9.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.12.1}{Introduction and motivation into string theory}}{395}{subsection.9.12.1}
+\contentsline {subsubsection}{\numberline {9.8.3.1}{This leads to the bootstrap programme}}{395}{subsubsection.9.8.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.12.1.1}{Motivation}}{395}{subsubsection.9.12.1.1}
+\contentsline {section}{\numberline {9.9}{Hilbert space of a CFT in $\mathrm {d}>2$}}{396}{section.9.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.12.1.2}{Quick intro to string theory}}{395}{subsubsection.9.12.1.2}
+\contentsline {section}{\numberline {9.10}{Correlation functions of primary fields and CFT data}}{396}{section.9.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.12.2}{Unitarity of CFT in $\mathrm {d}=2$}}{397}{subsection.9.12.2}
+\contentsline {section}{\numberline {9.11}{CFT and scale invariance (Zamolodchikov-Polchinski theorem)}}{396}{section.9.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}{Supersymmetry}}{399}{chapter.10}
+\contentsline {section}{\numberline {9.12}{CFT in $2 \mathrm {d}$ }}{397}{section.9.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}{String Theory}}{401}{chapter.11}
+\contentsline {subsection}{\numberline {9.12.1}{Introduction and motivation into string theory}}{397}{subsection.9.12.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {9.12.1.1}{Motivation}}{397}{subsubsection.9.12.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {9.12.1.2}{Quick intro to string theory}}{397}{subsubsection.9.12.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.12.2}{Unitarity of CFT in $\mathrm {d}=2$}}{399}{subsection.9.12.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}{Supersymmetry}}{401}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}{String Theory}}{403}{chapter.11}

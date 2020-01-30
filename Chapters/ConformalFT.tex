@@ -432,6 +432,24 @@ As in $\md>2$, it holds that
 \bse 
 \partial_\mu T^{\mu \nu} = 0 \quad \text{and} \quad T^\mu_\mu = 0.
 \ese 
+Go over to $z,\z$ basis as described above with metric $\eta_{zz}=\eta_{\z \z} =0$, $\eta_{z\z}=\eta_{\z z}=1$, with $A_z = \eta_{z\z} A^{\z}$, such that we know 
+\bse
+T^{\mu \nu} \rightarrow T^{zz}, T^{\z\z}, \; T^{z \z}= T^{\z z}.
+\ese 
+Demand tracelesness, which implies
+\be 
+T^\mu_\mu = T^{\mu \nu} \eta\munu = 2 T^{z \z} = 0 \; \Leftrightarrow \; T^{z\z}=0.
+\ee 
+We furthermore know that we can distinguish
+\begin{align*}
+	\nu&= z: \; \partial_z T^{zz}+\partial_{\bar{z}} \underbrace{T^{\z z}}_{=0} =0 \; \Rightarrow \; \partial_z T^{zz} =0 \\
+	\nu& = \z: \qquad \Rightarrow \partial_{\bar{z}} T^{\z \z} = 0
+\end{align*}
+from which we can conclude that the energy-momentum tensor in $\md=2$ has the properties
+\begin{align}
+	T_{zz} &= T^{\z \z} = T(z), \quad T_{\z \z} = T^{zz} = \bar{T}(z)\\
+	T:{z\z} &= T^{z \z} = 0.
+\end{align}
 \section{Correlation functions, the heart of CFT}
 \subsection{Foreword}
 
@@ -659,7 +677,7 @@ Here there are more invariant cross ratios. These can not be fixed by conformal 
 
 
 
-\subsection{Radial quantization and the operator-state correspondence} 
+\subsection{Radial quantization and the operator-state correspondence in $\md>2$} 
 \subsubsection{Radial quantization motivation}
 We normally quantize a theory on "equal time slices", compare the canonical quantization procedure \ref{eq:canonicalQFTequaltimecommutationrel}. It is however equally possible to quantize on "equal radial slices", this is called \emph{Radial Quantization}.\\ 
 We can motivate this by first considering the theory on a cylinder, i.e. we have a Euclidean (in the sense of Wick-rotated) CFT on $\mR\times S^{D-1}$, and relate it to flat space afterwards. On the cylinder we have Euclidean time $\tau$ and coordinates for $S^{D-1}$ which we fednite by $\vec{n}, \vec{n}^2=1$. Thus
@@ -844,6 +862,68 @@ Action of conformal symmetry on $\ket{\hat{ \mO}}$ is with $x=0$ and thus
  \be 
  \bra{\mO_{\Delta, I}} \mO_{\Delta,2}(\hat{ 1}) \ket{\mO_{\Delta, 3}} = C_{123}, \quad \hat{1} \equiv (1,0,0,\dots).
  \ee 
+ 
+ 
+ \subsection{Radial quantization and the operator-state correspondence in $\md=2$}
+ \subsubsection{Radial quantization}
+ Same as before, we have a mapping from $\tau$ on the cylinder translating to a fixed radius $r=\abs{z}$ centred around zero, but this time the circle is in the $\mC-$plane. Before we had coordinates $(r,\vec{n}^\mu)$ ($\abs{\vec{n}}=1,x^\mu = r n^\mu$), now we just write 
+ \bse 
+ \vec{n}^\mu = \begin{pmatrix}
+ 	\cos \theta \\
+ 	\sin \theta \\
+ \end{pmatrix},\quad 
+z=r e^{i\theta},\; r =\abs{z} \quad \forall \theta.
+ \ese 
+ \subsubsection{Hermitian conjugation in $2\md$ radial quantization}
+ For $h=\h$, $\Delta = 2h$, such that for scalar field we have
+ \bse 
+ \mO(z,\z)^\dagger = \frac{1}{(z \z)^{2h}} \mO(\frac{1}{\z},\frac{1}{z} ), \quad \frac{1}{\z} = r^{-1} e^{i\theta}.
+ \ese 
+ The generalization for fields with spin reads
+ \be 
+ \label{eq:cfthermitianconjugation2d}
+ \phi(z,\z)^\dagger = \frac{1}{z^{2 \bar{h}} } \frac{1}{\z^{2 h}} \phi(\frac{1}{\z}, \frac{1}{z}).
+ \ee 
+ \subsubsection{Mode expansion}
+ In $2\md$, it is useful to consider the Laurent expansion of our fields 
+ \be 
+ \label{eq:cftModeexpansion}
+ \phi(z,\z) = \sum_{n,m} \frac{\phi_{nm}}{z^{n+h} \z^{m+\h}}.
+ \ee 
+ Inserting the hermitian conjugate \ref{eq:cfthermitianconjugation2d} into the mode expansion, we find the condition
+ \be 
+ \phi^\dagger_{n,m} = \phi_{-n,-m}.
+ \ee 
+ 
+ \subsubsection{Operator-state correspondence}
+ We are simply tweaking the statements for $\md>2$ case.\\
+ For any operator $\phi$ we have a state 
+ \be 
+ \ket{\phi} = \phi(0,0) \ket{0}.
+ \ee 
+ Comparing with mode expansion, we have
+ \bse 
+ \ket{\phi}= \sum_{n,m} \frac{\phi_{nm}}{z^{n+h} \z^{m+\h} } |_{z,\z=0} \ket{0}.
+ \ese 
+ This expression obviously blows up, at the quantum level we therefore have to enforce
+ \be 
+ \phi_{nm} \ket{0}=0 \quad \text{for } n+h >0 \& m+\h >0.
+ \ee 
+ Thus
+ 
+ \be 
+ \ket{\phi} = \phi_{-h,-\h} \ket{0}.
+ \ee 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
