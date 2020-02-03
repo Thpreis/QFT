@@ -912,7 +912,7 @@ z=r e^{i\theta},\; r =\abs{z} \quad \forall \theta.
  Thus
  
  \be 
- \ket{\phi} = \phi_{-h,-\h} \ket{0}.
+ \ket{\phi} = \phi_{-h,-\h} \ket{0}, \; \bra{\phi}= \bra{0}(\phi_{-h,-\h})^\dagger =\bra{0}\phi_{h,\h}
  \ee 
  
  
@@ -927,7 +927,7 @@ z=r e^{i\theta},\; r =\abs{z} \quad \forall \theta.
  
  
  
-  \subsection{The Operator Product Expansion OPE}
+  \subsection{The Operator Product Expansion OPE in $\md>2$}
   \begin{mybox}{OPE}
   	In a CFT, we can write the product of two operators at different points as a sum of operators at one point
  \begin{equation}
@@ -968,6 +968,112 @@ E.g. for the LO term as $x\rightarrow 0$
 	&= \frac{1}{\abs{x}^{\Delta_1 +\Delta_2 -\Delta_3} \abs{z}^{2 \Delta_3} } = RHS \\
 	\Leftrightarrow \quad C_{\Delta_3}(x,\partial_y) &= \frac{1}{\abs{x}^{\Delta_1+\Delta_2-\Delta_3} } + \mO(NLO).
 \end{align*}
+
+
+\subsection{The Operator Product Expansion in $\md=2$}
+There exists an OPE in $2\md$ as before
+\be 
+\phi_1(z) \phi_2(0)= \sum_{\phi_3} C_{123} C(z,\partial_y) \phi_3(y) |_{y=0}.
+\ee 
+Recall the mode expansion
+\bse 
+\phi(z,\z) = \sum_{n,m} \frac{\phi_{nm}}{z^{n+h} \z^{m+\h} }.
+\ese 
+From now on focus on a chiral field for simplicity, i.e. $\phi=\phi(z)$
+\bse 
+\phi(z) = \sum_n \frac{\phi_n}{z^{h+n}}.
+\ese 
+Then consider the contour integral along a contour around $z=0$\footnote{the coefficients of the Laurent expansion of the chiral field are given by the contour integral}
+\begin{align*}
+\frac{1}{2\pi i} \oint_{C(z=0)} \md z\phi(z) z^{n+h-1} &= \frac{1}{2\pi i} \oint \sum_{n^\prime} \frac{\phi_{n^\prime}}{z^{n^\prime +h}} z^{n+h-1} \md z \\
+&= \frac{1}{2 \pi i} \oint \sum_{n^\prime} \frac{\phi_{n^\prime}}{z^{n^\prime +h}} \frac{1}{z} \md z = \phi_n \\
+\text{Via Residue of} \quad \dots &+ \phi_{n-2} z + \phi_{n-1} + \underbrace{\frac{\phi_n}{z}}_{\text{pole}} + \frac{\phi_{n+1}}{z^2} + \dots
+\end{align*}
+This gives us the modes in terms of fields via a contour integral.
+\subsubsection{Note on Noether symmetries in $\md=2$}
+Recall that we had in higher dimensions, that the conformal Killing vector $\xi^\nu \partial_\nu$ has a corresponding Noether current
+\be 
+\xi^\nu \partial_\nu \text{ conformal Killing vector }  \rightarrow j^\mu = T^{\mu \nu}\xi_\nu \text{ conserved current } \rightarrow Q_3 = \int T^{0 \nu} \xi_\nu \md^3 x \text{ conserved charge}.
+\ee
+This is written down in the usual time quantization of QFT, which we see from singling out $0$ index and integrating out space.\\
+In $2\md$, things get easier due to our complexification of space time, i.e. $z\rightarrow z + \xi$, $\z \rightarrow \z + \bar{\xi}$, such that we analogously have
+\be 
+\text{conformal Killing vector }\xi \partial_z + \bar{\xi} \rightarrow \begin{array}{ll}
+	T^{zz} \xi_z & \rightarrow \; T(z) \xi/(z) \\
+	T^{\z \z} \xi_{\z} & \rightarrow \; \bar{T}(\z) \bar{\xi} (\z) 
+\end{array}
+\text{ Noether current in }2\md
+\ee 
+which leads to conserved charges, now in radial quantization
+\be 
+Q_3 = \oint_{C(z=0)} \frac{1}{2 \pi i} \xi/z) T(z) \md z. 
+\ee 
+\begin{mybox}{A Note on this}
+	Here, \emph{all} Noether currents are built up from the energy-momentum tensor, i.e. the Noether current of spacetime translations. The idea is that the $\xi_\nu$ encodes the additional symmetry, e.g. dilatation, ontop of the spacetime translation to give you the whole Noether current. \text{ Think about this}. The conservation is then guaranteed by tracelesness and conservation of energy momentum tensor. Not necessarily a deep statement, we just found out that every current constructed like this will be conserved by the properties of $T^{\mu \nu}$ in CFT.
+\end{mybox}
+Also recall that in QFT charges become the generators of the symmetry via commutators\footnote{Difference to higher dimension now is just the exact form of how the operator acts}. For a chiral primary weight $h$, we have
+\be 
+[Q_\xi, \phi(z)] = - \delta_\xi \phi = h (\partial_z \xi) \phi + \xi \partial_z \phi. 
+\ee 
+Consider the commutator 
+\bse 
+[Q_\xi, \phi(w)]= Q_\xi \phi(w) - \phi(w) Q_\xi 
+\ese 
+these quantum correlators are always thought of insertions into time-ordered correlation functions. Here, to be inserted into radially-ordered  correlation functions.
+So
+\begin{align*}
+	[Q_\xi , \phi(w) ] &= \frac{1}{2 \pi i} \oint \xi(z) T(z) \phi(w) \md z \\
+	&\frac{1}{2 \pi i } \oint_{\abs{z} R >\abs{w}} \xi(z) T(z) \phi(w) - \frac{1}{2 \pi i} \oint_{\abs{z} R <\abs{w}} \xi(z) T(z) \phi(w) 
+\end{align*}
+where we can choese the boundary of the integral by choosing the radius of the contour as it is conserved. Now we deform the contour such that it is basically  just centered around $w$, as everything also can be brought together as close as possible to have it cancel, apart from the point which is not integrated over, i.e. $w$.
+
+\be 
+[Q_\xi, \phi(w)] = \frac{1}{2 \pi i} \oint_{\abs{z-2} = R,\text{ anti-clockwise}} \xi(z) T(z) \md z,
+\ee 
+which is supposed to be equal to $h \partial_z \xi \phi + \xi \partial_z \phi$.
+\begin{mybox}{Claim}
+	This gives us information on the OPE in $\md=2$. This means for the OPE of a primary $\phi$ (weight $h$) with $T$ is 
+	\be 
+	\label{eq:cftOPE2d}
+	T(z)\phi(w) = \frac{h}{(z-w)^2} \phi(w) + \frac{1}{z-w} \partial_w \phi(w) + \dots 
+	\ee 
+	which is non-singular as $z\rightarrow w$. Upon comparison order by order, you get constraints saying that you have to have a specific number of poles per order, giving you this expression. Some text give you this as the definition for primary, i.e. 
+	\bse 
+	\text{ transformation of primary } \leftrightarrow \text{ OPE of primary with }T
+	\ese 
+\end{mybox}\footnote{Note that this looks very similar to the general idea of a Ward identity, involving a Noether current and contact terms}
+Plug this result explicitly into the commutator $[Q_\xi,\phi]$ aove
+\begin{align*}
+	&\frac{1}{2 \pi i}  \oint_{\text{anti-clockwise around }w} \\
+	& \quad \left[\xi(z) \frac{h}{(z-w)^2} \phi(w) + \frac{\xi(z) \partial_w \phi}{z-2} + \text{ non-singular }\right] \md z \\
+	&= \underbrace{-}_{\text{anti-clockw.}} \text{ Resiude at $z=w$ of singular part} \\
+	&= - h \partial_w \xi(w) \phi(w) - \xi(w) \partial_w \phi 
+\end{align*}
+using 
+\bse 
+\frac{1}{(z-w)^2} =-\partial_z \frac{1}{z-w}.
+\ese 
+You can do something similar in higher dimensions.
+\subsubsection{Quantum Conformal algebra}
+Expanding $\xi(z)\partial_z$ and taking coefficients gives the generators of the $2\md$ conformal algebra $L_n$. Similarly, expanding $\xi(z)$ in 
+\bse 
+Q_\xi = \oint \frac{1}{2\pi i} T(z) \xi(z) \md z 
+\ese 
+gives the \emph{quantum conformal algebra}
+\begin{mybox}{Generators quantum conformal algebra}
+	\be 
+	L_m = \frac{1}{2 \pi i} \oint \md z z^{m+1} T(z).
+	\ee 
+	This in turn implies that
+	\be 
+	T(z) = \sum_n \frac{L_n}{z^{n+2}}. 
+	\ee 
+	The $L_n$ are called \emph{Virasoro modes.}
+\end{mybox}
+We obtain a version of the $T\phi$ OPE on the modes
+\be 
+[L_m,\phi_n] = \left((h-1) m -n\right) \phi_{n+m}
+\ee 
 
 
 
@@ -1107,8 +1213,117 @@ and therefore
  	
  	
 
- 	
- 	
+ 	\section{Example of a $2\md$ CFT -- Free boson}
+ 	\subsection{The classical theory}
+ 	Simplest example of a $2\md$ CFT, the free boson (free scalar field). The difference to normal QFT is that we put it on a cylinder (circle). Recall that the Polyakov action is just the sum of $md$ free scalar fields. So even this simple example is useful for string theory. Doing it on a cylinder corresponds to looking at a closed string. Going back to $\md=2$ space $a=(0,1), X=(t,\sigma)$\footnote{We are writing $X$ as we are thinking of string theory, but it really is just a scalar field $X=\phi$.} we have
+ \be
+ S = -\frac{1}{4 \alpha^\prime} \int \md^2X \partial_a X \partial^a X.
+ \ee 
+ You normally solve e.o.m. via a mode expansion where the coefficients of your expansion become the creation and annihilation operators. Since we are on a cylinder, we now get a discrete mode expansion. The e.o.m. is
+ \be 
+ - \partial^2_t X + \partial^2_\sigma X = 0,
+ \ee 
+ the $1 \md$ wave equation. Being on the cylinder implies periodic boundary conditions $X(t,\sigma) =X(t,2 \pi)$, which basically closes the string. The solution can therefore be written as
+ 
+ \be 
+ X = x - \sqrt{2 \alpha^\prime} \alpha_0 t - i \sqrt{\half\alpha^\prime} \sum_{n\neq 0} \left[ \frac{\alpha_n}{n} e^{-i n (t+\sigma)} + \frac{\bar{\alpha}_n}{n} e^{-i n (t-\sigma)} \right].
+ \ee 
+ Realitiy of $X$ implies
+ \be
+ X=X^* \; \Rightarrow \; \alpha^*_n = \alpha_{-n}, \; \bar{\alpha}^*_n = \bar{\alpha}_{-n}.
+ \ee 
+ In string theory, $\alpha_n$ are called the \emph{oscillator modes}, or just \emph{modes}. We define the centre of mass-momentum of the string
+ \be 
+ p = \sqrt{\frac{2}{\alpha^\prime}} \alpha_0 
+ \ee 
+ Therefore, the centre-of-mass of the string is moving with a linear motion $x-\sqrt{2 \alpha^\prime} \alpha_0 t$ and wiggles around via the oscillating contribution whilst moving linearly through spacetime.\\
+ Follow the change of variable to $z$ we did before be get
+ \begin{enumerate}
+ 	\item Wick rotate $\tau = i t$, $\sigma = \theta$
+ 	\item $r=e^\tau$ such that
+ 	\bse 
+ 	e^{-i (\tau +\sigma)} \rightarrow e^{-\tau} e^{-i\sigma} = \frac{1}{r e^{i \sigma}} = \frac{1}{z}.
+ 	\ese 
+ \end{enumerate}
+ We then have
+ \be 
+ X = x + i \alpha^\prime p \ln(\abs{z}) - i \sqrt{\frac{\alpha^\prime}{2}} \sum_{n\neq 0} \left[\frac{\alpha_n}{2} z^{-n} + \frac{\bar{\alpha}_n}{n} \z^{-n} \right]
+ \ee 
+ Note that this is meromorphic, but $\partial_z X$ is meromorphic and a primary field, whereas $X$ is not a primary field from a CFT POV
+ \be 
+ \partial_z X = i \sqrt{\frac{\alpha^\prime}{2}} \sum_n \frac{\alpha_n}{z^{n+1}},\; \partial_{\bar{z}} X= i \sqrt{\frac{\alpha^\prime}{2}} \sum_n \frac{\bar{\alpha}_n}{\z^{n+1}}.
+ \ee 
+ It turns out that $\partial_z X$ and $\partial_{\bar{z}} X$ are both primaries, but $X$ is not. $X$ has dimension $0$ and weight $\frac{\md-2}{2}$, i.e $\partial X$ has weight $
+ (1,0)$ and $\partial_{\bar{z}} X$ has weight $(0,1)$.
+ \subsection{Quantization of the $2\md$ free scalar}
+ \subsubsection{Canonical quantization by introducing commutation relations }
+ For the moment go back to $(t,\sigma)$. We impose the usual equal time commutators
+ \be
+ \Pi = \frac{\partial L}{\partial \dot{X}} = \frac{1}{2 \pi \alpha^\prime} \dot{X},
+ \ee 
+ which is the canonically conjugate momentum to $X$, such that
+ \be 
+ [X(t,\sigma), \dot{X}(t,\sigma^\prime)] = 2 \pi \alpha^\prime i \delta(\sigma-\sigma^\prime).
+ \ee 
+ This gives the commutators for the modes
+ \be 
+ [x,p] = i,\; [\alpha_m,\alpha_n] = m \delta_{n+m,0}, \; [\bar{\alpha}_m, \bar{\alpha}_n] = m \delta_{n+m,0}.
+ \ee 
+ Such that the commutators are only non-zero for $[\alpha_m, \alpha_{-m}] = m$.
+ We see that all the factors of $\alpha^\prime$ etc. were introduced to make the commutators nice
+ \be 
+ H= \int \md \sigma (\Pi \dot{X} - L) = \frac{\alpha^\prime}{2} p^2 + \sum_{n>0} ( \alpha_{-n} \alpha_n + \bar{\alpha}_{-n} \bar{\alpha}_n).
+ \ee 
+ That implies the following commutation relations
+ \be 
+ [H,\alpha_{-n}] = n \alpha_{-n}.
+ \ee
+ \subsubsection{Building the Fock space}
+ \footnote{He keeps saying Hilbert space, but should it not be a Fock space ?}
+ Conformal represenations will be objects on the Fock space we are constructing now from these commutation relations. $\alpha_m$, $\bar{\alpha}_m$ are the usual \emph{raising} (for $m<0$) and \emph{lowering} (for $m>0$) operators for the scalar field. As usual, define a Fock space by choosing a vacuum $\ket{0;k}$ such that
+ \be 
+ \alpha_m \ket{0;k} =0 \quad \bar{\alpha}_m \ket{0;k} = 0 \quad \forall m >0.
+ \ee 
+ Normally the ground state corresponds to $\phi=0$, loosely speaking. Now, the vacuum will go round in the circle, i.e. the vacuum is \emph{not unique}\footnote{This is because the boundary conditions are that we live on a circle}. In string theory, the vacuum has no excited mode on string but the string is travelling with constant velocity. We label therefore label different vacua by the momentum 
+ \be 
+ p \ket{0;k} = k \ket{0;k}
+ \ee
+ Built up the Fock space by acting with $\alpha_n,\bar{\alpha}_n$ with $n<0$ on $\ket{0;k}$
+ \bse 
+ \alpha^{n_1}_{-1} \alpha^{n_2}_{-2} \dots \bar{\alpha}^{\bar{n}_1}_{-1} \bar{\alpha}^{\bar{n}_2}_{-2} \dots \ket{0;k}.
+ \ese 
+ Important case $\ket{0}= \ket{0;0}$ i.e. vacuum with $k=0$, this is sometimes called the \emph{absolute vacuum}, i.e. 
+ \bse 
+ p \ket{0} = 0.
+ \ese 
+  This is invariant under the global subgroup of the conformal group. We can construct $\ket{0;k}$ from $\ket{0}$
+ \be 
+ \ket{0;k} = e^{i k X(z=0)} \ket{0}.
+ \ee 
+ The object acting on the absolute vacuum is one form of a so-called \emph{vertex operator} interesting in string theory. You can not write something similar down in higher dimensions. We can exponentiate $X$ because has has a dilatation weight of zero, this is only true for $\md =2$.
+ \\
+\emph{ Proof}  that this is the right object by showing that it has the right commutation relations
+ \begin{align*}
+ 	p\ket{0;k} &= p d^{i k X(0)} \ket{0} = [p,e^{i k X(0)} ] \ket{0} = e^{ikX(0)} [p,ikX(0)] \ket{0} \\
+ 	&= e^{ikX(0)} ik [p,x] = k e^{ikX(0)} \ket{0} = k \ket{0;k} \quad \# \\
+ 	n>0 \quad \alpha_n\ket{0;k} &= [\alpha_n, e^{ik X(0)}] \ket{0} = e^{ikX(0)} [\alpha_n, ikX(0)] \ket{0 } \\
+ 	&= e^{ikX(0)} i k [\alpha_n, \frac{\alpha_{-n}}{-n} z^n] |_{z=0} \ket{0} = 0 \quad \blacksquare,
+ \end{align*}
+where we used the fact that $z^n$ is the only object which does not commute.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  	
  	\section{Wilson's OPE}
  	\begin{mybox}{}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.22)  30 JAN 2020 20:59
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.22)  3 FEB 2020 10:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5942,12 +5942,6 @@ Overfull \hbox (10.56477pt too wide) in paragraph at lines 851--851
  of operator- 
  []
 
-
-Overfull \hbox (47.52377pt too wide) in paragraph at lines 887--887
- [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Conformal blocks and the conformal boot
-strap programme []  
- []
-
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/m/n/7'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -6117,19 +6111,25 @@ Package microtype Info: Character `―' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/m/n/5'.
 (microtype)             Ignoring protrusion settings for this character.
 [8]
-Overfull \hbox (16.49788pt too wide) in paragraph at lines 903--903
+Overfull \hbox (47.52377pt too wide) in paragraph at lines 903--903
+ [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Conformal blocks and the conformal boot
+strap programme []  
+ []
+
+
+Overfull \hbox (16.49788pt too wide) in paragraph at lines 919--919
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Correlation functions of primary fields
  and CFT data []  
  []
 
 
-Overfull \hbox (7.40573pt too wide) in paragraph at lines 905--905
+Overfull \hbox (7.40573pt too wide) in paragraph at lines 921--921
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 CFT and scale invariance (Zamolodchikov
 -Polchinski the- 
  []
 
 
-Overfull \hbox (22.45187pt too wide) in paragraph at lines 909--909
+Overfull \hbox (22.45187pt too wide) in paragraph at lines 925--925
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Introduction and motivation into string
  theory []  
  []
@@ -6309,38 +6309,33 @@ Overfull \hbox (0.3066pt too wide) detected at line 112
  []
 
 
-Overfull \hbox (0.16425pt too wide) detected at line 118
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 390[][]
- []
-
-
-Overfull \hbox (0.16425pt too wide) detected at line 120
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 390[][]
- []
-
-
-Overfull \hbox (0.38326pt too wide) detected at line 124
+Overfull \hbox (0.38326pt too wide) detected at line 122
  [][][]\TU/TeXGyrePagella(0)/m/n/10.95 394[][]
  []
 
 
-Overfull \hbox (0.38326pt too wide) detected at line 126
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 394[][]
+Overfull \hbox (0.64606pt too wide) detected at line 124
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 400[][]
  []
 
 
-Overfull \hbox (0.38326pt too wide) detected at line 128
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 394[][]
+Overfull \hbox (0.64606pt too wide) detected at line 126
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 400[][]
  []
 
 
-Overfull \hbox (0.1971pt too wide) detected at line 130
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 397[][]
+Overfull \hbox (0.64606pt too wide) detected at line 128
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 400[][]
  []
 
 
-Overfull \hbox (0.1971pt too wide) detected at line 132
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 397[][]
+Overfull \hbox (0.5256pt too wide) detected at line 130
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 403[][]
+ []
+
+
+Overfull \hbox (0.5256pt too wide) detected at line 132
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 403[][]
  []
 
 )
@@ -15333,7 +15328,20 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 867.
 
-[385] [386]
+[385]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 930.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathrm' on input line 930.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 930.
+
+[386]
 Underfull \hbox (badness 10000) in paragraph at lines 940--942
 
  []
@@ -15354,119 +15362,195 @@ Overfull \hbox (4.4909pt too wide) in paragraph at lines 963--966
 coefficient, this factors
  []
 
-[388] [389]
-Overfull \hbox (49.7492pt too wide) detected at line 1039
- $[][][] [] [][][] [] [] [] [][][][] [] [][][][][][][] [] [][][][][][][][][][][
-] [] [][][]$  
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 973.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathrm' on input line 973.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 973.
+
+[388]
+Overfull \hbox (159.28918pt too wide) detected at line 997
+ $[][][][][] [] [][] [] [][][][][] [] [][] [] [] [][][][][][][][][]$  
  []
 
-[390] [391]
-Overfull \hbox (3.36195pt too wide) in paragraph at lines 1121--1121
-|[]\TU/TeXGyrePagella(2)/m/sc/10.95 conformal blocks and the conformal bootstra
-p pro-
+
+Overfull \hbox (48.31812pt too wide) detected at line 1006
+ $[][][][] [] [] [] [][][][]$  
  []
 
-[392]
-Overfull \hbox (132.62114pt too wide) detected at line 1155
+
+Underfull \hbox (badness 2980) in paragraph at lines 1012--1013
+[]\TU/TeXGyrePagella(0)/m/n/10.95 Here, \TU/TeXGyrePagella(0)/m/it/10.95 all \T
+U/TeXGyrePagella(0)/m/n/10.95 Noether currents are built up from the energy-
+ []
+
+[389]
+Overfull \hbox (1.7847pt too wide) in paragraph at lines 1021--1024
+\TU/TeXGyrePagella(0)/m/n/10.95 ordered correlation functions. Here, to be inse
+rted into radially-ordered
+ []
+
+
+Overfull \hbox (5.89328pt too wide) detected at line 1027
 []
  []
 
-
-Overfull \hbox (16.74971pt too wide) has occurred while \output is active
- []|[]|
+[390] [391] [392]
+Overfull \hbox (49.7492pt too wide) detected at line 1145
+ $[][][] [] [][][] [] [] [] [][][][] [] [][][][][][][] [] [][][][][][][][][][][
+] [] [][][]$  
  []
 
 [393] [394]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1246.
+(hyperref)                removing `math shift' on input line 1216.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathrm' on input line 1246.
+(hyperref)                removing `\mathrm' on input line 1216.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1246.
+(hyperref)                removing `math shift' on input line 1216.
 
 
-Overfull \hbox (33.03487pt too wide) detected at line 1265
+Overfull \hbox (4.86806pt too wide) in paragraph at lines 1221--1223
+\TU/TeXGyrePagella(0)/m/n/10.95 of your expansion become the creation and annih
+ilation operators. Since
+ []
+
+[395]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1258.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathrm' on input line 1258.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1258.
+
+[396]
+Overfull \hbox (15.108pt too wide) detected at line 1311
+[]
+ []
+
+[397]
+Overfull \hbox (3.3948pt too wide) in paragraph at lines 1336--1336
+|[]\TU/TeXGyrePagella(2)/m/sc/10.95 conformal blocks and the conformal bootstra
+p pro-
+ []
+
+[398]
+Overfull \hbox (132.62114pt too wide) detected at line 1370
+[]
+ []
+
+
+Overfull \hbox (16.77971pt too wide) has occurred while \output is active
+ []|[]|
+ []
+
+[399] [400]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1461.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathrm' on input line 1461.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1461.
+
+
+Overfull \hbox (33.03487pt too wide) detected at line 1480
  $[][][][][][][][][][][][][][][][][][][][] [] []$  
  []
 
 
-Overfull \hbox (16.74971pt too wide) has occurred while \output is active
+Overfull \hbox (16.77971pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[395]
-Overfull \hbox (13.92863pt too wide) in paragraph at lines 1283--1283
+[401]
+Overfull \hbox (14.90318pt too wide) in paragraph at lines 1498--1498
 |[]\TU/TeXGyrePagella(2)/m/sc/10.95 cft and scale invariance (zamolodchikov-pol
 chinski
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1294.
+(hyperref)                removing `math shift' on input line 1509.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathrm' on input line 1294.
+(hyperref)                removing `\mathrm' on input line 1509.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1294.
+(hyperref)                removing `math shift' on input line 1509.
 
-[396]
-Overfull \hbox (9.6497pt too wide) in paragraph at lines 1307--1309
+[402]
+Overfull \hbox (9.6497pt too wide) in paragraph at lines 1522--1524
 []\TU/TeXGyrePagella(0)/m/n/10.95 A relativistic particle fulfils the following
 . $[][][][][]$ maps $[] [] [][]$,
  []
 
-[397]
-Overfull \hbox (5.80244pt too wide) in paragraph at lines 1341--1353
+[403]
+Overfull \hbox (5.80244pt too wide) in paragraph at lines 1556--1568
 \TU/TeXGyrePagella(0)/m/n/10.95 invariant under world-sheet reparametrization. 
 There is however a prob-
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1366.
+(hyperref)                removing `math shift' on input line 1581.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathrm' on input line 1366.
+(hyperref)                removing `\mathrm' on input line 1581.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1366.
+(hyperref)                removing `math shift' on input line 1581.
 
 
-Overfull \hbox (5.93501pt too wide) detected at line 1377
+Overfull \hbox (5.93501pt too wide) detected at line 1592
 []
  []
 
-[398]) [399]
+[404]) [405]
 \openout2 = `Chapters/Supersymmetry.aux'.
 
  (./Chapters/Supersymmetry.tex
 Chapter 10.
-[400
+[406
 
 
 
 
-]) [401]
+]) [407]
 \openout2 = `Chapters/StringTheory.aux'.
 
  (./Chapters/StringTheory.tex
 Chapter 11.
-[402
+[408
 
 
 
 
-]) [403]
+]) [409]
 \tf@thm=\write14
 \openout14 = `QFTnotes.thm'.
 
@@ -15750,12 +15834,12 @@ Package logreq Info: Writing requests to 'QFTnotes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 63190 strings out of 493007
- 1301058 string characters out of 6136718
- 2202728 words of memory out of 5000000
- 66042 multiletter control sequences out of 15000+600000
+ 63205 strings out of 493007
+ 1301289 string characters out of 6136718
+ 2207728 words of memory out of 5000000
+ 66057 multiletter control sequences out of 15000+600000
  547005 words of font info for 182 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  87i,23n,138p,10511b,5680s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on QFTnotes.pdf (415 pages).
+Output written on QFTnotes.pdf (421 pages).
