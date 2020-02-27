@@ -1,0 +1,216 @@
+\chapter{Non perturbative Physics}
+\section{Introduction}
+The course will mostly about non-perturbative methods or phenomena, very rarely you have general methods though. Every problem in NPP is a new problem, as it is very difficult to talk about general concepts. We will just do a lot of examples for non-perturbative problems.
+\section{Motivating problems in QM}
+\subsection{Theorem}
+Want to proove the theorem that the ground-state of a QM system is non-degenerate. Consider therefore the following $N$-particle Schrödinger system
+\be 
+\left[-\sum_i \frac{\partial^2}{\partial x^2_i} + V(\{x_i\} ) \right] \Psi_n(x_1,x_2,\dots,x_N) = E_n \Psi_n (x_1, \dots, x_N).
+\ee 
+Where we assumed the system to be Hamiltonian, the wave-functions to be decaying on the boundary of $\mR^N$. How do we prove that the ground-state is unique.\\
+Pick an arbitrary function $\Psi(x_1 \dots, x_N)$ and define the average energy
+\bse 
+\expval{E}= \int \md^N x \Psi \hat{H} \Psi=\int \md^N x \left[\half (\partial_x \Psi)^2 + V \Psi^2 \right]+ \lambda ( \norm{\Psi}^2 -1 ),
+\ese 
+you can always pick solutions to be purely real or purely imaginary which is why we left the complex conjugate off of $\Psi$, as we chose real solutions. Varying this functional w.r.t. $\Psi$ will give you the ground-state, where you have to impose $\int \md^N x \Psi^2 =1$ (which we did via Lagrange multiplier).
+\subsubsection{Prove a small Lemma for this}
+\begin{mybox}{}
+If $\Psi_0$ is a ground state, then $\Psi_0$ has a definite sign.
+\end{mybox}
+Assume it to change sign, then we can consider a solution
+\bse 
+	\Psi^\prime  = \abs{\Psi_0}
+\ese 
+where the derivative can have a different sign
+\bse 
+\partial_i \Psi^\prime = \pm \partial_i \abs{\Psi_0}.
+\ese 
+Then $\Psi^\prime$ has the same $\expval{E}$, but $\Psi^\prime$ can not solve the Schrödinger equation as it is not smooth. Varying $\Psi^\prime$, we can now however always lower $\expval{E}$, this is equivalent to the statement that $\Psi_0$ was not a ground state in the first place. The ground state (g.s.) has to have a definite sign.
+\subsubsection{Continue with proof}
+\begin{mybox}{}
+	Ground state is unique.
+\end{mybox}
+Assume $\Psi_0$ and $\Psi^\prime_0$ both to be g.s.. Then
+\bse 
+\int \Psi_0 \Psi^\prime_0 \md^N X = 0\quad \int \Psi \Psi^\prime_0 \md^N x > 0,
+\ese 
+where the latter follows from choosing $\Psi_0$ and $\Psi^\prime_0$ to be positive, which can be assumed as the operators are hermitian.\footnote{This holds only for QM because it describes a finite volume. If you go towards QFT, you have to consider the infinite volume limit, where you have infinitely many particles. There, most states are exponentially close to the ground state (by Boltzmann decay of energies). Due to the infinite volume-limit, these all go down to the ground state such that you will have a degenerate ground state.}
+\subsection{Particle on a circle} 
+We have the classical Lagrangian 
+\bse 
+\mL = \frac{\dot{\vec{x}}^2}{2} = \frac{R^2 \dot{\phi}^2}{2} = \half \dot{\phi}^2
+\ese 
+for a normalized radius. We have the canonical momentum 
+\bse 
+p = \frac{\partial \mL}{\partial \dot{\phi}}= \dot{\phi}
+\ese 
+and Hamiltonian
+\bse 
+H = \half p^2.
+\ese 
+Upon quantization 
+\bse 
+p,\phi \rightarrow \hat{p},\hat{\phi}, \quad [\hat{\phi},\hat{p}]=i
+\ese 
+we have
+\bse 
+\hat{\phi} \psi(\phi) = \phi \psi(\phi), \quad \hat{p} \psi(\phi) = -i \partial_{\phi} \psi(\phi).
+\ese 
+We then have
+\bse 
+H = - \half \frac{\partial^2}{\partial \phi^2}.
+\ese 
+\subsubsection{Theorem and couple to magnetic field}
+\begin{mybox}{Theorem}
+	The spectrum is discrete via the periodicity.
+	\be 
+	E_n= \half n^2,\quad n\in \Z,\quad \psi(\phi+2 \pi) = \psi(\phi).
+	\ee 
+\end{mybox}
+We can couple to a magnetic field by substituting
+\bse 
+p \rightarrow p-A = - i \frac{\partial}{\partial \phi} - A = -i \frac{\partial}{\partial \phi} - \frac{\theta}{2 \pi }
+\ese 
+where we substituted $\theta$ (an angle) as this is actually an example for a \emph{theta-term}, which can be found in many things in QFT.
+We can get this from
+\bse 
+\mL = \half \dot{\phi}^2 + \frac{\theta}{2 \pi} \dot{\phi},\quad p = \dot{\phi} + \frac{\theta}{2 \pi}, 
+\ese 
+with energy spectrum
+\bse 
+H=\half ( p-\frac{\theta}{2\pi})^2 \quad \Rightarrow \quad E_n = \half (n-\frac{\theta}{2 \pi})^2 
+\ese 
+\todo{draws graph form his notes} 
+Increasing theta from $0$ to $\pi$ lets you go from excited states to ground states, we see that the g.s. is double degenerate. The excited states are essentially related by parity. We find
+\bse 
+E^{\theta=0}_n = \half n^2,\quad E^{\theta=\pi}_n=\half (n-\half)^2, \quad E^{\theta=\pi}_0 = E^{\theta=\pi}_1.
+\ese 
+Thus the ground state is double degenerate. You can see the degeneracy via parity from
+\bse 
+n-\half \stackrel{!}{=} - (n^\prime -\half) \quad \Leftrightarrow \; n^\prime = 1-n.
+\ese You typically do not have degeneracies. They are normally due to symmetries. It is very difficult to fine-tune the system such that a large part of the spectrum is degenerate if you do not have a symmetry underlying the system.
+\begin{mybox}{}
+	Always think of symmetries if you have degeneracies.
+\end{mybox}
+\subsubsection{Symmetries of this system}
+We are talking about global symmetries here.  We define our representation space of the states via the global symmetry (e.g. rep of Poincare symmetry), these are the only important ones.\\
+It is not only symmetry of the action, as, especially in the presence of a theta-term, it is sometimes more subtle to see all the symmetries of the system. For now we look at symmetries of the Hilbert space. We get a hint from the Lagrangian for $\theta=0$\footnote{Go over to general coordinates}
+\bse 
+\mL = \half \dot{q}^2.
+\ese 
+One symmetry by differentiation is 
+\bse 
+q(t) \rightarrow q(t) +\alpha, \quad \alpha \in \mR.
+\ese 
+Note however that $\alpha=2 \pi$ in this system as $q$ is an angle, i.e. $q ~ q + 2\pi$, which is basically a gauge symmetry of the system on a circle. The angle is not an observable, $\cos q$ or $e^{iq}$ are observable, $q$ is not. $\alpha$ really parametrizes a circle, as we also have that $\alpha ~ \alpha + 2\pi$. \\
+We have another $\Z_2$ symmetry
+\bse
+q \rightarrow - q,
+\ese 
+which we call \emph{parity- or p-symmetry}. In the presence of a theta-term it is more subtle to see this symmetry, will see later in pathintegral language. Now define these symmetries on a Hilbert space via unitary operators, i.e. $\mO_\alpha$:
+\bse 
+\mO_\alpha \hat{q} \mO^\dagger_\alpha = \hat{q} + \alpha.
+\ese 
+The parity operator for $\theta=0$ is
+\bse 
+P \hat{q} P^\dagger = - \hat{q}.
+\ese 
+In terms of $\ket{n}$-eigenstates 
+\bse 
+P : \ket{n} \rightarrow \ket{-n}, \quad \mO_\alpha: \ket{n} \rightarrow e^{i \alpha n} \ket{n},
+\ese 
+where the exact form is
+\bse 
+P = \sum_n \ket{-n}\bra{n}, \quad \mO_\alpha = \sum_n e^{i\alpha n} \ket{n} \bra{n}.
+\ese 
+Now we consider the Hamiltonian in the eigenbasis
+\bse 
+H_\theta = \sum_n \half (n-\frac{\theta}{2 \pi})^2 \ket{n}\bra{n},
+\ese 
+where our symmetries hold as we find
+\bse 
+[\mO_\alpha, H_\theta] = 0 \quad [H_{\theta=0}, P] = 0.
+\ese 
+The spectrum is symmetric by a shift of $\theta \rightarrow \theta + 2 \pi$. This is non-trivial, as the \emph{whole} spectrum gets reshuffled
+\bse 
+E^{\theta=2 \pi}_n = \half (n-1)^2 \equiv \half {n^\prime}^2, \quad n^\prime = n-1.
+\ese 
+How does this work ?\\
+We know further
+\bse 
+P \mO_\alpha P = \mO_{-\alpha},\quad O(2)-\text{group}.
+\ese 
+The task is to find an operator $\hat{P}$ such that the spectrum with non-vanishing but specific theta is invariant
+\bse 
+E^{\theta=\pi}_n = \half (n-\half)^2 \text{ which is $\mO_\alpha$-symmetric},
+\ese 
+and $\hat{P}^2=1$. We can construct this by observing that
+\bse 
+n-\half \rightarrow - (n-\half ) \; \Leftrightarrow \; n \rightarrow -n+1 \; \Rightarrow \; \ket{n} \rightarrow \ket{-n+1}.
+\ese 
+This operator is found to be
+\bse 
+\hat{P} = \sum_n \ket{-n+1}\bra{n} ,\quad \Rightarrow \quad [H^{\theta=\pi},\hat{P}]=0.
+\ese 
+Can we understand this symmetry further by looking at the algebra which $\hat{P}$ obeys
+\bse 
+\hat{P} \mO_\alpha \hat{P} =\sum_{n,n^\prime,n^{\prime \prime}} \ket{-n+1} \bra{n} e^{i \alpha n^\prime} \ket{n^\prime}\bra{n^\prime} \ket{-n^{\prime \prime} +1}\bra{n^{\prime \prime}} = e^{i \alpha} \mO_{-\alpha},
+\ese 
+which is a different algebra. We can never get rid of this phase by redefining operators. This is called a \emph{central extension} of $O(2)$, via the \emph{centre element} $I_\alpha = e^{i\alpha}$. Note that $\mO^2_\pi =\mI$, which has the algebra
+\bse 
+\hat{P} \mO_\pi \hat{P} = e^{i \pi} \mO_{-\pi}=- \mO_\pi \quad \Leftrightarrow\; \hat{P} \mO_\pi = - \mO_{\pi} \hat{P}.
+\ese 
+Let us assume that $\ket{\psi}$ is an eigenstate which is non-degenerate with energy, $H\ket{\psi} = E \ket{\psi}$. Then, what is the energy of a state $\ket{\psi^\prime}=\mO_\pi \ket{\psi}$ ?
+\bse 
+H \underbrace{\mO_{\pi} \ket{\psi}}_{\ket{\psi}} = \mO_{\pi} H \ket{\psi} = E \underbrace{\mO_{\pi} \ket{\psi}}_{\ket{\psi^\prime}} 
+\ese 
+which is an eigenstate with $E$ and also
+\bse 
+H \underbrace{\hat{P}\ket{\psi}}_{\ket{\psi^{\prime \prime}}} = E \underbrace{\hat{P} \ket{\psi}}_{\ket{\psi^{\prime \prime}}} 
+\ese 
+which is also an eigenstate with $E$.\\
+Using a phase $\eta,\tilde{\eta}$ we know that 
+\bse 
+\mO_\pi \ket{\pi} = \eta \ket{\psi}, \quad \eta= \pm 1, \; \ket{\psi^{\prime \prime}} = \tilde{\eta} \ket{\psi}, \; \tilde{\eta}=\pm 1.
+\ese 
+We get a contradiction of our assumption that the state is non-degenerate by looking at 
+\todo{look at notes}.
+\subsection{T'Hooft Anomaly matching}
+This is a first example of anomaly matching. We used an explicit algebra to derive this. We can do this more generally in the pathntegral language for the particle on a circle.
+\bse 
+Z = e^{- \beta \hat{H}} = \int \mD q e^{- \half \int_0^\beta \md t \left[\half \dot{q}^2 + i \frac{\theta}{2 \pi} \do{q}\right]},
+\ese 
+note that you dont have an $i$ inside the bracket for Minkowskian action. This theta-term is a topological theta term, which does not change its realness if you go to Euclidean space.
+Note that the difference 
+\bse 
+S_{\theta=2\pi} - S_{\theta=0} = i \md  t \dot{q} = i (q(\beta) - q(0)) = i 2 \pi k,\quad k \in \Z
+\ese 
+so paths at $\theta = 2 \pi$ and $\theta=0$ are weighted by the same weight
+\bse 
+e^{S_{\theta=2 \pi} - S_{\theta=0}} = e^{i 2 \pi k} = 1 
+\ese 
+Again looking at symmetries, we have the invariance of the PI weight under the two symmetries
+\bse 
+\mO_\alpha: q \rightarrow q + \alpha, \quad P: q \rightarrow - q,
+\ese 
+where $P$ obviously is an invarince at $\theta=0$. What about $\theta=\pi$ ? We observe
+\bse 
+e^{i \pi k} \stackrel{\stackrel{q \rightarrow - q}{\rightarrow}}{e^{-i \pi k}= e^{i \pi k} }.
+\ese 
+\subsubsection{t'Hooft anomaly}
+\begin{mybox}{t'Hooft anomaly}
+	Let $G$ be a global symmetry. If $G$ cannot be promoted to a gauge symmetry, in a way that the action is local, we say $G$ has a \emph{t'Hooft anomaly}.\\
+\\
+	Consequence, if you cannot promote a good (all operators transform under it) global symmetry to a gauge symmetry, then this implies that the ground state is non-trivial.
+\end{mybox}
+Non-trivial ground state here means a ground state that is not unique and gapped.\footnote{Note that is highly non-trivial to understand what it means to gauge the $P$ symmetry, but the $U(1)$ symmetry $\mO_\alpha$ can be gauged.}
+\\
+\\
+We will observe that parity invariance is lost upon gauging of $U(1)$ symmetry $\mO_\alpha$, such that there is a t'Hooft anomaly.
+
+
+
+
+
+
+

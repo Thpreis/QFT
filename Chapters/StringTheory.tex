@@ -1,4 +1,334 @@
 \chapter{String Theory}
 Ttring theory is a two dimensional conformally invariant field
-theory, but not a quantum field theory in four spacetime dimen-
-sions.
+theory, but not a quantum field theory in four spacetime dimensions.
+\section{Motivation}
+\begin{enumerate}
+	\item Modern physics is primarily built on three pillars that have held up to experiment time and again:
+	\begin{enumerate} 
+	\item \textbf{Special relativity} is the framework of choice when describing \emph{fast-moving} objects.
+	\item  \textbf{General relativity} prevails in the face of objects so \emph{massive} that they bend spacetime itself.
+	\item  \textbf{Quantum mechanics} claims to describe physics down to the \emph{smallest} level.
+	\end{enumerate} 
+	\item  But what if something is both small \emph{and} fast? To describe such systems, special relativity and
+	quantum mechanics were beautifully incorporated into a multiparticle, relativistic framework called
+	\textbf{quantum field theory} - the most successful physical theory yet, tested to excruciating precision.
+	\item Or, what about systems that are massive yet small (and perhaps fast)? Clearly, for something to be
+	both massive and small implies that we are looking at high densities on short length scales where
+	gravity becomes important and of a magnitude comparable to the other forces. We are entering
+	an exotic regime of physics involving systems such as the early universe and (rotating) black holes.
+	Quantum field theory in its current state is of no use here, as it discards gravity from the outset. In
+	fact, no field-theoretic description of gravity has been found that is both strictly local down to the
+	smallest level and consistently quantizable, i.e. that results in a renormalizable quantum theory.
+	\item As suggested by the Wilsonian interpretation of QFT, a fundamentally new (nonlocal) picture of
+	the microscopic degrees of freedom is needed to make headway. This is where \textbf{string theory} comes
+	in, whose central axiom is that \emph{the fundamental objects in Nature are one-dimensional rather than
+	pointlike}. Combined with the standard kinematics of \textbf{general covariance}\footnote{General covariance is the paradigm that the form of physical laws should be invariant under arbitrary differentiable coordinate transformations. This statement is motivated by the conviction that coordinates do not exist in nature, and are only artificies of our description. Hence, which ones we choose should play no physical role.} and the usual procedure
+	of \textbf{quantization}, this simple statement has resulted in an amazingly rich, mathematically intricate
+	and conceptually insightful framework. In particular, string theory leads to a unified description of
+	all forces, a divergence-free UV completion of QFT, and it recovers Einstein gravity at low energies.
+\end{enumerate}
+\subsection{Central properties}
+\label{subsec:stringProperties}
+\begin{enumerate}
+	\item There is only \emph{one} free parameter in string theory, the \textbf{string length} $\ell_s$ which (due to current limits
+	of high-energy colliders) can take any value in the range
+	\bse 
+	\text{(Planck length)}\quad 
+	10 −35 m < \ell_s < 10 −19 m
+	\quad \text{(TeV scale)}
+	\ese 
+	This is in stark contrast to GR and QFT where all masses and higher couplings are input parameters
+	that have to be taken from experiment. String couplings are given by expectation values of a
+	dynamical field, the scalar dilaton $\phi$. That means they can be calculated from within the theory!
+	\item String states can be classified into two regimes:
+	\begin{enumerate}
+	\item  In the \textbf{low-energy limit} of distances much larger than $\ell_s$ , strings appear pointlike. Integrating
+	out the massive string tower results in a low-energy effective theory of only the massless excita-
+	tions. These are found to model gauge interactions and gravity. Conformal invariance of the field
+	theory on the worldsheet requires that to lowest order, gravity obeys the Einstein equations.
+	\item  The \textbf{ultraviolet regime} resides at distances of the order of $\ell_s$. The extended nature of the string
+	becomes important, rendering the theory nonlocal with important consequences for interactions:
+	Sharp vertices at which interactions are localized in space and time no longer exist.\footnote{In point-particle theories, the sharp localization of vertices is responsible for the appearance of divergent amplitudes.} Locally, the
+	string always appears free with interactions encoded solely in the global worldsheet topology.
+\end{enumerate}
+	\item In string perturbation, each loop order (for a given process) contains only a single diagram. By
+	contrast, the number of Feynman graphs in QFT grows factorially. Due to a feature called \textbf{duality},
+	there is no need to sum over the scattering channels $s, t, u$. They are all the same in string theory.
+	\item A string can be open or closed. Open strings generate Yang-Mills theory, closed strings produce
+	gravity. Since open strings can close up and vice versa, gravity and Yang-Mills are dynamically
+	related. One automatically implies existence of the other, as it must be, to allow for effects such as
+	energy stored in an electric field to gravitate itself. This is what is meant with the statement that
+	string theory provides a unified description of all forces.
+\end{enumerate}
+
+
+\section{Classical bosonic string}
+\subsection{Bosonic string action}
+\begin{mybox}{Nambu-Goto action }
+	 The \textbf{Nambu-Goto action} of the classical bosonic string spanning the worldsheet $\Sigma$ is defined as
+	\be 
+	\label{eq:stringNGaction}
+	S_{NG}[X]= - T \int_\Sigma \md A.
+	\ee 
+	$T$ is the string tension and $\md A=\sqrt{-\det(\mathbf{G})}\md \tau \md \sigma$ is the area element of $\Sigma$ with coordinates $\mathbf{\xi}=(\xi^0,\xi^1)=(\tau,\sigma)$. The components of the \textbf{pullback} $\mathbf{G}$ of the ambient space $\eta\munu$ onto $\Sigma$ are 
+	\be 
+	\label{eq:stringPullback}
+	G_{ab}= \frac{\partial X^\mu}{\partial \xi^a} \frac{\partial X_\mu}{\partial \xi^b},\quad  a,b \in \{0,1\}, \; \mu \in \{0,\dots,d-1\}.
+	\ee 
+	\end{mybox} 
+\begin{mybox}{Polyakov action}
+	To eliminate the square root in \ref{eq:stringNGaction}, we introduce the \emph{worldsheet metric } $h^{ab}(\tau,\sigma)$ as an auxiliary (symmetric two-tensor) field and define the \emph{Polyakov action} 
+	\be 
+	\label{eq:stringPaction}
+	S_P [X,h] = -\frac{T}{2} \int_\Sigma \md^2 \xi \sqrt{-h} h^{ab} G_{ab},\quad \text{with } h = \det(\mathbf{h}).
+		\ee 
+\end{mybox}
+The bosonic string field $X^\mu(\tau,\sigma)$ in $G_{ab}$ provides an embedding of the worldsheet into ambient space. $X^\mu$ is a spacetime vector but a scalar on the worldsheet (due to the absence of worldsheet indices). Hence $S_P$ describes $d$ scalar fields $X^\mu$ coupled to the dynamical worldsheet metric $h_{ab}$. 
+\begin{enumerate}
+\item Since the spacetime coordinates $X^\mu$ of the string are promoted to dynamical fields, spacetime becomes a derived concept. The fundamental object is the field theory on the worldsheet.
+\item $S_P$ and $S_{NG}$ are classically equivalent, i.e. upon enforcing the equation of motion for the auxiliary field $h_{ab}$. However, this equivalence does not extend to the quantum level.
+\item \ref{eq:stringPaction} is the most general bosonic string action imaginable. $S_P$ could be modified in two ways
+\begin{enumerate}
+	\item A \emph{cosmological constant term} 
+	\bse 
+	S_\Lambda = \Lambda \int_\Sigma \md^2 \xi \sqrt{-h}
+	\ese 
+	could be added, but this would spoil Weyl invariance which will turn out to be vita for consistency of the CFT on the worldsheet.
+	\item We might also include an \emph{Einstein-Hilbert term}
+	\bse 
+	S_{EH} = \frac{\lambda_{EH}}{4 \pi} \int_\Sigma \md^2 \xi \sqrt{-h}\mathcal{R} 
+	\ese 
+	with $\mathcal{R}$ the Ricci scalar of the worldsheet. But this is a total derivative and hence introduces no new dynamics (corresponding to the fact that two-dimensional gravity is dynamically trivial).
+\end{enumerate}
+\end{enumerate}
+\subsection{Symmetries}
+\subsubsection{Symmetries of the Polyakov action}
+$S_P$ enjoys several symmetries, where it is important to distinguish between spacetime symmetries in $\mR^{1,\md-1}$ (taken to be flat) and worldsheet symmetries on $\Sigma$ (dynamic). $S_P$ is invariant under 
+\begin{enumerate}
+	\item $\md$-dimensional \emph{spacetime} \textbf{Poincaré transformations} 
+	\bse 
+	X^\mu \rightarrow \Lambda^\mu_\nu X^\nu+V^\mu,
+	\ese
+	with $\Lambda^\mu_\nu$ in the Lorentz group $SO(1,\md-1)$ and $V^\mu \in \mR^{1,\md-1}$ a translation. The associated conserved charges (according to Noether's theorem\ref{subsec:noethersymmetries}) are energy, momentum and angular momentum.
+	\item Local \emph{worldsheet}  \textbf{diffeomorphisms} 
+	\bse 
+	\xi^a \rightarrow \xi^a + \epsilon^a (\xi)
+	\ese 
+	under which the string field $X^\mu$ transforms as
+	\bse 
+	\delta X^\mu= \epsilon^a\partial_a X^\mu,
+	\ese
+	 the metric $h_{ab}$ as 
+	\bse 
+	\delta h_{ab} = \nabla_a \epsilon_b +\nabla_b \epsilon_a,
+	\ese 
+	and the object $\sqrt{-h}$ as $\delta \sqrt{-h}= \partial_a (\epsilon_a \sqrt{-h})$, i.e. like a scalar density of weight $p=1$.
+\item Local \textbf{Weyl transformations} 
+\bse 
+h_{ab} \rightarrow \Lambda(\mathbf{\xi}) h_{ab} 
+\ese 
+parametrized by $\Lambda(\mathbf{\xi})=e^{\omega(\mathbf{\xi})}$ with $\omega(\mathbf{\xi})\in \mR$ for convenient series expansion. This symmetry is special in that it arises only for two-dimensional world\emph{sheets} (as opposed to, say, membranes), making strings generalization of point-particles. This symmetries requires $T^a_a=0$ and is crucial for consistent string quantization. 
+	 
+\end{enumerate}
+\subsubsection{Killing symmetry}
+The effect on the metric $h_{ab}$ of certain diffeomorphisms $\epsilon_a$ that fulfill the \text{conformal Killing equation} \ref{eq:ctkilling}
+\bse 
+P^c_{ab} \epsilon_c = (\mathbf{P} \mathbf{\epsilon})_{ab} = 0
+\ese 
+can be undone by a Weyl rescaling $\Lambda^{-1}$. The linear operator $\mathbf{P}$ is defined via
+\bse 
+\delta h_{ab} = \nabla_a \epsilon_b + \nabla_b \epsilon_a = \underbrace{\nabla_a \epsilon_b+\nabla_b \epsilon_a - \nabla^c\epsilon_c h_{ab}}_{P^c_{ab} \epsilon_c} + \underbrace{\nabla^c \epsilon_c}_{\Lambda} h_{ab}.
+\ese 
+These $\epsilon_a$ are the \emph{conformal Killing vectors}. Every such $\epsilon_a$ yields a conserved current
+\be 
+J^a_\epsilon = T^{ab}\epsilon_b \quad \text{with} \quad \nabla_a J^a_\epsilon = 0 
+\ee 
+where the conservation follows from the tracelessness of the energy-momentum tensor. The number of such $\epsilon_a$ is infinite and hence infinitely many conserved currents arise.
+\subsubsection{Energy-momentum tensor}
+\begin{mybox}{Energy-momentum tensor} 
+The energy-momentum tensor is defined as the variation of $S_P$ w.r.t. to the worldsheet metric
+\be
+\label{eq:stringEMtensor}
+T_{ab} = \frac{4 \pi}{\sqrt{-h}} \frac{\delta S_P}{\delta h^{ab}} = - \frac{1}{\alpha^\prime} \left(G_{ab} - \half h_{ab} G^c_c\right).
+\ee 
+It is traceless $T^a_a=0$ (as a consequence of Weyl invariance), and (for on-shell $X^\mu$) constitutes the conserved current $\nabla^a T_{ab}=0$ w.r.t. local worldsheet diffeomorphisms.
+\end{mybox}
+The equation of motion 
+\bse 
+T_{ab}=0
+\ese 
+for $h_{ab}$ implies
+\bse 
+G_{ab} = \frac{G^c_c}{2} h_{ab},
+\ese 
+i.e. on-shell $h_{ab}$ is proportional to the pullback.
+
+\subsection{Gauge-fixing}
+On a $D$-dimensional worldmembrane, $h_{ab}$ has $\frac{D}{2}(D+1)$ degrees of freedom, while diffeomorphisms plus Weyl rescalings account for $(D+1)$ parameters. Precisely in $D=2$ do we have equally many transformational parameters as metric degrees of freedom. Two more features exclusive to $D=2$ are that the Riemann-tensor has only one degree of freedom given by the Ricci scalar $\mathcal{R}$
+\be 
+R_{abcd} = \frac{\mathcal{R}}{2} ( h_{ac} h_{bd} - h_{ad} h_{bc}),
+\ee 
+and second, that under Weyl rescaling $\Lambda(\mathbf{\xi}), \mathcal{R}$ transforms as
+\bse 
+\mathcal{R} \rightarrow \mathcal{R} - \mathbf{\nabla}^2\Lambda(\mathbf{\xi}). 
+\ese 
+Choosing $\Lambda(\mathbf{\xi})$ such that $\mathcal{R}= \mathbf{\nabla}^2 \Lambda(\mathbf{\xi})$ (locally, this is always possible) thus implies
+\bse 
+R_{abcd}=0 \quad \forall a,b,c,d.
+\ese 
+This means we can always transform the worldsheet so that locally, it resembles flat space. Once space is flat, we can transform coordinates, i.e. apply a diffeomorphism to bring the metric into Minkowskian shape $h_{ab} = \eta_{ab}$. This procedure of fixing the metric is called (partially) \emph{fixing the gauge}.
+\begin{enumerate}
+	\item It leaves a large \emph{residual gauge symmetry} generated by the conformal Killing vectors $\mathbf{\epsilon}$ mentioned above. Since these leave the metric invariant, they still represent an unphysical gauge symmetry in our description even after the metric has been fixed.
+	\item Worldsheets may exhibit topological obstructions to fixing the metric globally. In this case there remain parameters in the metric, so-called \emph{moduli}, which cannot be removed by a conformal drescaling and diffeomorphisms. These moduli are the global properties of worldsheets that account for string interaction (mentioned in item $2$ of \ref{subsec:stringProperties}).
+\end{enumerate}
+\subsubsection{Flat gauge}
+In \emph{flat gauge} $h_{ab}=\eta_{ab}$, the Polyakov action reduces to the action of $d$ \emph{free} scalar fields,
+\be
+\label{eq:stringPactionflatgauge}
+S_P[X]= \frac{T}{2} \int_\Sigma \md^2 \xi \left[(\partial_\tau \mathbf{X})^2 - (\partial_\sigma \mathbf{X})^2\right].
+\ee 
+\subsubsection{Lightcone coordinates}
+Lightcone coordinates $\xi^\pm = \tau \pm  \sigma$ are convenient, e.g. when treating closed string mode expansions with right- and left-moving modes $\mathbf{\alpha}^\pm_n$ ( $+$ right-moving, $-$ left-moving). The metric in \emph{lightcone gauge} reads
+\bse 
+h_{\pm \pm} =0, \; h_{\pm \mp} = - \half, \; \text{i.e. } \mathbf{h}= 
+\begin{pmatrix}
+	0& - \half \\
+	-\half & 0 \\
+\end{pmatrix},
+\;
+\mathbf{h}^{-1} = 
+\begin{pmatrix}
+	0 & -2 \\
+	-2 & 0 \\
+\end{pmatrix},
+\ese 
+yielding the line element 
+\bse 
+\md s^2 = h_{ab} \xi^a \xi^b = - \md \tau^2 + \md \sigma^2 = - \md\xi^+ \md \xi^-. 
+\ese 
+The Jacobian of the transformation $\begin{pmatrix}
+\tau \\
+\sigma \\
+\end{pmatrix}
+\rightarrow \begin{pmatrix}
+\xi^+ \\
+\xi^- \\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+\tau + \sigma \\
+\tau - \sigma \\
+\end{pmatrix}
+$ from worldsheet to lightcone coordinates has determinant
+\bse 
+\abs{\det(\mathbf{J})} = \abs{\det\begin{pmatrix}
+		\partial_\tau \xi^+ & \partial_\sigma \xi^+ \\
+		\partial_\tau \xi^- & \partial_\sigma \xi^- \\
+\end{pmatrix}}
+ = 
+ \abs{\det \begin{pmatrix}
+ 		1 &1 \\
+ 		1 & -1 \\
+ \end{pmatrix}}
+=2.
+\ese 
+Thus the measure becomes 
+\bse 
+\md^2 \xi = \md \tau \md \sigma = \half \md \xi^+ \md \xi^-
+\ese 
+and the partial derivatives are $\partial_\pm = \half (\partial_\tau \pm \partial_\sigma)$.\\
+\\
+The Polyakov action and energy-momentum tensor in lightcone coordinates read 
+\be
+\label{eq:stringPactionEMtensorLightcone} 
+S_P[X] = T \int_\Sigma \md^2 \xi \partial_+ \mathbf{X} \cdot \partial_- \mathbf{X},\quad T_{\pm \pm} = - \frac{1}{\alpha^\prime} \partial_\pm \mathbf{X} \cdot \partial_\pm \mathbf{X}.
+\ee 
+Tracelessness translates into $T_{\pm \mp}=0$, and conservation into $\partial_\mp T_{\pm \pm}=0 \Rightarrow T_{\pm \pm} (\xi^{\pm})$. It is important to remember that in flat gauge, the metric's equation of motion $T_{ab}=0$ still has to be enforced as constraint. Partially fulfilled already by tracelessness, this only amounts to $T_{\pm \pm}=0$.\\
+The conformal Killing equation $(\mathbf{P}\mathbf{\epsilon})_{ab}=0$ in lightcone gauge, where now $\mathbf{\epsilon}=(\epsilon_+,\epsilon_-)$, becomes the statement $\partial_\pm \epsilon_\pm=0$. Using $\epsilon^\pm = h^{\pm a} \epsilon_a = h^{\pm \mp} \epsilon_\mp = -2 \epsilon_\mp$, this means
+\bse 
+\partial_\mp \epsilon^\pm = 0 \quad \Rightarrow \quad \epsilon^\pm = \epsilon^\pm(\xi^\pm),
+\ese 
+i.e. the $\epsilon^\pm$ are chiral.
+
+\subsection{Mode expansion}
+\subsubsection{Equation of motion and mode expansion}
+Varying the Polyakov action \ref{eq:stringPaction} w.r.t. the bosonic string field yields the free wave equaton
+\be 
+\label{eq:stringEomBosonic}
+(\partial^2_\tau - \partial^2_\sigma) X^\mu = 0 = \partial_+ \partial_- X^\mu 
+\ee 
+provided the boundary terms vanish. 
+\begin{enumerate}
+	\item he closed string has cancelling periodic boundaries.
+	\item The open string requires \emph{Neumann} ($\partial_\sigma X^\mu =0$) and/or \emph{Dirichlet} ($\delta X^\mu = 0 = \partial_\tau X^\mu$) boundaries at both ends $\sigma \in \{0,l\}$.
+\end{enumerate}
+Each has a different mode expansion, e.g. the open NN string expansion is
+\be
+\label{eq:stringOpenModeExpansion}
+X^\mu = x^\mu + \frac{p^\mu \tau}{T l} + i \sqrt{2 \alpha^\prime} \sum_{n\neq 0} \frac{\alpha^\mu_n}{n} e^{-i \frac{\pi}{l} n \tau} \cos(\frac{n\pi \sigma}{l}).
+\ee 
+\subsubsection{Virasoro algebra}
+From 
+\bse 
+\{X^\mu (\tau,\sigma), \Pi^\nu (\tau,\sigma^\prime) \}_{PB} = \eta^{\mu \nu} \delta(\sigma-\sigma^\prime) \quad \text{with } \Pi^\mu = T\partial_\tau X^\mu,
+\ese 
+the \emph{Poisson bracket} forthe modes follows as
+\bse 
+\{\alpha^\mu_m,\alpha^\nu_n \}_{PB} = - i m \eta^{\mu \nu} \delta_{m,-n} 
+\ese 
+(for both left- and right-movers). Also, 
+\bse 
+\{x^\mu, p^\nu \}_{PB} = \eta^{\mu \nu}.
+\ese
+Inserting the $\partial_\pm X^\mu$ that result from \ref{eq:stringEomBosonic} into $T_{\pm \pm}$ from \ref{eq:stringPactionEMtensorLightcone} yields the mode expansion
+\be 
+\label{eq:stringModeExpansionVirasoro}
+T_{\pm \pm} = 4 \alpha^\prime \sum_{m\in\Z} L^\pm_m e^{-i \frac{2\pi}{l} m \xi^\pm} 
+\ee 
+in terms of the \emph{Virasoro generators} $L_m$ (appeared also in \ref{subsubsec:virasoro}). The equation of motion (or constraint if $h_{ab}$ is fixed) $T_{ab}=0$ thus implies the \emph{Virasoro constraints} 
+\be
+ \label{eq:stringVirasoroConstraints}
+L^\pm_m = 0 \quad \forall m \in \Z.
+\ee 
+In particular, the \emph{Hamiltonian}, which for the open string reads
+\begin{align} 
+\label{eq:stringHamiltonianOpenBosonic}
+H_{op} &= \frac{\pi}{l} L_0 =\frac{\pi}{l} \half \sum_{n\in\Z} \mathbf{\alpha}_{-n} \cdot \mathbf{\alpha}_n \\
+&= \frac{\pi}{l} \left(\half \mathbf{\alpha}^2_0 + \half \sum_{n\neq 0} \mathbf{\alpha}_{-n} \cdot \mathbf{\alpha}_n\right)= \frac{\pi}{l} \left(\alpha^\prime \mathbf{p}^2+ \sum_{n=1}^\infty \mathbf{\alpha}_{-n} \cdot \mathbf{\alpha}_n\right), \nonumber
+\end{align}
+must vanish due to $T_{ab}=0$ which implies the (classical open string) \emph{mass shell condition}
+\be 
+\label{eq:stringMassShellCondition}
+M^2 =- \mathbf{p}^2 = \frac{1}{\alpha^\prime} \sum_{n=1}^\infty \mathbf{\alpha}_{-n} \cdot \mathbf{\alpha}_n = \frac{N}{\alpha^\prime}.
+\ee 
+For closed strings, 
+\bse 
+H_{cl} = \frac{2\pi}{l} (L^+_0 + L^-_0) \propto \partial_+ + \partial_- \propto \partial_\tau \stackrel{!}{=} 0
+\ese 
+implements time reparametrization invariance.
+
+
+
+
+\section{Bosonic string quantization}
+There are three popular ways to quantize string theory, each with its own merits and downsides.
+\begin{enumerate}
+	\item In the (old) \emph{canonical quantization}, the Virasoro constraints \ref{eq:stringVirasoroConstraints} are not implemented until we reach the quantum level. This manifestly retains the Lorentz covariance of the classical theory, but a unitary quantum theory is ensured only in a critical number of spacetime dimensions $d_{crit}$.
+	\item \emph{Lightcone quantization} enforces Virasoro constrains already at the classical level, resulting in a manifestly unitary quantum theory, but Lorentz covariance holds only in $d = d_{crit}$.
+	\item (Modern) \emph{path-integral quantization} uses the Faddeev-Popov gauge fixing procedure. Criticality becomes quivalent to closure of the BRST algebra, which can occur only in $d=d_{crit}$.
+\end{enumerate}
+\subsection{Canonical quantization}
+\subsubsection{Canonical commutation relations}
+Canonical quantization promotes all fields to operators and postulates the replacement $\{\cdot,\cdot \}_{PB}\rightarrow \frac{1}{i} [\cdot,\cdot]$, resulting in the canonical commutation relations
+
+\begin{align*}
+	[X^\mu(\tau,\sigma),\Pi^\nu (\tau,\sigma^\prime)] &= i \eta^{\mu \nu} \delta(\sigma-\sigma^\prime),\\
+	[\alpha^\mu_m,\alpha^\nu_n] &= m \eta^{\mu \nu} \delta_{m,-n}, \\
+	[x^\mu,p^\nu] &= i \eta{ \mu \nu}.
+\end{align*}
+Reality $X^\mu \in \mR$ at the classical level implies hermiticity $(X^\mu)^\dagger = X^\mu$ at the quantum level which in turn requires $(\alpha^\mu_m)^\dagger=\alpha^\mu_{-m}$. This carries over to the Virasoro generators $L^\dagger_m= L_{-m}$.
+
+\subsubsection{Normal ordering}
+As always, this procedure is terribly ambiguous because there is nothing to tell us the ’correct’ order within products of noncommuting operators. Hence we simply \emph{define} the \textbf{normal ordering} to be 
+
+
