@@ -1317,9 +1317,37 @@ Any state $\ket{\psi}$ in a vector space $\mH$ with a nilpotent linear operator 
 	\ket{\psi} \in \text{Im}(\hat{Q}).
 	\ese 
 \end{enumerate}
-Since for all $\hat{Q}$-exact $\ket{\psi}$ it holds that $\hat{Q}$
-
-
+Since for all $\hat{Q}$-exact $\ket{\psi}$ it holds that $\hat{Q}\ket{\psi}=\hat{Q}^2\ket{\chi}=0$, we have $\text{Im}(\hat{Q}) \subset \ker(\hat{Q})$. Further, the 
+$\hat{Q}$-\emph{cohomology} is defined as the quotient space
+\be 
+\mathcal{C}(\hat{Q}) \equiv \frac{\ker(\hat{Q})}{\text{Im}(\hat{Q})}.
+\ee 
+\subsubsection{Physical intricacies}
+The space of states on which the time-evolution operator $\hat{U} = \mathcal{T}e^{i \int_{\mR} \hat{H} \md t}$ is independent of the specific choice of gauge-fixing condition given by $\ker(\hat{Q}_{BRST})$. Time evolution should not depend on gauge, so we require
+\be 
+\label{eq:BRSTcondition}
+\ket{\psi}\in \mH_{phys} \text{    only if    } \hat{Q}_{BRST}\ket{\psi}=0.
+\ee 
+Within $\ker(\hat{Q}_{BRST})$, the BRST-exact states have zero overlap with all other states since
+\bse 
+\forall \ket{\psi} \in \text{Im}(\hat{Q}_{BRST}) \text{  with  } \ket{\psi}=\hat{Q}_{BRST} \ket{\chi} \text{  and  } \forall \ket{\xi} \in \ker(\hat{Q}_{BRST})
+\ese 
+such that
+\be 
+\braket{\psi}{\xi} = \bra{\chi}\hat{Q}^\dagger_{BRST}\ket{\xi} = \bra{\chi}\underbrace{\hat{Q}_{BRST}\ket{\xi}}_{=0} = 0.
+\ee 
+\begin{mybox}{Physical Hilbert space}
+States with zero overlap with all other states can never be measured and are therefore unphysical. We thus define the \emph{physical Hilbert space} of quantum YM theory as the cohomology 
+\be
+\label{eq:BRSTphysicalHilbert}
+\mH_{phys} = \mathcal{C}(\hat{Q}_{BRST}) = \frac{\ker(\hat{Q}_{BRST}) }{\text{Im}(\hat{Q}_{BRST})}.
+\ee 
+\end{mybox} 
+Evaluating the physical state condition \ref{eq:BRSTcondition} reveals $B-\bar{c},$ and $c$-excitations to be unphysical. The only physical states are of the form
+\be 
+\ket{\psi}\in \mH_{phys} \; \Leftrightarrow \;  \ket{\psi}= \xi_\mu \ket{A^\mu(\mathbf{k})}
+\ee 
+with $k^2=0$ and $\xi_\mu k^\mu=0$.
 
 
 
