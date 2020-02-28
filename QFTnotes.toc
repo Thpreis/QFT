@@ -414,317 +414,323 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.3}{Executive Summary of QFT }}{210}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}{Renormalization and effective field theory}}{212}{section.5.3}
+\contentsline {subsection}{\numberline {5.2.4}{BRST Symmetry and the physical Hilbert space- TO PUT SOMEWHERE}}{211}{subsection.5.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}{Mass dimension}}{214}{subsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.2.4.1}{The technical details}}{211}{subsubsection.5.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}{Classification of operators}}{216}{subsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.2.4.2}{Mathematical intricacies}}{212}{subsubsection.5.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}{Topological classification of diagrams (graph theory)}}{217}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.3}{Renormalization and effective field theory}}{213}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}{Superficial degree of divergence and renormalizability}}{217}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.1}{Mass dimension}}{215}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.5}{Perturbative renormalizability and classification of couplings}}{222}{subsection.5.3.5}
+\contentsline {subsection}{\numberline {5.3.2}{Classification of operators}}{217}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.6}{Renormalization theorem (BPHZ theorem)}}{223}{subsection.5.3.6}
+\contentsline {subsection}{\numberline {5.3.3}{Topological classification of diagrams (graph theory)}}{218}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.7}{A more in-depth look at regularization schemes}}{224}{subsection.5.3.7}
+\contentsline {subsection}{\numberline {5.3.4}{Superficial degree of divergence and renormalizability}}{218}{subsection.5.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.7.1}{Dimensional regularization}}{224}{subsubsection.5.3.7.1}
+\contentsline {subsection}{\numberline {5.3.5}{Perturbative renormalizability and classification of couplings}}{223}{subsection.5.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.8}{An arsenal of identities}}{226}{subsection.5.3.8}
+\contentsline {subsection}{\numberline {5.3.6}{Renormalization theorem (BPHZ theorem)}}{224}{subsection.5.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.8.1}{Useful integrals for regularization scheme}}{226}{subsubsection.5.3.8.1}
+\contentsline {subsection}{\numberline {5.3.7}{A more in-depth look at regularization schemes}}{225}{subsection.5.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.8.2}{A rule of thumb for regularization}}{228}{subsubsection.5.3.8.2}
+\contentsline {subsubsection}{\numberline {5.3.7.1}{Dimensional regularization}}{225}{subsubsection.5.3.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.8.3}{Asymptotic behaviours useful in regularization schemes}}{228}{subsubsection.5.3.8.3}
+\contentsline {subsection}{\numberline {5.3.8}{An arsenal of identities}}{227}{subsection.5.3.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.9}{Example of On-shell (i.e. perturbative) renormalization -- QED renormalized}}{228}{subsection.5.3.9}
+\contentsline {subsubsection}{\numberline {5.3.8.1}{Useful integrals for regularization scheme}}{227}{subsubsection.5.3.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.9.1}{The UV problems of QED}}{230}{subsubsection.5.3.9.1}
+\contentsline {subsubsection}{\numberline {5.3.8.2}{A rule of thumb for regularization}}{229}{subsubsection.5.3.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.9.2}{Corrections to the fermion propagator}}{231}{subsubsection.5.3.9.2}
+\contentsline {subsubsection}{\numberline {5.3.8.3}{Asymptotic behaviours useful in regularization schemes}}{229}{subsubsection.5.3.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.9.3}{Corrections to the photon propagator}}{232}{subsubsection.5.3.9.3}
+\contentsline {subsection}{\numberline {5.3.9}{Example of On-shell (i.e. perturbative) renormalization -- QED renormalized}}{229}{subsection.5.3.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.9.4}{Corrections to the interaction vertex}}{233}{subsubsection.5.3.9.4}
+\contentsline {subsubsection}{\numberline {5.3.9.1}{The UV problems of QED}}{231}{subsubsection.5.3.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.10}{Self-energy of the electron at 1-loop}}{233}{subsection.5.3.10}
+\contentsline {subsubsection}{\numberline {5.3.9.2}{Corrections to the fermion propagator}}{232}{subsubsection.5.3.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.10.1}{Explicit discussion of renormalized QED}}{234}{subsubsection.5.3.10.1}
+\contentsline {subsubsection}{\numberline {5.3.9.3}{Corrections to the photon propagator}}{233}{subsubsection.5.3.9.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Note}}{235}{paragraph*.46}
+\contentsline {subsubsection}{\numberline {5.3.9.4}{Corrections to the interaction vertex}}{234}{subsubsection.5.3.9.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.10.2}{Physical discussion of renormalized QED}}{235}{subsubsection.5.3.10.2}
+\contentsline {subsection}{\numberline {5.3.10}{Self-energy of the electron at 1-loop}}{234}{subsection.5.3.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.11}{Second example for on-shell renormalization --phi 4 theory renormalized}}{237}{subsection.5.3.11}
+\contentsline {subsubsection}{\numberline {5.3.10.1}{Explicit discussion of renormalized QED}}{235}{subsubsection.5.3.10.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.11.1}{Superficially divergent amplitudes in $d=4$}}{237}{subsubsection.5.3.11.1}
+\contentsline {paragraph}{{Note}}{236}{paragraph*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.11.2}{Renormalization conditions and renormalized perturbation theory}}{238}{subsubsection.5.3.11.2}
+\contentsline {subsubsection}{\numberline {5.3.10.2}{Physical discussion of renormalized QED}}{236}{subsubsection.5.3.10.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.11.3}{Explicit renormalization analysis of $\mitphi ^4$}}{239}{subsubsection.5.3.11.3}
+\contentsline {subsection}{\numberline {5.3.11}{Second example for on-shell renormalization --phi 4 theory renormalized}}{238}{subsection.5.3.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.12}{Third example of on-shell renormalization - YM renormalized}}{241}{subsection.5.3.12}
+\contentsline {subsubsection}{\numberline {5.3.11.1}{Superficially divergent amplitudes in $d=4$}}{238}{subsubsection.5.3.11.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.12.1}{Preliminaries in Group Theory}}{242}{subsubsection.5.3.12.1}
+\contentsline {subsubsection}{\numberline {5.3.11.2}{Renormalization conditions and renormalized perturbation theory}}{239}{subsubsection.5.3.11.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.12.2}{Computation of $\mitdelta _3$}}{243}{subsubsection.5.3.12.2}
+\contentsline {subsubsection}{\numberline {5.3.11.3}{Explicit renormalization analysis of $\mitphi ^4$}}{240}{subsubsection.5.3.11.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.12.3}{Computation of $\mitdelta _2$}}{245}{subsubsection.5.3.12.3}
+\contentsline {subsection}{\numberline {5.3.12}{Third example of on-shell renormalization - YM renormalized}}{242}{subsection.5.3.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.12.4}{Computation of $\mitdelta _1$}}{245}{subsubsection.5.3.12.4}
+\contentsline {subsubsection}{\numberline {5.3.12.1}{Preliminaries in Group Theory}}{243}{subsubsection.5.3.12.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.12.5}{YM $\mitbeta $-function at $1$-loop in $g$}}{246}{subsubsection.5.3.12.5}
+\contentsline {subsubsection}{\numberline {5.3.12.2}{Computation of $\mitdelta _3$}}{244}{subsubsection.5.3.12.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.13}{Fourth example for On-shell renormalization -- QCD renormalized}}{246}{subsection.5.3.13}
+\contentsline {subsubsection}{\numberline {5.3.12.3}{Computation of $\mitdelta _2$}}{246}{subsubsection.5.3.12.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.13.1}{Superficially divergent vertex functions in QCD}}{246}{subsubsection.5.3.13.1}
+\contentsline {subsubsection}{\numberline {5.3.12.4}{Computation of $\mitdelta _1$}}{246}{subsubsection.5.3.12.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.13.2}{Isolate divergences of all the self-energies at one loop}}{247}{subsubsection.5.3.13.2}
+\contentsline {subsubsection}{\numberline {5.3.12.5}{YM $\mitbeta $-function at $1$-loop in $g$}}{247}{subsubsection.5.3.12.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.13.3}{Renormalization of QCD divergent graphs}}{250}{subsubsection.5.3.13.3}
+\contentsline {subsection}{\numberline {5.3.13}{Fourth example for On-shell renormalization -- QCD renormalized}}{247}{subsection.5.3.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.13.4}{Running coupling and beta-function}}{252}{subsubsection.5.3.13.4}
+\contentsline {subsubsection}{\numberline {5.3.13.1}{Superficially divergent vertex functions in QCD}}{247}{subsubsection.5.3.13.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.14}{Renormalization flow (Callan-Symanzik flow)}}{253}{subsection.5.3.14}
+\contentsline {subsubsection}{\numberline {5.3.13.2}{Isolate divergences of all the self-energies at one loop}}{248}{subsubsection.5.3.13.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.14.1}{The renormalization scale}}{253}{subsubsection.5.3.14.1}
+\contentsline {subsubsection}{\numberline {5.3.13.3}{Renormalization of QCD divergent graphs}}{251}{subsubsection.5.3.13.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.14.2}{The renormalization conditions stated}}{253}{subsubsection.5.3.14.2}
+\contentsline {subsubsection}{\numberline {5.3.13.4}{Running coupling and beta-function}}{253}{subsubsection.5.3.13.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.14.3}{Derivation of renormalization conditions}}{255}{subsubsection.5.3.14.3}
+\contentsline {subsection}{\numberline {5.3.14}{Renormalization flow (Callan-Symanzik flow)}}{254}{subsection.5.3.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.14.4}{The Callan-Symanzyk (CS) equation (renormalization flow equation)}}{256}{subsubsection.5.3.14.4}
+\contentsline {subsubsection}{\numberline {5.3.14.1}{The renormalization scale}}{254}{subsubsection.5.3.14.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.14.5}{$\mitbeta $-function and running of dimensionless (renormalizable) couplings}}{258}{subsubsection.5.3.14.5}
+\contentsline {subsubsection}{\numberline {5.3.14.2}{The renormalization conditions stated}}{254}{subsubsection.5.3.14.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.14.6}{$\mitbeta $-function of dimensionless (marginal) couplings from counterterms}}{259}{subsubsection.5.3.14.6}
+\contentsline {subsubsection}{\numberline {5.3.14.3}{Derivation of renormalization conditions}}{256}{subsubsection.5.3.14.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.14.7}{Running of dimensionful (non/super-renormalizable couplings)}}{260}{subsubsection.5.3.14.7}
+\contentsline {subsubsection}{\numberline {5.3.14.4}{The Callan-Symanzyk (CS) equation (renormalization flow equation)}}{257}{subsubsection.5.3.14.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.15}{The running coupling}}{261}{subsection.5.3.15}
+\contentsline {subsubsection}{\numberline {5.3.14.5}{$\mitbeta $-function and running of dimensionless (renormalizable) couplings}}{259}{subsubsection.5.3.14.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.15.1}{Mathematically}}{261}{subsubsection.5.3.15.1}
+\contentsline {subsubsection}{\numberline {5.3.14.6}{$\mitbeta $-function of dimensionless (marginal) couplings from counterterms}}{260}{subsubsection.5.3.14.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.15.2}{Conceptually}}{261}{subsubsection.5.3.15.2}
+\contentsline {subsubsection}{\numberline {5.3.14.7}{Running of dimensionful (non/super-renormalizable couplings)}}{261}{subsubsection.5.3.14.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.16}{Fixed point stability analysis and flow trajectories}}{263}{subsection.5.3.16}
+\contentsline {subsection}{\numberline {5.3.15}{The running coupling}}{262}{subsection.5.3.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.17}{TODO Anomalous dimension and dangerously (ir)relevant operators}}{263}{subsection.5.3.17}
+\contentsline {subsubsection}{\numberline {5.3.15.1}{Mathematically}}{262}{subsubsection.5.3.15.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.18}{TODO Two-point functions in real space and screening masses}}{264}{subsection.5.3.18}
+\contentsline {subsubsection}{\numberline {5.3.15.2}{Conceptually}}{262}{subsubsection.5.3.15.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.18.1}{An example of renormalization of quantum potential-- On the case of Euclidean massles $\mitphi ^4$}}{265}{subsubsection.5.3.18.1}
+\contentsline {subsection}{\numberline {5.3.16}{Fixed point stability analysis and flow trajectories}}{264}{subsection.5.3.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.19}{The emergence of renormalizability}}{266}{subsection.5.3.19}
+\contentsline {subsection}{\numberline {5.3.17}{TODO Anomalous dimension and dangerously (ir)relevant operators}}{264}{subsection.5.3.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.20}{On the Wilsonian renormalization idea -- Wilsonian effective field theory}}{266}{subsection.5.3.20}
+\contentsline {subsection}{\numberline {5.3.18}{TODO Two-point functions in real space and screening masses}}{265}{subsection.5.3.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.20.1}{Conceptual idea}}{266}{subsubsection.5.3.20.1}
+\contentsline {subsubsection}{\numberline {5.3.18.1}{An example of renormalization of quantum potential-- On the case of Euclidean massles $\mitphi ^4$}}{266}{subsubsection.5.3.18.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.20.2}{Floating UV cutoff and Wilsonian effective action}}{269}{subsubsection.5.3.20.2}
+\contentsline {subsection}{\numberline {5.3.19}{The emergence of renormalizability}}{267}{subsection.5.3.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.21}{On the importance of effective field theories}}{270}{subsection.5.3.21}
+\contentsline {subsection}{\numberline {5.3.20}{On the Wilsonian renormalization idea -- Wilsonian effective field theory}}{267}{subsection.5.3.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}{Non-Abelian Gauge Theory aka Yang-Mills theory}}{270}{section.5.4}
+\contentsline {subsubsection}{\numberline {5.3.20.1}{Conceptual idea}}{267}{subsubsection.5.3.20.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}{Introduction by Witten and Jaffe}}{270}{subsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.3.20.2}{Floating UV cutoff and Wilsonian effective action}}{270}{subsubsection.5.3.20.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.1.1}{The application of Yang-Mills theory}}{270}{subsubsection.5.4.1.1}
+\contentsline {subsection}{\numberline {5.3.21}{On the importance of effective field theories}}{271}{subsection.5.3.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.1.2}{Mathematical caveats}}{272}{subsubsection.5.4.1.2}
+\contentsline {section}{\numberline {5.4}{Non-Abelian Gauge Theory aka Yang-Mills theory}}{271}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.1.3}{Quantum Fields}}{274}{subsubsection.5.4.1.3}
+\contentsline {subsection}{\numberline {5.4.1}{Introduction by Witten and Jaffe}}{271}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.1.4}{The problem of establishing a mathematically consistent theory}}{274}{subsubsection.5.4.1.4}
+\contentsline {subsubsection}{\numberline {5.4.1.1}{The application of Yang-Mills theory}}{271}{subsubsection.5.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.1.5}{Comments on the problem}}{275}{subsubsection.5.4.1.5}
+\contentsline {subsubsection}{\numberline {5.4.1.2}{Mathematical caveats}}{273}{subsubsection.5.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}{Geometric perspective on abelian gauge theory}}{276}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.1.3}{Quantum Fields}}{275}{subsubsection.5.4.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.3}{Generalisation to $SU(N)$ gauge symmetry}}{277}{subsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.1.4}{The problem of establishing a mathematically consistent theory}}{275}{subsubsection.5.4.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.3.1}{Recap of classical Lie group theory}}{277}{subsubsection.5.4.3.1}
+\contentsline {subsubsection}{\numberline {5.4.1.5}{Comments on the problem}}{276}{subsubsection.5.4.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.3.2}{Construction of the theory}}{278}{subsubsection.5.4.3.2}
+\contentsline {subsection}{\numberline {5.4.2}{Geometric perspective on abelian gauge theory}}{277}{subsection.5.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.3.3}{Caveats of YM-theory}}{279}{subsubsection.5.4.3.3}
+\contentsline {subsection}{\numberline {5.4.3}{Generalisation to $SU(N)$ gauge symmetry}}{278}{subsection.5.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.3.4}{Summary of classical Yang-Mills theory}}{280}{subsubsection.5.4.3.4}
+\contentsline {subsubsection}{\numberline {5.4.3.1}{Recap of classical Lie group theory}}{278}{subsubsection.5.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.4}{Quantizing Yang-Mills theory}}{282}{subsection.5.4.4}
+\contentsline {subsubsection}{\numberline {5.4.3.2}{Construction of the theory}}{279}{subsubsection.5.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.4.1}{Problems and Idea of quantization procedure}}{282}{subsubsection.5.4.4.1}
+\contentsline {subsubsection}{\numberline {5.4.3.3}{Caveats of YM-theory}}{280}{subsubsection.5.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.4.2}{Derivation of quantized Yang-Mills theory}}{283}{subsubsection.5.4.4.2}
+\contentsline {subsubsection}{\numberline {5.4.3.4}{Summary of classical Yang-Mills theory}}{281}{subsubsection.5.4.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.4.3}{Summary of quantized YM theory}}{284}{subsubsection.5.4.4.3}
+\contentsline {subsection}{\numberline {5.4.4}{Quantizing Yang-Mills theory}}{283}{subsection.5.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.5}{Feynman rules for scattering}}{286}{subsection.5.4.5}
+\contentsline {subsubsection}{\numberline {5.4.4.1}{Problems and Idea of quantization procedure}}{283}{subsubsection.5.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.5.1}{Field}}{286}{subsubsection.5.4.5.1}
+\contentsline {subsubsection}{\numberline {5.4.4.2}{Derivation of quantized Yang-Mills theory}}{284}{subsubsection.5.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.5.2}{Field self-interactions}}{287}{subsubsection.5.4.5.2}
+\contentsline {subsubsection}{\numberline {5.4.4.3}{Summary of quantized YM theory}}{285}{subsubsection.5.4.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.5.3}{Ghosts}}{288}{subsubsection.5.4.5.3}
+\contentsline {subsection}{\numberline {5.4.5}{Feynman rules for scattering}}{287}{subsection.5.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.5.4}{Matter sector minimally coupled to YM }}{290}{subsubsection.5.4.5.4}
+\contentsline {subsubsection}{\numberline {5.4.5.1}{Field}}{287}{subsubsection.5.4.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.6}{Application to scattering processes}}{291}{subsection.5.4.6}
+\contentsline {subsubsection}{\numberline {5.4.5.2}{Field self-interactions}}{288}{subsubsection.5.4.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.6.1}{Fermion-Antifermion annihilation}}{291}{subsubsection.5.4.6.1}
+\contentsline {subsubsection}{\numberline {5.4.5.3}{Ghosts}}{289}{subsubsection.5.4.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.6.2}{Emission}}{293}{subsubsection.5.4.6.2}
+\contentsline {subsubsection}{\numberline {5.4.5.4}{Matter sector minimally coupled to YM }}{291}{subsubsection.5.4.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.6.3}{Tricks in computation of scattering amplitudes}}{293}{subsubsection.5.4.6.3}
+\contentsline {subsection}{\numberline {5.4.6}{Application to scattering processes}}{292}{subsection.5.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.7}{Running coupling in YM}}{294}{subsection.5.4.7}
+\contentsline {subsubsection}{\numberline {5.4.6.1}{Fermion-Antifermion annihilation}}{292}{subsubsection.5.4.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.7.1}{YM $\mitbeta $-function at $1$-loop in $g$}}{294}{subsubsection.5.4.7.1}
+\contentsline {subsubsection}{\numberline {5.4.6.2}{Emission}}{294}{subsubsection.5.4.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.7.2}{Crucial Implications}}{294}{subsubsection.5.4.7.2}
+\contentsline {subsubsection}{\numberline {5.4.6.3}{Tricks in computation of scattering amplitudes}}{294}{subsubsection.5.4.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.7.3}{Examples}}{295}{subsubsection.5.4.7.3}
+\contentsline {subsection}{\numberline {5.4.7}{Running coupling in YM}}{295}{subsection.5.4.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.4.7.4}{Notes on the $\mitbeta $ function}}{295}{subsubsection.5.4.7.4}
+\contentsline {subsubsection}{\numberline {5.4.7.1}{YM $\mitbeta $-function at $1$-loop in $g$}}{295}{subsubsection.5.4.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}{Quantumchromodynamics (QCD)}}{295}{section.5.5}
+\contentsline {subsubsection}{\numberline {5.4.7.2}{Crucial Implications}}{295}{subsubsection.5.4.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.1}{Overview of the theory}}{295}{subsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.4.7.3}{Examples}}{296}{subsubsection.5.4.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.2}{The theory in its full glory}}{297}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.4.7.4}{Notes on the $\mitbeta $ function}}{296}{subsubsection.5.4.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.2.1}{Heuristic motivation of QCD Lagrangian}}{297}{subsubsection.5.5.2.1}
+\contentsline {section}{\numberline {5.5}{Quantumchromodynamics (QCD)}}{296}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.3}{Running coupling and beta-function}}{301}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.1}{Overview of the theory}}{296}{subsection.5.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.4}{Phase structure}}{302}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.2}{The theory in its full glory}}{298}{subsection.5.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.5}{Deep-inelastic scattering - Parton theory}}{304}{subsection.5.5.5}
+\contentsline {subsubsection}{\numberline {5.5.2.1}{Heuristic motivation of QCD Lagrangian}}{298}{subsubsection.5.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.6}{Comments to think about}}{305}{subsection.5.5.6}
+\contentsline {subsection}{\numberline {5.5.3}{Running coupling and beta-function}}{302}{subsection.5.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}{Standard Model of particle physics}}{305}{section.5.6}
+\contentsline {subsection}{\numberline {5.5.4}{Phase structure}}{303}{subsection.5.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.1}{Contents of the SM}}{307}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.5.5}{Deep-inelastic scattering - Parton theory}}{305}{subsection.5.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.6.1.1}{Gauge fields}}{307}{subsubsection.5.6.1.1}
+\contentsline {subsection}{\numberline {5.5.6}{Comments to think about}}{306}{subsection.5.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.6.1.2}{Simple Lie groups}}{308}{subsubsection.5.6.1.2}
+\contentsline {section}{\numberline {5.6}{Standard Model of particle physics}}{306}{section.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.6.1.3}{Repackaging of the gauge fields}}{308}{subsubsection.5.6.1.3}
+\contentsline {subsection}{\numberline {5.6.1}{Contents of the SM}}{308}{subsection.5.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.2}{Matter fields}}{309}{subsection.5.6.2}
+\contentsline {subsubsection}{\numberline {5.6.1.1}{Gauge fields}}{308}{subsubsection.5.6.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.6.2.1}{The SM Higgs}}{310}{subsubsection.5.6.2.1}
+\contentsline {subsubsection}{\numberline {5.6.1.2}{Simple Lie groups}}{309}{subsubsection.5.6.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}{Example of spontaneous symmetry breaking in QCD -- Chiral symmetry}}{311}{section.5.7}
+\contentsline {subsubsection}{\numberline {5.6.1.3}{Repackaging of the gauge fields}}{309}{subsubsection.5.6.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.8}{Neutrino Physics}}{313}{section.5.8}
+\contentsline {subsection}{\numberline {5.6.2}{Matter fields}}{310}{subsection.5.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.8.1}{Neutrino Phenomenology - Motivation to Neutrino physics}}{313}{subsection.5.8.1}
+\contentsline {subsubsection}{\numberline {5.6.2.1}{The SM Higgs}}{311}{subsubsection.5.6.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.8.1.1}{Why are neutrinos nowadays important ?}}{313}{subsubsection.5.8.1.1}
+\contentsline {section}{\numberline {5.7}{Example of spontaneous symmetry breaking in QCD -- Chiral symmetry}}{312}{section.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.8.1.2}{Open questions}}{313}{subsubsection.5.8.1.2}
+\contentsline {section}{\numberline {5.8}{Neutrino Physics}}{314}{section.5.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.8.1.3}{Theory of Neutrinos}}{313}{subsubsection.5.8.1.3}
+\contentsline {subsection}{\numberline {5.8.1}{Neutrino Phenomenology - Motivation to Neutrino physics}}{314}{subsection.5.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.8.2}{Neutrino Oscillations}}{314}{subsection.5.8.2}
+\contentsline {subsubsection}{\numberline {5.8.1.1}{Why are neutrinos nowadays important ?}}{314}{subsubsection.5.8.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.9}{Quantum vacuum}}{314}{section.5.9}
+\contentsline {subsubsection}{\numberline {5.8.1.2}{Open questions}}{314}{subsubsection.5.8.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.9.1}{Quantum vacuum energy}}{314}{subsection.5.9.1}
+\contentsline {subsubsection}{\numberline {5.8.1.3}{Theory of Neutrinos}}{314}{subsubsection.5.8.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.9.1.1}{Implications}}{315}{subsubsection.5.9.1.1}
+\contentsline {subsection}{\numberline {5.8.2}{Neutrino Oscillations}}{315}{subsection.5.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.9.2}{Symmetry}}{316}{subsection.5.9.2}
+\contentsline {section}{\numberline {5.9}{Quantum vacuum}}{315}{section.5.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.9.3}{Vacuum expectation value}}{317}{subsection.5.9.3}
+\contentsline {subsection}{\numberline {5.9.1}{Quantum vacuum energy}}{315}{subsection.5.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.9.4}{Wightman Axioms}}{318}{subsection.5.9.4}
+\contentsline {subsubsection}{\numberline {5.9.1.1}{Implications}}{316}{subsubsection.5.9.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.9.5}{QCD vacuum}}{318}{subsection.5.9.5}
+\contentsline {subsection}{\numberline {5.9.2}{Symmetry}}{317}{subsection.5.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.9.5.1}{Symmetries and symmetry breaking}}{318}{subsubsection.5.9.5.1}
+\contentsline {subsection}{\numberline {5.9.3}{Vacuum expectation value}}{318}{subsection.5.9.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.9.6}{QED vacuum}}{319}{subsection.5.9.6}
+\contentsline {subsection}{\numberline {5.9.4}{Wightman Axioms}}{319}{subsection.5.9.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.9.7}{Zero-point energy}}{319}{subsection.5.9.7}
+\contentsline {subsection}{\numberline {5.9.5}{QCD vacuum}}{319}{subsection.5.9.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.9.8}{Virtual particle}}{319}{subsection.5.9.8}
+\contentsline {subsubsection}{\numberline {5.9.5.1}{Symmetries and symmetry breaking}}{319}{subsubsection.5.9.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.9.9}{Quantum fluctuations}}{319}{subsection.5.9.9}
+\contentsline {subsection}{\numberline {5.9.6}{QED vacuum}}{320}{subsection.5.9.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.10}{Spontaneous symmetry breaking}}{319}{section.5.10}
+\contentsline {subsection}{\numberline {5.9.7}{Zero-point energy}}{320}{subsection.5.9.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.10.1}{Discrete Symmetries}}{321}{subsection.5.10.1}
+\contentsline {subsection}{\numberline {5.9.8}{Virtual particle}}{320}{subsection.5.9.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.10.2}{Continuous symmetries}}{322}{subsection.5.10.2}
+\contentsline {subsection}{\numberline {5.9.9}{Quantum fluctuations}}{320}{subsection.5.9.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.2.1}{What is the idea behind this ?}}{323}{subsubsection.5.10.2.1}
+\contentsline {section}{\numberline {5.10}{Spontaneous symmetry breaking}}{320}{section.5.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Example}}{323}{paragraph*.72}
+\contentsline {subsection}{\numberline {5.10.1}{Discrete Symmetries}}{322}{subsection.5.10.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.2.2}{The Goldstone Theorem}}{323}{subsubsection.5.10.2.2}
+\contentsline {subsection}{\numberline {5.10.2}{Continuous symmetries}}{323}{subsection.5.10.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.10.3}{Goldstone theorem}}{324}{subsection.5.10.3}
+\contentsline {subsubsection}{\numberline {5.10.2.1}{What is the idea behind this ?}}{324}{subsubsection.5.10.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.3.1}{Explicit calculation}}{325}{subsubsection.5.10.3.1}
+\contentsline {paragraph}{{Example}}{324}{paragraph*.73}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.3.2}{Goldstone's argument}}{326}{subsubsection.5.10.3.2}
+\contentsline {subsubsection}{\numberline {5.10.2.2}{The Goldstone Theorem}}{324}{subsubsection.5.10.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.3.3}{Non-relativistic theories}}{327}{subsubsection.5.10.3.3}
+\contentsline {subsection}{\numberline {5.10.3}{Goldstone theorem}}{325}{subsection.5.10.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.3.4}{Pseudo-Goldstone bosons}}{327}{subsubsection.5.10.3.4}
+\contentsline {subsubsection}{\numberline {5.10.3.1}{Explicit calculation}}{326}{subsubsection.5.10.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.10.4}{Explicit calculation of the SSB mechanism }}{328}{subsection.5.10.4}
+\contentsline {subsubsection}{\numberline {5.10.3.2}{Goldstone's argument}}{327}{subsubsection.5.10.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.4.1}{SM course}}{328}{subsubsection.5.10.4.1}
+\contentsline {subsubsection}{\numberline {5.10.3.3}{Non-relativistic theories}}{328}{subsubsection.5.10.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.10.5}{Spontaneous symmetry breaking in physics - Examples}}{328}{subsection.5.10.5}
+\contentsline {subsubsection}{\numberline {5.10.3.4}{Pseudo-Goldstone bosons}}{328}{subsubsection.5.10.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.5.1}{Particle physics}}{330}{subsubsection.5.10.5.1}
+\contentsline {subsection}{\numberline {5.10.4}{Explicit calculation of the SSB mechanism }}{329}{subsection.5.10.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.5.2}{Chiral symmetry}}{330}{subsubsection.5.10.5.2}
+\contentsline {subsubsection}{\numberline {5.10.4.1}{SM course}}{329}{subsubsection.5.10.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.10.6}{Higgs mechanism}}{330}{subsection.5.10.6}
+\contentsline {subsection}{\numberline {5.10.5}{Spontaneous symmetry breaking in physics - Examples}}{329}{subsection.5.10.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.6.1}{Condensed matter physics}}{331}{subsubsection.5.10.6.1}
+\contentsline {subsubsection}{\numberline {5.10.5.1}{Particle physics}}{331}{subsubsection.5.10.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.6.2}{Continuous symmetry}}{331}{subsubsection.5.10.6.2}
+\contentsline {subsubsection}{\numberline {5.10.5.2}{Chiral symmetry}}{331}{subsubsection.5.10.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.6.3}{Dynamical symmetry breaking}}{332}{subsubsection.5.10.6.3}
+\contentsline {subsection}{\numberline {5.10.6}{Higgs mechanism}}{331}{subsection.5.10.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.6.4}{Generalization and technical usage}}{333}{subsubsection.5.10.6.4}
+\contentsline {subsubsection}{\numberline {5.10.6.1}{Condensed matter physics}}{332}{subsubsection.5.10.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.6.5}{The Higgs mechanism - Weigand}}{334}{subsubsection.5.10.6.5}
+\contentsline {subsubsection}{\numberline {5.10.6.2}{Continuous symmetry}}{332}{subsubsection.5.10.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Reason}}{335}{paragraph*.76}
+\contentsline {subsubsection}{\numberline {5.10.6.3}{Dynamical symmetry breaking}}{333}{subsubsection.5.10.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Note}}{335}{paragraph*.77}
+\contentsline {subsubsection}{\numberline {5.10.6.4}{Generalization and technical usage}}{334}{subsubsection.5.10.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.6.6}{Note on Higgs in SM}}{335}{subsubsection.5.10.6.6}
+\contentsline {subsubsection}{\numberline {5.10.6.5}{The Higgs mechanism - Weigand}}{335}{subsubsection.5.10.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.6.7}{Abelian Higgs Model - an explicit calculation}}{335}{subsubsection.5.10.6.7}
+\contentsline {paragraph}{{Reason}}{336}{paragraph*.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.6.8}{Higgs SSB of electroweak sector in the SM}}{337}{subsubsection.5.10.6.8}
+\contentsline {paragraph}{{Note}}{336}{paragraph*.78}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.6.9}{Higgs mechanism for fermions}}{338}{subsubsection.5.10.6.9}
+\contentsline {subsubsection}{\numberline {5.10.6.6}{Note on Higgs in SM}}{336}{subsubsection.5.10.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.6.10}{Vector boson mass via Higgs mechanism}}{341}{subsubsection.5.10.6.10}
+\contentsline {subsubsection}{\numberline {5.10.6.7}{Abelian Higgs Model - an explicit calculation}}{336}{subsubsection.5.10.6.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.6.11}{Higgs Mechanism in $\mitphi ^4$-theory}}{342}{subsubsection.5.10.6.11}
+\contentsline {subsubsection}{\numberline {5.10.6.8}{Higgs SSB of electroweak sector in the SM}}{338}{subsubsection.5.10.6.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.10.6.12}{Mermin-Wagner theorem}}{343}{subsubsection.5.10.6.12}
+\contentsline {subsubsection}{\numberline {5.10.6.9}{Higgs mechanism for fermions}}{339}{subsubsection.5.10.6.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.11}{Anomalies}}{343}{section.5.11}
+\contentsline {subsubsection}{\numberline {5.10.6.10}{Vector boson mass via Higgs mechanism}}{342}{subsubsection.5.10.6.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.11.1}{Axial anomaly}}{343}{subsection.5.11.1}
+\contentsline {subsubsection}{\numberline {5.10.6.11}{Higgs Mechanism in $\mitphi ^4$-theory}}{343}{subsubsection.5.10.6.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.12}{On order parameter, second-order phase transitions, symmetries etc.}}{343}{section.5.12}
+\contentsline {subsubsection}{\numberline {5.10.6.12}{Mermin-Wagner theorem}}{344}{subsubsection.5.10.6.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.11}{Anomalies}}{344}{section.5.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.11.1}{Axial anomaly}}{344}{subsection.5.11.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.12}{On order parameter, second-order phase transitions, symmetries etc.}}{344}{section.5.12}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}{Thermal equilibrium quantum field theory}}{345}{chapter.6}
 \defcounter {refsection}{0}\relax 
@@ -976,24 +982,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {11.3.3.1}{Little group}}{421}{subsubsection.11.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}{Non perturbative Physics}}{423}{chapter.12}
+\contentsline {subsubsection}{\numberline {11.3.3.2}{$Dp$-brane}}{422}{subsubsection.11.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.1}{Introduction}}{423}{section.12.1}
+\contentsline {subsubsection}{\numberline {11.3.3.3}{Open string spectrum}}{422}{subsubsection.11.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.2}{Motivating problems in QM}}{423}{section.12.2}
+\contentsline {subsubsection}{\numberline {11.3.3.4}{Closed spring spectrum}}{422}{subsubsection.11.3.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.1}{Theorem}}{423}{subsection.12.2.1}
+\contentsline {subsection}{\numberline {11.3.4}{Covariant quantization}}{423}{subsection.11.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {12.2.1.1}{Prove a small Lemma for this}}{423}{subsubsection.12.2.1.1}
+\contentsline {subsubsection}{\numberline {11.3.4.1}{Characteristic of the ghosts}}{423}{subsubsection.11.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {12.2.1.2}{Continue with proof}}{424}{subsubsection.12.2.1.2}
+\contentsline {subsubsection}{\numberline {11.3.4.2}{BRST symmetry}}{424}{subsubsection.11.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.2}{Particle on a circle}}{424}{subsection.12.2.2}
+\contentsline {section}{\numberline {11.4}{String interactions}}{425}{section.11.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {12.2.2.1}{Theorem and couple to magnetic field}}{425}{subsubsection.12.2.2.1}
+\contentsline {chapter}{\numberline {12}{Non perturbative Physics}}{427}{chapter.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {12.2.2.2}{Symmetries of this system}}{425}{subsubsection.12.2.2.2}
+\contentsline {section}{\numberline {12.1}{Introduction}}{427}{section.12.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.3}{T'Hooft Anomaly matching}}{428}{subsection.12.2.3}
+\contentsline {section}{\numberline {12.2}{Motivating problems in QM}}{427}{section.12.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {12.2.3.1}{t'Hooft anomaly}}{428}{subsubsection.12.2.3.1}
+\contentsline {subsection}{\numberline {12.2.1}{Theorem}}{427}{subsection.12.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {12.2.1.1}{Prove a small Lemma for this}}{427}{subsubsection.12.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {12.2.1.2}{Continue with proof}}{428}{subsubsection.12.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.2.2}{Particle on a circle}}{428}{subsection.12.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {12.2.2.1}{Theorem and couple to magnetic field}}{429}{subsubsection.12.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {12.2.2.2}{Symmetries of this system}}{429}{subsubsection.12.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.2.3}{T'Hooft Anomaly matching}}{432}{subsection.12.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {12.2.3.1}{t'Hooft anomaly}}{432}{subsubsection.12.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.2.4}{Comments on t'Hooft anomalies}}{433}{subsection.12.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.3}{Lectures when I was gone}}{433}{section.12.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.4}{Spinors in $1+1$-dimension, an example of axial anomaly}}{433}{section.12.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.4.1}{Fujikawa method}}{433}{subsection.12.4.1}

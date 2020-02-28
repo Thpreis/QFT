@@ -1275,7 +1275,60 @@ Replacing $S[\phi]$ by $\Gamma[\varphi]$ introduces $1PI$ amputated vertices and
 \begin{mybox}{What is the physical picture ?}
 	In quantum field theory of point particles, the force between two particles is mediated by the exchange of virtual (or off-shell) particles. Associated with each force is a charge. Charged particles feel the force by coupling to or interacting with the particles that carry the force. The most familiar example is electrodynamics. The particles that feel the force carry electric charge. The electromagnetic force is mediated by the exchange of spin-1 photons. The photons themselves are uncharged and therefore do not directly couple to each other. The resulting field equations are linear. In QCD, a theory of the strong force built from a Yang-Mills gauge theory (the strong force is responsible for holding together nucleons and thereby the nucleus), the charge is called colour. The fundamental particles that feel the strong force are coloured quarks, and the particles that carry the force are called gluons. The gluons themselves are colour charged, hence, unlike the photon, they can directly interact with each other, and the resulting field equations are nonlinear. 
 \end{mybox}
+\subsection{BRST Symmetry and the physical Hilbert space- TO PUT SOMEWHERE}
+\label{subsec:BRSTYM}
+The problem of determining the physical Hilbert space $\mH_{phys}$ has two parts. We need to first of all guarantee
+a positive-definite norm on $\mH_{phys}$ , and secondly show that time-evolution does not lead out of $\mH_{phys}$, i.e.
+the S-matrix needs to be a unitary operator on $\mH_{phys}$ . If the criterion for a state to lie in $\mH_{phys}$ is
+related to a symmetry of the full interacting theory, then invariance of the physical Hilbert space
+under time-evolution follows automatically because the S-matrix respects all symmetries.
+\subsubsection{The technical details}
+Note that the ABc action \todo{reference} possesses a global residual fermionic symmetry - the BRST
+symmetry. It is implemented via the Grassmann-odd nilpotent operator $R$ acting as
+\be 
+R A^\mu = - D^\mu c = -(\partial^\mu c + i g[A^\mu,c]), \; Rc = \frac{ig}{2} \{c,\bar{c}\},\; R\bar{c}=-B, \; RB=0.
+\ee 
+Defining $\psi(x)= \bar{c}^a \partial_\mu A^\mu_a + \frac{\xi}{2} \bar{c}^aB_a$, with the \emph{gauge-fixing parameter} $\xi$, the ABc Lagranian reads
+\be 
+\mL(A,B,\bar{c},c) = - \frac{1}{4} F^a\munu F^{\mu \nu}_a - R \psi,
+\ee 
+which fulfills $R\mL=0$, because for the first term, $R$ is just a gauge transformation on $A^\mu$ that leaves $F^2$ invariant, and $R^2=0$ in the second.\\
+\begin{mybox}{BRST-symmetry}
+	Like any quantum symmetry, the \emph{BRST-symmetry transformation}
+	\be 
+	\delta_\epsilon \Phi = \epsilon R \Phi, \quad \Phi \in \{A,B,\bar{c},c \}
+	\ee 
+	with $\epsilon$ a global Grassmann-valued parameter, is generated (in canonical quantization) by it associated \emph{Noether charge} (operator) $\hat{Q}_{BRST}$ in the sense that
+	\be 
+	[\epsilon \hat{Q}_{BRST}, \hat{\Phi}]= i \delta_\epsilon \hat{\Phi}.
+	\ee 
+	The \emph{BRST charge} $\hat{Q}_{BRST}$ is conserved, nilpotent, and hermitian:
+	\be 
+	\hat{Q}_{BRST}=0  \Leftrightarrow [\hat{H},\hat{Q}_{BRST}]=0,\; \hat{Q}^2_{BRST}=0, \; \hat{Q}^\dagger_{BRST}= \hat{Q}_{BRST}.
+	\ee 
+\end{mybox}
+\subsubsection{Mathematical intricacies}
+Some useful mathematic for finding $\mH_{phys}$ of quantum YM theory:\\
+Any state $\ket{\psi}$ in a vector space $\mH$ with a nilpotent linear operator $\hat{Q}: \mH \rightarrow \mH$ acting on it can be classified as either
+\begin{enumerate}
+	\item $\hat{Q}$-closed if $\hat{Q}\ket{\psi} =0$, i.e. if $\ket{\psi}\in \ker(\hat{Q})$, or
+	\item $\hat{Q}$-exact if $\exists \ket{\chi} \in \mH$ such that $\ket{\psi} = \hat{Q}\ket{\chi}$, i.e. if 
+	\bse 
+	\ket{\psi} \in \text{Im}(\hat{Q}).
+	\ese 
+\end{enumerate}
+Since for all $\hat{Q}$-exact $\ket{\psi}$ it holds that $\hat{Q}$
+
+
+
+
+
+
+
+
+
 \newpage
+
 
 \section{Renormalization and effective field theory}
 \label{sec:renormalization}

@@ -458,13 +458,110 @@ a_{tot} = \frac{d-2}{24} - \frac{n_{ND}+n_{DN}}{16},
 In a $d$-dimensional Lorentz covariant theory, states form irreducible representations of the subgroup $\mathbb{S}$ - called \emph{little group} or \emph{stabilizer} - of the $d$-dimensional Poincaré group $SO(1,d-1)\rtimes \mR^{1,d-1}$\footnote{Note that we used the semi-direct product here to construct the Poincaré group.} that leave their momentum $p^\mu$ invariant. Depending on whether $p^\mu$ is space-/light-/timelike, $\mathbb{S}$ is 
 \begin{enumerate}
 	\item For $\vec{p}^2>0$, we can Lorentz transform to get $\vec{p}=(0,p,0,\dots,0)$ and hence $\mathbb{S}=SO(1,d-2)$. An example is the tachyonic ground state $\ket{0,\vec{p}}$ with $\vec{p}^2= \frac{a}{\alpha^\prime}$, a scalar of the little group $SO(1,24)$.
+	\item For $\vec{p}^2=0$ we can rotate coordinates so that $\vec{p}=(p,p,0,\dots,0)$, i.e. $\mathbb{S}=SO(d-2)$. States of this type are the first-level massless transverse excitations $\xi_i \alpha^i_{-1}\ket{0,\vec{p}}$. They are spacetime vectors in the fundamental representation $\yng(1)$ of $\mathbb{S}=SO(24)$.
+	\item $\vec{p}^2<0$ admits $\vec{p}=(p,0,\dots,0)$, i.e. $\mathbb{S}=SO(d-1)$. All massive states (i.e. at second excited level or higher) form irreps of $\mathbb{S}=SO(25)$. E.g. a second-level state of the form $(\xi_i \alpha^i_{-2}+\zeta_{ij} \alpha^i_{-1} \alpha^j_{-1})\ket{0,\vec{p}}$ has $24+\frac{24}{2}(24+1)=324$ polarization degrees of freedom which combine into the symmetric traceless representation $\yng(2)$ of $SO(25)$.
 \end{enumerate}
+\subsubsection{$Dp$-brane}
+A \emph{D$p$-brane} is a $(p+1)$-dimensional hypersurface on which open strings can end, fixing them in place in the dimensions normal to it. DD boundary conditions allow for momentum flow off the string ends which implies that $D$-branes are dynamical (albeit non-perturbative) objects themselves.
+\subsubsection{Open string spectrum}
+\begin{enumerate}
+	\item The presence of a single $Dp$-brane allows the following low-level states\footnote{The lightcone coordinates $X^\pm=\frac{1}{\sqrt{2}}(X^0 \pm X^{25}) $ mus lie in $NN$ dimensions for a treatment within lightcone quantization. }:
+	\begin{enumerate}
+		\item The ground state $\ket{0,\vec{p}}$ can have nonzero momentum $\vec{p}$ only in $NN$ dimensions along the brane.
+		\item Excitations $\xi_i \alpha^i_{-1}\ket{0,\vec{p}}$ \emph{parallel} to the brane for $i\in \{1,\dots,p-1\}$ form a massless vector from the perspective of the $Dp$-brane. Its interactions identify it as a gauge potential. Thus a \textbf{single brane hosts a }$U(1)$ \textbf{ gauge theory !} Excitations \emph{normal} to the brane $\xi_a \alpha^a_{-1} \ket{0,\vec{p}}$ for $a\in \{p,\dots,24 \}$ form $24-p$ massless scalars. They are the \textbf{Goldstone bosons} associated with spontaneous breaking of the $26$-dimensional Poincaré symmetry by the brane.
+	\end{enumerate}
+\item Strings stretched between parallel $Dp$-branes located at $x^a_1$ and $x^a_2$ receive a mass contribution $T^2 \sum_a (x^a_2-x^a_1)^2$ from tension, rendering the above gauge and Goldstone excitations massive.
+\item For $N$ coincident $Dp$-branes, states need to be labelled by \emph{Chan-Paton factors} $r,s\in \{1,\dots,N\}$ enumerating the branches to keep track of the boundaries. We get the same states listed under $1$, but $N^2$ copies of each, i.e. $N^2$ massless vectors and $N^2(24-p)$ massless scalars. The vectors enhance the original $U(1)$ gauge symmetry to a non-Abelian $U(N)$. States can be expanded in terms of the $N^2$ hermitian $N\times N$-Chan-Paton -matrices $\mathbf{\lambda}^a$ that span the Lie algebra of $U(N)$.\footnote{In orientifolded theories, also $SO(N)$ and the symplectic $Sp(2N)$ are possible gauge groups of coincident branes.}
+\end{enumerate}
+\subsubsection{Closed spring spectrum}
+The polarization two-tensor $\xi_{ij}$ of the first excited level decomposes into irreps of the little group $SO(24)$: $\xi_{ij}=g_{ij}+B_{ij}+\phi \delta_{ij}$, where $g_{ij}$ is symmetric traceless and describes massless, transversely polarized spin $2$ particles, i.e. \emph{gravitons}, while the antisymmetric $B_{ij}$ is called \emph{Kalb-Ramond tensor field} and models a generalized (i.e. higher-rank) gauge potential. Lastly, $\phi$, the trace part of $\xi_{ij}$, is a scalar field called the \emph{dilaton}.
+
+\subsection{Covariant quantization}
+The modern covariant approach to quantization utilizes the path integral which is particularly suitable for theories with gauge symmetries, and a powerful tool to compute string interactions.\\
+The naive partition function $Z=\int \mD X \mD h e^{iS_p[X,h]}$ overcounts due to gauge-equivalent configurations of the auxiliary field $h_{ab}$. The solution is to isolate the integral over gauge space, in this case over all diffeomorphisms $\epsilon_a$ and Weyl rescalings $\Lambda$, and cancel it by division with the gauge group's volume. This can be achieved with the Faddeev-Popov gauge fixing procedure and yields
+\be 
+\label{eq:stringQuantGeneratingFctl1}
+Z=\int \mD X \det(\mathbf{P}) e^{i S_P[X,\hat{h}]} 
+\ee 
+with $\hat{h}_{ab}$ an arbitrary reference metric, and $\det(\mathbf{P})$ the \emph{Faddeev-Popov determinant}, stemming from the Jacobian of the transformation used to factor out $\mD \epsilon$ and $\mD \Lambda$ and cancel with $\text{Vol}^{-1}_{\text{diff }\times \text{Weyl}}$,
+\be 
+\mD h \rightarrow \mD \epsilon \mD \Lambda \det \left(\frac{\partial(\mathbf{P}\mathbf{\epsilon}, \Lambda)}{\partial (\mathbf{\epsilon},\Lambda)} \right) = \mD \epsilon \mD \Lambda \det \begin{pmatrix}
+	\mathbf{P}&0 \\
+	0& 1\\
+\end{pmatrix}.
+\ee 
+We assumed every metric $h_{ab}$ can be transformed to $\hat{h}_{ab}$ for precisely one combination of $\epsilon_a$ and $\Lambda$. There is, however, a double mismatch:
+\begin{enumerate}
+\item The conformal Killing vectors generate as yet unfixed residual gauge transformations which leave the metric invariant and must not be integrated over to avoid overcounting.
+\item For worldsheets of complicated topology, the metric contains global properties - the moduli - not accounted by local gauge transformations. For topologies more complicated than the vacuum, we must sum over these moduli by hand.
+\end{enumerate}
+\subsubsection{Characteristic of the ghosts}
+By introducing the Grassmann-valued Faddeev-Popov ghost $c^a(\xi)$ and antighost $b_{ab}(\xi)$, $\det(\mathbf{P})$ can be expressed as the Berezin integral 
+\bse 
+\det(\mathbf{P}) = \int \mD b \mD c \exp \left[\frac{1}{4 \pi} \int_\Sigma \md^2 \xi \sqrt{-\hat{ h}} \mathbf{b}\cdot (\mathbf{P}\cdot c)\right]
+\ese 
+with which \ref{eq:stringQuantGeneratingFctl1} becomes
+\be 
+Z=\int \mD X \mD b \mD c e^{i(S_P+S_g)}.
+\ee 
+$c^a(\xi)$ and $b_{ab}(\xi)$ are anti-commuting, fermionic fields with integer spin in violation of the spin-statistics theorem, thus producing negative norm states. They are governed by the ghost action
+\be
+\label{eq:stringQuantGhostaction}
+S_g = \frac{-i}{2 \pi}  \int_\Sigma \md^2 \xi \sqrt{-\hat{h}} \hat{h}^{ab} c^d \nabla_a b_{bd} \stackrel{lcg}{=} \frac{i}{\pi} \int_\Sigma \md^2 \xi (c^+ \partial_- b_{++}+c^- \partial_+ b_{--})
+\ee 
+and the equations of motion $\nabla^a b_{ab} = 0=\partial_\mp b_{\pm \pm}$ and $P^c_{ab} c_c=0=\partial_\mp c^\pm$ imply $c^a$. The latter tells us that the ghost vectors $c^a$ are in one-to-one correspondence with the conformal Killing vectors $ \epsilon_a$.\\
+\\
+Ghosts and antighosts are canonically conjugate fields. Their modes $b_n,c_n$ fulfill the anti-commutaion relations
+\bse 
+\{c_m,b_n\} = \delta_{m,-n} \quad \{c_m,c_n\} = \{b_m,b_n\}=0.
+\ese 
+In terms of the ghost modes, the ghost Virasoro generators read
+\bse 
+L^g_m = \sum_{n\in\Z} (m-n) N(b_{m+n} c_{-n}).
+\ese 
+the $L^g_m$ satisfy the \emph{ghost Virasoro algebra}
+\be 
+\label{eq:stringGhostVirasoro}
+[L^g_m, L^g_n] = (m-n) L^g_{m+n} + \frac{m}{6} (1-13 m^2) \delta_{m,-n}.
+\ee 
+Defining $L^{tot}_m=L^X_m+L^g_m-a^{tot} \delta_{m,-n}$ yields the combined \emph{ghost and bosonic Virasoro algebra} 
+\be 
+\label{eq:stringGhostBosonicVirasoro}
+[L^{tot}_m,L^{tot}_n]= (m-n) L^{tot}_{m+n} + \left[\frac{c^{tot}}{12} m(m^2-1) + 2 m(a^{tot}-1)\right]\delta_{m,-n},
+\ee 
+with the central charge $c^{tot}=c^X+c^g$ where $c^g=-26$, $c^X=d$ in $\mR^{1,\md-1}$, and total normal ordering constant $a^{tot}=a^X+a^g$, where $a^g=+ \frac{1}{12}$ and $a^X=\frac{\md}{24}$ in a covariant gauge that treats $X^\pm$ as independent d.o.f. The presence of a central term signals a Weyl anomaly of the full action $S_p+S_g$ and, hence, the path integral. But we used Weyl invariance to factor out the integration over gauge-equivalent metrics. Self-consistency thus requires that the central term vanishes which is the case precisely in $\md=26$ (this really fixes the central charge $c^X$ and only indirectly constrains $\md$).
+
+
+\subsubsection{BRST symmetry}
+In path integral quantization of gauge theories, the physical state condition is implemented via the \emph{BRST symmetry}, a global, fermionic, residual symmetry of the full action $S_p + S_g$ invariant under
+\be 
+\label{eq:stringBRST}
+\delta_\epsilon X^\mu = \epsilon(c^+ \partial_+ + c^- \partial_-) X^\mu, \; \delta_\epsilon c^\pm = \epsilon (c^+ \partial_++c^- \partial_-) c^\pm, \; \delta_\epsilon b_{\pm \pm} = i \epsilon (T^X_{\pm \pm} + X^g_{\pm \pm}),
+\ee 
+where $\epsilon$ is a global Grassmann-valued parameter. BRST invariance is present even after gauge fixing $h_{ab}=\eta_{ab}$. It is generated by the nilpotent, Hermitian, conserved charge $Q_B$ via the brackets
+\be 
+\delta_\epsilon X^\mu = \epsilon [Q_B,X^\mu], \; \delta_\epsilon c^\pm = \epsilon \{Q_B,c^\pm\}, \; \delta_\epsilon b_{\pm \pm} = \{Q_B,b_{\pm \pm} \}.
+\ee 
+A long calculation reveals that nilpotence $Q^2_B = \half \{Q_B,Q_B\}\stackrel{!}{=}0$, as required for consistency of the BRST symmetry, is equivalent to absence of the Weyl anomaly, i.e. zero central extension in \ref{eq:stringGhostBosonicVirasoro}. \\
+\\
+A physical state must be gauge invariant. Since $Q_B$ acts on $X^\mu$ like the residual gauge transformations generated by conformal Killing vectors, a physical state must be invariant under a BRST transformation, i.e.
+\bse 
+Q_B \ket{\phi}=0 \quad \forall \ket{\phi}\in\mH_{phys}.
+\ese 
+This is not sufficient, however. As in quantization of YM theory (compare \ref{subsec:BRSTYM}), we find that due to nilpotence, all states in $\mH$ lie either in the kernel $\ker(Q_B)$ or image $\text{Im}(Q_B)$ of $Q_B$. The latter states are null, i.e. orthogonal to all states including themselves. The physical (positive-norm) Hilbert space is given by the cohomology of $Q_B$, i.e.
+\be 
+\label{eq:stringBRSTHilbert}
+\mH_{phys}= \mathcal{C}(Q_B) = \frac{\ker(Q_B)}{\text{Im}(Q_B)}. 
+\ee 
+States differing only by elements of $\text{Im}(Q_B)$ are in the same equivalence class and transform into one another by gauge transformation.
 
 
 
 
 
 
+\section{String interactions}
+A key property of string 
 
 
 
