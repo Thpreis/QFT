@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.22)  28 FEB 2020 13:40
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.22)  9 APR 2020 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3436,6 +3436,23 @@ zlibrary3d.code.tex
 File: tikzlibrary3d.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.2)
 ) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (/usr/share/texlive/texmf-dist/tex/latex/frcursive/frcursive.sty
+Package: frcursive 2004/02/01 v1.2 support package for French Cursive
+\seyesThickness=\skip152
+\seyes@box=\box82
+\seyes@ln=\skip153
+)
+(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks76
+\SOUL@lasttoken=\toks77
+\SOUL@cmds=\toks78
+\SOUL@buffer=\toks79
+\SOUL@token=\toks80
+\SOUL@spaceskip=\skip154
+\SOUL@ttwidth=\dimen324
+\SOUL@uldp=\dimen325
+\SOUL@ulht=\dimen326
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -3443,7 +3460,8 @@ Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'british'.
 Package biblatex Info: Trying to load language 'british'...
 Package biblatex Info: ... file 'british.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/british.lbx
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/british.lbx
 File: british.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -3477,26 +3495,26 @@ File: german.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 (./Chapters/StringTheory.aux) (./Chapters/NPP.aux))
 \openout1 = `QFTnotes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Data encoding 'ascii' specified.
@@ -3509,29 +3527,29 @@ Package biblatex Info: Data encoding 'ascii' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'QFTnotes.bbl' found.
  (./QFTnotes.bbl)
-Package biblatex Info: Reference section=0 on input line 106.
-Package biblatex Info: Reference segment=0 on input line 106.
+Package biblatex Info: Reference section=0 on input line 112.
+Package biblatex Info: Reference segment=0 on input line 112.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count482
-Package scrhack Info: undefining \float@addtolists on input line 106.
+Package scrhack Info: undefining \float@addtolists on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  TU/TeXGyrePagellaMath(1)/m/n --> TU/TeXGyrePagella(0)/m
-/n on input line 106.
+/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TeXGyrePagella(0)/m/it on input lin
-e 106.
+e 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TeXGyrePagella(0)/bx/n on input lin
-e 106.
+e 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 106.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 106.
-LaTeX Info: Redefining \microtypecontext on input line 106.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 112.
+LaTeX Info: Redefining \microtypecontext on input line 112.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -4085,8 +4103,8 @@ Package microtype Info: Character `‒' is missing
 Package microtype Info: Character `―' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-\AtBeginShipoutBox=\box82
-Package hyperref Info: Link coloring ON on input line 106.
+\AtBeginShipoutBox=\box83
+Package hyperref Info: Link coloring ON on input line 112.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -4096,9 +4114,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count483
 )
-LaTeX Info: Redefining \ref on input line 106.
-LaTeX Info: Redefining \pageref on input line 106.
-LaTeX Info: Redefining \nameref on input line 106.
+LaTeX Info: Redefining \ref on input line 112.
+LaTeX Info: Redefining \pageref on input line 112.
+LaTeX Info: Redefining \nameref on input line 112.
 
 (./QFTnotes.out) (./QFTnotes.out)
 \@outlinefile=\write8
@@ -4108,7 +4126,7 @@ LaTeX Info: Redefining \nameref on input line 106.
 
 Package tikz-feynman Warning: LuaTeX is required if you wish to have vertices a
 utomatically placed. You can disable this warning by setting /tikzfeynman/warn 
-luatex=false on input line 106.
+luatex=false on input line 112.
 
 \openout2 = `FrontBackmatter/Titlepage.aux'.
 
@@ -6358,14 +6376,150 @@ Overfull \hbox (0.40515pt too wide) detected at line 138
 \openout13 = `QFTnotes.tdo'.
 
  [2]
+\openout2 = `Chapters/Acknowledgements.aux'.
+
+ (./Chapters/Acknowledgements.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--11
+
+ []
+
+Package microtype Info: Character `ﬆ' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `ﬅ' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‥' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‼' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⌐' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁰' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁴' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁵' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁶' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁷' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁸' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁹' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₀' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₁' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₂' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₃' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₄' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₅' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₆' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₇' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₈' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₉' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₊' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₋' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁺' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁻' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‒' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `―' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Try loading font information for T1+frc on input line 18.
+(/usr/share/texlive/texmf-dist/tex/latex/frcursive/t1frc.fd
+File: t1frc.fd 2004/06/12 French Cursive font definition
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `frc' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Character `@' is missing
+(microtype)             in font `T1/frc/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `%' is missing
+(microtype)             in font `T1/frc/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `T1/frc/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `+' is missing
+(microtype)             in font `T1/frc/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' has a width of 0pt 
+(microtype)             in font `T1/frc/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `AE ' is missing
+(microtype)             in font `T1/frc/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `T1/frc/m/n/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+) [3
+
+]
 \openout2 = `Chapters/fieldtheory.aux'.
 
- (./Chapters/fieldtheory.tex
+
+(./Chapters/fieldtheory.tex
 Chapter 1.
+[4
+
+
+
+
+]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 4.
 
-LaTeX Warning: Marginpar on page 3 moved.
+
+LaTeX Warning: Marginpar on page 5 moved.
 
 
 Overfull \hbox (0.12119pt too wide) in paragraph at lines 6--7
@@ -6458,11 +6612,7 @@ Package microtype Info: Character `―' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 Chapter 2.
-[3
-
-
-
-] [4
+[5] [6
 
 
 ]
@@ -6471,7 +6621,7 @@ Overfull \hbox (11.04498pt too wide) in paragraph at lines 16--17
  such that $[][] [] [][][][] [][][] [][] [] [][][][] [][][]$
  []
 
-[5] [6]
+[7] [8]
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -6562,17 +6712,17 @@ Package microtype Info: Character `ﬅ' is missing
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
- [7]
+ [9]
 Underfull \hbox (badness 10000) in paragraph at lines 129--140
 
  []
 
-[8]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 164--167
 
  []
 
-[9]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 192--197
 
  []
@@ -6582,13 +6732,13 @@ Overfull \hbox (14.70412pt too wide) detected at line 213
 []
  []
 
-[10]
+[12]
 Underfull \hbox (badness 2213) in paragraph at lines 246--248
 \TU/TeXGyrePagella(0)/m/n/10.95 where $[]$ is the on-shell Lagrangian. The impl
 ied charges
  []
 
-[11]
+[13]
 Package microtype Info: Character `‥' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/m/it/9'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -6756,7 +6906,7 @@ Overfull \hbox (32.23935pt too wide) in paragraph at lines 280--282
 d 4-momentum. 
  []
 
-[12]
+[14]
 Overfull \hbox (5.21298pt too wide) in paragraph at lines 319--321
 \TU/TeXGyrePagella(0)/m/n/10.95 These definitions coincide with the definitions
  of the energy momentum
@@ -6768,7 +6918,7 @@ Overfull \hbox (8.06363pt too wide) in paragraph at lines 323--325
 ian and the Lagrangian
  []
 
-[13]) [14]
+[15]) [16]
 \openout2 = `Chapters/groupsLorentz.aux'.
 
  (./Chapters/groupsLorentz.tex
@@ -6784,7 +6934,7 @@ Overfull \hbox (7.55257pt too wide) in paragraph at lines 19--23
  representation etc) should
  []
 
-[15
+[17
 
 
 
@@ -6794,15 +6944,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[16]
+[18]
 Overfull \hbox (1.74551pt too wide) in paragraph at lines 60--67
 \TU/TeXGyrePagella(0)/m/n/10.95 such that the antisymmetric matrices form the b
 asis for the vector space,
  []
 
-[17] [18]
+[19] [20]
 Package youngtab: box1 not free! Expect an error!
-[19]
+[21]
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 
@@ -6825,13 +6975,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
-[20]
+[22]
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
-[21]
+[23]
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 
@@ -6841,7 +6991,7 @@ s form invariant sub-
  []
 
 
-LaTeX Warning: Marginpar on page 22 moved.
+LaTeX Warning: Marginpar on page 24 moved.
 
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
@@ -6855,7 +7005,7 @@ Overfull \hbox (62.6492pt too wide) detected at line 198
 []
  []
 
-[22]
+[24]
 Package youngtab: box1 not free! Expect an error!
 
 Overfull \hbox (54.73985pt too wide) detected at line 221
@@ -6887,7 +7037,7 @@ Package youngtab: box1 not free! Expect an error!
 
 LaTeX Warning: Command \i invalid in math mode on input line 256.
 
-[23]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 284--286
 
  []
@@ -6899,7 +7049,7 @@ Overfull \hbox (8.61444pt too wide) detected at line 300
  $[] [] [] [] [][] []  [] []  []  [] [] [] [] [][] []  [] [][]$  
  []
 
-[24]
+[26]
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
@@ -6909,7 +7059,7 @@ Overfull \hbox (12.64798pt too wide) in paragraph at lines 320--322
 ntracted downwards),
  []
 
-[25]
+[27]
 Package youngtab: box1 not free! Expect an error!
 
 Overfull \hbox (10.4945pt too wide) in paragraph at lines 333--336
@@ -6938,442 +7088,442 @@ and $[]$ fundamental
  []
 
 Package youngtab: box1 not free! Expect an error!
-[26]
-Package youngtab: box1 not free! Expect an error!
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
-(microtype)             Ignoring protrusion settings for this character.
-Package youngtab: box1 not free! Expect an error!
-Package youngtab: box1 not free! Expect an error!
-Package youngtab: box1 not free! Expect an error!
-Package youngtab: box1 not free! Expect an error!
-Package youngtab: box1 not free! Expect an error!
-Package youngtab: box1 not free! Expect an error!
-Package youngtab: box1 not free! Expect an error!
-Package youngtab: box1 not free! Expect an error!
-Package youngtab: box1 not free! Expect an error!
-Package youngtab: box1 not free! Expect an error!
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-[27]
-Package youngtab: box1 not free! Expect an error!
-Package youngtab: box1 not free! Expect an error!
 [28]
+Package youngtab: box1 not free! Expect an error!
+Package microtype Info: Character `ﬆ' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `ﬅ' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‥' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‼' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⌐' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁰' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁴' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁵' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁶' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁷' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁸' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁹' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₀' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₁' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₂' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₃' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₄' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₅' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₆' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₇' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₈' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₉' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₊' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₋' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁺' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁻' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‒' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `―' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/8.1091'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `ﬆ' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `ﬅ' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‥' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‼' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⌐' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁰' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁴' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁵' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁶' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁷' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁸' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁹' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₀' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₁' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₂' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₃' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₄' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₅' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₆' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₇' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₈' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₉' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₊' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₋' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁺' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁻' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‒' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `―' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/6.028'.
+(microtype)             Ignoring protrusion settings for this character.
+Package youngtab: box1 not free! Expect an error!
+Package youngtab: box1 not free! Expect an error!
+Package youngtab: box1 not free! Expect an error!
+Package youngtab: box1 not free! Expect an error!
+Package youngtab: box1 not free! Expect an error!
+Package youngtab: box1 not free! Expect an error!
+Package youngtab: box1 not free! Expect an error!
+Package youngtab: box1 not free! Expect an error!
+Package youngtab: box1 not free! Expect an error!
+Package youngtab: box1 not free! Expect an error!
+Package microtype Info: Character `ﬆ' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `ﬅ' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‥' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‼' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⌐' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁰' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁴' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁵' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁶' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁷' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁸' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁹' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₀' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₁' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₂' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₃' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₄' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₅' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₆' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₇' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₈' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₉' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₊' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₋' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁺' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁻' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‒' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `―' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `ﬆ' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `ﬅ' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‥' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‼' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⌐' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁰' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁴' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁵' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁶' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁷' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁸' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁹' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₀' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₁' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₂' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₃' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₄' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₅' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₆' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₇' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₈' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₉' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₊' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₋' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁺' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁻' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‒' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `―' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `ﬆ' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `ﬅ' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‥' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‼' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⌐' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁰' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁴' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁵' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁶' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁷' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁸' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁹' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₀' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₁' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₂' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₃' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₄' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₅' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₆' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₇' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₈' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₉' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₊' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₋' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁺' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁻' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‒' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `―' is missing
+(microtype)             in font `\TU/TeXGyrePagella(0)/bx/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+[29]
+Package youngtab: box1 not free! Expect an error!
+Package youngtab: box1 not free! Expect an error!
+[30]
 File: gfx/clebschgordon2.jpg Graphic file (type bmp)
 <gfx/clebschgordon2.jpg>
 File: gfx/clebschgordon1.jpg Graphic file (type bmp)
@@ -7384,7 +7534,7 @@ Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
-[29]
+[31]
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 
@@ -7392,18 +7542,18 @@ Overfull \hbox (2.3592pt too wide) detected at line 441
 []
  []
 
-[30]
+[32]
 Overfull \hbox (8.3904pt too wide) detected at line 490
  $[][][][][][][][][][] [] [][][][] [][][] [] [][][][]  []  [][][][][][][][][] [
 ] [][] [] [][]$  
  []
 
-[31] [32] [33]
+[33] [34] [35]
 Overfull \hbox (12.9902pt too wide) detected at line 559
  $[][] [] [][][] [] [][] [] [][]  [] [] [][][][] [] []$ 
  []
 
-[34]
+[36]
 Overfull \hbox (17.27185pt too wide) detected at line 569
  $[][][][][][][][][] [] [] [][] [] [][][][][][][] [] [] [][][][] [] [] [][] [] 
 [][] [] []$ 
@@ -7593,7 +7743,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 619--623
 
  []
 
-[35]
+[37]
 Overfull \hbox (51.31143pt too wide) detected at line 637
   $[][][][] [] [] [] [][]  [][][][][] [] [] [] [][][]  [][][][][] [] [] [] [][]
 [][]$ 
@@ -7610,14 +7760,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 670--680
 
  []
 
-[36]
+[38]
 Package youngtab: box1 not free! Expect an error!
-[37]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 769--773
 
  []
 
-[38]
+[40]
 Overfull \hbox (41.23183pt too wide) in paragraph at lines 791--802
 \TU/TeXGyrePagella(0)/m/n/10.95 Note that the each of the sets $[][][][] [][][]
  [][][][] [][][][] [][][] [][][][][] [] [][][][]$,$[][][][] [][][] [][][][][] [
@@ -7657,7 +7807,7 @@ Overfull \hbox (14.48904pt too wide) detected at line 845
 []
  []
 
-[39]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 850--852
 
  []
@@ -7667,7 +7817,7 @@ Overfull \hbox (41.93932pt too wide) detected at line 858
 []
  []
 
-[40]
+[42]
 File: gfx/rootlattice.jpg Graphic file (type bmp)
 <gfx/rootlattice.jpg>
 
@@ -7688,7 +7838,7 @@ File: gfx/eightfoldway.jpg Graphic file (type bmp)
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
-[41] [42]
+[43] [44]
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
@@ -7795,7 +7945,7 @@ Overfull \hbox (5.81914pt too wide) in paragraph at lines 948--980
 $ generated by $[][][][][][][][]$, where
  []
 
-[43]
+[45]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 987.
@@ -7804,7 +7954,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 987.
 
-[44]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 1009--1017
 
  []
@@ -7814,7 +7964,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1045--1048
 
  []
 
-[45]
+[47]
 Overfull \hbox (7.44681pt too wide) in paragraph at lines 1050--1052
 \TU/TeXGyrePagella(0)/m/n/10.95 where $[][][][]$ is a particular representation
  of the element $[]$ of the Lorentz
@@ -7842,7 +7992,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1077--1081
 
  []
 
-[46]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 1090--1094
 
  []
@@ -7853,7 +8003,7 @@ Overfull \hbox (28.12311pt too wide) in paragraph at lines 1090--1094
 resents a non-renormalizable
  []
 
-[47]
+[49]
 Overfull \hbox (15.54129pt too wide) in paragraph at lines 1123--1128
 \TU/TeXGyrePagella(0)/m/n/10.95 where the respective indices of the disjoint su
 bspaces $[][][][][]$, $[][][][]$,
@@ -7864,7 +8014,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1123--1128
 
  []
 
-[48]
+[50]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1132.
@@ -7879,7 +8029,7 @@ Underfull \hbox (badness 1776) in paragraph at lines 1152--1153
 metric $[] []
  []
 
-[49] [50]
+[51] [52]
 Package youngtab: box1 not free! Expect an error!
 
 Overfull \hbox (3.5903pt too wide) in paragraph at lines 1226--1229
@@ -7887,7 +8037,7 @@ Overfull \hbox (3.5903pt too wide) in paragraph at lines 1226--1229
 can label the irreps of the Lorentz
  []
 
-[51]
+[53]
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 
@@ -7897,11 +8047,11 @@ ella(0)/m/it/10.95 spinors are just a pseudo-representation\TU/TeXGyrePagella(0
 )/m/n/10.95 ,
  []
 
-[52]
+[54]
 
-LaTeX Warning: Marginpar on page 53 moved.
+LaTeX Warning: Marginpar on page 55 moved.
 
-[53]
+[55]
 Overfull \hbox (0.33441pt too wide) in paragraph at lines 1372--1374
 \TU/TeXGyrePagella(0)/m/n/10.95 with $[][] [] []$, immediately imply that momen
 tum, angular momentum,
@@ -7913,7 +8063,7 @@ Underfull \hbox (badness 2334) in paragraph at lines 1397--1398
  the algebra
  []
 
-[54] [55]
+[56] [57]
 Overfull \hbox (6.53847pt too wide) in paragraph at lines 1457--1461
 [][]\TU/TeXGyrePagella(0)/m/n/10.95 3.79[][], the direct sum of two irreducible
  representation with $[][] [] [][][][][][]$.
@@ -7926,18 +8076,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1457--1461
 
 File: gfx/doublecoverDiracSpinor.png Graphic file (type bmp)
 <gfx/doublecoverDiracSpinor.png>
-[56]
+[58]
 Overfull \hbox (1.00087pt too wide) in paragraph at lines 1492--1493
 \TU/TeXGyrePagella(0)/m/n/10.95 Fields $[][][][]$ transforming under Lorentz tr
 ansformations of the coordin-
  []
 
-) [57]
+) [59]
 \openout2 = `Chapters/canonicalQFT.aux'.
 
  (./Chapters/canonicalQFT.tex
 Chapter 4.
-[58
+[60
 
 
 
@@ -7958,12 +8108,12 @@ Underfull \hbox (badness 2005) in paragraph at lines 38--39
 quares of
  []
 
-[59]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 61--65
 
  []
 
-[60]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 67--75
 
  []
@@ -7978,49 +8128,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--75
 
  []
 
-[61] [62]
+[63] [64]
 Overfull \hbox (3.03024pt too wide) in paragraph at lines 139--141
 []$ \TU/TeXGyrePagella(0)/m/n/10.95 symmetry transformations continuously depen
 d on some para-
  []
 
-[63] [64] [65]
+[65] [66] [67]
 Package hyperref Info: bookmark level for unknown statements defaults to 0 on i
 nput line 254.
 
 
-LaTeX Warning: Reference `subssec:noethersymmetries' on page 66 undefined on in
+LaTeX Warning: Reference `subssec:noethersymmetries' on page 68 undefined on in
 put line 256.
 
-[66]
+[68]
 Overfull \hbox (19.9553pt too wide) in paragraph at lines 286--287
 []\TU/TeXGyrePagella(0)/m/n/10.95 Gauge symmetry of the Lagrangian then implies
  interactions ($[]$vertex
  []
 
-[67]
+[69]
 Overfull \hbox (3.1615pt too wide) in paragraph at lines 298--301
 \TU/TeXGyrePagella(0)/m/n/10.95 abelian gauge group $[][][][][]$ and transforma
 tions $[][][][] [] [][]$, where
  []
 
 
-LaTeX Warning: Reference `subsec:GaugeTheoriesInterpretation' on page 68 undefi
+LaTeX Warning: Reference `subsec:GaugeTheoriesInterpretation' on page 70 undefi
 ned on input line 325.
 
-[68] [69] [70]
+[70] [71] [72]
 Overfull \hbox (1.9864pt too wide) in paragraph at lines 435--437
 []$ \TU/TeXGyrePagella(0)/m/n/10.95 is a Lorentz-scalar and therefore has to de
 pend only on Lorentz-
  []
 
-[71]
+[73]
 Overfull \hbox (4.65088pt too wide) in paragraph at lines 489--491
 \TU/TeXGyrePagella(0)/m/n/10.95 self-adjoint and time independent (all time dep
 endence lies in the states)
  []
 
-[72] [73]
+[74] [75]
 Underfull \hbox (badness 10000) in paragraph at lines 545--550
 
  []
@@ -8037,7 +8187,7 @@ Overfull \hbox (18.77365pt too wide) in paragraph at lines 545--550
 , with suitable non-singular
  []
 
-[74]
+[76]
 Overfull \hbox (3.58598pt too wide) in paragraph at lines 582--591
 \TU/TeXGyrePagella(0)/m/n/10.95 could have obtained the energy-momentum tensor 
 in CFT already. Only
@@ -8048,12 +8198,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 582--591
 
  []
 
-[75]
+[77]
 Underfull \hbox (badness 10000) in paragraph at lines 618--622
 
  []
 
-[76] [77]
+[78] [79]
 Underfull \hbox (badness 10000) in paragraph at lines 660--665
 
  []
@@ -8063,7 +8213,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 669--673
 
  []
 
-[78] [79]
+[80] [81]
 Overfull \hbox (1.18427pt too wide) in paragraph at lines 731--734
 \TU/TeXGyrePagella(0)/m/n/10.95 distance, i.e. small energy, behaviour of the t
 heory. IR divergences
@@ -8074,13 +8224,13 @@ Overfull \hbox (34.26755pt too wide) detected at line 748
  $[] [] [] [] [] [] [][] [][] [][][][][] [] [] [][][][] [][][]$  
  []
 
-[80]
+[82]
 Overfull \hbox (3.56918pt too wide) in paragraph at lines 766--767
 \TU/TeXGyrePagella(0)/m/n/10.95 sional regularization and leads to $[] [] [][]$
 . Nevertheless, adding
  []
 
-[81] [82]
+[83] [84]
 Underfull \hbox (badness 10000) in paragraph at lines 827--831
 
  []
@@ -8090,7 +8240,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 843--849
 
  []
 
-[83] [84]
+[85] [86]
 Overfull \hbox (29.01102pt too wide) in paragraph at lines 881--882
 \TU/TeXGyrePagella(0)/m/n/10.95 It is not trivial to assume Lorentz invariance 
 of time independent Schrödinger
@@ -8112,13 +8262,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 905--912
 
  []
 
-[85]
+[87]
 Overfull \hbox (27.85056pt too wide) detected at line 916
  $[][][][] [] [] [] [][][][][] [] [][][][][]  [][][][] [] [][][][] [][] [][][][
 ][][][][][][] [] [][][][][][][][][][][][][]$  
  []
 
-[86]
+[88]
 Overfull \hbox (30.66417pt too wide) detected at line 944
  $[] [][][][][][] [][][][][] [] [] [][][] [] [][] [] [][][] [] [][]  []  [][][]
 [][][] [][][][][] [] [] [][][] [][] [] [][][] [] [][]$  
@@ -8139,7 +8289,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 956--974
 
  []
 
-[87]
+[89]
 File: gfx/Contour1.png Graphic file (type bmp)
 <gfx/Contour1.png>
 File: gfx/Contour2.png Graphic file (type bmp)
@@ -8216,7 +8366,7 @@ Package microtype Info: Character `‒' is missing
 Package microtype Info: Character `―' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/bx/it/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [88]
+ [90]
 Overfull \hbox (223.62088pt too wide) detected at line 1006
 []
  []
@@ -8226,7 +8376,7 @@ Overfull \hbox (23.97993pt too wide) detected at line 1011
 []
  []
 
-[89]
+[91]
 File: gfx/Retardedcontour.png Graphic file (type bmp)
 <gfx/Retardedcontour.png>
 
@@ -8245,7 +8395,7 @@ Overfull \hbox (59.8027pt too wide) detected at line 1063
  $[][] [] [][] [] [][][][][] [] [][][]  [][][][] [][][][] [] [] [] [] [] []$  
  []
 
-[90] [91]
+[92] [93]
 Overfull \hbox (13.68886pt too wide) detected at line 1099
 []
  []
@@ -8256,7 +8406,7 @@ Overfull \hbox (45.268pt too wide) detected at line 1113
 ] [] [][][] [] [][][][][][] [][][][][] []$ 
  []
 
-[92]
+[94]
 Overfull \hbox (16.6812pt too wide) detected at line 1155
 []
  []
@@ -8282,7 +8432,7 @@ Overfull \hbox (76.8489pt too wide) detected at line 1168
 []
  []
 
-[93] [94]
+[95] [96]
 Underfull \hbox (badness 10000) in paragraph at lines 1181--1184
 
  []
@@ -8305,12 +8455,12 @@ Overfull \hbox (13.16205pt too wide) detected at line 1206
   $[] [] [] [] [][][] [] [][][] [] [] [] []$  
  []
 
-[95]
+[97]
 Underfull \hbox (badness 10000) in paragraph at lines 1209--1210
 
  []
 
-[96]
+[98]
 Underfull \hbox (badness 10000) in paragraph at lines 1251--1258
 
  []
@@ -8320,9 +8470,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 1271--1273
 
  []
 
-[97]
+[99]
 
-LaTeX Warning: Marginpar on page 98 moved.
+LaTeX Warning: Marginpar on page 100 moved.
 
 File: gfx/Spectruminteractingtheory.png Graphic file (type bmp)
 <gfx/Spectruminteractingtheory.png>
@@ -8331,13 +8481,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1330--1332
 
  []
 
-[98] [99] [100]
+[100] [101] [102]
 Overfull \hbox (12.15442pt too wide) in paragraph at lines 1355--1357
 \TU/TeXGyrePagella(0)/m/n/10.95 An aside (Reh-Schlieder property): local operat
 ors can not have an identic-
  []
 
-[101] [102]
+[103] [104]
 Underfull \hbox (badness 10000) in paragraph at lines 1422--1423
 
  []
@@ -8348,7 +8498,7 @@ Overfull \hbox (7.80986pt too wide) in paragraph at lines 1426--1428
 ivative of the product sgn$[][][] []
  []
 
-[103]
+[105]
 Underfull \hbox (badness 10000) in paragraph at lines 1465--1467
 
  []
@@ -8364,12 +8514,12 @@ File: gfx/SpectrumInteractingTheoryMass.png Graphic file (type bmp)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[104]
+[106]
 Underfull \hbox (badness 10000) in paragraph at lines 1498--1503
 
  []
 
-[105]
+[107]
 Overfull \hbox (19.15845pt too wide) detected at line 1541
 []
  []
@@ -8379,23 +8529,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 1543--1546
 
  []
 
-[106] [107] [108] [109]
+[108] [109] [110] [111]
 Overfull \hbox (3.81679pt too wide) detected at line 1649
  $[] []  [] [] []  [] [][][][] [][] [][] [] [] [] [] []$  
  []
 
-[110]
+[112]
 Overfull \hbox (15.90346pt too wide) in paragraph at lines 1674--1677
 \TU/TeXGyrePagella(0)/m/n/10.95 Then again, $[][] [] [][][][][][] [] [][][][][]
  [][]$ and $[][] [] [][][][][][] []
  []
 
-[111]
+[113]
 Underfull \hbox (badness 10000) in paragraph at lines 1714--1718
 
  []
 
-[112]
+[114]
 Underfull \hbox (badness 10000) in paragraph at lines 1733--1734
 []\TU/TeXGyrePagella(0)/m/n/10.95 The aim is to compute a S-matrix element
  []
@@ -8444,7 +8594,7 @@ Overfull \hbox (19.08054pt too wide) detected at line 1764
 []
  []
 
-[113]
+[115]
 Underfull \hbox (badness 10000) in paragraph at lines 1769--1773
 
  []
@@ -8454,12 +8604,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1776--1781
 
  []
 
-[114] [115] [116]
+[116] [117] [118]
 Overfull \hbox (8.5945pt too wide) detected at line 1901
 []
  []
 
-[117] [118]
+[119] [120]
 Underfull \hbox (badness 10000) in paragraph at lines 1916--1922
 
  []
@@ -8475,7 +8625,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1916--1922
 
  []
 
-[119]
+[121]
 Underfull \hbox (badness 10000) in paragraph at lines 1924--1930
 
  []
@@ -8485,13 +8635,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1924--1930
 
  []
 
-[120]
+[122]
 Overfull \hbox (2.20175pt too wide) in paragraph at lines 1953--1954
 []\TU/TeXGyrePagella(0)/m/n/10.95 Note that the awkward denominator drops out w
 ithout worrying about
  []
 
-[121]
+[123]
 Underfull \hbox (badness 10000) in paragraph at lines 2022--2023
 
  []
@@ -8501,7 +8651,7 @@ Overfull \hbox (36.1244pt too wide) detected at line 2029
 []
  []
 
-[122]
+[124]
 Overfull \hbox (18.10965pt too wide) detected at line 2039
 []
  []
@@ -8521,7 +8671,7 @@ Overfull \hbox (21.91829pt too wide) detected at line 2051
 []
  []
 
-[123]
+[125]
 Underfull \hbox (badness 10000) in paragraph at lines 2070--2079
 
  []
@@ -8536,7 +8686,7 @@ Overfull \hbox (129.33052pt too wide) detected at line 2087
 []
  []
 
-[124]
+[126]
 Overfull \hbox (87.215pt too wide) detected at line 2091
  $[][][][] [][][][][][][][][][][][][] [][][][][][][][][][][][][] [][][] [] [][]
 [][][][][][][][][][][][][] [][][][][][][][] [][][][][][][][] [][][]$ 
@@ -8558,7 +8708,7 @@ Overfull \hbox (3.38069pt too wide) in paragraph at lines 2097--2102
 g the denominator $[]$,
  []
 
-[125]
+[127]
 Overfull \hbox (20.53685pt too wide) detected at line 2135
 []
  []
@@ -8574,18 +8724,18 @@ Overfull \hbox (23.26028pt too wide) detected at line 2153
 []
  []
 
-[126]
+[128]
 Overfull \hbox (51.64827pt too wide) detected at line 2172
 []
  []
 
-[127]
+[129]
 Overfull \hbox (62.85817pt too wide) in paragraph at lines 2197--2208
 \TU/TeXGyrePagella(0)/m/n/10.95 From Dyson’s formula, we want to compute quanti
 ties like $[] [][][][][][][][] [] [][][][][][][] []$,
  []
 
-[128] [129]
+[130] [131]
 Overfull \hbox (75.06906pt too wide) detected at line 2240
  $[][][][][][][][] [][][][] [][][][][][][][][][][][][] [][][][][][][][][] [][][
 ][] [][][] [][][][][][] [][][][][][][] [][][][][][][][][]$ 
@@ -8606,7 +8756,7 @@ Overfull \hbox (30.71902pt too wide) in paragraph at lines 2284--2284
 [][] [][][][]$\TU/TeXGyrePagella(0)/m/it/9 .  
  []
 
-[130]
+[132]
 Overfull \hbox (57.638pt too wide) detected at line 2296
  $[] [][][][] [] [] [] [][][][][][][][][][][][] [] [] [][][][] [][][][]  [] [][
 ][][] [] [] [] [] [] [][][][] [] [] [][]$  
@@ -8622,7 +8772,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2304--2312
 
  []
 
-[131]
+[133]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2331.
@@ -8685,7 +8835,7 @@ Overfull \hbox (3.3159pt too wide) in paragraph at lines 2338--2351
 ith symmetry group
  []
 
-[132]
+[134]
 Underfull \hbox (badness 1708) in paragraph at lines 2360--2361
 []\TU/TeXGyrePagella(0)/m/n/10.95 possible way of connecting internal lines: $[
 ] []
@@ -8696,12 +8846,12 @@ Overfull \hbox (15.94655pt too wide) detected at line 2381
  $[][][][][][][][][][][][][][][][] [] [] [] [] [] [] [] [][]$  
  []
 
-[133]
+[135]
 Overfull \hbox (29.53223pt too wide) detected at line 2417
 []
  []
 
-[134] [135]
+[136] [137]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2477.
@@ -8798,7 +8948,7 @@ out' requires LuaTeX. It will be ignored. on input line 2477.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2477.
 
-[136]
+[138]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2483.
@@ -8906,12 +9056,12 @@ Overfull \hbox (9.74896pt too wide) detected at line 2509
 []
  []
 
-[137]
+[139]
 Underfull \hbox (badness 10000) in paragraph at lines 2527--2531
 
  []
 
-[138]
+[140]
 Overfull \hbox (12.12013pt too wide) detected at line 2554
  $[] [] [] [][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][] []
 [][][] [] [][][][][][][][] [][][][][][][][]$  
@@ -8930,7 +9080,7 @@ Overfull \hbox (22.78506pt too wide) detected at line 2572
  $[][][][][][][][] [][] [] [] []$  
  []
 
-[139]
+[141]
 Underfull \hbox (badness 10000) in paragraph at lines 2578--2582
 
  []
@@ -8970,7 +9120,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2590--2596
 
  []
 
-[140]
+[142]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2625.
@@ -9024,7 +9174,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2630--2634
 
  []
 
-[141]
+[143]
 Overfull \hbox (23.80463pt too wide) detected at line 2644
 []
  []
@@ -9112,7 +9262,7 @@ Overfull \hbox (63.10512pt too wide) detected at line 2670
 []
  []
 
-[142]
+[144]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2701.
@@ -9191,23 +9341,23 @@ Overfull \hbox (2.31085pt too wide) in paragraph at lines 2703--2704
  spacetime point
  []
 
-[143]
+[145]
 Underfull \hbox (badness 10000) in paragraph at lines 2729--2747
 
  []
 
-[144]
+[146]
 Overfull \hbox (12.94319pt too wide) in paragraph at lines 2760--2760
 |[]\TU/TeXGyrePagella(2)/m/sc/10.95 chain of reasoning for perturbative qft cal
 culations| 
  []
 
-[145]
+[147]
 Overfull \hbox (26.98354pt too wide) detected at line 2803
 []
  []
 
-[146]
+[148]
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
 tance' requires LuaTeX. It will be ignored. on input line 2835.
@@ -9224,7 +9374,7 @@ distance' requires LuaTeX. It will be ignored. on input line 2835.
 Package tikz-feynman Warning: The key you tried to use '/tikz/graphs/spring lay
 out' requires LuaTeX. It will be ignored. on input line 2835.
 
-[147]
+[149]
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
 tance' requires LuaTeX. It will be ignored. on input line 2839.
@@ -9272,7 +9422,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2899.
 
-[148] [149]
+[150] [151]
 Underfull \hbox (badness 10000) in paragraph at lines 2967--2969
 \TU/TeXGyrePagella(0)/m/n/10.95 transform \TU/TeXGyrePagella(0)/m/it/10.95 sepa
 rately \TU/TeXGyrePagella(0)/m/n/10.95 under Lorentz transformations. The
@@ -9289,7 +9439,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2967--2969
 
  []
 
-[150]
+[152]
 Underfull \hbox (badness 10000) in paragraph at lines 3020--3023
 
  []
@@ -9299,7 +9449,7 @@ Overfull \hbox (7.35646pt too wide) detected at line 3054
 []
  []
 
-[151] [152]
+[153] [154]
 Underfull \hbox (badness 10000) in paragraph at lines 3111--3113
 
  []
@@ -9316,7 +9466,7 @@ Overfull \hbox (8.78185pt too wide) in paragraph at lines 3128--3132
 spin $[]$ particles
  []
 
-[153]
+[155]
 Underfull \hbox (badness 10000) in paragraph at lines 3138--3139
 
  []
@@ -9352,7 +9502,7 @@ Underfull \hbox (badness 1484) in paragraph at lines 3175--3178
 ration is $[]
  []
 
-[154]
+[156]
 Underfull \hbox (badness 1173) in paragraph at lines 3191--3192
 []\TU/TeXGyrePagella(0)/m/n/10.95 The time ordering of several fields picks up 
 a minus sign
@@ -9382,12 +9532,12 @@ out' requires LuaTeX. It will be ignored. on input line 3217.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 3217.
 
-[155] [156]
+[157] [158]
 Overfull \hbox (15.08388pt too wide) detected at line 3244
 []
  []
 
-[157]
+[159]
 Underfull \hbox (badness 10000) in paragraph at lines 3272--3276
 
  []
@@ -9406,14 +9556,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3276.
 
-[158] [159] [160]
+[160] [161] [162]
 Overfull \hbox (0.88042pt too wide) in paragraph at lines 3404--3405
 \TU/TeXGyrePagella(0)/m/n/10.95 The \TU/TeXGyrePagella(0)/m/it/10.95 Gupta-Bleu
 ler \TU/TeXGyrePagella(0)/m/n/10.95 formalism directly implements the Lorenz ga
 uge con-
  []
 
-[161]
+[163]
 Underfull \hbox (badness 10000) in paragraph at lines 3407--3411
 
  []
@@ -9423,7 +9573,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3437--3441
 
  []
 
-[162] [163]
+[164] [165]
 Underfull \hbox (badness 10000) in paragraph at lines 3523--3527
 
  []
@@ -9433,7 +9583,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3523--3527
 
  []
 
-[164]
+[166]
 Underfull \hbox (badness 10000) in paragraph at lines 3528--3531
 
  []
@@ -9461,13 +9611,13 @@ Overfull \hbox (4.28221pt too wide) in paragraph at lines 3550--3551
  states (the two trans-
  []
 
-[165] [166]
+[167] [168]
 Overfull \hbox (19.70972pt too wide) in paragraph at lines 3629--3632
 \TU/TeXGyrePagella(0)/m/n/10.95 fermion current associated with the $[][][][]$ 
 symmetry ($[][][][] [] [][][][][][][] [] []
  []
 
-[167]
+[169]
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
 tance' requires LuaTeX. It will be ignored. on input line 3657.
@@ -9564,7 +9714,7 @@ out' requires LuaTeX. It will be ignored. on input line 3673.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 3673.
 
-[168]
+[170]
 Overfull \hbox (19.74286pt too wide) detected at line 3701
  $[][] [] [][][] [] [][][] [] [][][][][] []  [] [][] [] [] [][][][][][] [] [][]
 [][][][][][][][] [] [][][]$  
@@ -9580,12 +9730,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3709--3711
 
  []
 
-[169] [170] [171])
+[171] [172] [173])
 \openout2 = `Chapters/advancedqft.aux'.
 
  (./Chapters/advancedqft.tex
 Chapter 5.
-[172
+[174
 
 
 
@@ -9612,22 +9762,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--55
 
  []
 
-[173]
+[175]
 Underfull \hbox (badness 10000) in paragraph at lines 60--64
 
  []
 
-[174]
+[176]
 Overfull \hbox (14.72322pt too wide) detected at line 95
 []
  []
 
-[175]
+[177]
 Underfull \hbox (badness 10000) in paragraph at lines 109--117
 
  []
 
-[176]
+[178]
 Overfull \hbox (19.6862pt too wide) detected at line 151
 []
  []
@@ -9637,7 +9787,7 @@ Overfull \hbox (19.81241pt too wide) detected at line 166
 []
  []
 
-[177]
+[179]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 182.
@@ -9651,7 +9801,7 @@ Overfull \hbox (15.92323pt too wide) detected at line 216
  $[][][][] [] [] [][][][] [] [] [][][][][][] [] [][] []$  
  []
 
-[178]
+[180]
 Underfull \hbox (badness 10000) in paragraph at lines 230--233
 
  []
@@ -9667,7 +9817,7 @@ Overfull \hbox (22.7789pt too wide) detected at line 260
  $[][][][][] [] [] [][][][] [] [] [][][][] [] [][][][][][][][]$  
  []
 
-[179]
+[181]
 Overfull \hbox (8.95619pt too wide) in paragraph at lines 271--273
 \TU/TeXGyrePagella(0)/m/n/10.95 we can identify the defining equation of the pr
 opagator $[][][] [] [][][][][][][][] []
@@ -9683,7 +9833,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--296
 
  []
 
-[180]
+[182]
 Overfull \hbox (20.70073pt too wide) detected at line 336
  $[][] [] [][][][][][][][][][][][] [] [] [][][][][][][][][]$  
  []
@@ -9693,7 +9843,7 @@ Overfull \hbox (17.05664pt too wide) detected at line 347
 []
  []
 
-[181]
+[183]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 354.
@@ -9742,7 +9892,7 @@ out' requires LuaTeX. It will be ignored. on input line 358.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 358.
 
-[182]
+[184]
 Overfull \hbox (47.2394pt too wide) detected at line 366
 []
  []
@@ -9777,27 +9927,27 @@ Overfull \hbox (4.28773pt too wide) in paragraph at lines 377--379
 tices. Together with Euler’s
  []
 
-[183]
+[185]
 Overfull \hbox (17.95984pt too wide) detected at line 407
 []
  []
 
-[184]
+[186]
 Underfull \hbox (badness 10000) in paragraph at lines 421--426
 
  []
 
-[185]
+[187]
 Overfull \hbox (8.44653pt too wide) detected at line 498
 []
  []
 
-[186]
+[188]
 Overfull \hbox (4.16306pt too wide) detected at line 525
  $[][][][][][] [] [] [][][] [] [] [] [] [][][][][][][] [][] [][][][][]$  
  []
 
-[187] [188]
+[189] [190]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 589.
@@ -9806,7 +9956,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 589.
 
-[189]
+[191]
 Underfull \hbox (badness 10000) in paragraph at lines 598--619
 
  []
@@ -9822,12 +9972,12 @@ Underfull \hbox (badness 1742) in paragraph at lines 654--656
 rse connected
  []
 
-[190] [191]
+[192] [193]
 Underfull \hbox (badness 10000) in paragraph at lines 658--659
 
  []
 
-[192]
+[194]
 Underfull \hbox (badness 10000) in paragraph at lines 663--667
 
  []
@@ -9854,9 +10004,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 677--683
 
  []
 
-[193]
+[195]
 
-LaTeX Warning: Reference `eq:onePIonepointfunction' on page 194 undefined on in
+LaTeX Warning: Reference `eq:onePIonepointfunction' on page 196 undefined on in
 put line 699.
 
 
@@ -9875,7 +10025,7 @@ Overfull \hbox (25.91687pt too wide) detected at line 732
 []
  []
 
-[194]
+[196]
 Underfull \hbox (badness 10000) in paragraph at lines 732--738
 
  []
@@ -9896,7 +10046,7 @@ Overfull \hbox (10.69376pt too wide) detected at line 771
 []
  []
 
-[195] [196]
+[197] [198]
 Underfull \hbox (badness 10000) in paragraph at lines 777--781
 
  []
@@ -9911,12 +10061,12 @@ Overfull \hbox (14.452pt too wide) detected at line 825
 []
  []
 
-[197]
+[199]
 Underfull \hbox (badness 10000) in paragraph at lines 830--834
 
  []
 
-[198]
+[200]
 Overfull \hbox (13.12524pt too wide) detected at line 894
 []
  []
@@ -9927,11 +10077,11 @@ Underfull \hbox (badness 2707) in paragraph at lines 899--901
 ing this function
  []
 
-[199]
+[201]
 Overfull \vbox (15.84782pt too high) has occurred while \output is active []
 
 
-[200]
+[202]
 Underfull \hbox (badness 10000) in paragraph at lines 916--921
 
  []
@@ -9947,12 +10097,12 @@ Underfull \hbox (badness 3333) in paragraph at lines 916--921
 ls at tree-level, i.e.
  []
 
-[201]
+[203]
 Overfull \hbox (17.7249pt too wide) detected at line 963
 []
  []
 
-[202]
+[204]
 Overfull \hbox (18.01413pt too wide) in paragraph at lines 1004--1006
 \TU/TeXGyrePagella(0)/m/n/10.95 Choose a convenient form of $[]$ (e.g. $[] [] [
 ][][][][][]$ by Coleman-Weinberg)
@@ -9981,18 +10131,18 @@ Overfull \hbox (16.83092pt too wide) in paragraph at lines 1006--1008
 nly lead to internal lines(as
  []
 
-[203]
+[205]
 Underfull \hbox (badness 10000) in paragraph at lines 1040--1045
 
  []
 
-[204] [205]
+[206] [207]
 Overfull \hbox (8.49068pt too wide) in paragraph at lines 1134--1135
 []\TU/TeXGyrePagella(0)/m/n/10.95 Iteratively we can build higher rank anti-sym
 metric product spaces
  []
 
-[206] [207]
+[208] [209]
 Overfull \hbox (28.58316pt too wide) detected at line 1211
 []
  []
@@ -10002,7 +10152,7 @@ Overfull \hbox (18.64095pt too wide) detected at line 1228
  $[] [] [][] [][][][][] [][][][][][][] [][][][][]$  
  []
 
-[208]
+[210]
 Overfull \hbox (19.34233pt too wide) detected at line 1242
 []
  []
@@ -10012,24 +10162,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 1234--1244
 
  []
 
-[209] [210]
+[211] [212]
 Underfull \hbox (badness 10000) in paragraph at lines 1294--1309
 
  []
 
-[211]
+[213]
 Overfull \hbox (1.40797pt too wide) in paragraph at lines 1326--1327
 \TU/TeXGyrePagella(0)/m/n/10.95 The space of states on which the time-evolution
  operator $[] [] [][][]$
  []
 
-[212]
+[214]
 Overfull \hbox (15.36363pt too wide) in paragraph at lines 1346--1347
 []\TU/TeXGyrePagella(0)/m/n/10.95 Evaluating the physical state condition [][]5
 .186[][] reveals $[] [] [][]$ and $[]$-excitations
  []
 
-[213]
+[215]
 Underfull \hbox (badness 10000) in paragraph at lines 1377--1401
 
  []
@@ -10044,18 +10194,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1377--1401
 
  []
 
-[214] [215] [216]
+[216] [217] [218]
 Underfull \hbox (badness 10000) in paragraph at lines 1459--1463
 
  []
 
-[217]
+[219]
 Overfull \hbox (5.33344pt too wide) in paragraph at lines 1488--1489
 \TU/TeXGyrePagella(0)/m/n/10.95 Lagrangians are fixed by the requirement of gau
 ge-invariance and renor-
  []
 
-[218]
+[220]
 Underfull \hbox (badness 10000) in paragraph at lines 1537--1553
 
  []
@@ -10065,13 +10215,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1537--1553
 
  []
 
-[219]
+[221]
 Overfull \hbox (21.60358pt too wide) in paragraph at lines 1555--1556
 []\TU/TeXGyrePagella(0)/m/n/10.95 Regularizing the divergence with a momentum c
 utoff $[]$, i.e. $[][] [][] []
  []
 
-[220]
+[222]
 Overfull \hbox (9.73526pt too wide) detected at line 1586
 []
  []
@@ -10081,24 +10231,24 @@ Overfull \hbox (5.19385pt too wide) detected at line 1602
 []
  []
 
-[221] [222]
+[223] [224]
 Overfull \hbox (5.24312pt too wide) in paragraph at lines 1640--1642
 \TU/TeXGyrePagella(0)/m/n/10.95 where $[]$ indicates quarks, $[]$ indicates glu
 ons and $[]$ indicates ghosts.
  []
 
-[223]
+[225]
 Overfull \hbox (2.15883pt too wide) in paragraph at lines 1687--1688
 \TU/TeXGyrePagella(0)/m/n/10.95 vergent amplitudes since for every ??, diagrams
  with high enough
  []
 
-[224]
+[226]
 Underfull \hbox (badness 10000) in paragraph at lines 1703--1711
 
  []
 
-[225]
+[227]
 File: gfx/Wickrotation.jpg Graphic file (type bmp)
 <gfx/Wickrotation.jpg>
 
@@ -10107,12 +10257,12 @@ Overfull \hbox (21.22757pt too wide) in paragraph at lines 1738--1745
 l form $[] [][]$,
  []
 
-[226] [227]
+[228] [229]
 Overfull \hbox (17.45268pt too wide) detected at line 1792
 []
  []
 
-[228] [229]
+[230] [231]
 File: gfx/DivergingIntegralsQED.png Graphic file (type bmp)
 <gfx/DivergingIntegralsQED.png>
 
@@ -10131,11 +10281,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1864--1881
 
  []
 
-[230]
+[232]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[231]
+[233]
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
 tance' requires LuaTeX. It will be ignored. on input line 1884.
@@ -10296,7 +10446,7 @@ out' requires LuaTeX. It will be ignored. on input line 1896.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 1896.
 
-[232]
+[234]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 1916.
@@ -10705,7 +10855,7 @@ out' requires LuaTeX. It will be ignored. on input line 1942.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 1942.
 
-[233]
+[235]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 1950.
@@ -10777,7 +10927,7 @@ Underfull \hbox (badness 5460) in paragraph at lines 1966--1967
 ll loop-
  []
 
-[234]
+[236]
 File: gfx/VertexFunctionQED.png Graphic file (type bmp)
 <gfx/VertexFunctionQED.png>
 
@@ -10834,7 +10984,7 @@ out' requires LuaTeX. It will be ignored. on input line 1994.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 1994.
 
-[235]
+[237]
 Overfull \hbox (4.75467pt too wide) detected at line 2022
 []
  []
@@ -10962,7 +11112,7 @@ Overfull \hbox (15.19214pt too wide) detected at line 2035
   $[] [] [][][][][][][][][] [] [] [] [][]$  
  []
 
-[236]
+[238]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2042.
@@ -11127,7 +11277,7 @@ distance' requires LuaTeX. It will be ignored. on input line 2042.
 Package tikz-feynman Warning: The key you tried to use '/tikz/graphs/spring lay
 out' requires LuaTeX. It will be ignored. on input line 2042.
 
-[237]
+[239]
 Overfull \hbox (1.83644pt too wide) in paragraph at lines 2069--2073
 \TU/TeXGyrePagella(0)/m/n/10.95 able, via e.g. wavefunction renormalization. Th
 e $[][]$ are called \TU/TeXGyrePagella(0)/m/it/10.95 coun-
@@ -11150,7 +11300,7 @@ Overfull \hbox (5.66164pt too wide) detected at line 2075
   $[] [][][][][][][][][] [] [] [] [][] [] [] [][][]$  
  []
 
-[238] [239] [240]
+[240] [241] [242]
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
 tance' requires LuaTeX. It will be ignored. on input line 2164.
@@ -11295,7 +11445,7 @@ distance' requires LuaTeX. It will be ignored. on input line 2164.
 Package tikz-feynman Warning: The key you tried to use '/tikz/graphs/spring lay
 out' requires LuaTeX. It will be ignored. on input line 2164.
 
-[241]
+[243]
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
 tance' requires LuaTeX. It will be ignored. on input line 2172.
@@ -11434,7 +11584,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2189--2195
 
  []
 
-[242]
+[244]
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
 tance' requires LuaTeX. It will be ignored. on input line 2201.
@@ -11718,7 +11868,7 @@ out' requires LuaTeX. It will be ignored. on input line 2207.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2207.
 
-[243]
+[245]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2243.
@@ -11874,14 +12024,14 @@ Overfull \hbox (6.24228pt too wide) in paragraph at lines 2256--2258
 ract only the divergences
  []
 
-[244]
+[246]
 Overfull \hbox (2.18053pt too wide) detected at line 2292
 []
  []
 
 File: gfx/YMpictures/YMselfenergy.png Graphic file (type bmp)
 <gfx/YMpictures/YMselfenergy.png>
-[245]
+[247]
 Underfull \hbox (badness 10000) in paragraph at lines 2320--2324
 
  []
@@ -11939,10 +12089,10 @@ out' requires LuaTeX. It will be ignored. on input line 2363.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2363.
 
-[246]
+[248]
 File: gfx/YMpictures/YMoneLoopDeltaOne.png Graphic file (type bmp)
 <gfx/YMpictures/YMoneLoopDeltaOne.png>
- [247]
+ [249]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2416.
@@ -12111,7 +12261,7 @@ out' requires LuaTeX. It will be ignored. on input line 2422.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2422.
 
-[248]
+[250]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2423.
@@ -12232,7 +12382,7 @@ out' requires LuaTeX. It will be ignored. on input line 2437.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2437.
 
-[249]
+[251]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2450.
@@ -12675,7 +12825,7 @@ Overfull \hbox (8.4812pt too wide) detected at line 2469
   $[] [] [][][][][][][][] []$ 
  []
 
-[250]
+[252]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2476.
@@ -12825,7 +12975,7 @@ distance' requires LuaTeX. It will be ignored. on input line 2507.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2507.
 
-[251]
+[253]
 Overfull \hbox (22.72441pt too wide) detected at line 2526
 []
  []
@@ -13028,7 +13178,7 @@ out' requires LuaTeX. It will be ignored. on input line 2547.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 2547.
 
-[252]
+[254]
 Overfull \hbox (2.09042pt too wide) in paragraph at lines 2547--2551
 \TU/TeXGyrePagella(0)/m/n/10.95 malized $[][][]$ graphs and counterterms. For t
 his we need that the dressed
@@ -13260,13 +13410,13 @@ Overfull \hbox (52.72003pt too wide) detected at line 2573
 []
  []
 
-[253]
+[255]
 Overfull \hbox (6.18205pt too wide) in paragraph at lines 2576--2579
 \TU/TeXGyrePagella(0)/m/n/10.95 at one-loop. Note that the $[]$-dependence intr
 oduced before is completely
  []
 
-[254]
+[256]
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
 tance' requires LuaTeX. It will be ignored. on input line 2622.
@@ -13656,7 +13806,7 @@ Overfull \hbox (26.9288pt too wide) detected at line 2647
 []
  []
 
-[255]
+[257]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/vertical' require
 s LuaTeX. It will be ignored. on input line 2655.
@@ -13681,7 +13831,7 @@ out' requires LuaTeX. It will be ignored. on input line 2655.
 Package tikz-feynman Warning: The key you tried to use '/tikz/vertical' require
 s LuaTeX. It will be ignored. on input line 2655.
 
-[256]
+[258]
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
 tance' requires LuaTeX. It will be ignored. on input line 2661.
@@ -13778,19 +13928,19 @@ Underfull \hbox (badness 7888) in paragraph at lines 2709--2711
 ompute
  []
 
-[257] [258]
+[259] [260]
 Overfull \hbox (9.3615pt too wide) in paragraph at lines 2719--2721
 \TU/TeXGyrePagella(0)/m/n/10.95 and because the $[]$-loop contribution to $[][]
 $ is the momentum-independent
  []
 
-[259]
+[261]
 Overfull \hbox (6.9978pt too wide) in paragraph at lines 2769--2769
 |[]$[]$\TU/TeXGyrePagella(0)/m/it/10.95 -function of dimensionless (marginal) c
 ouplings from counterterms| 
  []
 
-[260] [261] [262]
+[262] [263] [264]
 Overfull \hbox (5.96852pt too wide) in paragraph at lines 2855--2858
 []\TU/TeXGyrePagella(0)/m/n/10.95 The renormalization conditions define the mea
 ning of the physical coup-
@@ -13801,19 +13951,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 2855--2858
 
  []
 
-[263] [264] [265]
+[265] [266] [267]
 Underfull \hbox (badness 1383) in paragraph at lines 2954--2956
 \TU/TeXGyrePagella(0)/m/n/10.95 such that the Euclidean massless $[][]$ quantum
  potential in
  []
 
-[266] [267]
+[268] [269]
 Overfull \hbox (8.39217pt too wide) in paragraph at lines 3017--3018
 []\TU/TeXGyrePagella(0)/m/n/10.95 The cutoff $[]$ is merely a way to regulate d
 ivergent integrals without
  []
 
-[268]
+[270]
 Overfull \hbox (7.40668pt too wide) in paragraph at lines 3027--3033
 \TU/TeXGyrePagella(0)/m/n/10.95 coupled QFT in the infrared is string theory, w
 hich abandons the concept
@@ -13836,7 +13986,7 @@ Overfull \hbox (8.39854pt too wide) in paragraph at lines 3027--3033
 o the integrated-out modes
  []
 
-[269] [270] [271] [272]
+[271] [272] [273] [274]
 Overfull \hbox (4.8699pt too wide) in paragraph at lines 3107--3144
 \TU/TeXGyrePagella(0)/m/n/10.95 The massless nature of classical Yang–Mills wav
 es was a serious obstacle
@@ -13848,7 +13998,7 @@ Overfull \hbox (10.95807pt too wide) in paragraph at lines 3107--3144
 ak theory with gauge
  []
 
-[273]
+[275]
 Overfull \hbox (16.19035pt too wide) in paragraph at lines 3147--3150
 \TU/TeXGyrePagella(0)/m/n/10.95 fields, that transform non-trivially under $[][
 ][][][]$, the physical particle
@@ -13865,7 +14015,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3167--3177
 
  []
 
-[274]
+[276]
 Overfull \hbox (20.69719pt too wide) in paragraph at lines 3178--3184
 \TU/TeXGyrePagella(0)/m/n/10.95 the construction of new sorts of measures, in p
 articular non-Gaussian,
@@ -13913,12 +14063,12 @@ Overfull \hbox (6.89378pt too wide) in paragraph at lines 3208--3232
 kov field. Osterwalder
  []
 
-[275] [276]
+[277] [278]
 Underfull \hbox (badness 10000) in paragraph at lines 3261--3270
 
  []
 
-[277]
+[279]
 Package microtype Info: Character `‥' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/m/it/8.1091'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -13991,7 +14141,7 @@ Package microtype Info: Character `‒' is missing
 Package microtype Info: Character `―' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/m/it/8.1091'.
 (microtype)             Ignoring protrusion settings for this character.
- [278]
+ [280]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3335.
@@ -14000,7 +14150,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3335.
 
-[279] [280]
+[281] [282]
 Overfull \hbox (4.54868pt too wide) in paragraph at lines 3439--3440
 \TU/TeXGyrePagella(0)/m/n/10.95 Mills non-abelian gauge field exhibits cubic an
 d quartic self-interactions
@@ -14068,7 +14218,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[281]
+[283]
 Overfull \hbox (7.45502pt too wide) in paragraph at lines 3468--3469
 []\TU/TeXGyrePagella(0)/m/n/10.95 Every Lie algebra also posses a symmetric bil
 inear form, the Killing
@@ -14080,7 +14230,7 @@ Overfull \hbox (1.61774pt too wide) in paragraph at lines 3484--3486
 ice of basis matrices
  []
 
-[282] [283] [284]
+[284] [285] [286]
 Underfull \hbox (badness 10000) in paragraph at lines 3554--3559
 
  []
@@ -14102,7 +14252,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3575--3580
 
  []
 
-[285] [286]
+[287] [288]
 Overfull \hbox (6.21307pt too wide) in paragraph at lines 3627--3628
 []\TU/TeXGyrePagella(0)/m/n/10.95 Quantization is only possible through the int
 roduction of Faddeev-
@@ -14114,7 +14264,7 @@ Overfull \hbox (4.25755pt too wide) in paragraph at lines 3636--3638
 ess amplitudes, cross
  []
 
-[287] [288]
+[289] [290]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 3685.
@@ -14197,7 +14347,7 @@ out' requires LuaTeX. It will be ignored. on input line 3713.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 3713.
 
-[289]
+[291]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 3729.
@@ -14294,7 +14444,7 @@ out' requires LuaTeX. It will be ignored. on input line 3758.
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 3758.
 
-[290]
+[292]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 3771.
@@ -14330,7 +14480,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3779--3783
 
  []
 
-[291]
+[293]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 3815.
@@ -14434,7 +14584,7 @@ the \TU/TeXGyrePagella(0)/m/it/10.95 colour index\TU/TeXGyrePagella(0)/m/n/10.9
 5 ) and
  []
 
-[292]
+[294]
 Overfull \hbox (3.50685pt too wide) detected at line 3849
  $[][][] [][][] [] [][][][][] [] [][][][][][][][][] [] [][][][][][][][][]$ 
  []
@@ -14442,10 +14592,10 @@ Overfull \hbox (3.50685pt too wide) detected at line 3849
 File: gfx/YMpictures/YMfermionantifermionAnnihilation.png Graphic file (type bm
 p)
 <gfx/YMpictures/YMfermionantifermionAnnihilation.png>
-[293]
+[295]
 File: gfx/YMpictures/YMghostloops.png Graphic file (type bmp)
 <gfx/YMpictures/YMghostloops.png>
- [294]
+ [296]
 
 Package tikz-feynman Warning: The key you tried to use '/tikz/horizontal' requi
 res LuaTeX. It will be ignored. on input line 3925.
@@ -14558,7 +14708,7 @@ distance' requires LuaTeX. It will be ignored. on input line 3949.
 Package tikz-feynman Warning: The key you tried to use '/tikz/graphs/spring lay
 out' requires LuaTeX. It will be ignored. on input line 3949.
 
-[295]
+[297]
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
 tance' requires LuaTeX. It will be ignored. on input line 3952.
@@ -14575,36 +14725,36 @@ distance' requires LuaTeX. It will be ignored. on input line 3952.
 Package tikz-feynman Warning: The key you tried to use '/tikz/graphs/spring lay
 out' requires LuaTeX. It will be ignored. on input line 3952.
 
-[296]
+[298]
 Package youngtab: box1 not free! Expect an error!
-[297]
+[299]
 Underfull \hbox (badness 10000) in paragraph at lines 4040--4045
 
  []
 
-[298]
+[300]
 Overfull \hbox (22.61801pt too wide) in paragraph at lines 4078--4079
 []\TU/TeXGyrePagella(0)/m/n/10.95 Quarks also have a ”colour” d.o.f., i.e. we h
 ave $[][] [] [][][][] [][][] [][][][]$. 
  []
 
-[299]
+[301]
 Overfull \hbox (10.5747pt too wide) in paragraph at lines 4103--4104
 []\TU/TeXGyrePagella(0)/m/n/10.95 Explicit representation is given by the Gell-
 Mann matrices
  []
 
-[300]
+[302]
 Overfull \hbox (56.61319pt too wide) detected at line 4176
 []
  []
 
-[301]
+[303]
 Overfull \hbox (28.26193pt too wide) detected at line 4211
 []
  []
 
-[302]
+[304]
 Underfull \hbox (badness 10000) in paragraph at lines 4238--4240
 
  []
@@ -14614,14 +14764,14 @@ File: gfx/YMpictures/QCDrunningcoupling.png Graphic file (type bmp)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[303] [304]
+[305] [306]
 File: gfx/YMpictures/GlueTunnel.png Graphic file (type bmp)
 <gfx/YMpictures/GlueTunnel.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[305]
+[307]
 File: gfx/YMpictures/PartonScattering.png Graphic file (type bmp)
 <gfx/YMpictures/PartonScattering.png>
 
@@ -14635,7 +14785,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4371--4376
 
  []
 
-[306]
+[308]
 Overfull \hbox (12.22275pt too wide) in paragraph at lines 4396--4404
 \TU/TeXGyrePagella(0)/m/n/10.95 an unbroken, i.e. exact, gauge symmetry. The el
 ectroweak sector (\TU/TeXGyrePagella(0)/m/it/10.95 Glashow-
@@ -14646,24 +14796,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 4396--4404
 
  []
 
-[307]
+[309]
 Overfull \hbox (86.26176pt too wide) in paragraph at lines 4442--4461
 []
  []
 
-[308]
+[310]
 Overfull \hbox (16.81143pt too wide) in paragraph at lines 4530--4531
 []$[][][][][][]$ \TU/TeXGyrePagella(0)/m/n/10.95 therefore has $[]$ generators,
  which are \TU/TeXGyrePagella(0)/m/it/10.95 gluons $[][]$\TU/TeXGyrePagella(0)/
 m/n/10.95 . $[][][][][][]$
  []
 
-[309]
+[311]
 Underfull \hbox (badness 10000) in paragraph at lines 4571--4575
 
  []
 
-[310]
+[312]
 Overfull \hbox (6.19212pt too wide) in paragraph at lines 4582--4583
 []\TU/TeXGyrePagella(0)/m/n/10.95 The SM only contains one scalar field, the \T
 U/TeXGyrePagella(0)/m/it/10.95 Higgs\TU/TeXGyrePagella(0)/m/n/10.95 , a complex
@@ -14676,7 +14826,7 @@ Overfull \hbox (5.5937pt too wide) in paragraph at lines 4585--4586
 ][][][][]$, i.e. quarks
  []
 
-[311]
+[313]
 Overfull \hbox (0.61754pt too wide) in paragraph at lines 4612--4615
 \TU/TeXGyrePagella(0)/m/n/10.95 where $[][][] [][][] [] [] [][]$ are singlets u
 nder $[][][][][][]$. Note that Par-
@@ -14694,12 +14844,12 @@ Overfull \hbox (19.60591pt too wide) in paragraph at lines 4633--4636
  under $[][][][][][]$, $[][][][][][]$
  []
 
-[312]
+[314]
 Overfull \hbox (65.79965pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[313]
+[315]
 Overfull \hbox (7.6056pt too wide) in paragraph at lines 4726--4729
 \TU/TeXGyrePagella(0)/m/n/10.95 Argument by SM lecturer: Have to go to confinin
 g phase (as quarks,
@@ -14717,7 +14867,7 @@ Overfull \hbox (2.52292pt too wide) in paragraph at lines 4737--4738
 dard model (BSM) 
  []
 
-[314]
+[316]
 Underfull \hbox (badness 10000) in paragraph at lines 4765--4768
 
  []
@@ -14727,7 +14877,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4765--4768
 
  []
 
-[315]
+[317]
 Underfull \hbox (badness 10000) in paragraph at lines 4769--4776
 
  []
@@ -14738,13 +14888,13 @@ Overfull \hbox (2.55945pt too wide) in paragraph at lines 4769--4776
 y that exists in space
  []
 
-[316]
+[318]
 Overfull \hbox (10.66974pt too wide) in paragraph at lines 4786--4787
 \TU/TeXGyrePagella(0)/m/n/10.95 plates due to resonances in the vacuum energy i
 n the space between
  []
 
-[317]
+[319]
 Overfull \hbox (0.84206pt too wide) in paragraph at lines 4787--4788
 \TU/TeXGyrePagella(0)/m/n/10.95 always created as particle–antiparticle pairs. 
 The creation of these
@@ -14756,7 +14906,7 @@ Overfull \hbox (0.12854pt too wide) in paragraph at lines 4791--4792
 oved directly without
  []
 
-[318]
+[320]
 Overfull \hbox (9.9479pt too wide) in paragraph at lines 4798--4799
 []\TU/TeXGyrePagella(0)/m/n/10.95 The chiral condensate in Quantum chromodynami
 cs, about a factor
@@ -14768,19 +14918,19 @@ Overfull \hbox (1.98909pt too wide) in paragraph at lines 4798--4799
 quark matter. This
  []
 
-[319]
+[321]
 Overfull \hbox (0.45154pt too wide) in paragraph at lines 4826--4830
 \TU/TeXGyrePagella(0)/m/n/10.95 Goldstone bosons. These would have been strictl
 y massless in the chiral
  []
 
-[320]
+[322]
 Overfull \hbox (3.16899pt too wide) in paragraph at lines 4870--4872
 \TU/TeXGyrePagella(0)/m/n/10.95 Spontaneous symmetry breaking is a spontaneous 
 process of symmetry
  []
 
-[321]
+[323]
 Overfull \hbox (9.81833pt too wide) in paragraph at lines 4873--4874
 []\TU/TeXGyrePagella(0)/m/n/10.95 In condensed matter: ferromagnetism by alignm
 ent of atomic spins,
@@ -14792,10 +14942,10 @@ Overfull \hbox (2.7967pt too wide) in paragraph at lines 4889--4894
 dynamical symmetry break-
  []
 
-[322]
+[324]
 File: gfx/YMpictures/SSB.png Graphic file (type bmp)
 <gfx/YMpictures/SSB.png>
- [323]
+ [325]
 Underfull \hbox (badness 10000) in paragraph at lines 4931--4936
 
  []
@@ -14812,7 +14962,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4944--4957
 
  []
 
-[324]
+[326]
 Overfull \hbox (1.76373pt too wide) in paragraph at lines 4974--4975
 \TU/TeXGyrePagella(0)/m/n/10.95 three Goldstone bosons resulting from the disap
 pearance of $[][][][][]$ lend
@@ -14823,7 +14973,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4977--4983
 
  []
 
-[325]
+[327]
 Overfull \hbox (3.65233pt too wide) in paragraph at lines 4984--4985
 [] [] []$ \TU/TeXGyrePagella(0)/m/n/10.95 spontaneously. Then, the theory after
  symmetry breaking shows 
@@ -14846,19 +14996,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 4995--4997
 
  []
 
-[326]
+[328]
 Overfull \hbox (12.57224pt too wide) in paragraph at lines 5027--5031
 \TU/TeXGyrePagella(0)/m/n/10.95 In general, in a theory with several scalar fie
 lds, $[][]$, the Nambu–Goldstone
  []
 
-[327]
+[329]
 Overfull \hbox (2.6169pt too wide) in paragraph at lines 5039--5042
 \TU/TeXGyrePagella(0)/m/n/10.95 through its shift transformation feature illust
 rated above. Actually, here,
  []
 
-[328]
+[330]
 Overfull \hbox (3.25475pt too wide) in paragraph at lines 5048--5051
 \TU/TeXGyrePagella(0)/m/n/10.95 It essentially states that, for each spontaneou
 sly broken symmetry, there
@@ -14882,13 +15032,13 @@ Overfull \hbox (2.74557pt too wide) in paragraph at lines 5052--5056
 pontaneously broken
  []
 
-[329]
+[331]
 Overfull \hbox (2.81496pt too wide) in paragraph at lines 5066--5068
 \TU/TeXGyrePagella(0)/m/n/10.95 yields a Lagrangian with interaction terms impl
 ying the following phys-
  []
 
-[330]
+[332]
 Overfull \hbox (1.91335pt too wide) in paragraph at lines 5080--5081
 \TU/TeXGyrePagella(0)/m/n/10.95 troweak gauge symmetry to the electromagnetic g
 auge symmetry.
@@ -14906,7 +15056,7 @@ Overfull \hbox (0.8558pt too wide) in paragraph at lines 5087--5089
 n, representing a break-
  []
 
-[331]
+[333]
 Underfull \hbox (badness 10000) in paragraph at lines 5090--5093
 
  []
@@ -14917,7 +15067,7 @@ Overfull \hbox (3.53857pt too wide) in paragraph at lines 5126--5130
 taneous symmetry break-
  []
 
-[332] [333] [334] [335]
+[334] [335] [336] [337]
 Underfull \hbox (badness 10000) in paragraph at lines 5172--5178
 
  []
@@ -14927,19 +15077,19 @@ Overfull \hbox (12.86172pt too wide) detected at line 5186
 []
  []
 
-[336]
+[338]
 Overfull \hbox (5.6996pt too wide) in paragraph at lines 5194--5195
 [] []\TU/TeXGyrePagella(2)/m/sc/10.95 reason[] \TU/TeXGyrePagella(0)/m/n/10.95 
 The $[][][][]$ boson has absorbed the would-be Goldstone mode
  []
 
-[337]
+[339]
 Overfull \hbox (10.91792pt too wide) in paragraph at lines 5237--5239
 \TU/TeXGyrePagella(0)/m/n/10.95 the gauge field therefore becomes massive due t
 o the non-vanishing
  []
 
-[338]
+[340]
 Overfull \hbox (12.66502pt too wide) detected at line 5248
 []
  []
@@ -14950,38 +15100,38 @@ Overfull \hbox (7.90123pt too wide) in paragraph at lines 5259--5261
 ield is the physical massive
  []
 
-[339]
+[341]
 Overfull \hbox (104.48734pt too wide) detected at line 5301
  $[] [] [] [] [] [] [] [] [] [] [] []$  
  []
 
-[340]
+[342]
 Underfull \hbox (badness 10000) in paragraph at lines 5338--5343
 
  []
 
-[341]
+[343]
 Overfull \hbox (22.86768pt too wide) detected at line 5367
   $[][][][] [] [][][][][][][][] [] [] [] []  [][][][] [] [][][]  [] [] [][]$  
  []
 
-[342]
+[344]
 Overfull \hbox (6.08846pt too wide) detected at line 5420
 []
  []
 
-[343] [344]
+[345] [346]
 Overfull \hbox (14.67473pt too wide) in paragraph at lines 5491--5491
 |[]\TU/TeXGyrePagella(2)/m/sc/10.95 on order parameter, second-order phase tran
 sitions,
  []
 
-) [345]
+) [347]
 \openout2 = `Chapters/thermaleqQFT.aux'.
 
  (./Chapters/thermaleqQFT.tex
 Chapter 6.
-[346
+[348
 
 
 
@@ -14991,7 +15141,7 @@ Overfull \hbox (8.37941pt too wide) detected at line 52
  $[][][] [] [][] [][] [] [] [] [] [] [] [] [] [] [] []$  
  []
 
-[347] [348] [349]
+[349] [350] [351]
 Overfull \hbox (11.43587pt too wide) detected at line 126
  $[][][][] [] [] [] [] [] [][][][][][] [][] [] [][][][] [] [][][][][] [] [][][]
 $  
@@ -15002,7 +15152,7 @@ Overfull \hbox (74.9961pt too wide) detected at line 146
  $[][][][][] [] [] [][] [][][][][][] [] [][][]$  
  []
 
-[350] [351]) [352]
+[352] [353]) [354]
 \openout2 = `Chapters/noneqQFT.aux'.
 
  (./Chapters/noneqQFT.tex
@@ -15012,17 +15162,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--57
 
  []
 
-[353
+[355
 
 
 
 
-] [354]
+] [356]
 Underfull \hbox (badness 10000) in paragraph at lines 99--132
 
  []
 
-[355] [356]
+[357] [358]
 Overfull \hbox (18.29916pt too wide) in paragraph at lines 134--134
 [][][][][][][][][][][][][][][][][][]$ 
  []
@@ -15065,12 +15215,12 @@ Overfull \hbox (1.83405pt too wide) in paragraph at lines 160--162
 effective action in powers
  []
 
-[357] [358]
+[359] [360]
 Underfull \hbox (badness 10000) in paragraph at lines 225--235
 
  []
 
-[359]
+[361]
 Overfull \hbox (22.0787pt too wide) in paragraph at lines 251--254
 \TU/TeXGyrePagella(0)/m/n/10.95 lated by the famous Kubo-Martin-Schwinger (KMS)
  relations or fluctuation-
@@ -15081,22 +15231,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--271
 
  []
 
-[360] [361])
+[362] [363])
 \openout2 = `Chapters/curvedBackgroundQFT.aux'.
 
  (./Chapters/curvedBackgroundQFT.tex
 Chapter 8.
-[362
+[364
 
 
 
 
-]) [363]
+]) [365]
 \openout2 = `Chapters/ConformalFT.aux'.
 
  (./Chapters/ConformalFT.tex
 Chapter 9.
-[364
+[366
 
 
 
@@ -15107,18 +15257,18 @@ Overfull \hbox (4.4492pt too wide) in paragraph at lines 12--14
 vity on AdS space
  []
 
-[365]
+[367]
 Underfull \hbox (badness 1803) in paragraph at lines 38--40
 []\TU/TeXGyrePagella(0)/m/n/10.95 A \TU/TeXGyrePagella(0)/m/it/10.95 conformal 
 transformation \TU/TeXGyrePagella(0)/m/n/10.95 (CT) is a diffeomorphism under
  []
 
-[366]
+[368]
 Overfull \hbox (71.47966pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[367]
+[369]
 Overfull \hbox (4.0523pt too wide) in paragraph at lines 108--111
 \TU/TeXGyrePagella(0)/m/n/10.95 Note that (finite) global special conformal tra
 nsformations take the form
@@ -15142,7 +15292,7 @@ Overfull \hbox (3.86395pt too wide) detected at line 140
 ][][][] [] [] []$ 
  []
 
-[368]
+[370]
 Overfull \hbox (8.57828pt too wide) in paragraph at lines 153--155
 \TU/TeXGyrePagella(0)/m/n/10.95 This describes several different cases for the 
 underlying two-dimensional
@@ -15153,7 +15303,7 @@ Overfull \hbox (71.47966pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[369]
+[371]
 Overfull \hbox (7.79323pt too wide) in paragraph at lines 190--202
 [] \TU/TeXGyrePagella(0)/m/n/10.95 These are the subset of transformations whic
 h are globally well-defined
@@ -15170,7 +15320,7 @@ Overfull \hbox (3.85791pt too wide) in paragraph at lines 203--204
 al sub-group, i.e. the Möbius
  []
 
-[370]
+[372]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 230.
@@ -15194,13 +15344,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--242
 
  []
 
-[371]
+[373]
 Underfull \hbox (badness 2875) in paragraph at lines 292--293
 []\TU/TeXGyrePagella(0)/m/n/10.95 By taking coefficients of $[][] [][][] [][] [
 ][]$, we get te action of
  []
 
-[372]
+[374]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 322.
@@ -15213,22 +15363,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 322.
 
-[373] [374]
+[375] [376]
 Overfull \hbox (22.41724pt too wide) detected at line 406
  $[][][][][]$  
  []
 
-[375]
+[377]
 
-LaTeX Warning: Reference `eq:cftKilling' on page 376 undefined on input line 42
+LaTeX Warning: Reference `eq:cftKilling' on page 378 undefined on input line 42
 0.
 
 
-LaTeX Warning: Reference `eq:cftKilling' on page 376 undefined on input line 42
+LaTeX Warning: Reference `eq:cftKilling' on page 378 undefined on input line 42
 4.
 
 
-LaTeX Warning: Reference `eq:cftKilling' on page 376 undefined on input line 42
+LaTeX Warning: Reference `eq:cftKilling' on page 378 undefined on input line 42
 4.
 
 
@@ -15242,7 +15392,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 456--461
 
  []
 
-[376]
+[378]
 Overfull \hbox (8.54066pt too wide) in paragraph at lines 462--464
 []\TU/TeXGyrePagella(0)/m/n/10.95 Our starting point is a classical theory defi
 ned by an action $[][][][][][][][]$
@@ -15254,19 +15404,19 @@ Overfull \hbox (6.10722pt too wide) in paragraph at lines 487--501
 iliar point: Conformal
  []
 
-[377]
+[379]
 Overfull \hbox (6.43329pt too wide) in paragraph at lines 522--523
 []\TU/TeXGyrePagella(0)/m/n/10.95 A \TU/TeXGyrePagella(0)/m/it/10.95 quasi-prim
 ary field \TU/TeXGyrePagella(0)/m/n/10.95 satisfies [][]9.42[][] for $[] [] [][
 ][][][][] [][] [] [][][][][] [][][][][]$.
  []
 
-[378] [379]
+[380] [381]
 Overfull \hbox (39.20572pt too wide) detected at line 571
 []
  []
 
-[380]
+[382]
 Underfull \hbox (badness 10000) in paragraph at lines 596--599
 
  []
@@ -15282,12 +15432,12 @@ Overfull \hbox (21.03123pt too wide) detected at line 621
 []
  []
 
-[381]
+[383]
 Overfull \hbox (4.97798pt too wide) detected at line 652
  $[] [] [][]$  
  []
 
-[382]
+[384]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 680.
@@ -15312,7 +15462,7 @@ Overfull \hbox (22.81094pt too wide) detected at line 721
  $[]$ 
  []
 
-[383] [384]
+[385] [386]
 Overfull \hbox (14.85172pt too wide) in paragraph at lines 755--757
 \TU/TeXGyrePagella(0)/m/n/10.95 are equivalent to solutions of the Schrödinger 
 equation, i.e. to Schrödinger-
@@ -15331,7 +15481,7 @@ Overfull \hbox (16.47726pt too wide) in paragraph at lines 778--781
 different point, e.g. $[][][][] [] []
  []
 
-[385]
+[387]
 Underfull \hbox (badness 10000) in paragraph at lines 788--793
 
  []
@@ -15347,7 +15497,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 826--830
 
  []
 
-[386]
+[388]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 867.
@@ -15360,7 +15510,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 867.
 
-[387]
+[389]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 930.
@@ -15373,7 +15523,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 930.
 
-[388]
+[390]
 Underfull \hbox (badness 10000) in paragraph at lines 940--942
 
  []
@@ -15383,7 +15533,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 947--951
 
  []
 
-[389]
+[391]
 Overfull \hbox (17.62285pt too wide) detected at line 963
  $[] [] [][][][][][][] [][][][][][][]$  
  []
@@ -15406,7 +15556,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 973.
 
-[390]
+[392]
 Overfull \hbox (159.28918pt too wide) detected at line 997
  $[][][][][] [] [][] [] [][][][][] [] [][] [] [] [][][][][][][][][]$  
  []
@@ -15422,7 +15572,7 @@ Underfull \hbox (badness 2980) in paragraph at lines 1012--1013
 U/TeXGyrePagella(0)/m/n/10.95 Noether currents are built up from the energy-
  []
 
-[391]
+[393]
 Overfull \hbox (1.7847pt too wide) in paragraph at lines 1021--1024
 \TU/TeXGyrePagella(0)/m/n/10.95 ordered correlation functions. Here, to be inse
 rted into radially-ordered
@@ -15433,13 +15583,13 @@ Overfull \hbox (5.89328pt too wide) detected at line 1027
 []
  []
 
-[392] [393] [394]
+[394] [395] [396]
 Overfull \hbox (49.7492pt too wide) detected at line 1146
  $[][][] [] [][][] [] [] [] [][][][] [] [][][][][][][] [] [][][][][][][][][][][
 ] [] [][][]$  
  []
 
-[395] [396]
+[397] [398]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1217.
@@ -15458,7 +15608,7 @@ Overfull \hbox (4.86806pt too wide) in paragraph at lines 1222--1224
 ilation operators. Since
  []
 
-[397]
+[399]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1259.
@@ -15471,18 +15621,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1259.
 
-[398]
+[400]
 Overfull \hbox (15.108pt too wide) detected at line 1312
 []
  []
 
-[399]
+[401]
 Overfull \hbox (3.3948pt too wide) in paragraph at lines 1337--1337
 |[]\TU/TeXGyrePagella(2)/m/sc/10.95 conformal blocks and the conformal bootstra
 p pro-
  []
 
-[400]
+[402]
 Overfull \hbox (132.62114pt too wide) detected at line 1371
 []
  []
@@ -15492,7 +15642,7 @@ Overfull \hbox (16.77971pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[401] [402]
+[403] [404]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1462.
@@ -15515,7 +15665,7 @@ Overfull \hbox (16.77971pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[403]
+[405]
 Overfull \hbox (14.90318pt too wide) in paragraph at lines 1499--1499
 |[]\TU/TeXGyrePagella(2)/m/sc/10.95 cft and scale invariance (zamolodchikov-pol
 chinski
@@ -15533,13 +15683,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1510.
 
-[404]
+[406]
 Overfull \hbox (9.6497pt too wide) in paragraph at lines 1523--1525
 []\TU/TeXGyrePagella(0)/m/n/10.95 A relativistic particle fulfils the following
 . $[][][][][]$ maps $[] [] [][]$,
  []
 
-[405]
+[407]
 Overfull \hbox (5.80244pt too wide) in paragraph at lines 1557--1569
 \TU/TeXGyrePagella(0)/m/n/10.95 invariant under world-sheet reparametrization. 
 There is however a prob-
@@ -15562,40 +15712,40 @@ Overfull \hbox (5.93501pt too wide) detected at line 1593
 []
  []
 
-[406]) [407]
+[408]) [409]
 \openout2 = `Chapters/Supersymmetry.aux'.
 
  (./Chapters/Supersymmetry.tex
 Chapter 10.
-[408
-
-
-
-
-]) [409]
-\openout2 = `Chapters/StringTheory.aux'.
-
- (./Chapters/StringTheory.tex
-Chapter 11.
 [410
 
 
 
 
-] [411]
+]) [411]
+\openout2 = `Chapters/StringTheory.aux'.
+
+ (./Chapters/StringTheory.tex
+Chapter 11.
+[412
+
+
+
+
+] [413]
 Overfull \hbox (0.24628pt too wide) in paragraph at lines 33--35
 []\TU/TeXGyrePagella(0)/m/n/10.95 There is only \TU/TeXGyrePagella(0)/m/it/10.9
 5 one \TU/TeXGyrePagella(0)/m/n/10.95 free parameter in string theory, the \TU/
 TeXGyrePagella(0)/bx/n/10.95 string length
  []
 
-[412]
+[414]
 Overfull \hbox (0.56853pt too wide) in paragraph at lines 90--91
 [][][]\TU/TeXGyrePagella(0)/m/n/10.95 11.3[][] is the most general bosonic stri
 ng action imaginable. $[][]$ could
  []
 
-[413]
+[415]
 Overfull \hbox (15.23701pt too wide) in paragraph at lines 106--107
 $[][]$ \TU/TeXGyrePagella(0)/m/n/10.95 enjoys several symmetries, where it is i
 mportant to distinguish between
@@ -15608,23 +15758,23 @@ m/it/10.95 sheets \TU/TeXGyrePagella(0)/m/n/10.95 (as opposed to, say, membrane
 s),
  []
 
-[414]
+[416]
 
-LaTeX Warning: Reference `eq:ctkilling' on page 415 undefined on input line 133
+LaTeX Warning: Reference `eq:ctkilling' on page 417 undefined on input line 133
 .
 
-[415]
+[417]
 Overfull \hbox (0.96803pt too wide) in paragraph at lines 182--183
 \TU/TeXGyrePagella(0)/m/n/10.95 properties of worldsheets that account for stri
 ng interaction (men-
  []
 
-[416]
+[418]
 Underfull \hbox (badness 10000) in paragraph at lines 238--242
 
  []
 
-[417] [418]
+[419] [420]
 Overfull \hbox (0.47345pt too wide) in paragraph at lines 316--317
 \TU/TeXGyrePagella(0)/m/n/10.95 are not implemented until we reach the quantum 
 level. This mani-
@@ -15642,19 +15792,19 @@ Overfull \hbox (37.58916pt too wide) detected at line 348
 []
  []
 
-[419]
+[421]
 Underfull \hbox (badness 3029) in paragraph at lines 356--358
 \TU/TeXGyrePagella(0)/m/n/10.95 is a central extension by $[]$ of the classical
  Witt algebra
  []
 
-[420]
+[422]
 Overfull \hbox (1.1213pt too wide) in paragraph at lines 385--387
 \TU/TeXGyrePagella(0)/m/n/10.95 The level-one constrain evaluates to the requir
 ement of transverse
  []
 
-[421]
+[423]
 Underfull \hbox (badness 2302) in paragraph at lines 430--431
 []\TU/TeXGyrePagella(0)/m/it/10.95 Criticality \TU/TeXGyrePagella(0)/m/n/10.95 
 in lightcone quantization follows from requiring
@@ -15665,7 +15815,7 @@ Overfull \hbox (9.5592pt too wide) detected at line 439
  $[][] [] [] [][][] [] [] [] [] []$  
  []
 
-[422]
+[424]
 Overfull \hbox (3.35521pt too wide) in paragraph at lines 451--452
 \TU/TeXGyrePagella(0)/m/n/10.95 dering constant increases by $[]$ per $[][] [] 
 [][][]$-dimension and decreases
@@ -15685,10 +15835,10 @@ Overfull \hbox (14.83289pt too wide) in paragraph at lines 462--463
 tion $[] [] $ of $[][][][][][]$. 
  []
 
-[423]
+[425]
 Missing character: There is no 𝜆 in font TeX Gyre Pagella Bold/OT:script=latn;l
 anguage=DFLT;+onum;mapping=tex-text;!
- [424]
+ [426]
 Missing character: There is no 𝜖 in font TeX Gyre Pagella Bold/OT:script=latn;l
 anguage=DFLT;+onum;mapping=tex-text;!
 Missing character: There is no 𝜖 in font TeX Gyre Pagella Bold/OT:script=latn;l
@@ -15710,7 +15860,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 511--515
 
  []
 
-[425]
+[427]
 Overfull \hbox (33.3328pt too wide) detected at line 540
  $[][][][] [] [][][][][][] [] [][][][][][][][]  [][][][] [] [][][][][][] [] [][
 ][][][][][][]  [][][][] [] [][][][][] [] [][][][]$  
@@ -15721,12 +15871,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 544--548
 
  []
 
-[426]) [427]
+[428]) [429]
 \openout2 = `Chapters/NPP.aux'.
 
  (./Chapters/NPP.tex
 Chapter 12.
-[428
+[430
 
 
 
@@ -15737,13 +15887,13 @@ Overfull \hbox (10.95622pt too wide) in paragraph at lines 6--7
 g $[]$-particle Schrödinger
  []
 
-[429] [430] [431] [432]
+[431] [432] [433] [434]
 Overfull \hbox (6.41023pt too wide) in paragraph at lines 175--178
 \TU/TeXGyrePagella(0)/m/n/10.95 We get a contradiction of our assumption that t
 he state is non-degenerate
  []
 
-[433]
+[435]
 Underfull \hbox (badness 10000) in paragraph at lines 202--205
 
  []
@@ -15767,20 +15917,26 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 240.
 
-[434]) [435]
+[436]) [437]
 \tf@thm=\write14
 \openout14 = `QFTnotes.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (./QFTnotes.aux (./FrontBackmatter/Titlepage.aux)
-(./FrontBackmatter/Contents.aux) (./Chapters/fieldtheory.aux)
-(./Chapters/groupsLorentz.aux) (./Chapters/canonicalQFT.aux)
-(./Chapters/advancedqft.aux) (./Chapters/thermaleqQFT.aux)
-(./Chapters/noneqQFT.aux) (./Chapters/curvedBackgroundQFT.aux)
-(./Chapters/ConformalFT.aux) (./Chapters/Supersymmetry.aux)
-(./Chapters/StringTheory.aux) (./Chapters/NPP.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 138.
+(./FrontBackmatter/Contents.aux) (./Chapters/Acknowledgements.aux)
+(./Chapters/fieldtheory.aux) (./Chapters/groupsLorentz.aux)
+(./Chapters/canonicalQFT.aux) (./Chapters/advancedqft.aux)
+(./Chapters/thermaleqQFT.aux) (./Chapters/noneqQFT.aux)
+(./Chapters/curvedBackgroundQFT.aux) (./Chapters/ConformalFT.aux)
+(./Chapters/Supersymmetry.aux) (./Chapters/StringTheory.aux)
+(./Chapters/NPP.aux)
+
+Package mparhack Warning: Marginpars may have changed.
+(mparhack)                Rerun to get them right.
+
+)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 145.
 
 
  *File List*
@@ -15981,6 +16137,8 @@ youngtab.sty    1999/05/19 v1.1; Macros for Young-Tableaux
 ytableau.sty    2012/08/14 v1.3 Many-featured Young tableaux and Young diagrams
 
   cancel.sty    2013/04/12 v2.2 Cancel math terms
+frcursive.sty    2004/02/01 v1.2 support package for French Cursive
+    soul.sty    2003/11/17 v2.4 letterspacing/underlining (mf)
  english.lbx    2017/12/19 v3.10 biblatex localization (PK/JW/AB)
  british.lbx    2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 american.lbx    2017/12/19 v3.10 biblatex localization (PK/JW/AB)
@@ -15999,6 +16157,8 @@ FrontBackmatter/Titlepage.tex
     umsb.fd    2013/01/14 v3.01 AMS symbols B
   mt-msb.cfg    2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 FrontBackmatter/Contents.tex
+Chapters/Acknowledgements.tex
+   t1frc.fd    2004/06/12 French Cursive font definition
 Chapters/fieldtheory.tex
 Chapters/groupsLorentz.tex
 gfx/clebschgordon2.jpg
@@ -16043,21 +16203,24 @@ Chapters/StringTheory.tex
 Chapters/NPP.tex
  ***********
 
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 138.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 145.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'QFTnotes.run.xml'.
 \openout1 = `QFTnotes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 63360 strings out of 493007
- 1304422 string characters out of 6136718
- 2216728 words of memory out of 5000000
- 66205 multiletter control sequences out of 15000+600000
- 547005 words of font info for 182 fonts, out of 8000000 for 9000
+ 63662 strings out of 493007
+ 1309805 string characters out of 6136718
+ 2219458 words of memory out of 5000000
+ 66487 multiletter control sequences out of 15000+600000
+ 548315 words of font info for 185 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  87i,23n,138p,10511b,5680s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on QFTnotes.pdf (447 pages).
+Output written on QFTnotes.pdf (449 pages).
