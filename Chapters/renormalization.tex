@@ -1557,6 +1557,82 @@ with a critical surface spanned by directions $i\in \mathcal{I}$ in coupling spa
 \begin{equation}
 	b_i >0 \text{ for } i\in \mathcal{I}.
 \end{equation}
+\subsubsection{An example of fixed-point analysis}
+Consider the following toy model with two coupling constants $g_1,g_2$ and we flow from a cutoff $\Lambda^\prime$ to $\Lambda$ with $\Lambda^\prime = e^{-\ell} \Lambda$. We have the following given
+\bse 
+\vec{\beta}(\vec{g})= \begin{pmatrix}
+	\beta_1 (\vec{g})  \\
+	\beta_2(\vec{g})\\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+	-g^3_1 -g^2_2 g_1 + g_1 \\
+	-g^3_2 - g^2_1 g_2 - g_2 \\
+\end{pmatrix}.
+\ese 
+where the $\beta$ functions adhere to the following flow equation (per definition \ref{eq:betafunction})
+\be 
+\frac{\md \vec{g}}{\md \ell} = - \vec{\beta}(\vec{g}).
+\ee 
+We can look for fixed points by searching for zeros of $\vec{\beta}\stackrel{!}{=} 0$. This implies the following fixed points
+\bse 
+\vec{g}^*= \begin{pmatrix}
+	0 \\
+	0 \\
+\end{pmatrix}, \quad 
+\begin{pmatrix}
+\pm 1 \\ 
+0 \\
+\end{pmatrix}.
+\ese 
+Next we must determine whether the fixed points are attractive or repulsive, and from which directions. We therefore do an expansion around $\vec{g}^*$ in the $\beta$ function via our flow equation.
+\begin{enumerate} 
+	\item  First the expansion in $(0,0)^T$.
+\begin{align}
+	\frac{\md \vec{g}}{\md \ell }|_{\vec{g}=(0,0)^T} &= - \vec{\beta}|_{\vec{g}=(0,0)^T} = \begin{pmatrix}
+		-g_1(0)\\
+		g_2(0) \\
+	\end{pmatrix} + \mO(g_{1,2}) \nonumber \\
+\Rightarrow \quad g_1(\ell) &= g_1(0) e^{-\ell} \\
+g_2(\ell) &= g_2(0) e^{+ \ell}.
+\end{align}
+Therefore, $g_1(\ell)$ is here an irrelevant (i.e. attractive towards the fixed point) coupling whilst $g_2(\ell)$ is relevant (i.e. repulsive from the fixed point), compare \ref{fig:rgtoy1}. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gfx/RGtoy1}
+	\caption{}
+	\label{fig:rgtoy1}
+\end{figure}
+\item As for the other fixed point $g^*_1=\pm1$, $g^*_2=0$, we do an expansion of the form $g_i=g^*_i+\delta_i$ and linearize the $\beta$ function in $\delta_i$ for the respective component to get insight for the neighbourhood around the fixed point. We get
+\begin{align}
+	\frac{\md \vec{g}}{\md \ell} &= \frac{\md}{\md \ell} \begin{pmatrix}
+		\delta_1 \\
+		\delta_2 \\
+	\end{pmatrix} = - \vec{\beta }|_{g_i=g^*_i+\delta_i} \nonumber\\
+&= \begin{pmatrix}
+ 2 \delta_1 \\
+ 2\delta_2 \\
+\end{pmatrix} + \mO(\delta_{1,2}) \nonumber \\
+\Rightarrow \quad \delta_1(\ell) &= \delta_1(0) e^{2 \ell} \\
+\delta_2(\ell) &= \delta_2(0) e^{2 \ell}.
+\end{align} 
+Therefore, the couplings are relevant (i.e. repulsive from the fixed point) for this fixed point, compare \ref{fig:rgtoy2}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.35\linewidth]{gfx/RGtoy2}
+	\; \longrightarrow \; 
+	\includegraphics[width=0.35\linewidth]{gfx/RGtoy3}
+	\caption{}
+	\label{fig:rgtoy2}
+\end{figure}
+Note that we connected the flow lines in a way which is consistent with the properties of the above fixed points.\\
+Now consider crossing the $g_1$-axis while $-1 < g_1 < 1$. If $g_2=0$, the RG flow will take us to the $g_1=g_2=0$ fixed point. At a fixed point the correlation length blows up and the system undergoes a phase transition.
+
+
+ 
+\end{enumerate}
+
 \subsection{TODO Anomalous dimension and dangerously (ir)relevant operators}
 \begin{equation}
 G_2(p) = \int \md^d x \bra{\Omega}\phi(x) \phi(y) \ket{\Omega} e^{ip(x-y)}\propto \left(\frac{1}{p^2}\right)^{1-\gamma_\phi(\lambda^*)}
@@ -1936,10 +2012,23 @@ The terms are chosen to reflect the couplings $u_i$ in the IR. Note that the mar
 There is a subtlety here which we have to address before moving on.
 \subsubsection{Subtlety on irrelevant operators} 
 It is not quite true when we say that irrelevant operators can simply be dropped. A more precise statement is that they do not (under certain assumptions) influence the IR physics. However, the dimensionless couplings $g_i$ which are irrelevant do not necessarily go to zero. Rather the statement is that whatever their starting point is at $\Lambda_0$, the RG flow curves will pass very close to each other. 
-\todo{plot}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gfx/RG1}
+	\caption{}
+	\label{fig:rg1}
+\end{figure}
+
 The marginally irrelevant couplings will also attract in the IR, but the effect will be logarithmic in the ratio 
 of the UV and IR scales, so its effects can be felt to very deep IR. Considering a plot with a relevant coupling, we have
-\todo{plot}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gfx/RG2}
+	\caption{}
+	\label{fig:rg2}
+\end{figure}
 
 Note that these results involve some assumptions.
 \begin{enumerate}
@@ -1998,11 +2087,90 @@ Scaling laws like this give us much more than just the critical exponent $\nu$. 
 
 
 
+\subsection{Scaling relations}
 
-
-
-
-
+\subsubsection{An example for scaling relations}
+Consider a system with two relevant couplings $t$ and $h$. The choice of the naming for
+these couplings is coming from the Ising model. The system has some kind of symmetry ($\Z_2$
+symmetry in the case of Ising), and $h$ is a coupling that explicitly breaks that symmetry.
+When $h = 0$ the theory enjoys the symmetry. On the other hand t is the “temperature”
+driving the transition\footnote{c
+	Usually $t=\frac{T-T_C}{T_C}$, where $T$ is the temperature and $T_C$ is the critical temperature, and $t$ is referred to
+	as the \emph{reduced temperature}.} at $h = 0$, normalized so that $t = 0$ is the critical point. $t < 0$ is the
+“ordered phase”, where an expectation value of some operator $\Psi$ develops. This operator
+$\Psi$ is not invariant under the relevant symmetry, so we say that, although at $h = 0$ the
+symmetry is a good symmetry of the theory, the ground state does not obey it (e.g. all
+spins are either up or down).The average $\expval{\Psi}$ is called the \emph{order parameter}.
+Associated to the critical point $t = 0, h = 0$ is a set of parameters called \emph{critical
+exponents}. These are defined by the divergence of certain thermodynamic quantities at the
+critical point. Most exponents are defined for $h = 0$, as $t$ approaches zero. We first define
+several important thermodynamic quantities. The specific heat $c$, the order parameter $\expval{\Psi}$ and the magnetic susceptibility $\chi$ are defined through the specific free energy $f$\footnote{The specific heat and the magnetic susceptibility are names which have their origin in identifying $t$
+	with the temperature and $h$ with the magnetic field. One should consider these observables in a generalized
+	sense however, as they can be defined in any system, regardless of whether $t$ and $h$ have this interpretation.} as
+\begin{align}
+	c&= -\partial^2_t , \\
+	\expval{\Psi} &= - \partial_h f, \\
+	\chi = \partial_h \expval{\Psi} &= - \partial^2_h f, \text{ where} \\
+	f &= - \log\frac{Z}{V} \nonumber.
+\end{align}
+Note that $V$ is
+either the space-time volume in the case of the quantum field theory, or spatial volume in
+the case of statistical mechanics system, so it has a mass dimension of $D$. At the critical
+point $c$ and $\chi$ diverge, while $\expval{\Psi}$ goes to zero, if we approach the transition point from the
+ordered phase, i.e. from $t < 0$. So that we define the \emph{critical exponents}\footnote{We have no reason to assume that the critical exponents $α, β$ are the same for $t > 0$ and $t < 0$ are the
+	same, and indeed they may be different. We will not bother with this issue here however.} $\alpha,\beta,\gamma$ by
+\begin{align}
+	c \quad &\propto \quad \abs{t}^{-\alpha}, \\
+	\expval{\Psi}\quad  &\propto \quad \abs{t}^\beta, \\
+	\chi \quad &\propto \quad \abs{t^{-\gamma}.}
+\end{align}
+Moreover we can also define a critical exponent $\delta$ for when $t = 0$ and $h$ approaches zero
+by noting that the order parameter must somehow be proportional to the source $h$. The
+exponent is defined as 
+\be 
+\expval{\Psi} \quad \propto \quad h^{\frac{1}{\delta}},
+\ee 
+when $t=0$.
+\\
+Assuming that $t, h$ are linear in the two relevant scaling variables $u_t$ and $u_h$ , with the
+RG eigenvalues $y_t$ , $y_h$ , and assuming that the specific free energy\footnote{This is in fact not true, but the relevant, singular part of the free energy does scale like this, so for the
+	purposes of calculating the critical exponents, this is an adequate assumption.} scales as $f(\ell) = e^{D \ell } f(0)$ where $\ell$ is the RG flow time. Then we must have
+\bse 
+f = \abs{t}^{\frac{D}{y_t}} g\left(\frac{h}{\abs{t}^{\frac{y_h}{y_t}}}\right)
+\ese  
+for some function $g$ (note that we used absolute value, as we want to capture both
+the regime $t > 0$ and $t < 0$. We assume $h > 0$ always). This comes about because the singular part of the free energy scales like $f \rightarrow e^{D \ell} f$. Since $\abs{t}^{\frac{1}{y_t}} \rightarrow e^\ell \abs{t}^{\frac{1}{y_t}}$, we must have 
+		\bse 
+		f= \abs{t}^{\frac{D}{y_t}} \bar{g}(t,h)
+		\ese 
+		where $\bar{g}(t,h)$ does not scale under the RG flow. But since
+		\bse 
+		t \rightarrow e^{\ell y_t} t,\quad h \rightarrow e^{\ell y_h} h
+		\ese 
+the function $\bar{g}(t,h)$ must be a function of only $\frac{\abs{t}^{1/y_t}}{h^{1/y_h}}$ which does not scale with the RG flow. Equivalently it is a function of $\frac{h}{\abs{t}^{y_t/y_h}}$.\\
+\\
+Assuming that the limit $h\rightarrow0$ is finite,  at $h=0$ the critical exponents in terms of $y_{t,h}$ are given by
+\be 
+\alpha= 2 - \frac{D}{y_t},\quad \beta = \frac{D-y_h}{y_t}, \quad \gamma = \frac{2 y_h-D}{y_t}.
+\ee 
+Furthermore, we find by direct computation for finite $h$
+\bse 
+ \bar{\Psi} = \abs{t}^{\frac{D-y_h}{y_t}} g^\prime \left(\frac{h}{\abs{t}^{\frac{y_h}{y_t}}}\right).
+\ese
+Assuming that $\expval{\Psi}$ has a finite limit when $t\rightarrow 0$, we obtain that in this limit (at finite,
+but small $h$) 
+\be 
+\expval{\Psi} \quad \propto \quad h^{\frac{D-y_h}{y_t}} \equiv h^{\frac{1}{\delta}}
+\ee 
+with another critical exponent $\delta$.\\
+Since the four critical exponents $α, β, γ, δ$ all depend on only the two RG eigenvalues
+$y_t,y_h$, there must be two relations between them, they are
+\begin{align}
+	\alpha + 2\beta + \gamma &= 2 \\
+	\alpha + \beta(1+\delta) &=2- \\
+\end{align}
+Notice that these relations do not depend on the dimensionality D of the system.
+They are called the \emph{scaling relations}.
 
 
 

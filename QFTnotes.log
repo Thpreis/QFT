@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.22)  16 APR 2020 16:08
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.22)  23 APR 2020 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1906,15 +1906,64 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 Package hyperref Warning: pdfproducer: xdvipdfmx will use its own setting
 (hyperref)                instead of the value given on input line 192.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2018/01/12 version 4.12 text color boxes
+) (./Include/macros.tex
+(/usr/share/texlive/texmf-dist/tex/latex/ntheorem/ntheorem.sty
+Style `ntheorem', Version 1.33 <2011/08/15>
+Package: ntheorem 2011/08/15 1.33
+\theorem@style=\toks37
+\theorem@@style=\toks38
+\theorembodyfont=\toks39
+\theoremnumbering=\toks40
+\theorempreskipamount=\skip140
+\theorempostskipamount=\skip141
+\theoremframepreskipamount=\skip142
+\theoremframepostskipamount=\skip143
+\theoreminframepreskipamount=\skip144
+\theoreminframepostskipamount=\skip145
+\theorem@preskip=\toks41
+\theorem@postskip=\toks42
+\theorem@framepreskip=\toks43
+\theorem@framepostskip=\toks44
+\theorem@inframepreskip=\toks45
+\theorem@inframepostskip=\toks46
+\theoremindent=\dimen191
+\theorem@indent=\dimen192
+\theoremrightindent=\dimen193
+\theorem@rightindent=\dimen194
+\theoremheaderfont=\toks47
+\theoremseparator=\toks48
+\theoremprework=\toks49
+\theorempostwork=\toks50
+\theoremsymbol=\toks51
+\qedsymbol=\toks52
+\theoremkeyword=\toks53
+\qedsymbol=\toks54
+\thm@topsep=\skip146
+\thm@topsepadd=\skip147
+)
+\c@statements=\count443
+ (/usr/share/texlive/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
 
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks55
+\XKV@tempa@toks=\toks56
+)
+\XKV@depth=\count444
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks37
-\pgfutil@tempdima=\dimen191
-\pgfutil@tempdimb=\dimen192
+\pgfutil@everybye=\toks57
+\pgfutil@tempdima=\dimen195
+\pgfutil@tempdimb=\dimen196
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -1933,30 +1982,30 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks38
-\pgfkeys@temptoks=\toks39
+\pgfkeys@pathtoks=\toks58
+\pgfkeys@temptoks=\toks59
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks40
+\pgfkeys@tmptoks=\toks60
 ))
-\pgf@x=\dimen193
-\pgf@y=\dimen194
-\pgf@xa=\dimen195
-\pgf@ya=\dimen196
-\pgf@xb=\dimen197
-\pgf@yb=\dimen198
-\pgf@xc=\dimen199
-\pgf@yc=\dimen256
+\pgf@x=\dimen197
+\pgf@y=\dimen198
+\pgf@xa=\dimen199
+\pgf@ya=\dimen256
+\pgf@xb=\dimen257
+\pgf@yb=\dimen258
+\pgf@xc=\dimen259
+\pgf@yc=\dimen260
 \w@pgf@writea=\write5
 \r@pgf@reada=\read3
-\c@pgf@counta=\count443
-\c@pgf@countb=\count444
-\c@pgf@countc=\count445
-\c@pgf@countd=\count446
-\t@pgf@toka=\toks41
-\t@pgf@tokb=\toks42
-\t@pgf@tokc=\toks43
+\c@pgf@counta=\count445
+\c@pgf@countb=\count446
+\c@pgf@countc=\count447
+\c@pgf@countd=\count448
+\t@pgf@toka=\toks61
+\t@pgf@tokb=\toks62
+\t@pgf@tokc=\toks63
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -1972,13 +2021,13 @@ File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
 f
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )
-\pgfsys@objnum=\count447
+\pgfsys@objnum=\count449
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count448
-\pgfsyssoftpath@bigbuffer@items=\count449
+\pgfsyssoftpath@smallbuffer@items=\count450
+\pgfsyssoftpath@bigbuffer@items=\count451
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -1991,12 +2040,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen257
-\pgfmath@count=\count450
+\pgfmath@dimen=\dimen261
+\pgfmath@count=\count452
 \pgfmath@box=\box51
-\pgfmath@toks=\toks44
-\pgfmath@stack@operand=\toks45
-\pgfmath@stack@operation=\toks46
+\pgfmath@toks=\toks64
+\pgfmath@stack@operand=\toks65
+\pgfmath@stack@operation=\toks66
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -2016,37 +2065,37 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count451
+\c@pgfmathroundto@lastzeros=\count453
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen258
-\pgf@picmaxx=\dimen259
-\pgf@picminy=\dimen260
-\pgf@picmaxy=\dimen261
-\pgf@pathminx=\dimen262
-\pgf@pathmaxx=\dimen263
-\pgf@pathminy=\dimen264
-\pgf@pathmaxy=\dimen265
-\pgf@xx=\dimen266
-\pgf@xy=\dimen267
-\pgf@yx=\dimen268
-\pgf@yy=\dimen269
-\pgf@zx=\dimen270
-\pgf@zy=\dimen271
+\pgf@picminx=\dimen262
+\pgf@picmaxx=\dimen263
+\pgf@picminy=\dimen264
+\pgf@picmaxy=\dimen265
+\pgf@pathminx=\dimen266
+\pgf@pathmaxx=\dimen267
+\pgf@pathminy=\dimen268
+\pgf@pathmaxy=\dimen269
+\pgf@xx=\dimen270
+\pgf@xy=\dimen271
+\pgf@yx=\dimen272
+\pgf@yy=\dimen273
+\pgf@zx=\dimen274
+\pgf@zy=\dimen275
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen272
-\pgf@path@lasty=\dimen273
+\pgf@path@lastx=\dimen276
+\pgf@path@lasty=\dimen277
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen274
-\pgf@shorten@start@additional=\dimen275
+\pgf@shorten@end@additional=\dimen278
+\pgf@shorten@start@additional=\dimen279
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
@@ -2054,19 +2103,19 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box52
 \pgf@hbox=\box53
 \pgf@layerbox@main=\box54
-\pgf@picture@serial@count=\count452
+\pgf@picture@serial@count=\count454
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen276
+\pgflinewidth=\dimen280
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen277
-\pgf@pt@y=\dimen278
-\pgf@pt@temp=\dimen279
+\pgf@pt@x=\dimen281
+\pgf@pt@y=\dimen282
+\pgf@pt@temp=\dimen283
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -2082,12 +2131,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen280
+\pgfarrowsep=\dimen284
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen281
-\pgf@sys@shading@range@num=\count453
+\pgf@max=\dimen285
+\pgf@sys@shading@range@num=\count455
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -2118,47 +2167,13 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen282
-\pgf@nodesepend=\dimen283
+\pgf@nodesepstart=\dimen286
+\pgf@nodesepend=\dimen287
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks47
-\verbatim@line=\toks48
-\verbatim@in@stream=\read4
-)
-(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
-Package: environ 2014/05/04 v0.3 A new way to define environments
-
-(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-))
-\tcb@titlebox=\box57
-\tcb@upperbox=\box58
-\tcb@lowerbox=\box59
-\tcb@phantombox=\box60
-\c@tcbbreakpart=\count454
-\c@tcblayer=\count455
-\tcolorbox@number=\count456
-\tcb@temp=\box61
-\tcb@temp=\box62
-\tcb@temp=\box63
-\tcb@temp=\box64
-\tcb@out=\write6
-\tcb@record@out=\write7
-
-(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
-Library (tcolorbox): 'tcbraster.code.tex' version '4.12'
-\c@tcbrastercolumn=\count457
-\c@tcbrasterrow=\count458
-\c@tcbraster=\count459
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '4.12'
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
@@ -2167,10 +2182,10 @@ Library (tcolorbox): 'tcbskins.code.tex' version '4.12'
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen284
-\pgffor@skip=\dimen285
-\pgffor@stack=\toks49
-\pgffor@toks=\toks50
+\pgffor@iter=\dimen288
+\pgffor@skip=\dimen289
+\pgffor@stack=\toks67
+\pgffor@toks=\toks68
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -2178,106 +2193,126 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count460
-\pgfplotmarksize=\dimen286
+\pgf@plot@mark@count=\count456
+\pgfplotmarksize=\dimen290
 )
-\tikz@lastx=\dimen287
-\tikz@lasty=\dimen288
-\tikz@lastxsaved=\dimen289
-\tikz@lastysaved=\dimen290
-\tikzleveldistance=\dimen291
-\tikzsiblingdistance=\dimen292
-\tikz@figbox=\box65
-\tikz@figbox@bg=\box66
-\tikz@tempbox=\box67
-\tikz@tempbox@bg=\box68
-\tikztreelevel=\count461
-\tikznumberofchildren=\count462
-\tikznumberofcurrentchild=\count463
-\tikz@fig@count=\count464
+\tikz@lastx=\dimen291
+\tikz@lasty=\dimen292
+\tikz@lastxsaved=\dimen293
+\tikz@lastysaved=\dimen294
+\tikzleveldistance=\dimen295
+\tikzsiblingdistance=\dimen296
+\tikz@figbox=\box57
+\tikz@figbox@bg=\box58
+\tikz@tempbox=\box59
+\tikz@tempbox@bg=\box60
+\tikztreelevel=\count457
+\tikznumberofchildren=\count458
+\tikznumberofcurrentchild=\count459
+\tikz@fig@count=\count460
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count465
-\pgfmatrixcurrentcolumn=\count466
-\pgf@matrix@numberofcolumns=\count467
+\pgfmatrixcurrentrow=\count461
+\pgfmatrixcurrentcolumn=\count462
+\pgf@matrix@numberofcolumns=\count463
 )
-\tikz@expandcount=\count468
+\tikz@expandcount=\count464
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-\tcb@waterbox=\box69
-
-(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.12'
-)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '4.12'
-\tcb@testbox=\box70
-\tcb@totalupperbox=\box71
-\tcb@totallowerbox=\box72
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
-Library (tcolorbox): 'tcbhooks.code.tex' version '4.12'
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
-Library (tcolorbox): 'tcbtheorems.code.tex' version '4.12'
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
-Library (tcolorbox): 'tcbfitting.code.tex' version '4.12'
-\tcbfitdim=\dimen293
-\tcb@lowerfitdim=\dimen294
-\tcb@upperfitdim=\dimen295
-\tcb@cur@hbadness=\count469
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
-Library (tcolorbox): 'tcbxparse.code.tex' version '4.12'
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \tcboxverb with sig. ' O{} v ' on line 128.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \tcbsidebyside with sig. ' +O{} +m +m ' on line 280.
-.................................................
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
-Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.12'
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/listingsutf8.sty
-Package: listingsutf8 2016/05/16 v1.3 Allow UTF-8 in listings input (HO)
-
-
-Package listingsutf8 Warning: Package loading is aborted because of missing \pd
-f@unescapehex.
-(listingsutf8)                It is provided by pdfTeX >= 1.30.
-
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
-Library (tcolorbox): 'tcblistings.code.tex' version '4.12'
-(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
-Library (tcolorbox): 'tcblistingscore.code.tex' version '4.12'
-(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
-Library (tcolorbox): 'tcbprocessing.code.tex' version '4.12'
-(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
-Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 69.
-))
-\c@tcblisting=\count470
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
-Library (tcolorbox): 'tcbexternal.code.tex' version '4.12'
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
-Library (tcolorbox): 'tcbmagazine.code.tex' version '4.12'
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
-Library (tcolorbox): 'tcbvignette.code.tex' version '4.12'
-
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryfadings.code.tex
-File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count465
+\calc@Bcount=\count466
+\calc@Adimen=\dimen297
+\calc@Bdimen=\dimen298
+\calc@Askip=\skip148
+\calc@Bskip=\skip149
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count467
+\calc@Cskip=\skip150
+)
+\c@@todonotes@numberoftodonotes=\count468
+)
+(/usr/share/texlive/texmf-dist/tex/latex/youngtab/youngtab.sty
+Package: youngtab 1999/05/19 v1.1; Macros for Young-Tableaux
+\y@b@xdim=\dimen299
+\y@boxdim=\dimen300
+\y@linethick=\dimen301
+\y@interspace=\skip151
+\y@counter=\count469
+)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/young.sty
+\hoogte=\dimen302
+\breedte=\dimen303
+\dikte=\dimen304
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ytableau/ytableau.sty
+Package: ytableau 2012/08/14 v1.3 Many-featured Young tableaux and Young diagra
+ms
+\tableaux@YT=\box61
+\thistableau@YT=\box62
+\refhtdp@YT=\box63
+\toks@YT=\toks69
+\opttoksa@YT=\toks70
+\opttoksb@YT=\toks71
+\boxdim@YT=\dimen305
+\tableauwd@YT=\dimen306
+\count@YT=\count470
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
-.tex
-File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
-))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
-Library (tcolorbox): 'tcbposter.code.tex' version '4.12'
-)) (/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks72
+\pgfopts@list@add@b@toks=\toks73
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrary3d.code.tex
+File: tikzlibrary3d.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+(/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/share/texlive/texmf-dist/tex/latex/frcursive/frcursive.sty
+Package: frcursive 2004/02/01 v1.2 support package for French Cursive
+\seyesThickness=\skip152
+\seyes@box=\box64
+\seyes@ln=\skip153
+)
+(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks74
+\SOUL@lasttoken=\toks75
+\SOUL@cmds=\toks76
+\SOUL@buffer=\toks77
+\SOUL@token=\toks78
+\SOUL@spaceskip=\skip154
+\SOUL@ttwidth=\dimen307
+\SOUL@uldp=\dimen308
+\SOUL@ulht=\dimen309
+)
+(/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -2847,9 +2882,9 @@ Package: physics
 . Redefining command \Pr with sig. '' on line 352.
 .................................................
 .................................................
-. LaTeX info: "xparse/redefine-command"
+. LaTeX info: "xparse/define-command"
 . 
-. Redefining command \tr with sig. '' on line 353.
+. Defining command \tr with sig. '' on line 353.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -3229,48 +3264,39 @@ Package: physics
 Package: simplewick 2007/11/23 v1.2a
 
 Package: simplewick v1.2a (2007/11/23)
-\swb@xone=\box73
-\swb@xtwo=\box74
-\swb@xthree=\box75
-\swb@xfour=\box76
-\swdimen@ne=\dimen296
-\swdimentw@=\dimen297
+\swb@xone=\box65
+\swb@xtwo=\box66
+\swb@xthree=\box67
+\swb@xfour=\box68
+\swdimen@ne=\dimen310
+\swdimentw@=\dimen311
 ) (/usr/share/texlive/texmf-dist/tex/latex/tikz-feynman/tikz-feynman.sty
 Package: tikz-feynman 2016/02/05v1.1.0Feynman diagrams with TikZ
 
-(/usr/share/texlive/texmf-dist/tex/latex/pgfopts/pgfopts.sty
-Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks51
-\pgfopts@list@add@b@toks=\toks52
-)
 (/usr/share/texlive/texmf-dist/tex/latex/tikz-feynman/tikzlibraryfeynman.code.t
 ex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
 code.tex
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen298
-\pgfarrowlength=\dimen299
-\pgfarrowwidth=\dimen300
-\pgfarrowlinewidth=\dimen301
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+\pgfarrowinset=\dimen312
+\pgfarrowlength=\dimen313
+\pgfarrowwidth=\dimen314
+\pgfarrowlinewidth=\dimen315
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarydecorations.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
 e.tex
-\pgfdecoratedcompleteddistance=\dimen302
-\pgfdecoratedremainingdistance=\dimen303
-\pgfdecoratedinputsegmentcompleteddistance=\dimen304
-\pgfdecoratedinputsegmentremainingdistance=\dimen305
-\pgf@decorate@distancetomove=\dimen306
+\pgfdecoratedcompleteddistance=\dimen316
+\pgfdecoratedremainingdistance=\dimen317
+\pgfdecoratedinputsegmentcompleteddistance=\dimen318
+\pgfdecoratedinputsegmentremainingdistance=\dimen319
+\pgf@decorate@distancetomove=\dimen320
 \pgf@decorate@repeatstate=\count471
-\pgfdecorationsegmentamplitude=\dimen307
-\pgfdecorationsegmentlength=\dimen308
+\pgfdecorationsegmentamplitude=\dimen321
+\pgfdecorationsegmentlength=\dimen322
 )
-\tikz@lib@dec@box=\box77
+\tikz@lib@dec@box=\box69
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarydecorations.markings.code.tex
@@ -3298,25 +3324,8 @@ File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
 e.tex
 File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
-)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
-s.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
-
-))
 (/usr/share/texlive/texmf-dist/tex/latex/tikz-feynman/tikzfeynman.keys.code.tex
-))) (/usr/share/texlive/texmf-dist/tex/latex/carlisle/slashed.sty
-Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/savesym/savesym.sty
+))) (/usr/share/texlive/texmf-dist/tex/latex/savesym/savesym.sty
 Package: savesym 2013/09/02 v1.2 Saves and restores symbols (JG)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
@@ -3331,137 +3340,130 @@ LaTeX Font Info:    Redeclaring math delimiter \urcorner on input line 75.
 LaTeX Font Info:    Redeclaring math delimiter \llcorner on input line 76.
 LaTeX Font Info:    Redeclaring math delimiter \lrcorner on input line 77.
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/slashed.sty
+Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
+)
 (/usr/share/texlive/texmf-dist/tex/generic/mathdots/mathdots.sty
 Package: mathdots 2014/06/11 v0.9 Improve and add various macros for dots in ma
 th.
-\MDo@unit=\dimen309
-\MDo@dotsbox=\box78
+\MDo@unit=\dimen323
+\MDo@dotsbox=\box70
 \MDoprekern=\muskip19
 \MDopostkern=\muskip20
 \MDodotkern=\muskip21
 )
-(/usr/share/texlive/texmf-dist/tex/latex/ntheorem/ntheorem.sty
-Style `ntheorem', Version 1.33 <2011/08/15>
-Package: ntheorem 2011/08/15 1.33
-\theorem@style=\toks53
-\theorem@@style=\toks54
-\theorembodyfont=\toks55
-\theoremnumbering=\toks56
-\theorempreskipamount=\skip140
-\theorempostskipamount=\skip141
-\theoremframepreskipamount=\skip142
-\theoremframepostskipamount=\skip143
-\theoreminframepreskipamount=\skip144
-\theoreminframepostskipamount=\skip145
-\theorem@preskip=\toks57
-\theorem@postskip=\toks58
-\theorem@framepreskip=\toks59
-\theorem@framepostskip=\toks60
-\theorem@inframepreskip=\toks61
-\theorem@inframepostskip=\toks62
-\theoremindent=\dimen310
-\theorem@indent=\dimen311
-\theoremrightindent=\dimen312
-\theorem@rightindent=\dimen313
-\theoremheaderfont=\toks63
-\theoremseparator=\toks64
-\theoremprework=\toks65
-\theorempostwork=\toks66
-\theoremsymbol=\toks67
-\qedsymbol=\toks68
-\theoremkeyword=\toks69
-\qedsymbol=\toks70
-\thm@topsep=\skip146
-\thm@topsepadd=\skip147
-)
-\c@statements=\count474
- (/usr/share/texlive/texmf-dist/tex/latex/todonotes/todonotes.sty
-Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
-Package: todonotes 2012/07/25
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2018/01/12 version 4.12 text color boxes
 
-(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks71
-\XKV@tempa@toks=\toks72
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks79
+\verbatim@line=\toks80
+\verbatim@in@stream=\read4
 )
-\XKV@depth=\count475
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count476
-\calc@Bcount=\count477
-\calc@Adimen=\dimen314
-\calc@Bdimen=\dimen315
-\calc@Askip=\skip148
-\calc@Bskip=\skip149
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count478
-\calc@Cskip=\skip150
-)
-\c@@todonotes@numberoftodonotes=\count479
-)
-(/usr/share/texlive/texmf-dist/tex/latex/youngtab/youngtab.sty
-Package: youngtab 1999/05/19 v1.1; Macros for Young-Tableaux
-\y@b@xdim=\dimen316
-\y@boxdim=\dimen317
-\y@linethick=\dimen318
-\y@interspace=\skip151
-\y@counter=\count480
-)
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/young.sty
-\hoogte=\dimen319
-\breedte=\dimen320
-\dikte=\dimen321
-)
-(/usr/share/texlive/texmf-dist/tex/latex/ytableau/ytableau.sty
-Package: ytableau 2012/08/14 v1.3 Many-featured Young tableaux and Young diagra
-ms
-\tableaux@YT=\box79
-\thistableau@YT=\box80
-\refhtdp@YT=\box81
-\toks@YT=\toks73
-\opttoksa@YT=\toks74
-\opttoksb@YT=\toks75
-\boxdim@YT=\dimen322
-\tableauwd@YT=\dimen323
-\count@YT=\count481
-)
+\tcb@titlebox=\box71
+\tcb@upperbox=\box72
+\tcb@lowerbox=\box73
+\tcb@phantombox=\box74
+\c@tcbbreakpart=\count474
+\c@tcblayer=\count475
+\tcolorbox@number=\count476
+\tcb@temp=\box75
+\tcb@temp=\box76
+\tcb@temp=\box77
+\tcb@temp=\box78
+\tcb@out=\write6
+\tcb@record@out=\write7
+
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '4.12'
+\c@tcbrastercolumn=\count477
+\c@tcbrasterrow=\count478
+\c@tcbraster=\count479
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.12'
+\tcb@waterbox=\box79
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.12'
+)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.12'
+\tcb@testbox=\box80
+\tcb@totalupperbox=\box81
+\tcb@totallowerbox=\box82
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '4.12'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '4.12'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '4.12'
+\tcbfitdim=\dimen324
+\tcb@lowerfitdim=\dimen325
+\tcb@upperfitdim=\dimen326
+\tcb@cur@hbadness=\count480
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.12'
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tcboxverb with sig. ' O{} v ' on line 128.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tcbsidebyside with sig. ' +O{} +m +m ' on line 280.
+.................................................
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.12'
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/listingsutf8.sty
+Package: listingsutf8 2016/05/16 v1.3 Allow UTF-8 in listings input (HO)
+
+
+Package listingsutf8 Warning: Package loading is aborted because of missing \pd
+f@unescapehex.
+(listingsutf8)                It is provided by pdfTeX >= 1.30.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '4.12'
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '4.12'
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '4.12'
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+))
+\c@tcblisting=\count481
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '4.12'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '4.12'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '4.12'
+
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrary3d.code.tex
-File: tikzlibrary3d.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.2)
-) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
-Package: cancel 2013/04/12 v2.2 Cancel math terms
-) (/usr/share/texlive/texmf-dist/tex/latex/frcursive/frcursive.sty
-Package: frcursive 2004/02/01 v1.2 support package for French Cursive
-\seyesThickness=\skip152
-\seyes@box=\box82
-\seyes@ln=\skip153
-)
-(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
-Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks76
-\SOUL@lasttoken=\toks77
-\SOUL@cmds=\toks78
-\SOUL@buffer=\toks79
-\SOUL@token=\toks80
-\SOUL@spaceskip=\skip154
-\SOUL@ttwidth=\dimen324
-\SOUL@uldp=\dimen325
-\SOUL@ulht=\dimen326
-)
+zlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
+.tex
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
+))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '4.12'
+)))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'british'.
 Package biblatex Info: Trying to load language 'british'...
 Package biblatex Info: ... file 'british.lbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/british.lbx
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/british.lbx
 File: british.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -3496,26 +3498,26 @@ File: german.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 (./Chapters/StringTheory.aux) (./Chapters/NPP.aux))
 \openout1 = `QFTnotes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Data encoding 'ascii' specified.
@@ -3528,29 +3530,29 @@ Package biblatex Info: Data encoding 'ascii' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'QFTnotes.bbl' found.
  (./QFTnotes.bbl)
-Package biblatex Info: Reference section=0 on input line 113.
-Package biblatex Info: Reference segment=0 on input line 113.
+Package biblatex Info: Reference section=0 on input line 36.
+Package biblatex Info: Reference segment=0 on input line 36.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count482
-Package scrhack Info: undefining \float@addtolists on input line 113.
+Package scrhack Info: undefining \float@addtolists on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  TU/TeXGyrePagellaMath(1)/m/n --> TU/TeXGyrePagella(0)/m
-/n on input line 113.
+/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TeXGyrePagella(0)/m/it on input lin
-e 113.
+e 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TeXGyrePagella(0)/bx/n on input lin
-e 113.
+e 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 113.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 113.
-LaTeX Info: Redefining \microtypecontext on input line 113.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 36.
+LaTeX Info: Redefining \microtypecontext on input line 36.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -4105,7 +4107,7 @@ Package microtype Info: Character `―' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 \AtBeginShipoutBox=\box83
-Package hyperref Info: Link coloring ON on input line 113.
+Package hyperref Info: Link coloring ON on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -4115,9 +4117,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count483
 )
-LaTeX Info: Redefining \ref on input line 113.
-LaTeX Info: Redefining \pageref on input line 113.
-LaTeX Info: Redefining \nameref on input line 113.
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
 
 (./QFTnotes.out) (./QFTnotes.out)
 \@outlinefile=\write8
@@ -4127,7 +4129,7 @@ LaTeX Info: Redefining \nameref on input line 113.
 
 Package tikz-feynman Warning: LuaTeX is required if you wish to have vertices a
 utomatically placed. You can disable this warning by setting /tikzfeynman/warn 
-luatex=false on input line 113.
+luatex=false on input line 36.
 
 \openout2 = `FrontBackmatter/Titlepage.aux'.
 
@@ -5764,31 +5766,31 @@ low) []
  []
 
 
-Overfull \hbox (15.80798pt too wide) in paragraph at lines 725--725
+Overfull \hbox (15.80798pt too wide) in paragraph at lines 727--727
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 TODO Two-point functions in real space 
 and screen- 
  []
 
 
-Overfull \hbox (0.55556pt too wide) in paragraph at lines 731--731
+Overfull \hbox (0.55556pt too wide) in paragraph at lines 733--733
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Concepts from critical phenomena theory
  - a pre- 
  []
 
 
-Overfull \hbox (8.3337pt too wide) in paragraph at lines 753--753
+Overfull \hbox (8.3337pt too wide) in paragraph at lines 763--763
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 On the importance of effective field th
 eories []  
  []
 
 [7]
-Overfull \hbox (7.18025pt too wide) in paragraph at lines 775--775
+Overfull \hbox (7.18025pt too wide) in paragraph at lines 785--785
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Free energy and thermodynamic potential
 s []  
  []
 
 
-Overfull \hbox (10.03737pt too wide) in paragraph at lines 787--787
+Overfull \hbox (10.03737pt too wide) in paragraph at lines 797--797
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Classical statistical theory from noneq
  QFT - TODO []  
  []
@@ -5962,13 +5964,13 @@ Package microtype Info: Character `―' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/m/n/6.028'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (18.4478pt too wide) in paragraph at lines 861--861
+Overfull \hbox (18.4478pt too wide) in paragraph at lines 871--871
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Conformal symmetry of correlation funct
 ions []  
  []
 
 
-Overfull \hbox (10.56477pt too wide) in paragraph at lines 877--877
+Overfull \hbox (10.56477pt too wide) in paragraph at lines 887--887
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Correlators again, but under the aspect
  of operator- 
  []
@@ -6142,27 +6144,33 @@ Package microtype Info: Character `―' is missing
 (microtype)             in font `\TU/TeXGyrePagella(0)/m/n/5'.
 (microtype)             Ignoring protrusion settings for this character.
 [8]
-Overfull \hbox (47.52377pt too wide) in paragraph at lines 929--929
+Overfull \hbox (47.52377pt too wide) in paragraph at lines 939--939
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Conformal blocks and the conformal boot
 strap programme []  
  []
 
 
-Overfull \hbox (16.49788pt too wide) in paragraph at lines 945--945
+Overfull \hbox (16.49788pt too wide) in paragraph at lines 955--955
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Correlation functions of primary fields
  and CFT data []  
  []
 
 
-Overfull \hbox (7.40573pt too wide) in paragraph at lines 947--947
+Overfull \hbox (7.40573pt too wide) in paragraph at lines 957--957
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 CFT and scale invariance (Zamolodchikov
 -Polchinski the- 
  []
 
 
-Overfull \hbox (22.45187pt too wide) in paragraph at lines 951--951
+Overfull \hbox (22.45187pt too wide) in paragraph at lines 961--961
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Introduction and motivation into string
  theory []  
+ []
+
+
+Overfull \hbox (22.12701pt too wide) in paragraph at lines 1033--1033
+ [][] []\TU/TeXGyrePagella(0)/m/n/10.95 String perturbation and worldsheet topo
+logies []  
  []
 
 [9])
@@ -6260,6 +6268,9 @@ rocesses
 \tf@lof=\write10
 \openout10 = `QFTnotes.lof'.
 
+ [11
+
+]
 Package tocbasic Info: character protrusion at lot deactivated on input line 39
 .
  (./QFTnotes.lot)
@@ -6270,9 +6281,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 39
 \tf@lol=\write12
 \openout12 = `QFTnotes.lol'.
 
- [11
-
-]) [12] (./QFTnotes.tdo
+) [12] (./QFTnotes.tdo
 Overfull \hbox (0.36136pt too wide) detected at line 58
  [][][]\TU/TeXGyrePagella(0)/m/n/10.95 220[][]
  []
@@ -6354,63 +6363,53 @@ Overfull \hbox (0.49275pt too wide) detected at line 104
  []
 
 
-Overfull \hbox (0.5256pt too wide) detected at line 106
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 340[][]
+Overfull \hbox (0.49275pt too wide) detected at line 106
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 342[][]
  []
 
 
-Overfull \hbox (0.40515pt too wide) detected at line 108
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 343[][]
+Overfull \hbox (0.7446pt too wide) detected at line 108
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 344[][]
  []
 
 
-Overfull \hbox (0.1533pt too wide) detected at line 110
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 354[][]
- []
-
-
-Overfull \hbox (0.18616pt too wide) detected at line 112
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 367[][]
- []
-
-
-Overfull \hbox (0.13141pt too wide) detected at line 116
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 380[][]
- []
-
-
-Overfull \hbox (0.3504pt too wide) detected at line 118
+Overfull \hbox (0.3504pt too wide) detected at line 116
  [][][]\TU/TeXGyrePagella(0)/m/n/10.95 384[][]
  []
 
 
-Overfull \hbox (0.38326pt too wide) detected at line 120
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 394[][]
+Overfull \hbox (0.67891pt too wide) detected at line 122
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 407[][]
  []
 
 
-Overfull \hbox (0.5256pt too wide) detected at line 122
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 403[][]
+Overfull \hbox (0.50371pt too wide) detected at line 124
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 409[][]
  []
 
 
-Overfull \hbox (0.27376pt too wide) detected at line 124
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 405[][]
+Overfull \hbox (0.50371pt too wide) detected at line 126
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 409[][]
  []
 
 
-Overfull \hbox (0.27376pt too wide) detected at line 126
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 405[][]
+Overfull \hbox (0.49275pt too wide) detected at line 140
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 432[][]
  []
 
 
-Overfull \hbox (0.49275pt too wide) detected at line 128
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 406[][]
+Overfull \hbox (0.8979pt too wide) detected at line 142
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 447[][]
  []
 
 
-Overfull \hbox (0.7446pt too wide) detected at line 142
- [][][]\TU/TeXGyrePagella(0)/m/n/10.95 443[][]
+Overfull \hbox (0.3723pt too wide) detected at line 144
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 463[][]
+ []
+
+
+Overfull \hbox (0.12045pt too wide) detected at line 146
+ [][][]\TU/TeXGyrePagella(0)/m/n/10.95 465[][]
  []
 
 )
@@ -15153,49 +15152,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 1496--1499
  []
 
 [337] [338] [339]
-Underfull \hbox (badness 1383) in paragraph at lines 1595--1597
+Overfull \hbox (11.77477pt too wide) in paragraph at lines 1587--1589
+\TU/TeXGyrePagella(0)/m/n/10.95 pulsive, and from which directions. We therefor
+e do an expansion around
+ []
+
+File: gfx/RGtoy1.png Graphic file (type bmp)
+<gfx/RGtoy1.png>
+File: gfx/RGtoy2.png Graphic file (type bmp)
+<gfx/RGtoy2.png>
+Missing character: There is no ⟶ in font TeX Gyre Pagella/OT:script=latn;langua
+ge=DFLT;+onum;mapping=tex-text;!
+File: gfx/RGtoy3.png Graphic file (type bmp)
+<gfx/RGtoy3.png>
+[340] [341]
+Underfull \hbox (badness 1383) in paragraph at lines 1671--1673
 \TU/TeXGyrePagella(0)/m/n/10.95 such that the Euclidean massless $[][]$ quantum
  potential in
  []
 
-[340] [341]
-Underfull \hbox (badness 10000) in paragraph at lines 1654--1658
+[342]
+Underfull \hbox (badness 10000) in paragraph at lines 1730--1734
 
  []
 
-[342] [343]
-Overfull \hbox (8.39217pt too wide) in paragraph at lines 1697--1698
+[343] [344]
+Overfull \hbox (8.39217pt too wide) in paragraph at lines 1773--1774
 []\TU/TeXGyrePagella(0)/m/n/10.95 The cutoff $[]$ is merely a way to regulate d
 ivergent integrals without
  []
 
 
-Overfull \hbox (7.40668pt too wide) in paragraph at lines 1707--1713
+Overfull \hbox (7.40668pt too wide) in paragraph at lines 1783--1789
 \TU/TeXGyrePagella(0)/m/n/10.95 coupled QFT in the infrared is string theory, w
 hich abandons the concept
  []
 
 
-Overfull \hbox (17.72974pt too wide) in paragraph at lines 1707--1713
+Overfull \hbox (17.72974pt too wide) in paragraph at lines 1783--1789
 \TU/TeXGyrePagella(0)/m/n/10.95 of pointlike particles, replacing them with exc
 itations of a one-dimensional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1707--1713
+Underfull \hbox (badness 10000) in paragraph at lines 1783--1789
 
  []
 
 
-Overfull \hbox (8.39854pt too wide) in paragraph at lines 1707--1713
+Overfull \hbox (8.39854pt too wide) in paragraph at lines 1783--1789
 [][]$ \TU/TeXGyrePagella(0)/m/n/10.95 includes only those quantum effects due t
 o the integrated-out modes
- []
-
-[344]
-Overfull \hbox (1.31296pt too wide) in paragraph at lines 1724--1725
-\TU/TeXGyrePagella(0)/m/n/10.95 from the classical one. Somehow all of the non-
-triviality of the quantum
  []
 
 
@@ -15204,19 +15211,20 @@ Overfull \hbox (98.68964pt too wide) has occurred while \output is active
  []
 
 [345]
-Overfull \hbox (4.32785pt too wide) in paragraph at lines 1767--1774
+Overfull \hbox (1.31296pt too wide) in paragraph at lines 1800--1801
+\TU/TeXGyrePagella(0)/m/n/10.95 from the classical one. Somehow all of the non-
+triviality of the quantum
+ []
+
+[346]
+Overfull \hbox (4.32785pt too wide) in paragraph at lines 1843--1850
 \TU/TeXGyrePagella(0)/m/n/10.95 (they require infinitely many counterterms to d
 eal with). Bet these terms
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1767--1774
+Underfull \hbox (badness 10000) in paragraph at lines 1843--1850
 
- []
-
-[346]
-Overfull \hbox (11.75082pt too wide) detected at line 1780
- $[] [][] [] [] [][][][][][] [][] [][][] [] [][][][][][][][][]$ 
  []
 
 
@@ -15225,49 +15233,75 @@ Overfull \hbox (98.68964pt too wide) has occurred while \output is active
  []
 
 [347]
-Underfull \hbox (badness 10000) in paragraph at lines 1786--1789
-
+Overfull \hbox (11.75082pt too wide) detected at line 1856
+ $[] [][] [] [] [][][][][][] [][] [][][] [] [][][][][][][][][]$ 
  []
 
 [348]
+Underfull \hbox (badness 10000) in paragraph at lines 1862--1865
+
+ []
+
+
 Overfull \hbox (98.68964pt too wide) has occurred while \output is active
  []|[]|
  []
 
 [349] [350]
-Overfull \hbox (1.16698pt too wide) in paragraph at lines 1888--1893
-\TU/TeXGyrePagella(0)/m/n/10.95 length must scale in our system with $[]$. Reca
-ll that the correlation length
- []
-
-
 Overfull \hbox (98.68964pt too wide) has occurred while \output is active
  []|[]|
  []
 
 [351]
+Overfull \hbox (1.16698pt too wide) in paragraph at lines 1964--1969
+\TU/TeXGyrePagella(0)/m/n/10.95 length must scale in our system with $[]$. Reca
+ll that the correlation length
+ []
+
+[352]
 Missing character: There is no 𝛽 in font TeX Gyre Pagella Bold/OT:script=latn;l
 anguage=DFLT;+onum;mapping=tex-text;!
 Missing character: There is no 𝛽 in font TeX Gyre Pagella Bold/OT:script=latn;l
 anguage=DFLT;+onum;mapping=tex-text;!
 Missing character: There is no 𝛽 in font TeX Gyre Pagella Bold/OT:script=latn;l
 anguage=DFLT;+onum;mapping=tex-text;!
- [352]
+
 Overfull \hbox (98.68964pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[353] [354])
+[353]
+File: gfx/RG1.png Graphic file (type bmp)
+<gfx/RG1.png>
+ [354]
+File: gfx/RG2.png Graphic file (type bmp)
+<gfx/RG2.png>
+
 Overfull \hbox (98.68964pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[355]
+[355] [356]
+Overfull \hbox (98.68964pt too wide) has occurred while \output is active
+ []|[]|
+ []
+
+[357]
+Underfull \hbox (badness 10000) in paragraph at lines 2149--2153
+
+ []
+
+[358])
+Overfull \hbox (98.68964pt too wide) has occurred while \output is active
+ []|[]|
+ []
+
+[359]
 \openout2 = `Chapters/thermaleqQFT.aux'.
 
  (./Chapters/thermaleqQFT.tex
 Chapter 7.
-[356
+[360
 
 
 
@@ -15277,7 +15311,7 @@ Overfull \hbox (8.37941pt too wide) detected at line 52
  $[][][] [] [][] [][] [] [] [] [] [] [] [] [] [] [] []$  
  []
 
-[357] [358] [359]
+[361] [362] [363]
 Overfull \hbox (11.43587pt too wide) detected at line 126
  $[][][][] [] [] [] [] [] [][][][][][] [][] [] [][][][] [] [][][][][] [] [][][]
 $  
@@ -15288,7 +15322,7 @@ Overfull \hbox (74.9961pt too wide) detected at line 146
  $[][][][][] [] [] [][] [][][][][][] [] [][][]$  
  []
 
-[360] [361]) [362]
+[364] [365]) [366]
 \openout2 = `Chapters/noneqQFT.aux'.
 
  (./Chapters/noneqQFT.tex
@@ -15298,17 +15332,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--57
 
  []
 
-[363
+[367
 
 
 
 
-] [364]
+] [368]
 Underfull \hbox (badness 10000) in paragraph at lines 99--132
 
  []
 
-[365] [366]
+[369] [370]
 Overfull \hbox (18.29916pt too wide) in paragraph at lines 134--134
 [][][][][][][][][][][][][][][][][][]$ 
  []
@@ -15351,12 +15385,12 @@ Overfull \hbox (1.83405pt too wide) in paragraph at lines 160--162
 effective action in powers
  []
 
-[367] [368]
+[371] [372]
 Underfull \hbox (badness 10000) in paragraph at lines 225--235
 
  []
 
-[369]
+[373]
 Overfull \hbox (22.0787pt too wide) in paragraph at lines 251--254
 \TU/TeXGyrePagella(0)/m/n/10.95 lated by the famous Kubo-Martin-Schwinger (KMS)
  relations or fluctuation-
@@ -15367,22 +15401,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--271
 
  []
 
-[370] [371])
+[374] [375])
 \openout2 = `Chapters/curvedBackgroundQFT.aux'.
 
  (./Chapters/curvedBackgroundQFT.tex
 Chapter 9.
-[372
+[376
 
 
 
 
-]) [373]
+]) [377]
 \openout2 = `Chapters/ConformalFT.aux'.
 
  (./Chapters/ConformalFT.tex
 Chapter 10.
-[374
+[378
 
 
 
@@ -15393,13 +15427,13 @@ Overfull \hbox (4.4492pt too wide) in paragraph at lines 12--14
 vity on AdS space
  []
 
-[375]
+[379]
 Underfull \hbox (badness 1803) in paragraph at lines 38--40
 []\TU/TeXGyrePagella(0)/m/n/10.95 A \TU/TeXGyrePagella(0)/m/it/10.95 conformal 
 transformation \TU/TeXGyrePagella(0)/m/n/10.95 (CT) is a diffeomorphism under
  []
 
-[376]
+[380]
 Overfull \hbox (3.6795pt too wide) in paragraph at lines 91--91
 |[]\TU/TeXGyrePagella(2)/m/sc/10.95 the conformal group – classification of con
 formal
@@ -15410,7 +15444,7 @@ Overfull \hbox (75.98965pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[377]
+[381]
 Overfull \hbox (4.0523pt too wide) in paragraph at lines 108--111
 \TU/TeXGyrePagella(0)/m/n/10.95 Note that (finite) global special conformal tra
 nsformations take the form
@@ -15434,7 +15468,7 @@ Overfull \hbox (3.86395pt too wide) detected at line 140
 ][][][] [] [] []$ 
  []
 
-[378]
+[382]
 Overfull \hbox (8.57828pt too wide) in paragraph at lines 153--155
 \TU/TeXGyrePagella(0)/m/n/10.95 This describes several different cases for the 
 underlying two-dimensional
@@ -15445,7 +15479,7 @@ Overfull \hbox (75.98965pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[379]
+[383]
 Overfull \hbox (7.79323pt too wide) in paragraph at lines 190--202
 [] \TU/TeXGyrePagella(0)/m/n/10.95 These are the subset of transformations whic
 h are globally well-defined
@@ -15462,7 +15496,7 @@ Overfull \hbox (3.85791pt too wide) in paragraph at lines 203--204
 al sub-group, i.e. the Möbius
  []
 
-[380]
+[384]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 230.
@@ -15486,13 +15520,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--242
 
  []
 
-[381]
+[385]
 Underfull \hbox (badness 2875) in paragraph at lines 292--293
 []\TU/TeXGyrePagella(0)/m/n/10.95 By taking coefficients of $[][] [][][] [][] [
 ][]$, we get te action of
  []
 
-[382]
+[386]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 322.
@@ -15505,22 +15539,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 322.
 
-[383] [384]
+[387] [388]
 Overfull \hbox (22.41724pt too wide) detected at line 406
  $[][][][][]$  
  []
 
-[385]
+[389]
 
-LaTeX Warning: Reference `eq:cftKilling' on page 386 undefined on input line 42
+LaTeX Warning: Reference `eq:cftKilling' on page 390 undefined on input line 42
 0.
 
 
-LaTeX Warning: Reference `eq:cftKilling' on page 386 undefined on input line 42
+LaTeX Warning: Reference `eq:cftKilling' on page 390 undefined on input line 42
 4.
 
 
-LaTeX Warning: Reference `eq:cftKilling' on page 386 undefined on input line 42
+LaTeX Warning: Reference `eq:cftKilling' on page 390 undefined on input line 42
 4.
 
 
@@ -15534,7 +15568,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 456--461
 
  []
 
-[386]
+[390]
 Overfull \hbox (8.54066pt too wide) in paragraph at lines 462--464
 []\TU/TeXGyrePagella(0)/m/n/10.95 Our starting point is a classical theory defi
 ned by an action $[][][][][][][][]$
@@ -15546,19 +15580,19 @@ Overfull \hbox (6.10722pt too wide) in paragraph at lines 487--501
 iliar point: Conformal
  []
 
-[387]
+[391]
 Overfull \hbox (11.37173pt too wide) in paragraph at lines 522--523
 []\TU/TeXGyrePagella(0)/m/n/10.95 A \TU/TeXGyrePagella(0)/m/it/10.95 quasi-prim
 ary field \TU/TeXGyrePagella(0)/m/n/10.95 satisfies [][]10.42[][] for $[] [] []
 [][][][][] [][] [] [][][][][] [][][][][]$.
  []
 
-[388] [389]
+[392] [393]
 Overfull \hbox (39.20572pt too wide) detected at line 571
 []
  []
 
-[390]
+[394]
 Underfull \hbox (badness 10000) in paragraph at lines 596--599
 
  []
@@ -15574,12 +15608,12 @@ Overfull \hbox (21.03123pt too wide) detected at line 621
 []
  []
 
-[391]
+[395]
 Overfull \hbox (4.97798pt too wide) detected at line 652
  $[] [] [][]$  
  []
 
-[392]
+[396]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 680.
@@ -15604,7 +15638,7 @@ Overfull \hbox (22.81094pt too wide) detected at line 721
  $[]$ 
  []
 
-[393] [394]
+[397] [398]
 Overfull \hbox (14.85172pt too wide) in paragraph at lines 755--757
 \TU/TeXGyrePagella(0)/m/n/10.95 are equivalent to solutions of the Schrödinger 
 equation, i.e. to Schrödinger-
@@ -15623,7 +15657,7 @@ Overfull \hbox (16.47726pt too wide) in paragraph at lines 778--781
 different point, e.g. $[][][][] [] []
  []
 
-[395]
+[399]
 Underfull \hbox (badness 10000) in paragraph at lines 788--793
 
  []
@@ -15639,7 +15673,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 826--830
 
  []
 
-[396]
+[400]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 867.
@@ -15652,7 +15686,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 867.
 
-[397]
+[401]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 930.
@@ -15665,7 +15699,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 930.
 
-[398]
+[402]
 Underfull \hbox (badness 10000) in paragraph at lines 940--942
 
  []
@@ -15675,7 +15709,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 947--951
 
  []
 
-[399]
+[403]
 Overfull \hbox (17.62285pt too wide) detected at line 963
  $[] [] [][][][][][][] [][][][][][][]$  
  []
@@ -15698,7 +15732,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 973.
 
-[400]
+[404]
 Overfull \hbox (159.28918pt too wide) detected at line 997
  $[][][][][] [] [][] [] [][][][][] [] [][] [] [] [][][][][][][][][]$  
  []
@@ -15714,7 +15748,7 @@ Underfull \hbox (badness 2980) in paragraph at lines 1012--1013
 U/TeXGyrePagella(0)/m/n/10.95 Noether currents are built up from the energy-
  []
 
-[401]
+[405]
 Overfull \hbox (1.7847pt too wide) in paragraph at lines 1021--1024
 \TU/TeXGyrePagella(0)/m/n/10.95 ordered correlation functions. Here, to be inse
 rted into radially-ordered
@@ -15725,13 +15759,13 @@ Overfull \hbox (5.89328pt too wide) detected at line 1027
 []
  []
 
-[402] [403] [404]
+[406] [407] [408]
 Overfull \hbox (49.7492pt too wide) detected at line 1146
  $[][][] [] [][][] [] [] [] [][][][] [] [][][][][][][] [] [][][][][][][][][][][
 ] [] [][][]$  
  []
 
-[405] [406]
+[409] [410]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1217.
@@ -15750,7 +15784,7 @@ Overfull \hbox (4.86806pt too wide) in paragraph at lines 1222--1224
 ilation operators. Since
  []
 
-[407]
+[411]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1259.
@@ -15763,12 +15797,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1259.
 
-[408]
+[412]
 Overfull \hbox (15.108pt too wide) detected at line 1312
 []
  []
 
-[409] [410]
+[413] [414]
 Overfull \hbox (132.62114pt too wide) detected at line 1371
 []
  []
@@ -15778,7 +15812,7 @@ Overfull \hbox (21.28972pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[411] [412]
+[415] [416]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1462.
@@ -15801,7 +15835,7 @@ Overfull \hbox (21.28972pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[413]
+[417]
 Overfull \hbox (19.84163pt too wide) in paragraph at lines 1499--1499
 |[]\TU/TeXGyrePagella(2)/m/sc/10.95 cft and scale invariance (zamolodchikov-pol
 chinski
@@ -15819,13 +15853,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1510.
 
-[414]
+[418]
 Overfull \hbox (9.6497pt too wide) in paragraph at lines 1523--1525
 []\TU/TeXGyrePagella(0)/m/n/10.95 A relativistic particle fulfils the following
 . $[][][][][]$ maps $[] [] [][]$,
  []
 
-[415]
+[419]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1582.
@@ -15843,111 +15877,161 @@ Overfull \hbox (5.93501pt too wide) detected at line 1593
 []
  []
 
-[416]) [417]
+[420]) [421]
 \openout2 = `Chapters/Supersymmetry.aux'.
 
  (./Chapters/Supersymmetry.tex
 Chapter 11.
-[418
+[422
 
 
 
 
-]) [419]
+]) [423]
 \openout2 = `Chapters/StringTheory.aux'.
 
  (./Chapters/StringTheory.tex
 Chapter 12.
-[420
+[424
 
 
 
 
-] [421]
+] [425]
 Overfull \hbox (0.24628pt too wide) in paragraph at lines 33--35
 []\TU/TeXGyrePagella(0)/m/n/10.95 There is only \TU/TeXGyrePagella(0)/m/it/10.9
 5 one \TU/TeXGyrePagella(0)/m/n/10.95 free parameter in string theory, the \TU/
 TeXGyrePagella(0)/bx/n/10.95 string length
  []
 
-[422]
-Overfull \hbox (1.54308pt too wide) in paragraph at lines 90--91
+[426]
+Overfull \hbox (1.54308pt too wide) in paragraph at lines 91--92
 [][][]\TU/TeXGyrePagella(0)/m/n/10.95 12.3[][] is the most general bosonic stri
 ng action imaginable. $[][]$ could
  []
 
-[423]
-Overfull \hbox (15.23701pt too wide) in paragraph at lines 106--107
+[427]
+Overfull \hbox (15.23701pt too wide) in paragraph at lines 107--108
 $[][]$ \TU/TeXGyrePagella(0)/m/n/10.95 enjoys several symmetries, where it is i
 mportant to distinguish between
  []
 
 
-Overfull \hbox (1.08298pt too wide) in paragraph at lines 129--131
+Overfull \hbox (1.08298pt too wide) in paragraph at lines 130--132
 \TU/TeXGyrePagella(0)/m/n/10.95 for two-dimensional world\TU/TeXGyrePagella(0)/
 m/it/10.95 sheets \TU/TeXGyrePagella(0)/m/n/10.95 (as opposed to, say, membrane
 s),
  []
 
-[424]
+[428]
 
-LaTeX Warning: Reference `eq:ctkilling' on page 425 undefined on input line 133
+LaTeX Warning: Reference `eq:ctkilling' on page 429 undefined on input line 134
 .
 
-[425]
-Overfull \hbox (0.96803pt too wide) in paragraph at lines 182--183
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--151
+
+ []
+
+
+Overfull \hbox (6.38832pt too wide) in paragraph at lines 146--151
+\TU/TeXGyrePagella(0)/m/n/10.95 Let us talk for a moment about important proper
+ties of conformal Killing
+ []
+
+[429] [430] [431]
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
+
+ []
+
+
+Overfull \hbox (7.72603pt too wide) in paragraph at lines 240--242
+\TU/TeXGyrePagella(0)/m/n/10.95 looked is the fact that Noether’s theorem works
+ both ways. Let us demon-
+ []
+
+
+Overfull \hbox (39.43239pt too wide) detected at line 244
+ $[][][][][] [][][] [][][][] [][][][][] [] [] [][] [] []$ 
+ []
+
+Missing character: There is no ſ in font cmmi10!
+Missing character: There is no ſ in font cmmi10!
+[432]
+Overfull \hbox (6.22025pt too wide) detected at line 261
+[]
+ []
+
+
+Overfull \hbox (27.21913pt too wide) detected at line 283
+ $[][][][][][] [][][] [][][][][] [][][][][] [] [][][][][][][][][] [][][][][][][
+][][] [][][][][][] [] [][][][][][] [] [][][][]$ 
+ []
+
+[433]
+Overfull \hbox (3.19547pt too wide) in paragraph at lines 291--294
+\TU/TeXGyrePagella(0)/m/n/10.95 exchange of its arguments, it together with the
+ Virasoro generator forms
+ []
+
+Missing character: There is no ß in font cmmi8!
+Missing character: There is no ß in font cmmi10!
+Missing character: There is no ß in font cmmi8!
+Missing character: There is no ß in font cmmi10!
+[434]
+Overfull \hbox (0.96803pt too wide) in paragraph at lines 328--329
 \TU/TeXGyrePagella(0)/m/n/10.95 properties of worldsheets that account for stri
 ng interaction (men-
  []
 
-[426]
-Underfull \hbox (badness 10000) in paragraph at lines 238--242
+[435]
+Underfull \hbox (badness 10000) in paragraph at lines 384--392
 
  []
 
-[427] [428]
-Overfull \hbox (0.47345pt too wide) in paragraph at lines 316--317
+[436] [437]
+Overfull \hbox (0.47345pt too wide) in paragraph at lines 466--467
 \TU/TeXGyrePagella(0)/m/n/10.95 are not implemented until we reach the quantum 
 level. This mani-
  []
 
 
-Overfull \hbox (2.16885pt too wide) in paragraph at lines 318--319
+Overfull \hbox (2.16885pt too wide) in paragraph at lines 468--469
 []\TU/TeXGyrePagella(0)/m/n/10.95 (Modern) \TU/TeXGyrePagella(0)/m/it/10.95 pat
 h-integral quantization \TU/TeXGyrePagella(0)/m/n/10.95 uses the Faddeev-Popov 
 gauge
  []
 
 
-Overfull \hbox (37.58916pt too wide) detected at line 348
+Overfull \hbox (49.80943pt too wide) detected at line 498
 []
  []
 
-[429]
-Underfull \hbox (badness 3029) in paragraph at lines 356--358
+[438]
+Underfull \hbox (badness 3029) in paragraph at lines 506--508
 \TU/TeXGyrePagella(0)/m/n/10.95 is a central extension by $[]$ of the classical
  Witt algebra
  []
 
-[430]
-Overfull \hbox (1.1213pt too wide) in paragraph at lines 385--387
+[439]
+Overfull \hbox (1.1213pt too wide) in paragraph at lines 540--542
 \TU/TeXGyrePagella(0)/m/n/10.95 The level-one constrain evaluates to the requir
 ement of transverse
  []
 
-[431]
-Underfull \hbox (badness 2302) in paragraph at lines 430--431
+[440] [441]
+Underfull \hbox (badness 2302) in paragraph at lines 608--609
 []\TU/TeXGyrePagella(0)/m/it/10.95 Criticality \TU/TeXGyrePagella(0)/m/n/10.95 
 in lightcone quantization follows from requiring
  []
 
 
-Overfull \hbox (9.5592pt too wide) detected at line 439
+Overfull \hbox (9.5592pt too wide) detected at line 617
  $[][] [] [] [][][] [] [] [] [] []$  
  []
 
-[432]
-Overfull \hbox (3.35521pt too wide) in paragraph at lines 451--452
+[442]
+Overfull \hbox (3.35521pt too wide) in paragraph at lines 629--630
 \TU/TeXGyrePagella(0)/m/n/10.95 dering constant increases by $[]$ per $[][] [] 
 [][][]$-dimension and decreases
  []
@@ -15955,76 +16039,239 @@ Overfull \hbox (3.35521pt too wide) in paragraph at lines 451--452
 Package youngtab: box1 not free! Expect an error!
 Package youngtab: box1 not free! Expect an error!
 
-Overfull \hbox (10.36295pt too wide) in paragraph at lines 462--463
+Overfull \hbox (11.54553pt too wide) in paragraph at lines 641--642
 [][][][][][]$\TU/TeXGyrePagella(0)/m/n/10.95 . E.g. a second-level state of the
  form $[][][][][] [] [][][][][][][] []$
  []
 
 
-Overfull \hbox (14.83289pt too wide) in paragraph at lines 462--463
+Overfull \hbox (14.83289pt too wide) in paragraph at lines 641--642
 \TU/TeXGyrePagella(0)/m/n/10.95 combine into the symmetric traceless representa
 tion $[] [] $ of $[][][][][][]$. 
  []
 
-[433]
+[443]
 Missing character: There is no 𝜆 in font TeX Gyre Pagella Bold/OT:script=latn;l
 anguage=DFLT;+onum;mapping=tex-text;!
- [434]
+ [444]
 Missing character: There is no 𝜖 in font TeX Gyre Pagella Bold/OT:script=latn;l
 anguage=DFLT;+onum;mapping=tex-text;!
 Missing character: There is no 𝜖 in font TeX Gyre Pagella Bold/OT:script=latn;l
 anguage=DFLT;+onum;mapping=tex-text;!
 
-Overfull \hbox (10.63776pt too wide) in paragraph at lines 496--497
+Overfull \hbox (10.63776pt too wide) in paragraph at lines 675--676
 []\TU/TeXGyrePagella(0)/m/n/10.95 For worldsheets of complicated topology, the 
 metric contains global
  []
 
 
-Overfull \hbox (6.10085pt too wide) in paragraph at lines 506--508
+Overfull \hbox (6.10085pt too wide) in paragraph at lines 685--687
 \TU/TeXGyrePagella(0)/m/n/10.95 in violation of the spin-statistics theorem, th
 us producing negative norm
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--515
+Underfull \hbox (badness 10000) in paragraph at lines 690--694
 
  []
 
-[435]
-Overfull \hbox (33.3328pt too wide) detected at line 540
+[445]
+Overfull \hbox (33.3328pt too wide) detected at line 719
  $[][][][] [] [][][][][][] [] [][][][][][][][]  [][][][] [] [][][][][][] [] [][
 ][][][][][][]  [][][][] [] [][][][][] [] [][][][]$  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--548
+Underfull \hbox (badness 10000) in paragraph at lines 723--727
 
  []
 
-[436]) [437]
+[446]
+Underfull \hbox (badness 10000) in paragraph at lines 743--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 743--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--758
+
+ []
+
+[447]
+Overfull \hbox (4.42099pt too wide) in paragraph at lines 766--769
+\TU/TeXGyrePagella(0)/m/n/10.95 where $[]$ is the Ricci scalar of the worldshee
+t’s sufrace and $[]$ the geodesic
+ []
+
+
+Overfull \hbox (39.03522pt too wide) detected at line 777
+ $[]$ 
+ []
+
+[448]
+Underfull \hbox (badness 10000) in paragraph at lines 789--796
+
+ []
+
+
+Overfull \hbox (11.31857pt too wide) in paragraph at lines 789--796
+\TU/TeXGyrePagella(0)/m/n/10.95 A \TU/TeXGyrePagella(0)/m/it/10.95 Riemann surf
+ace \TU/TeXGyrePagella(0)/m/n/10.95 is a one-dimensional complex manifold (can 
+be thought
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--796
+
+ []
+
+
+Overfull \hbox (28.7646pt too wide) in paragraph at lines 789--796
+\TU/TeXGyrePagella(0)/m/n/10.95 The Riemann-Roch theorem goes on to state that 
+the number $[] [] [][][] [][][]$
+ []
+
+
+Overfull \hbox (4.00648pt too wide) in paragraph at lines 805--808
+\TU/TeXGyrePagella(0)/m/n/10.95 integrate over the fundamental domain $[][] [][
+][]$ (which ensures only
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--808
+
+ []
+
+[449] [450] [451]
+Underfull \hbox (badness 10000) in paragraph at lines 861--876
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 861--876
+
+ []
+
+[452] [453]
+Underfull \hbox (badness 10000) in paragraph at lines 932--936
+
+ []
+
+[454]
+Underfull \hbox (badness 10000) in paragraph at lines 959--965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 959--965
+
+ []
+
+
+Overfull \hbox (96.40714pt too wide) detected at line 979
+ $[]$ 
+ []
+
+[455]
+Underfull \hbox (badness 10000) in paragraph at lines 989--992
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1004
+
+ []
+
+[456]
+Overfull \hbox (26.0335pt too wide) in paragraph at lines 1008--1010
+\TU/TeXGyrePagella(0)/m/n/10.95 the low-energy spectrum, which would make an or
+iginally $[] [] []$-dimensional
+ []
+
+
+Overfull \hbox (5.69565pt too wide) in paragraph at lines 1011--1012
+\TU/TeXGyrePagella(0)/m/n/10.95 One-dimensional compactification onto $[][]$ ca
+n be generalized to a multi-
+ []
+
+[457]
+Overfull \hbox (5.40646pt too wide) in paragraph at lines 1047--1048
+[]\TU/TeXGyrePagella(0)/m/n/10.95 That D-branes must be dynamical is clear alre
+ady from their momentum
+ []
+
+
+Overfull \hbox (5.75038pt too wide) in paragraph at lines 1047--1048
+\TU/TeXGyrePagella(0)/m/n/10.95 exchange with DD-branes. However, the linkage g
+oes deeper. The world-
+ []
+
+
+Overfull \hbox (1.42065pt too wide) in paragraph at lines 1047--1048
+\TU/TeXGyrePagella(0)/m/n/10.95 the quantum fluctuations of open string excitat
+ions normal to the brane,
+ []
+
+
+Overfull \hbox (6.92664pt too wide) in paragraph at lines 1047--1048
+\TU/TeXGyrePagella(0)/m/n/10.95 which describe massless scalar fields propagati
+ng along the brane. These
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1057
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1057
+
+ []
+
+[458]
+Overfull \hbox (25.3147pt too wide) in paragraph at lines 1082--1083
+\TU/TeXGyrePagella(0)/m/n/10.95 dimensions under Weyl rescaling $[][] [] [][][]
+[]$ the product $[][]$
+ []
+
+[459]
+Underfull \hbox (badness 10000) in paragraph at lines 1099--1104
+
+ []
+
+
+Overfull \hbox (13.49763pt too wide) in paragraph at lines 1112--1115
+[][][][][][]$ \TU/TeXGyrePagella(0)/m/n/10.95 also vanishes but only after inco
+rporating the extrinsic curvature
+ []
+
+) [460]
 \openout2 = `Chapters/NPP.aux'.
 
  (./Chapters/NPP.tex
 Chapter 13.
-[438
 
-
-
-
-]
 Overfull \hbox (10.95622pt too wide) in paragraph at lines 6--7
 \TU/TeXGyrePagella(0)/m/n/10.95 non-degenerate. Consider therefore the followin
 g $[]$-particle Schrödinger
  []
 
-[439] [440] [441] [442]
+[461
+
+
+
+
+] [462] [463] [464]
 Overfull \hbox (6.41023pt too wide) in paragraph at lines 175--178
 \TU/TeXGyrePagella(0)/m/n/10.95 We get a contradiction of our assumption that t
 he state is non-degenerate
  []
 
-[443]
+[465]
 Underfull \hbox (badness 10000) in paragraph at lines 202--205
 
  []
@@ -16048,12 +16295,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 240.
 
-[444]) [445]
+[466]) [467]
 \tf@thm=\write14
 \openout14 = `QFTnotes.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
  (./QFTnotes.aux (./FrontBackmatter/Titlepage.aux)
 (./FrontBackmatter/Contents.aux) (./Chapters/Acknowledgements.aux)
 (./Chapters/fieldtheory.aux) (./Chapters/groupsLorentz.aux)
@@ -16062,7 +16309,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
 (./Chapters/noneqQFT.aux) (./Chapters/curvedBackgroundQFT.aux)
 (./Chapters/ConformalFT.aux) (./Chapters/Supersymmetry.aux)
 (./Chapters/StringTheory.aux) (./Chapters/NPP.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 147.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 70.
 
 
  *File List*
@@ -16217,7 +16464,12 @@ hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
 stringenc.sty    2016/05/16 v1.11 Convert strings between diff. encodings (HO)
 rerunfilecheck.sty    2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 se-ascii-print.def    2016/05/16 v1.11 stringenc: Printable ASCII characters
-tcolorbox.sty    2018/01/12 version 4.12 text color boxes
+Include/macros.tex
+ntheorem.sty    2011/08/15 1.33
+todonotes.sty    2012/07/25
+ xkeyval.sty    2014/12/03 v2.7a package option processing (HA)
+ xkeyval.tex    2014/12/03 v2.7a key=value parser (HA)
+    tikz.sty    2015/08/07 v3.0.1a (rcs-revision 1.151)
      pgf.sty    2015/08/07 v3.0.1a (rcs-revision 1.15)
   pgfrcs.sty    2015/08/07 v3.0.1a (rcs-revision 1.31)
 everyshi.sty    2001/05/15 v3.00 EveryShipout Package (MS)
@@ -16230,10 +16482,6 @@ pgfsysprotocol.code.tex    2006/10/16  (rcs-revision 1.4)
  pgfcore.code.tex
 pgfcomp-version-0-65.sty    2007/07/03 v3.0.1a (rcs-revision 1.7)
 pgfcomp-version-1-18.sty    2007/07/23 v3.0.1a (rcs-revision 1.1)
-verbatim.sty    2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
- environ.sty    2014/05/04 v0.3 A new way to define environments
-trimspaces.sty    2009/09/17 v1.1 Trim spaces around a token list
-    tikz.sty    2015/08/07 v3.0.1a (rcs-revision 1.151)
   pgffor.sty    2013/12/13 v3.0.1a (rcs-revision 1.25)
  pgfkeys.sty    
  pgfkeys.code.tex
@@ -16241,30 +16489,30 @@ trimspaces.sty    2009/09/17 v1.1 Trim spaces around a token list
  pgfmath.code.tex
   pgffor.code.tex
     tikz.code.tex
-listingsutf8.sty    2016/05/16 v1.3 Allow UTF-8 in listings input (HO)
-shellesc.sty    2016/06/07 v0.02a unified shell escape interface for LaTeX
- physics.sty    
-simplewick.sty    2007/11/23 v1.2a
-tikz-feynman.sty    2016/02/05v1.1.0Feynman diagrams with TikZ
- pgfopts.sty    2014/07/10 v2.1a LaTeX package options with pgfkeys
- slashed.sty    1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
- savesym.sty    2013/09/02 v1.2 Saves and restores symbols (JG)
- amssymb.sty    2013/01/14 v3.01 AMS font symbols
-amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
-mathdots.sty    2014/06/11 v0.9 Improve and add various macros for dots in math
-.
-ntheorem.sty    2011/08/15 1.33
-todonotes.sty    2012/07/25
- xkeyval.sty    2014/12/03 v2.7a package option processing (HA)
- xkeyval.tex    2014/12/03 v2.7a key=value parser (HA)
     calc.sty    2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 youngtab.sty    1999/05/19 v1.1; Macros for Young-Tableaux
    young.sty    
 ytableau.sty    2012/08/14 v1.3 Many-featured Young tableaux and Young diagrams
 
+ pgfopts.sty    2014/07/10 v2.1a LaTeX package options with pgfkeys
   cancel.sty    2013/04/12 v2.2 Cancel math terms
 frcursive.sty    2004/02/01 v1.2 support package for French Cursive
     soul.sty    2003/11/17 v2.4 letterspacing/underlining (mf)
+ physics.sty    
+simplewick.sty    2007/11/23 v1.2a
+tikz-feynman.sty    2016/02/05v1.1.0Feynman diagrams with TikZ
+ savesym.sty    2013/09/02 v1.2 Saves and restores symbols (JG)
+ amssymb.sty    2013/01/14 v3.01 AMS font symbols
+amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
+ slashed.sty    1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
+mathdots.sty    2014/06/11 v0.9 Improve and add various macros for dots in math
+.
+tcolorbox.sty    2018/01/12 version 4.12 text color boxes
+verbatim.sty    2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+ environ.sty    2014/05/04 v0.3 A new way to define environments
+trimspaces.sty    2009/09/17 v1.1 Trim spaces around a token list
+listingsutf8.sty    2016/05/16 v1.3 Allow UTF-8 in listings input (HO)
+shellesc.sty    2016/06/07 v0.02a unified shell escape interface for LaTeX
  english.lbx    2017/12/19 v3.10 biblatex localization (PK/JW/AB)
  british.lbx    2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 american.lbx    2017/12/19 v3.10 biblatex localization (PK/JW/AB)
@@ -16320,6 +16568,11 @@ gfx/VertexFunctionQED.png
 gfx/YMpictures/YMselfenergy.png
 gfx/YMpictures/YMoneLoopDelta2.png
 gfx/YMpictures/YMoneLoopDeltaOne.png
+gfx/RGtoy1.png
+gfx/RGtoy2.png
+gfx/RGtoy3.png
+ gfx/RG1.png
+ gfx/RG2.png
 Chapters/thermaleqQFT.tex
 Chapters/noneqQFT.tex
 Chapters/curvedBackgroundQFT.tex
@@ -16330,7 +16583,7 @@ Chapters/StringTheory.tex
 Chapters/NPP.tex
  ***********
 
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 147.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 70.
 
 LaTeX Warning: There were undefined references.
 
@@ -16339,12 +16592,12 @@ Package logreq Info: Writing requests to 'QFTnotes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 63723 strings out of 493007
- 1310996 string characters out of 6136718
- 2222464 words of memory out of 5000000
- 66539 multiletter control sequences out of 15000+600000
+ 63848 strings out of 493007
+ 1313085 string characters out of 6136718
+ 2232484 words of memory out of 5000000
+ 66655 multiletter control sequences out of 15000+600000
  548315 words of font info for 185 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  87i,23n,138p,10511b,5680s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on QFTnotes.pdf (457 pages).
+Output written on QFTnotes.pdf (479 pages).

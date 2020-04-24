@@ -63,6 +63,7 @@ theory, but not a quantum field theory in four spacetime dimensions.
 
 
 \section{Classical bosonic string}
+\label{sec:stringBosonic}
 \subsection{Bosonic string action}
 \begin{mybox}{Nambu-Goto action }
 	 The \textbf{Nambu-Goto action} of the classical bosonic string spanning the worldsheet $\Sigma$ is defined as
@@ -70,7 +71,7 @@ theory, but not a quantum field theory in four spacetime dimensions.
 	\label{eq:stringNGaction}
 	S_{NG}[X]= - T \int_\Sigma \md A.
 	\ee 
-	$T$ is the string tension and $\md A=\sqrt{-\det(\vec{G})}\md \tau \md \sigma$ is the area element of $\Sigma$ with coordinates $\vec{\xi}=(\xi^0,\xi^1)=(\tau,\sigma)$. The components of the \textbf{pullback} $\vec{G}$ of the ambient space $\eta\munu$ onto $\Sigma$ are 
+	$T$ is the string tension and $\md A=\sqrt{-\det(\bG)}\md \tau \md \sigma$ is the area element of $\Sigma$ with coordinates $\mxi=(\xi^0,\xi^1)=(\tau,\sigma)$. The components of the \textbf{pullback} $\bG$ of the ambient space $\eta\munu$ onto $\Sigma$ are 
 	\be 
 	\label{eq:stringPullback}
 	G_{ab}= \frac{\partial X^\mu}{\partial \xi^a} \frac{\partial X_\mu}{\partial \xi^b},\quad  a,b \in \{0,1\}, \; \mu \in \{0,\dots,d-1\}.
@@ -80,7 +81,7 @@ theory, but not a quantum field theory in four spacetime dimensions.
 	To eliminate the square root in \ref{eq:stringNGaction}, we introduce the \emph{worldsheet metric } $h^{ab}(\tau,\sigma)$ as an auxiliary (symmetric two-tensor) field and define the \emph{Polyakov action} 
 	\be 
 	\label{eq:stringPaction}
-	S_P [X,h] = -\frac{T}{2} \int_\Sigma \md^2 \xi \sqrt{-h} h^{ab} G_{ab},\quad \text{with } h = \det(\vec{h}).
+	S_P [X,h] = -\frac{T}{2} \int_\Sigma \md^2 \xi \sqrt{-h} h^{ab} G_{ab},\quad \text{with } h = \det(\textbf{h}).
 		\ee 
 \end{mybox}
 The bosonic string field $X^\mu(\tau,\sigma)$ in $G_{ab}$ provides an embedding of the worldsheet into ambient space. $X^\mu$ is a spacetime vector but a scalar on the worldsheet (due to the absence of worldsheet indices). Hence $S_P$ describes $d$ scalar fields $X^\mu$ coupled to the dynamical worldsheet metric $h_{ab}$. 
@@ -125,16 +126,16 @@ $S_P$ enjoys several symmetries, where it is important to distinguish between sp
 	and the object $\sqrt{-h}$ as $\delta \sqrt{-h}= \partial_a (\epsilon_a \sqrt{-h})$, i.e. like a scalar density of weight $p=1$.
 \item Local \textbf{Weyl transformations} 
 \bse 
-h_{ab} \rightarrow \Lambda(\vec{\xi}) h_{ab} 
+h_{ab} \rightarrow \Lambda(\mxi) h_{ab} 
 \ese 
-parametrized by $\Lambda(\vec{\xi})=e^{\omega(\vec{\xi})}$ with $\omega(\vec{\xi})\in \mR$ for convenient series expansion. This symmetry is special in that it arises only for two-dimensional world\emph{sheets} (as opposed to, say, membranes), making strings generalization of point-particles. This symmetries requires $T^a_a=0$ and is crucial for consistent string quantization. 
+parametrized by $\Lambda(\mxi)=e^{\omega(\mxi)}$ with $\omega(\mxi)\in \mR$ for convenient series expansion. This symmetry is special in that it arises only for two-dimensional world\emph{sheets} (as opposed to, say, membranes), making strings generalization of point-particles. This symmetries requires $T^a_a=0$ and is crucial for consistent string quantization. 
 \end{enumerate}
 \subsubsection{Killing symmetry}
 The effect on the metric $h_{ab}$ of certain diffeomorphisms $\epsilon_a$ that fulfill the \text{conformal Killing equation} \ref{eq:ctkilling}
 \bse 
-P^c_{ab} \epsilon_c = (\vec{P} \vec{\epsilon})_{ab} = 0
+P^c_{ab} \epsilon_c = (\mathbf{P} \mep)_{ab} =\nabla_a \epsilon_b+\nabla_b \epsilon_a  - h_{ab} \nabla^c \epsilon_c = 0
 \ese 
-can be undone by a Weyl rescaling $\Lambda^{-1}$. The linear operator $\vec{P}$ is defined via
+can be undone by a Weyl rescaling $\Lambda^{-1}$. The linear operator $\mathbf{P}$ is defined via
 \be
 \label{eq:stringConformalKilling} 
 \delta h_{ab} = \nabla_a \epsilon_b + \nabla_b \epsilon_a = \underbrace{\nabla_a \epsilon_b+\nabla_b \epsilon_a - \nabla^c\epsilon_c h_{ab}}_{P^c_{ab} \epsilon_c} + \underbrace{\nabla^c \epsilon_c}_{\Lambda} h_{ab}.
@@ -144,6 +145,28 @@ These $\epsilon_a$ are the \emph{conformal Killing vectors}. Every such $\epsilo
 J^a_\epsilon = T^{ab}\epsilon_b \quad \text{with} \quad \nabla_a J^a_\epsilon = 0 
 \ee 
 where the conservation follows from the tracelessness of the energy-momentum tensor. The number of such $\epsilon_a$ is infinite and hence infinitely many conserved currents arise.
+\\
+\\
+Let us talk for a moment about important properties of conformal Killing vector fields.
+\begin{enumerate}
+	\item Vector fields that satisfy the conformal Killing equation are exactly those whose flow preserves the conformal structure of a manifold. Expressed in the language of conformal geometry:\\
+	The conformal Killing equation on a manifold $M$ with metric tensor $\mathbf{h}$ applies to those vector field $\epsilon(\xi)$ which preserve $\mathbf{h}$ up to a scaling, i.e.
+	\be 
+	\mL_\epsilon \mathbf{h} = \lambda(\xi) \mathbf{h}
+	\ee 
+	where $\mL_\epsilon$ is the Lie derivative and $\lambda(\xi)$ some function of position on $M$. It is easy to see, that this equation is completely equivalent to the conformal Killing equation \ref{eq:stringConformalKilling}. Inserting $\mL_\epsilon h_{ab}=\nabla_a \epsilon_b + \nabla_b \epsilon_a$ into \ref{eq:stringConformalKilling} and bringing $h_{ab}\nabla^c \epsilon_c$ to the other side, we have
+	\bse 
+	\mL_\epsilon h_{ab} = \nabla_a \epsilon_b + \nabla_b \epsilon_a = (\nabla^c \epsilon_c) h_{ab}.
+	\ese 
+	Hence $\lambda(\xi)$ is given by $\nabla^c \epsilon_c$. 
+	\item In particular, the above first property results in the fact that for diffeomorphisms  of the form 
+	\bse 
+	\xi^\pm \rightarrow \tilde{\xi}^a(\xi) = \xi^a + \epsilon^a(\xi),\quad \xi^a \in\{\tau,\sigma \},
+	\ese 
+	where $\epsilon^a(\xi)$ is a conformal Killing vector field, the effect on the metric can be undone by a Weyl rescaling.
+	\item Even after gauge fixing to the flat metric, $h_{ab}=\eta_{ab}$, the Polyakov action retains a large residual gauge symmetry, of which the conformal Killing vectors are the generators.
+\end{enumerate}
+A fourth very important property is the following which we want to prove as well. We will present this property in the next section after we defined the energy-momentum tensor.
 \subsubsection{Energy-momentum tensor}
 \begin{mybox}{Energy-momentum tensor} 
 The energy-momentum tensor is defined as the variation of $S_P$ w.r.t. to the worldsheet metric
@@ -153,50 +176,173 @@ T_{ab} = \frac{4 \pi}{\sqrt{-h}} \frac{\delta S_P}{\delta h^{ab}} = - \frac{1}{\
 \ee 
 It is traceless $T^a_a=0$ (as a consequence of Weyl invariance), and (for on-shell $X^\mu$) constitutes the conserved current $\nabla^a T_{ab}=0$ w.r.t. local worldsheet diffeomorphisms.
 \end{mybox}
-The equation of motion 
+The equation of motion for $h_{ab}$
 \bse 
 T_{ab}=0
 \ese 
-for $h_{ab}$ implies
+ implies
 \bse 
 G_{ab} = \frac{G^c_c}{2} h_{ab},
 \ese 
 i.e. on-shell $h_{ab}$ is proportional to the pullback.
+\vspace{0.7cm}
+\begin{mybox}{}
+	Every conformal Killing vector field $\epsilon^a(\xi)$ yields an associated conserved current $J^a_\epsilon= T^{ab}\epsilon_b$ with $\nabla_a J^a_\epsilon=0$. There exist infinitely many such $\epsilon^a(\xi)$.
+\end{mybox}
+By Noether's theorem, $T_{ab}$is the conserved current resulting from local diffeomorphism invariance on the worldsheet. In math: $\nabla^a T_{ab}=0$ for an on-shell string field $X(\tau,\sigma)$ since the action remains invariant under the following change in coordinates $\xi^a\in \{\tau,\sigma \}$ and metric $h_{ab}$,
+\begin{align}
+\xi^a \rightarrow \tilde{\xi}^a(\xi) &= \xi^a +\epsilon^a (\xi),\label{eq:stringKillingtrafoWS}\\
+h_{ab} \rightarrow h^\prime_{ab} &= h_{ab} + \delta h_{ab} = h_{ab} + \nabla_a \epsilon_b + \nabla_b \epsilon_a.\label{eq:stringKillingtrafoMetric}
+\end{align}
+To make this statement explicit, we recall the definition of the energy-momentum tensor i.to. the Polyakov action \ref{eq:stringEMtensor}, followed by considering the total variation of $S_P=S_P[X,h]$
+\begin{align*}
+	0&= \delta S_P = \int \md \tau \md \sigma \underbrace{\frac{\delta S_P}{\delta X^\mu}}_{=0} \delta X^\mu +\int \md \tau \md \sigma \frac{\delta S_p}{\delta h^{ab}} \delta h^{ab} \\
+	&= \frac{1}{4 \pi} \int \md \tau \md \sigma \sqrt{-h} T_{ab} h^{ab}
+\end{align*}
+where the very first equality holds because the action is invariant under the transformations \ref{eq:stringKillingtrafoMetric} and \ref{eq:stringKillingtrafoWS}, and the variation of $S_P$ w.r.t. $X^\mu$ vanishes on-shell, i.e. upon use of the string field´s e.o.m. Inserting $\delta h_{ab}$ from \ref{eq:stringKillingtrafoMetric} and using $T^{ab}=T^{ba}$, we get
+\begin{align*}
+	0&= \frac{1}{4 \pi} \int \md \tau \md \sigma \sqrt{-h} T_{ab} h^{ab} = \frac{1}{2\pi} \int \md \tau \md \sigma \sqrt{-h} T_{ab} \nabla^a \epsilon^b \\
+	&= \frac{1}{2 \pi} \int \md \tau \md \sigma \left[\nabla^a \left(\sqrt{-h} T_{ab} \epsilon^b \right) - \nabla^a \left(\sqrt{-h} T_{ab} \right) \epsilon^b\right] \\
+	&= - \frac{1}{2 \pi} \int \md \tau \md \sigma \nabla^a \left(\sqrt{-h} T_{ab}\right) \epsilon^b,
+\end{align*}
+where the first term in the second line is a volume integral over a total derivative. Using Stokes theorem, it can be converted to a surface integral without derivative, which by the usual argument of exclusively treating localized systems that do not extend outwards to infinity can be taken to vanish. The remaining term in the third line has to vanish for all and every $\epsilon^b(\xi)$ since the action is invariant under general diffeomorphisms. The only way for the integral to be zero regardless of which $\epsilon^b(\xi)$ we plug in, is for $\nabla^a (\sqrt{-h}T_{ab})$ to be zero. From $\nabla^a h_{bc}=0$, it follows by the chain rule that also $\nabla^a \sqrt{-h}=0$. Hence we are left with our initial statement,
+\be 
+\nabla^a T_{ab}=0.
+\ee 
+Due to this equation, we have
+\be
+\nabla_a J^a_\epsilon = \nabla_a (T^{ab} \epsilon_b) =T^{ab} \nabla_a \epsilon_b = \half T^{ab} (\nabla_a \epsilon_b + \nabla_b \epsilon_a),
+\ee 
+where in the last step we exploited the symmetry of $T^{ab}=T^{ba}$. Inserting the conformal Killing equation, we get
+\be 
+\nabla_a J^a_\epsilon = \half \underbrace{T^{ab} h_{ab}}_{=0} \nabla^c \epsilon_c = 0,
+\ee 
+where one uses the fact that the energy-momentum tensor is traceless in any system with an action invariant under Weyl rescalings.
+\\
+Proof for the tracelesness ?\\
+We know  that the Polyakov action features a local Weyl invariance. The metric on the other hand explicitly changes under a Weyl transformation. The same holds for its inverse and its determinant. They transform as
+\begin{align*}
+	h_{ab} &\rightarrow e^{2 \Lambda(\tau,\sigma)} h_{ab}, \quad h^{ab}\rightarrow e^{-2 \Lambda(\tau,\sigma)} h^{ab},\\
+	\det(\mathbf{h}) &\rightarrow e^{2 \md \Lambda(\tau,\sigma)} \det(\mathbf{h}),
+\end{align*}
+respectively, where $\md$ is the dimensionality of the space in which the determinant is taken, i.e. $\md=2$ on the worldsheet. Recalling the definition of the EM tensor \ref{eq:stringEMtensor}, we see that, under Weyl transformations, it remains invariant
+\begin{align*}
+	T_{ab}\rightarrow T^\prime_{ab} &= \frac{4 \pi}{\sqrt{-h^\prime}} \frac{\delta S^\prime_P}{\delta h^{\prime ab}} = \frac{4 \pi}{\sqrt{-e^{4 \Lambda} h} } \frac{\delta S_P}{e^{-2 \Lambda} \delta h^{ab}} \\
+	&= T_{ab}.
+\end{align*}
+Next we check the trace
+\begin{align*}
+	T^a_a\rightarrow T^{\prime a}_a &= h^{\prime ab} T_{\prime a b} = e^{-2 \Lambda} h^{ab} T_{ab} \\
+	&=e^{-2 \Lambda} T^a_a.
+\end{align*}
+A priori, it seems like $T^a_a$ may be a variant under Weyl rescalings,. But if $T_{ab}$ as a whole remains invariant, the same must apply to the trace $T^a_a$. This presents a contradiction unless the energy-momentum tensor is in fact traceless, $T^a_a=0$ $\square$.\\
+\subsubsection{Energy-momentum tensor and charges}
+Let us note one more thing in this section.
+The part of Noether's theorem stating that continuous symmetries give rise to conserved currents and associated charges is well known. What is sometimes overlooked is the fact that Noether's theorem works both ways. Let us demonstrate briefly the converse, namely that conserved charges also generate symmetries. More precisely, we show that the stress energy tensor generates conformal transformations, something we have already seen in \todo{reference to CFT section}. Consider the (equal-time) Poisson bracket defined for two fields $F(\tau,\sigma)$, $G(\tau,\sigma^\prime)$ as
+\bse 
+\{F(\tau,\sigma),G(\tau,\sigma^\prime)\}_{PB} \equiv \int \md \tilde{\sigma} \left(\frac{\partial F(\tau,\sigma)}{\partial X^\mu(\tau,\tilde{\sigma}) } \frac{\partial G(\tau,\sigma^\prime)}{\partial \Pi_\mu(\tau,\tilde{\sigma})} - \frac{\partial G(\tau,\sigma^\prime)}{\partial X^\mu(\tau,\tilde{\sigma})} \frac{\partial F(\tau,\sigma)}{\partial \Pi_\mu(\tau,\tilde{\sigma})} \right).
+\ese 
+Note further the following results which we simply state here
+\begin{align*}
+	T_{\pm \pm} &= -\frac{1}{\alpha^\prime} \partial_\pm X^\mu \partial_\pm X_\mu, \\
+	\{X^\mu(\tau,\sigma),X^\nu(\tau,\sigma^\prime) \}_{PB} &= \{\dot{X}^\mu(\tau,ſ\sigma),\dot{X}^\nu(\tau,\sigma^\prime) \}_{PB} = 0,\\
+	\{X^\mu(\tau,\sigma),\dot{X}^\nu(\tau,\sigma^\prime) \}_{PB} &= \frac{1}{T} \eta^{\mu \nu} \delta(\sigma-\sigma^\prime),\\
+	\{T_{\pm \pm}(\tau,\sigma),X^\mu(\tau,\sigma^\prime) \}_{PB} &=  2\pi \delta_\pm X^\mu (\tau,\sigma) \delta(\sigma-\sigma^\prime).
+\end{align*}
+With these equations in our toolbox, we can simply calculate the Poisson bracket of the string field $X^\mu(\tau,\sigma)$ and the conserved charges $L_{\epsilon^\pm}$ associated with invariance under conformal Killing transformations. The $L_{\epsilon^\pm}$ is given by 
+\be 
+L_{\epsilon^\pm} = - \frac{l}{4 \pi^2} \int_0^l \md \sigma \epsilon^\pm (\xi^\pm) T_{\pm \pm} (\xi^\pm). 
+\ee 
+Therefore,
+\begin{align*}
+	\{L_{\epsilon^\pm}, X^\mu(\tau,\sigma) \}_{PB} &= - \frac{l}{4 \pi^2} \int_0^l \md \sigma^\prime \epsilon^\pm(\xi^{\pm \prime}) \{T_{\pm \pm} (\tau,\sigma^\prime),X^\mu(\tau,\sigma) \}_{PB} \\
+	&= - \frac{l}{4 \pi^2} \int_0^l \md \sigma^\prime \epsilon^\pm(\xi^{\pm \prime}) 2 \pi \partial_\pm X^\mu(\tau,\sigma^\prime) \delta(\sigma-\sigma^\prime) \\
+	&=-\frac{l}{2 \pi} \epsilon^\pm(\xi^\pm) \partial_\pm X^\mu(\tau,\sigma).
+\end{align*}
+Since this is precisely the Lie derivative acting on the string field, i.e.
+\be
+-\frac{2\pi}{l} \{L_{\epsilon^\pm}, X^\mu(\tau,\sigma)\}_{PB} = \epsilon^\pm(\xi^\pm) \partial_\pm X^\mu(\tau,\sigma) = \mL_{\epsilon^\pm} X^\mu(\tau,\sigma),
+\ee 
+we have shown that the $L_{\epsilon^\pm}$ generate conformal transformations.
+\\
+By decomposing a Killing vector field $\epsilon^\pm(\xi^\pm)$ into its Fourier components, i.e.
+\be 
+\epsilon^\pm(\xi^\pm) = \sum_{m\in\Z} \epsilon^\pm_m e^{i \frac{2\pi}{l} m \xi^\pm},
+\ee 
+and inserting this sum into the conserved charges $L_{\epsilon^\pm}$, we get a series representation for the charges themselves,
+\be 
+L_{\epsilon^\pm}= - \frac{l}{4 \pi^2} \sum_{m\in\Z} \int_0^l \md \sigma \epsilon^\pm_m T_{\pm \pm}(\xi^\pm) e^{i \frac{2\pi}{l} m \xi^\pm} \equiv \sum_{m\in\Z} \epsilon^\pm_m L^\pm_m.
+\ee 
+The $L^\pm_m$ are the generators of the conformal Killing transformations. This assertion will be demonstrated after the following remark. The $L^\pm_m$ are called \emph{Virasoro generators} and are of vital importance as a tool in the full quantum theory to ensure that our description is free of unitarity-spoiling ghosts. Note that this equation establishes the Virasor generators as the Fourier modes of the energy-momentum tensor $T_{ab}$, they are given by
+\be 
+L^\pm_m = - \frac{l}{4 \pi} \int_0^l \md \sigma T_{\pm \pm} e^{i \frac{2 \pi }{l} m \xi^\pm}.
+\ee 
+Note that the set of $L^\pm_m,m\in\Z$ satisfy the Witt algebra, this can be shown by noting that
+\bse 
+\{T_{\pm \pm} (\tau,\sigma),T_{\pm \pm}(\tau,\sigma^\prime) \}_{PB} = \pm \frac{2 \pi}{\alpha^\prime} \partial_\pm X_\mu(\tau,\sigma) \partial_\pm X^\mu(\tau,\sigma^\prime) [\partial_\sigma-\partial_{\sigma^\prime}] \delta(\sigma-\sigma^\prime).
+\ese 
+We then find that the Witt algebra is satisfied
+\be 
+\{L^\pm_m,L^\pm_n\}_{PB} = -i(m-n) L^\pm_{m+n}.
+\ee 
+With this we also find that the Virasoro generators together with the Poisson bracket as binary operation fulfil the Jacobi identity
+\be
+\{\{L^\pm_l,L^\pm_m\}_{PB},L^\pm_n  \}_{PB} + \{ \{L^\pm_m,L^\pm_n\}_{PB}, L^\pm_l  \}_{PB} + \{ \{L^\pm_n,L^\pm_l\}_{PB},L^\pm_m\}_{PB} =0.
+\ee 
+Since the Poisson bracket is further bilinear and antisymmetric under exchange of its arguments, it together with the Virasoro generator forms a Lie algebra, i.e. the Witt algebra is a Lie algebra.\\
+If a set of generators form a Lie algebra, then a subset of those generators is called a Lie subalgebra, if the subset is closed under the Lie bracket. The subset $K=\{L^\pm_0,L^\pm_k,L^\pm_{-k} \}$ of all Virasoro generators forms a Lie subalgebra of the Witt algebra since
+\begin{align*}
+	\{L^\pm_0,L^\pm_k\}_{PB} &= - i (-k) L^\pm_k \; \in K,\\
+	\{L^\pm_0, L^\pm_{-k} \}_{PB} &= -i k L^\pm_{-k} \; \in K,\\
+	\{L^\pm_k, L^\pm_{-k} \}_{PB} &= -i 2k L^\pm_0 \; \in K.
+\end{align*}
+In particular, this holds for $k=1$.
+We now want to finally compute the effect of $(L^+_0-L^-_0)$ and $(L^+_0+L^-_0)$ on the string field $X^\mu(\tau,\sigma)$. To this end we note another identity
+\bse 
+\{L^\pm_m,X^\mu(\tau,\sigma) \}_{PB} = - \frac{l}{2 \pi} e^{i \frac{2 \pi}{l} m \xi^\pm} \partial_\pm X^\mu(\tau,\sigma).
+\ese 
+This leaves us with
+\begin{align}
+	\{(L^+_ß-L^-_0), X^\mu(\tau,\sigma) \}_{PB} &= -\frac{l}{2 \pi} \partial_\sigma X^\mu(\tau,\sigma), \\
+	\{(L^+_0+L^-_0),X^\mu(\tau,\sigma)\}_{PB} &= -\frac{l}{2 \pi} \partial_\tau X^\mu(\tau,\sigma).
+\end{align}
+We have thus shown that $(L^+_0-L^-_0)$ and $(L^+_0*L^-_0)$ generate infinitesimal $\sigma-$ and $\tau-$translations, respectively.
+
 
 \subsection{Gauge-fixing}
 On a $D$-dimensional worldmembrane, $h_{ab}$ has $\frac{D}{2}(D+1)$ degrees of freedom, while diffeomorphisms plus Weyl rescalings account for $(D+1)$ parameters. Precisely in $D=2$ do we have equally many transformational parameters as metric degrees of freedom. Two more features exclusive to $D=2$ are that the Riemann-tensor has only one degree of freedom given by the Ricci scalar $\mathcal{R}$
 \be 
 R_{abcd} = \frac{\mathcal{R}}{2} ( h_{ac} h_{bd} - h_{ad} h_{bc}),
 \ee 
-and second, that under Weyl rescaling $\Lambda(\vec{\xi}), \mathcal{R}$ transforms as
+and second, that under Weyl rescaling $\Lambda(\mxi), \mathcal{R}$ transforms as
 \bse 
-\mathcal{R} \rightarrow \mathcal{R} - \vec{\nabla}^2\Lambda(\vec{\xi}). 
+\mathcal{R} \rightarrow \mathcal{R} - \vec{\nabla}^2\Lambda(\mxi). 
 \ese 
-Choosing $\Lambda(\vec{\xi})$ such that $\mathcal{R}= \vec{\nabla}^2 \Lambda(\vec{\xi})$ (locally, this is always possible) thus implies
+Choosing $\Lambda(\mxi)$ such that $\mathcal{R}= \vec{\nabla}^2 \Lambda(\mxi)$ (locally, this is always possible) thus implies
 \bse 
 R_{abcd}=0 \quad \forall a,b,c,d.
 \ese 
 This means we can always transform the worldsheet so that locally, it resembles flat space. Once space is flat, we can transform coordinates, i.e. apply a diffeomorphism to bring the metric into Minkowskian shape $h_{ab} = \eta_{ab}$. This procedure of fixing the metric is called (partially) \emph{fixing the gauge}.
 \begin{enumerate}
-	\item It leaves a large \emph{residual gauge symmetry} generated by the conformal Killing vectors $\vec{\epsilon}$ mentioned above. Since these leave the metric invariant, they still represent an unphysical gauge symmetry in our description even after the metric has been fixed.
+	\item It leaves a large \emph{residual gauge symmetry} generated by the conformal Killing vectors $\mep$ mentioned above. Since these leave the metric invariant, they still represent an unphysical gauge symmetry in our description even after the metric has been fixed.
 	\item Worldsheets may exhibit topological obstructions to fixing the metric globally. In this case there remain parameters in the metric, so-called \emph{moduli}, which cannot be removed by a conformal drescaling and diffeomorphisms. These moduli are the global properties of worldsheets that account for string interaction (mentioned in item $2$ of \ref{subsec:stringProperties}).
 \end{enumerate}
 \subsubsection{Flat gauge}
 In \emph{flat gauge} $h_{ab}=\eta_{ab}$, the Polyakov action reduces to the action of $d$ \emph{free} scalar fields,
 \be
 \label{eq:stringPactionflatgauge}
-S_P[X]= \frac{T}{2} \int_\Sigma \md^2 \xi \left[(\partial_\tau \vec{X})^2 - (\partial_\sigma \vec{X})^2\right].
+S_P[X]= \frac{T}{2} \int_\Sigma \md^2 \xi \left[(\partial_\tau \mathbf{X})^2 - (\partial_\sigma \mathbf{X})^2\right].
 \ee 
 \subsubsection{Lightcone coordinates}
-Lightcone coordinates $\xi^\pm = \tau \pm  \sigma$ are convenient, e.g. when treating closed string mode expansions with right- and left-moving modes $\vec{\alpha}^\pm_n$ ( $+$ right-moving, $-$ left-moving). The metric in \emph{lightcone gauge} reads
+Lightcone coordinates $\xi^\pm = \tau \pm  \sigma$ are convenient, e.g. when treating closed string mode expansions with right- and left-moving modes $\malpha^\pm_n$ ( $+$ right-moving, $-$ left-moving). The metric in \emph{lightcone gauge}\footnote{Note that the term lightcone gauge can be confusing if one assumes the word lightcone to describe gauge. A more fitting name for this modus operandi might be flat gauge in lightcone coordinates. What is actually happening is that we partially fix the gauge by flattening the metric, $h_{ab}\stackrel{!}{=}\eta_ab$, followed by a transformation into lightcone coordinates $\xi^\pm=\tau \pm \sigma$, where now the metric components $,a,b$ are no longer $\in \{\tau,\sigma \}$, but $\in \{+,-\}$}.  reads
 \bse 
-h_{\pm \pm} =0, \; h_{\pm \mp} = - \half, \; \text{i.e. } \vec{h}= 
+h_{\pm \pm} =0, \; h_{\pm \mp} = - \half, \; \text{i.e. } \textbf{h}= 
 \begin{pmatrix}
 	0& - \half \\
 	-\half & 0 \\
 \end{pmatrix},
 \;
-\vec{h}^{-1} = 
+\textbf{h}^{-1} = 
 \begin{pmatrix}
 	0 & -2 \\
 	-2 & 0 \\
@@ -236,15 +382,19 @@ Thus the measure becomes
 \bse 
 \md^2 \xi = \md \tau \md \sigma = \half \md \xi^+ \md \xi^-
 \ese 
-and the partial derivatives are $\partial_\pm = \half (\partial_\tau \pm \partial_\sigma)$.\\
+and the partial derivatives are $\partial_\pm = \half (\partial_\tau \pm \partial_\sigma)$\footnote{Note further that a transformation of the form
+\bse 
+\xi^\pm \rightarrow \tilde{\xi}^\pm(\xi^\pm) = \xi^\pm + \epsilon^\pm(\xi^\pm)
+\ese
+is not prohibited even after partially fixing the gauge freedom by setting $h_{ab}\stackrel{!}{=} \eta_{ab}$. This remaining invariance thus constitutes the residual gauge symmetry in flat gauge. }.\\
 \\
 The Polyakov action and energy-momentum tensor in lightcone coordinates read 
 \be
 \label{eq:stringPactionEMtensorLightcone} 
-S_P[X] = T \int_\Sigma \md^2 \xi \partial_+ \vec{X} \cdot \partial_- \vec{X},\quad T_{\pm \pm} = - \frac{1}{\alpha^\prime} \partial_\pm \vec{X} \cdot \partial_\pm \vec{X}.
+S_P[X] = T \int_\Sigma \md^2 \xi \partial_+ \mathbf{X} \cdot \partial_- \mathbf{X},\quad T_{\pm \pm} = - \frac{1}{\alpha^\prime} \partial_\pm \mathbf{X} \cdot \partial_\pm \mathbf{X}.
 \ee 
 Tracelessness translates into $T_{\pm \mp}=0$, and conservation into $\partial_\mp T_{\pm \pm}=0 \Rightarrow T_{\pm \pm} (\xi^{\pm})$. It is important to remember that in flat gauge, the metric's equation of motion $T_{ab}=0$ still has to be enforced as constraint. Partially fulfilled already by tracelessness, this only amounts to $T_{\pm \pm}=0$.\\
-The conformal Killing equation $(\vec{P}\vec{\epsilon})_{ab}=0$ in lightcone gauge, where now $\vec{\epsilon}=(\epsilon_+,\epsilon_-)$, becomes the statement $\partial_\pm \epsilon_\pm=0$. Using $\epsilon^\pm = h^{\pm a} \epsilon_a = h^{\pm \mp} \epsilon_\mp = -2 \epsilon_\mp$, this means
+The conformal Killing equation $(\mathbf{p}\mep)_{ab}=0$ in lightcone gauge, where now $\mep=(\epsilon_+,\epsilon_-)$, becomes the statement $\partial_\pm \epsilon_\pm=0$. Using $\epsilon^\pm = h^{\pm a} \epsilon_a = h^{\pm \mp} \epsilon_\mp = -2 \epsilon_\mp$, this means
 \bse 
 \partial_\mp \epsilon^\pm = 0 \quad \Rightarrow \quad \epsilon^\pm = \epsilon^\pm(\xi^\pm),
 \ese 
@@ -293,13 +443,13 @@ L^\pm_m = 0 \quad \forall m \in \Z.
 In particular, the \emph{Hamiltonian}, which for the open string reads
 \begin{align} 
 \label{eq:stringHamiltonianOpenBosonic}
-H_{op} &= \frac{\pi}{l} L_0 =\frac{\pi}{l} \half \sum_{n\in\Z} \vec{\alpha}_{-n} \cdot \vec{\alpha}_n \\
-&= \frac{\pi}{l} \left(\half \vec{\alpha}^2_0 + \half \sum_{n\neq 0} \vec{\alpha}_{-n} \cdot \vec{\alpha}_n\right)= \frac{\pi}{l} \left(\alpha^\prime \vec{p}^2+ \sum_{n=1}^\infty \vec{\alpha}_{-n} \cdot \vec{\alpha}_n\right), \nonumber
+H_{op} &= \frac{\pi}{l} L_0 =\frac{\pi}{l} \half \sum_{n\in\Z} \malpha_{-n} \cdot \malpha_n \\
+&= \frac{\pi}{l} \left(\half \malpha^2_0 + \half \sum_{n\neq 0} \malpha_{-n} \cdot \malpha_n\right)= \frac{\pi}{l} \left(\alpha^\prime \mathbf{p}^2+ \sum_{n=1}^\infty \malpha_{-n} \cdot \malpha_n\right), \nonumber
 \end{align}
 must vanish due to $T_{ab}=0$ which implies the (classical open string) \emph{mass shell condition}
 \be 
 \label{eq:stringMassShellCondition}
-M^2 =- \vec{p}^2 = \frac{1}{\alpha^\prime} \sum_{n=1}^\infty \vec{\alpha}_{-n} \cdot \vec{\alpha}_n = \frac{N}{\alpha^\prime}.
+M^2 =- \mathbf{p}^2 = \frac{1}{\alpha^\prime} \sum_{n=1}^\infty \malpha_{-n} \cdot \malpha_n = \frac{N}{\alpha^\prime}.
 \ee 
 For closed strings, 
 \bse 
@@ -324,7 +474,7 @@ Canonical quantization promotes all fields to operators and postulates the repla
 \begin{align*}
 	[X^\mu(\tau,\sigma),\Pi^\nu (\tau,\sigma^\prime)] &= i \eta^{\mu \nu} \delta(\sigma-\sigma^\prime),\\
 	[\alpha^\mu_m,\alpha^\nu_n] &= m \eta^{\mu \nu} \delta_{m,-n}, \\
-	[x^\mu,p^\nu] &= i \eta{ \mu \nu}.
+	[x^\mu,p^\nu] &= i \eta_{ \mu \nu}.
 \end{align*}
 Reality $X^\mu \in \mR$ at the classical level implies hermiticity $(X^\mu)^\dagger = X^\mu$ at the quantum level which in turn requires $(\alpha^\mu_m)^\dagger=\alpha^\mu_{-m}$. This carries over to the Virasoro generators $L^\dagger_m= L_{-m}$.
 
@@ -339,12 +489,12 @@ N(\alpha^\mu_m \alpha^\nu_n) = \left\{ \begin{array}{ll}
 and use this prescription to promote the Virasoro generators to the quantum theory as the operators
 \be 
 \label{eq:stringVirasorogenerators}
-L_m = \half \sum_{n\in \Z} N({\vec{\alpha}}_{m-n} \cdot {\vec{\alpha}}_n).
+L_m = \half \sum_{n\in \Z} N({\malpha}_{m-n} \cdot {\malpha}_n).
 \ee 
-Actual ambiguity arises only in $L_0$ because modes $\alpha^\mu_m,\alpha^\nu_n$ are noncommuting only if $m=-n$ and for $m\neq 0$. By defining $L^{cl}_0 = L^{qu}_0 -a$\footnote{$L^{cl}_0$ and $L^{qu}_0$ are both quantum operators. The superscripts merely indicate that $L^{cl}_0$ has the structure of the classical Virasoro generators without normal-ordering prescription whereas $L^{qu}_0$ does, i.e. is precisely the one defined in \ref{eq:stringVirasorogenerators}.}, where $a$ follows from
+Actual ambiguity arises only in $L_0$ because modes $\alpha^\mu_m,\alpha^\nu_n$ are noncommuting only if $m=-n$ and for $m\neq 0$. By defining $L^{cl}_0 = L^{qu}_0 -a$, \footnote{$L^{cl}_0$ and $L^{qu}_0$ are both quantum operators. The superscripts merely indicate that $L^{cl}_0$ has the structure of the classical Virasoro generators without normal-ordering prescription whereas $L^{qu}_0$ does, i.e. is precisely the one defined in \ref{eq:stringVirasorogenerators}.}, where $a$ follows from
 \begin{align*}
-	L^{cl}_0 &= \half \sum_{n\in\Z} \vec{\alpha}_{-n} \cdot \vec{\alpha}_n = \half \sum_{n=-\infty}^{-1} \left\{\vec{\alpha}_n \cdot \vec{\alpha}_{-n} + \eta\munu \underbrace{[\alpha^\mu_{-n}, \alpha^\nu_n]}_{-n \eta^{\mu \nu}}		\right\} + \half \sum_{n=0}^\infty \vec{\alpha}_{-n} \cdot  \vec{\alpha}_n \\
-	&=\half \sum_{n\in\Z} N\left(\vec{\alpha}\cdot \vec{\alpha}_n\right) + \frac{d}{2} \sum_{n=1}^\infty n = L^{qu}_0 -a,
+	L^{cl}_0 &= \half \sum_{n\in\Z} \malpha_{-n} \cdot \malpha_n = \half \sum_{n=-\infty}^{-1} \left\{\malpha_n \cdot \malpha_{-n} + \eta\munu \underbrace{[\alpha^\mu_{-n}, \alpha^\nu_n]}_{-n \eta^{\mu \nu}}		\right\} + \half \sum_{n=0}^\infty \malpha_{-n} \cdot  \malpha_n \\
+	&=\half \sum_{n\in\Z} N\left(\malpha\cdot \malpha_n\right) + \frac{d}{2} \sum_{n=1}^\infty n = L^{qu}_0 -a,
 \end{align*}
 we capture the ambiguity in a divergent \emph{normal ordering constant} fixed by renormalization later.
 
@@ -356,54 +506,82 @@ we capture the ambiguity in a divergent \emph{normal ordering constant} fixed by
 	\ee 
 	is a central extension by $\mC$ of the classical Witt algebra $\{L_m,L_n\}_{PB} = (m-n)L_{m+n}$ satisfied by the classical Virasoro generators. The \emph{central charge} $c = \eta^\mu_\mu = d$ is given by the number of scalars $X^\mu$. The fact that $c \neq 0$ indicates a quantum analogy of the worldsheet's conformal symmetry.
 \end{mybox}
-To exclude negative norm states from the physical Hilbert space and ensure a unitary theory, we impose (with Ehrenfest's theorem in mind) they \emph{physical state condition} 
+To exclude negative norm states from the physical Hilbert space and ensure a unitary theory, we impose (with Ehrenfest's theorem in mind) the \emph{physical state condition} 
 \be 
 \label{eq:stringPhysicalStatecond}
 (L_m-a \delta_{m,0}) \ket{\phi} = 0 \quad \forall m \geq 0 \text{ and } \forall \ket{\phi}\in \mH_{phys}.
 \ee 
 Since the (quantum) mass shell condition arises from the level-zero Virasoro constraint, the normal ordering constant $a$ affects the string mass. The structure of the physical Hilbert space is a tower of string excitations with increasing mass according to the number of excitations counted by $N$:
 \be
-M^2_{op} \ket{\phi} = \left(\frac{1}{\alpha^\prime} (N-\alpha) + T^2 \Delta \vec{x}^2\right)\ket{\phi}.
+M^2_{op} \ket{\phi} = \left(\frac{1}{\alpha^\prime} (N-\alpha) + T^2 \Delta \mathbf{X}^2\right)\ket{\phi}.
 \ee 
-$T^2 \nabla \vec{x}^2$ is the energy contribution from the string's tension, non-zero only for states stretched between non-coincident D-branes.The closed string states with $M^2_{cl} \ket{\phi} = \frac{2}{\alpha^\prime} (N^++N^--a) \ket{\phi}$ are oganized by the \emph{level-matching condition}
+$T^2 \nabla \mathbf{X}^2$ is the energy contribution from the string's tension, non-zero only for states stretched between non-coincident D-branes. The closed string states with
+\bse 
+M^2_{cl} \ket{\phi} = \frac{2}{\alpha^\prime} (N^++N^--a) \ket{\phi}
+\ese 
+are oganized by the \emph{level-matching condition}
+
 \bse 
 (N^+-N^-) \ket{\phi}=0.
 \ese 
 \begin{enumerate}
-	\item For $a>0$, the vacuum $\ket{0,\vec{p}}$ of bosonic string theory is \emph{tachyonic} with $M^2=-\frac{a}{\alpha^\prime}$. This is not inconsistent, but signals an instability of the (naive) vacuum. Such a theory rapidly decays.
+	\item For $a>0$, the vacuum $\ket{0,\mathbf{p}}$ of bosonic string theory is \emph{tachyonic} with $M^2=-\frac{a}{\alpha^\prime}$. This is not inconsistent, but signals an instability of the (naive) vacuum. Such a theory rapidly decays.
 	\item Analysis of the level-zero Virasoro constraint on a first-excited level state
 	\bse 
-	\ket{\phi} = \xi_\mu \alpha^\mu_{-1}\ket{0,\vec{p}}
+	\ket{\phi} = \xi_\mu \alpha^\mu_{-1}\ket{0,\mathbf{p}}
 	\ese 
 	reveals
 	\bse 
-	(L_0-a)\ket{\phi} = \left(\frac{\vec{\alpha}^2_0}{2}+\vec{\alpha}\cdot \vec{\alpha}_{-1} - a\right)\ket{\phi} = \left(\alpha^\prime \vec{p}^2 +1 -a\right) \ket{\phi}\stackrel{!}{0}
+	(L_0-a)\ket{\phi} = \left(\frac{\malpha^2_0}{2}+\malpha\cdot \malpha_{-1} - a\right)\ket{\phi} = \left(\alpha^\prime \mathbf{p}^2 +1 -a\right) \ket{\phi}\stackrel{!}{0}
 	\ese 
 	which implies
 	\be
-	\vec{p}^2= \frac{a-1}{\alpha^\prime}.
+	\mathbf{p}^2= \frac{a-1}{\alpha^\prime}.
 	\ee 
-	The level-one constrain evaluates to the requirement of transverse polarization $\vec{\xi}$,
+	The level-one constrain evaluates to the requirement of transverse polarization $\mxi$,
 	\bse 
-	L_1 \ket{\phi}= \half \left(\dots+ \vec{\alpha}_1 \cdot \vec{\alpha}_0+ \vec{\alpha}_0\cdot \vec{\alpha}_1+\dots\right) \ket{\phi} = \sqrt{2 \alpha^\prime} \vec{p}\cdot \vec{\xi} \ket{\phi} \stackrel{!}{=} 0
+	L_1 \ket{\phi}= \half \left(\dots+ \malpha_1 \cdot \malpha_0+ \malpha_0\cdot \malpha_1+\dots\right) \ket{\phi} = \sqrt{2 \alpha^\prime} \mathbf{p}\cdot \mxi \ket{\phi} \stackrel{!}{=} 0
 	\ese 
 	which implies that
 	\be 
-	\vec{p} \cdot \vec{\xi} =0.
+	\mathbf{p} \cdot \mxi =0.
 	\ee 
-	All higher constraints are vacuous (automatically satisfied). Since for $a>1$ we have $\vec{p}^2>0$, we can choose $\vec{p}$ such that $p^0=0$. Then a purely $\xi^0$-polarized state fulfils $\vec{p}\cdot \vec{\xi}=0$, but, due to 
+	All higher constraints are vacuous (automatically satisfied). Since for $a>1$ we have $\mathbf{p}^2>0$, we can choose $\mathbf{p}$ such that $p^0=0$. Then a purely $\xi^0$-polarized state fulfils $\mathbf{p}\cdot \mxi=0$, but, due to 
 	\bse 
-	\braket{\phi}{\phi} = \bra{0,\vec{p}} (\xi_\mu \alpha^\mu_{-1})^\dagger (\xi_\mu \alpha^\mu_{-1}) \ket{0,\vec{p}} = \xi^\mu \xi_\mu,
+	\braket{\phi}{\phi} = \bra{0,\mathbf{p}} (\xi_\mu \alpha^\mu_{-1})^\dagger (\xi_\mu \alpha^\mu_{-1}) \ket{0,\mathbf{p}} = \xi^\mu \xi_\mu,
 	\ese 
 	has negative norm for every $\xi^0>0$. Thus $a\leq 1$ is necessary for a unitary quantum theory. For $\ket{\phi}$ twice excited, we similarly find we need $d \leq 26$.
 \end{enumerate}
+\subsubsection{On the polarization tensor}
+The components $\xi_{ij}$ of the so-called \emph{polarization tensor} can be decomposed into a symmetric and antisymmetric part,
+\be 
+\xi_{ij} = \half(\xi_{ij} + \xi_{ji}) + \half (\xi_{ij} - \xi_{ji}) \equiv S_{ij} + B_{ij}.
+\ee
+The symmetric part $S_{ij}$ can be broken down further down into a symmetric traceless portion and the trace
+\bse 
+S_{ij} = \left(S_{ij} - \frac{\delta^{kl} S_{kl}}{D-2} \delta_{ij}\right) + \frac{\delta^{kl} S_{kl}}{D_2} \delta_{ij} \equiv g_{ij} + \phi \delta_{ij},
+\ese 
+where summation over $k$ and $l$ is implied. It is easy to check that $g_{ij}$ is indeed traceless,
+\bse
+g^i_i = S^i_i - \frac{\delta^{kl} S_{kl}}{D-2} \underbrace{\delta^i_i}_{D-2} = S^i_i - S^l_l =0.
+\ese 
+All told, the polarization tensor splits into the three parts
+\be 
+\xi_{ij} = g_{ij} + B_{ij} + \phi \delta_{ij},
+\ee 
+each of which is entirely independent of the other two. These three parts have a very interesting physical interpretation. Firstly, note that since the closed string spectrum is organized into levels according to
+\bse 
+M^2_{cl} = \frac{1}{\alpha^\prime} (N_\perp - a_\perp),
+\ese 
+where $a_\perp =1$ and $N_\perp \equiv N_{l/r}$, all first level states are massless. At this point one might become suspicious when looking at $g_{ij}$. After all, a massless symmetric tensor field sounds rather reminiscent of an object central to general relativity. Indeed, a closer investigation reveals that $g_{ij}$ describes transversely polarized, spin$2$, one-particle states. That is why string theory identifies $g_{ij}$ as the \emph{graviton}. The antisymmetric two-tensor $B_{ij}$ is called the Kalb-Ramond field and can be though of as a generalized (i.e. higher-rank) \emph{gauge potential}.\\
+Finally, $\phi \delta_{ij}$ is just a scaled version of the unit matrix, i.e. has only one degree of freedom. It represents a scalar field and is called the \emph{dilaton}. $\phi$ is of crucial importance in the context of string interactions. We will discuss this again when talking about the spectrum of states for the closed string in canonical quantization \ref{eq:stringSpectrumCanonical}.
 
 \subsection{Lightcone quantization}
 It is convenient in this procedure to introduce lightcone coordinates also for spacetime
 \bse 
 X^\pm = \frac{1}{\sqrt{2}} (X^0 \pm X^{d-1}), \; X^i, \; i\in \{1,\dots,d-2 \},\; \eta_{\pm \mp} =-1=\eta_{\mp\pm} , \; \eta_{ij}=\delta_{ij},
 \ese 
-so that $\vec{X}\cdot \vec{X}= -2 X^+ X^- + \sum_i (X^i)^2=- 2 X^+ X^- + \vec{X}^2_\perp$.\\
+so that $\mathbf{X}\cdot \mathbf{X}= -2 X^+ X^- + \sum_i (X^i)^2=- 2 X^+ X^- + \mathbf{X}^2_\perp$.\\
 The key idea of lightcone quantization is to use the infinite dimensional residual symmetry generated by the conformal KIlling vectors fulfilling \ref{eq:stringConformalKilling} to gauge away an infinite number of oscillator derees of freedom, i.e. we set $\alpha^+_n=0 \forall n \neq 0$. This is possible because $\tau = \half (\xi^++\xi^-)$ fulfills the string field's e.o.m. $\partial_+ \partial_- \tau =0$. We can thus find a conformal Killing transformation that reshapes the worldsheet so that its time-axis agrees with one of the spacetime coordinates, say $X^+$, i.e. 
 \bse 
 X^+ = \frac{2 \pi \alpha^\prime}{l} p^+ \tau + x^+
@@ -412,7 +590,7 @@ X^+ = \frac{2 \pi \alpha^\prime}{l} p^+ \tau + x^+
 Of course, this procedure generally breaks Lorentz covariance as it singles out one coordinate!\\
 But it enables solving the Virasoro constraints at the classical level. By \ref{eq:stringPactionEMtensorLightcone}, $T_{ab}\stackrel{!}{=}0$ becomes
 \bse 
--2 (\partial_\tau \vec{X}\pm \partial_\sigma \vec{X})^+ (\partial_\tau \vec{X} \pm \partial_\sigma \vec{X})^- + (\partial_\tau \vec{X} \pm \partial_\sigma \vec{X})^2_\perp \stackrel{!}{=}0.
+-2 (\partial_\tau \mathbf{X}\pm \partial_\sigma \mathbf{X})^+ (\partial_\tau \mathbf{X} \pm \partial_\sigma \mathbf{X})^- + (\partial_\tau \mathbf{X} \pm \partial_\sigma \mathbf{X})^2_\perp \stackrel{!}{=}0.
 \ese 
 Inserting the string field expansions turns the Virasoro constraints into an interdependence of modes
 \be
@@ -421,7 +599,7 @@ Inserting the string field expansions turns the Virasoro constraints into an int
 \ee
 Inserting spacetime lightcone coordinates into the flat-gauge Polyakov action from \ref{eq:stringPactionflatgauge} yields
 \be 
-S_P = \frac{T}{2} \int_\Sigma \md^2 \xi \left[( \partial_\tau \vec{X})^2_\perp - (\partial_\sigma \vec{X})^2_\perp\right] - \int_{-\infty}^{\infty} \md \tau p^+ \partial_\tau q^-.
+S_P = \frac{T}{2} \int_\Sigma \md^2 \xi \left[( \partial_\tau \mathbf{X})^2_\perp - (\partial_\sigma \mathbf{X})^2_\perp\right] - \int_{-\infty}^{\infty} \md \tau p^+ \partial_\tau q^-.
 \ee 
 Following the standard quantization procedure gives canonically conjugate variables $X^+ \leftrightarrow \Pi^i$ and $p^+ \leftrightarrow \partial_\tau q^-$ with $q^-= \frac{1}{l} \int_0^l \md \sigma X^-$. Eq. \ref{eq:stringModesIndependent} and $L_m$ quantize as $\alpha^i_{n-m} \alpha^i_m\rightarrow N(\alpha^i_{n-m} \alpha^i_m) - a \delta_{m,0}$.
 \\
@@ -454,12 +632,13 @@ a_{tot} = \frac{d-2}{24} - \frac{n_{ND}+n_{DN}}{16},
 \ese 
 
 \subsection{String spectrum}
+\label{eq:stringSpectrumCanonical}
 \subsubsection{Little group}
 In a $d$-dimensional Lorentz covariant theory, states form irreducible representations of the subgroup $\mathbb{S}$ - called \emph{little group} or \emph{stabilizer} - of the $d$-dimensional Poincaré group $SO(1,d-1)\rtimes \mR^{1,d-1}$\footnote{Note that we used the semi-direct product here to construct the Poincaré group.} that leave their momentum $p^\mu$ invariant. Depending on whether $p^\mu$ is space-/light-/timelike, $\mathbb{S}$ is 
 \begin{enumerate}
-	\item For $\vec{p}^2>0$, we can Lorentz transform to get $\vec{p}=(0,p,0,\dots,0)$ and hence $\mathbb{S}=SO(1,d-2)$. An example is the tachyonic ground state $\ket{0,\vec{p}}$ with $\vec{p}^2= \frac{a}{\alpha^\prime}$, a scalar of the little group $SO(1,24)$.
-	\item For $\vec{p}^2=0$ we can rotate coordinates so that $\vec{p}=(p,p,0,\dots,0)$, i.e. $\mathbb{S}=SO(d-2)$. States of this type are the first-level massless transverse excitations $\xi_i \alpha^i_{-1}\ket{0,\vec{p}}$. They are spacetime vectors in the fundamental representation $\yng(1)$ of $\mathbb{S}=SO(24)$.
-	\item $\vec{p}^2<0$ admits $\vec{p}=(p,0,\dots,0)$, i.e. $\mathbb{S}=SO(d-1)$. All massive states (i.e. at second excited level or higher) form irreps of $\mathbb{S}=SO(25)$. E.g. a second-level state of the form $(\xi_i \alpha^i_{-2}+\zeta_{ij} \alpha^i_{-1} \alpha^j_{-1})\ket{0,\vec{p}}$ has $24+\frac{24}{2}(24+1)=324$ polarization degrees of freedom which combine into the symmetric traceless representation $\yng(2)$ of $SO(25)$.
+	\item For $\mathbf{p}^2>0$, we can Lorentz transform to get $\mathbf{p}=(0,p,0,\dots,0)$ and hence $\mathbb{S}=SO(1,d-2)$. An example is the tachyonic ground state $\ket{0,\mathbf{p}}$ with $\mathbf{p}^2= \frac{a}{\alpha^\prime}$, a scalar of the little group $SO(1,24)$.
+	\item For $\mathbf{p}^2=0$ we can rotate coordinates so that $\mathbf{p}=(p,p,0,\dots,0)$, i.e. $\mathbb{S}=SO(d-2)$. States of this type are the first-level massless transverse excitations $\xi_i \alpha^i_{-1}\ket{0,\mathbf{p}}$. They are spacetime vectors in the fundamental representation $\yng(1)$ of $\mathbb{S}=SO(24)$.
+	\item $\mathbf{p}^2<0$ admits $\mathbf{p}=(p,0,\dots,0)$, i.e. $\mathbb{S}=SO(d-1)$. All massive states (i.e. at second excited level or higher) form irreps of $\mathbb{S}=SO(25)$. E.g. a second-level state of the form $(\xi_i \alpha^i_{-2}+\zeta_{ij} \alpha^i_{-1} \alpha^j_{-1})\ket{0,\mathbf{p}}$ has $24+\frac{24}{2}(24+1)=324$ polarization degrees of freedom which combine into the symmetric traceless representation $\yng(2)$ of $SO(25)$.
 \end{enumerate}
 \subsubsection{$Dp$-brane}
 A \emph{D$p$-brane} is a $(p+1)$-dimensional hypersurface on which open strings can end, fixing them in place in the dimensions normal to it. DD boundary conditions allow for momentum flow off the string ends which implies that $D$-branes are dynamical (albeit non-perturbative) objects themselves.
@@ -467,8 +646,8 @@ A \emph{D$p$-brane} is a $(p+1)$-dimensional hypersurface on which open strings 
 \begin{enumerate}
 	\item The presence of a single $Dp$-brane allows the following low-level states\footnote{The lightcone coordinates $X^\pm=\frac{1}{\sqrt{2}}(X^0 \pm X^{25}) $ mus lie in $NN$ dimensions for a treatment within lightcone quantization. }:
 	\begin{enumerate}
-		\item The ground state $\ket{0,\vec{p}}$ can have nonzero momentum $\vec{p}$ only in $NN$ dimensions along the brane.
-		\item Excitations $\xi_i \alpha^i_{-1}\ket{0,\vec{p}}$ \emph{parallel} to the brane for $i\in \{1,\dots,p-1\}$ form a massless vector from the perspective of the $Dp$-brane. Its interactions identify it as a gauge potential. Thus a \textbf{single brane hosts a }$U(1)$ \textbf{ gauge theory !} Excitations \emph{normal} to the brane $\xi_a \alpha^a_{-1} \ket{0,\vec{p}}$ for $a\in \{p,\dots,24 \}$ form $24-p$ massless scalars. They are the \textbf{Goldstone bosons} associated with spontaneous breaking of the $26$-dimensional Poincaré symmetry by the brane.
+		\item The ground state $\ket{0,\mathbf{p}}$ can have nonzero momentum $\mathbf{p}$ only in $NN$ dimensions along the brane.
+		\item Excitations $\xi_i \alpha^i_{-1}\ket{0,\mathbf{p}}$ \emph{parallel} to the brane for $i\in \{1,\dots,p-1\}$ form a massless vector from the perspective of the $Dp$-brane. Its interactions identify it as a gauge potential. Thus a \textbf{single brane hosts a }$U(1)$ \textbf{ gauge theory !} Excitations \emph{normal} to the brane $\xi_a \alpha^a_{-1} \ket{0,\mathbf{p}}$ for $a\in \{p,\dots,24 \}$ form $24-p$ massless scalars. They are the \textbf{Goldstone bosons} associated with spontaneous breaking of the $26$-dimensional Poincaré symmetry by the brane.
 	\end{enumerate}
 \item Strings stretched between parallel $Dp$-branes located at $x^a_1$ and $x^a_2$ receive a mass contribution $T^2 \sum_a (x^a_2-x^a_1)^2$ from tension, rendering the above gauge and Goldstone excitations massive.
 \item For $N$ coincident $Dp$-branes, states need to be labelled by \emph{Chan-Paton factors} $r,s\in \{1,\dots,N\}$ enumerating the branches to keep track of the boundaries. We get the same states listed under $1$, but $N^2$ copies of each, i.e. $N^2$ massless vectors and $N^2(24-p)$ massless scalars. The vectors enhance the original $U(1)$ gauge symmetry to a non-Abelian $U(N)$. States can be expanded in terms of the $N^2$ hermitian $N\times N$-Chan-Paton -matrices $\mathbf{\lambda}^a$ that span the Lie algebra of $U(N)$.\footnote{In orientifolded theories, also $SO(N)$ and the symplectic $Sp(2N)$ are possible gauge groups of coincident branes.}
@@ -481,12 +660,12 @@ The modern covariant approach to quantization utilizes the path integral which i
 The naive partition function $Z=\int \mD X \mD h e^{iS_p[X,h]}$ overcounts due to gauge-equivalent configurations of the auxiliary field $h_{ab}$. The solution is to isolate the integral over gauge space, in this case over all diffeomorphisms $\epsilon_a$ and Weyl rescalings $\Lambda$, and cancel it by division with the gauge group's volume. This can be achieved with the Faddeev-Popov gauge fixing procedure and yields
 \be 
 \label{eq:stringQuantGeneratingFctl1}
-Z=\int \mD X \det(\mathbf{P}) e^{i S_P[X,\hat{h}]} 
+Z=\int \mD X \det(\mathbf{p}) e^{i S_P[X,\hat{h}]} 
 \ee 
-with $\hat{h}_{ab}$ an arbitrary reference metric, and $\det(\mathbf{P})$ the \emph{Faddeev-Popov determinant}, stemming from the Jacobian of the transformation used to factor out $\mD \epsilon$ and $\mD \Lambda$ and cancel with $\text{Vol}^{-1}_{\text{diff }\times \text{Weyl}}$,
+with $\hat{h}_{ab}$ an arbitrary reference metric, and $\det(\mathbf{p})$ the \emph{Faddeev-Popov determinant}, stemming from the Jacobian of the transformation used to factor out $\mD \epsilon$ and $\mD \Lambda$ and cancel with $\text{Vol}^{-1}_{\text{diff }\times \text{Weyl}}$,
 \be 
-\mD h \rightarrow \mD \epsilon \mD \Lambda \det \left(\frac{\partial(\mathbf{P}\mathbf{\epsilon}, \Lambda)}{\partial (\mathbf{\epsilon},\Lambda)} \right) = \mD \epsilon \mD \Lambda \det \begin{pmatrix}
-	\mathbf{P}&0 \\
+\mD h \rightarrow \mD \epsilon \mD \Lambda \det \left(\frac{\partial(\mathbf{p}\mathbf{\epsilon}, \Lambda)}{\partial (\mathbf{\epsilon},\Lambda)} \right) = \mD \epsilon \mD \Lambda \det \begin{pmatrix}
+	\mathbf{p}&0 \\
 	0& 1\\
 \end{pmatrix}.
 \ee 
@@ -496,9 +675,9 @@ We assumed every metric $h_{ab}$ can be transformed to $\hat{h}_{ab}$ for precis
 \item For worldsheets of complicated topology, the metric contains global properties - the moduli - not accounted by local gauge transformations. For topologies more complicated than the vacuum, we must sum over these moduli by hand.
 \end{enumerate}
 \subsubsection{Characteristic of the ghosts}
-By introducing the Grassmann-valued Faddeev-Popov ghost $c^a(\xi)$ and antighost $b_{ab}(\xi)$, $\det(\mathbf{P})$ can be expressed as the Berezin integral 
+By introducing the Grassmann-valued Faddeev-Popov ghost $c^a(\xi)$ and antighost $b_{ab}(\xi)$, $\det(\mathbf{p})$ can be expressed as the Berezin integral 
 \bse 
-\det(\mathbf{P}) = \int \mD b \mD c \exp \left[\frac{1}{4 \pi} \int_\Sigma \md^2 \xi \sqrt{-\hat{ h}} \mathbf{b}\cdot (\mathbf{P}\cdot c)\right]
+\det(\mathbf{p}) = \int \mD b \mD c \exp \left[\frac{1}{4 \pi} \int_\Sigma \md^2 \xi \sqrt{-\hat{ h}} \mathbf{b}\cdot (\mathbf{p}\cdot c)\right]
 \ese 
 with which \ref{eq:stringQuantGeneratingFctl1} becomes
 \be 
@@ -561,7 +740,320 @@ States differing only by elements of $\text{Im}(Q_B)$ are in the same equivalenc
 
 
 \section{String interactions}
-A key property of string 
+A key property of string scattering is the \emph{absence of interaction vertices} which fundamentally distinguishes it form point-particle scattering in QFT. Locally the string worldsheet always looks like that of a freely propagating string!\\
+Only global properties of the worldsheet capture interactions, which are hence encoded already in the free two-dimensional CFT without adding arbitrary further terms to the action as in QFT.\\
+\\
+As an important result, correlators of different fields (boson, fermions, ghosts) decouple! \\
+This is completely different from e.g. Yang-Mills which suffers from complicated ghost-gauge interactions.\\
+\\
+The path integral for the computation of scattering amplitudes usually accounts for the initial and final states by admitting only those worldsheets into the sum over histories that asymptote towards the specified in- and out-configurations. Thanks to the operator-state correspondence \todo{reference}, the worldsheet CFT allows for a simpler procedure:\\
+We consider trivial boundary conditions, i.e. the vacuum, as asymptotic in- and out-states an specify the type of scattering process solely by inclusion of vertex operations in the integrand, corresponding to states bing created at different places on the worldsheet.
+
+\subsection{String perturbation and worldsheet topologies}
+\emph{String perturbation} aims to calculate the \emph{S-matrix} of a scattering process. The loop expansion corresponds to a sum over compact worldsheets of increasingly complex topology, but each with the same number of vertex operators inserted on the surface (closed string) or boundary (open string).\\
+\\
+Which topologies to sum over is determined by the central theorem:
+\begin{mybox}{}
+	Every compact, connected oriented two-dimensional manifold is topologically equivalent to a sphere with $g$ handles ($g$ for genus) and $b$ boundaries.
+\end{mybox}
+In fact, $b$ and $g$ fully determine a worldsheet's \emph{Euler characteristic} 
+\be 
+\chi = 2-2g-b,
+\ee 
+a topological invariant unaffected by continuous deformations of the worldsheet metric. According to the \emph{Riemann-Roch theorem}, it is given by
+\be 
+\chi = \int_\Sigma \frac{\md^2 \xi}{4 \pi} \sqrt{-h} \mathcal{R} + \int_{\partial \Sigma} \frac{\md s}{2 \pi} k,
+\ee 
+where $\mathcal{R}$ is the Ricci scalar of the worldsheet's sufrace and $k$ the geodesic curvature of its boundary.\\
+For instance, the tree-level and one-loop worldsheet topologies of the oriented string are
+\bse 
+\begin{tabular}{|lll|}
+sector & tree-level & one-loop\\
+	\toprule
+	open & disk $\mathbb{D}^2$,$(b,g)=(0,1)$, $\chi=1$ & cylinder $\mathbb{C}^2$, $(b,g)=(0,2)$, $\chi=0$\\
+	closed & sphere $\mathbb{S}^2$, $(b,g)=(0,0),$ $\chi=2$ & tours $\mathbb{T}^2$, $(b,g)=(1,0)$, $\chi=0$ \\
+	\bottomrule 
+\end{tabular}
+\ese 
+Incorporating all of the above statements results in a heuristic expression for $n$-string scattering
+\be 
+S_{j_i} (k_i) = \sum_{\text{compact}\\
+	\text{ topologies}} \frac{\int \mD X \int \mD h}{\text{Vol}_{\text{diff$\times$Weyl}}} e^{-S_ps\lambda_\chi } \prod_{i=1}^n V_{j_i}(k_i) ,
+\ee 
+where $\chi$ (added to the action without affecting dynamics) modifies the usual weighting factor $e^{-S_p}$ to take into account the worldsheet topology. This is before gauge-fixing, hence the factor $\text{Vol}^{-1}_{\text{diff} \times\text{ Weyl}}.$
+
+\subsection{Metric moduli of Riemann surfaces}
+$\mathbf{P}^\dagger$ defines the adjoint of the conformal Killing operator $\mathbf{P}$. It maps two-tensors $t_{ab}$ to vectors via $(\mathbf{P}^\dagger \mathbf{t})=\nabla^b t_{ab}$. If there exists a symmetric, traceless $\mathbf{t}_0$ such that $\mathbf{P}^\dagger \mathbf{t}=0$, then for an arbitrary transformation $\epsilon_a$, we have
+\bse 
+0= \expval{\mep,\mathbf{P}^\dagger \mathbf{t}_0} = (\mathbf{P} \mep | \mathbf{t}_0),
+\ese 
+meaning $\mathbf{P}\mep$ is orthogonal to $\mathbf{t}_0$ for all $\epsilon_a$, i.e. no transformation can be found to obtain the two-tensor $\mathbf{t}_0$. Such tensors are called \emph{metric moduli}. They represent deformations of the metric that \emph{cannot} be reached by any diffeomorphism or Weyl rescaling.\\
+Similar to the ghost e.o.m. $P^c_{ab} c_c =0$ which identifies normalizable ghost solutions $c_a$ as conformal Killing vectors, the \emph{anti}ghost e.o.m. shows that normalizable zero-modes of the $b_{ab}$ are in one-to-one correspondence with the metric moduli.\\
+\\
+A \emph{Riemann surface} is a one-dimensional complex manifold (can be thought of as a deformed version of the complex plane). Its degrees of freedom are given by the number of metric moduli. \\
+\\
+The Riemann-Roch theorem goes on to state that the number $\mu=\dim(\ker \mathbf{P}^\dagger)$ of moduli and $\kappa = \dim(\ker \mathbf{P})$ of conformal Killing vectors of (orientable) Riemann surfaces fulfill
+\be 
+\mu - \kappa = -3 \chi \quad \text{ and} \quad \begin{cases} 
+	\mu=0 & \text{if } \chi>0, \\
+	\kappa=0&  \text{if } \chi <0. \\
+	\end{cases} 
+\ee 
+Deriving the gauge-fixed S-matrix via the Faddeev-Popov procedure yields the prescription:
+\begin{enumerate}
+	\item For each conformal Killing vector field $\epsilon_a$ on the worldsheet, we fix one vertex operator $V_{j_i}(\mathbf{k}_i,\mxi_i)$ at $\hat{\mxi}_i$ and replace the integral over the insertion point $\int_\Sigma \md^2 \xi_i$ by a ghost field $c^a_i(\hat{\mxi}_i)$ also at $\hat{\mxi}_i$. Alternatively we can keep the integral but divide by the volume of the remaining gauge group.
+	\item For each modulus $\mathbf{t}^a$, we insert an antighost field via $(\mathbf{b}|\partial_a \hat{\mathbf{h}})$ and integrate over the fundamental domain $\int_F \md t^a$ (which ensures only topologically inequivalent worldsheets enter the path integral). \\
+	\\
+	For example, the sphere $\mathbb{S}^2$ is the Riemann surface of maximal Euler number. Since $\chi>0$, it is moduli-free $\mu=0$, i.e. no antighost insertions are necessary in S-matrix calculations on $\mathbb{S}^2$ (this holds for all tree-level scatterings in string theory). $\kappa= 3 \chi=6$ shows that the sphere is endowed with six conformal Killing vector fields. We count real degrees of freedom, so this is consistent with the gauge group on $\mathbb{S}^2$ being $PSL(2,\mC)$ with three independent complex parameters complex parameters $(ab-cd \stackrel{!}{=} 1)$, of each infinite range. W(ith less than three integrated vertex operators, nothing cancels this infinity in the S-matrix denominator. Hence, the oriented closed string $0-,1-,$ and $2$-point functions vanish at tree-level, meaning no vacuum energy, tadpole, and mass renormalization.
+\end{enumerate}
+
+
+\subsection{Duality and UV finiteness}
+In string theory, amplitudes are completely symmetric in all channels $(s,t,u)$ and exhibit an infinite number of (simple) poles (due to the appearance of $\Gamma$-functions such as $\Gamma(-1-\frac{\alpha^\prime}{4} s)$ corresponding to resonance for every mass in the string spectrum, a property called \emph{channel duality}.
+\begin{enumerate}
+	\item As a result, a single worldsheet diagram captures what in QFT requires $s-$, $t-$, and $u$-channel Feynman diagrams and a sum over resonances of the propagator $\frac{i}{p^2-m^2}$. Compared to point-particle QFT, this leads to a much faster (exponential) fall off of string amplitudes; a feature partially responsible for \emph{UV finiteness} of string loop diagrams. Heuristically, strings behave differently in the hard-scattering limit because high-energy processes probe on scales of the order of the string length where the string acts as a nonlocal object.
+	\item Another reason for improved UV behaviour is \emph{modular invariance}, i.e. invariance of the worldsheet topology under the action of the modular group (e.g. $PSL(2,\mathbb{Z})$) which acts as an intrinsic regulator (UV cutoff) for the theory by excluding divergent areas of the moduli space from the fundamental domain.
+	\item Some UV divergences do arise in string perturbation buy they are no issue for UV finiteness due to \emph{worldsheet duality} between the open and closed channel:\\
+	\emph{All} UV divergent diagrams turn out to be IR divergences of dual diagrams. For instance, the cylinder is the worldhseet topology for both tree-level closed string and one-loop open string scatterings.
+\end{enumerate}
+
+\subsection{Strings in curved target space}
+\subsubsection{Non-linear $\sigma$-model}
+The \emph{non-linear }$\sigma$-\emph{model} describes the bosonic string field $X^\mu$ propagating on a curved target space with deviations from the flat metric $\eta\munu$ generated by a coherent state of its \emph{own} massless graviton fluctuations. Including also the other massless excitations into the Polyakov action yields
+\begin{align}
+\label{eq:stringSigmaAction}
+S_\sigma &= \frac{1}{4 \pi \alpha^\prime} \int_\Sigma \md^2 \xi \sqrt{h} \left[ \left(h^{ab}g\munu (X) + i \epsilon^{ab} B\munu (X) \right) \partial_a X^\mu \partial_b X^\nu \right. \nonumber \\
+&\left.+ \alpha^\prime \mathcal{R}\phi(X) \right]. 
+\end{align}
+This is the \emph{closed $\sigma$-model action} with $g\munu$ the graviton, $B\munu$ the antisymmetric Kalb-Ramond field (coupled to an equally antisymmetric worldsheet tensor $\epsilon^{ab}$), and $\phi$ the dilaton. $\phi(X)$  appears as a generalization of the hitherto unspecified $\lambda$ in the topological term
+\begin{align*}
+\lambda_\chi &= \frac{\lambda }{4 \pi} \int_\Sigma \md^2 \xi \sqrt{-h} \mathcal{R}\\
+&\rightarrow \frac{1}{4 \pi} \int_\Sigma \md^2 \xi \sqrt{-h} \mathcal{R} \phi(X). 
+\end{align*}
+Importantly, the string coupling, which determines the probability of strings to split and reconnect, is therefore really given by $g_s =e^{\phi(X)}$, i.e. the coupling is dynamical (not a constant) and determined by the vacuum expectation value of the string field itself, more precisely that of the dilaton. This holds generally in string theory (not just for $\Sigma_\sigma$).
+\subsubsection{String theory containing General Relativity }
+Consistency of the $\sigma$-model requires the absence of a Weyl anomaly, i.e. the classical scale invariance must carry over to the quantum theory. This is case if
+\be 
+	\beta^g\munu(E) = E\frac{\partial}{\partial E} g\munu (X,E) =\alpha^\prime R\munu + \mO[(\alpha^\prime/R_c)^2] \stackrel{!}{=} 0,
+\ee
+(where $E$ is the energy scale), i.e. if the spacetime metric's $\beta$-function vanishes.Thus consistency to first order in $\frac{\alpha^\prime}{R_c}$ (with $R_c$ the radius of the compact target space) requires that $g\munu$ is governed by Einstein's equations 
+\bse 
+R\munu =0 
+\ese 
+for the vacuum (we set all other fields $B\munu(X)=\phi(X)=0$ to obtain this result). Continuing the expansion systematically yields stringy higher-curvature corrections to $R\munu=0$.
+
+\section{Superstring theory} 
+Bosonic string theory is only a toy model due to its lack of fermionic excitations and unstable vacuum (signalled by the tachyonic ground state), both of which are in conflict with observations.
+\subsection{Classical RNS action}
+To overcome these problems, superstring theory adds a fermionic part to the Polyakov action $S_p$:
+\begin{align}
+\label{eq:stringFermion}
+S_F[\psi] &= - \frac{i}{4 \pi} \int_\Sigma \md^2 \xi \bar{\psi}^\mu_A \gamma^\alpha_{AB} \partial_\alpha \psi_{B,\mu} \nonumber \\
+&\stackrel{lcg}{=} \frac{i}{2 \pi} \int_\Sigma \md^2 \xi \left(\mpsi_+ \cdot \partial_- \mpsi_+ + \mpsi_- \cdot \partial_+ \mpsi_- \right).
+\end{align}
+$\psi_\pm$ are Grassmann-valued \emph{Majorana-Weyl}, i.e. real and chiral, spinors which are governed by the Dirac equation
+\be 
+\mgamma^\alpha \partial_\alpha \mpsi = 0 = \partial_\mp \psi_\pm.
+\ee 
+By definition, spinors furnish a representation of the Clifford algebra
+\be 
+\{\mgamma^\alpha, \mgamma^\beta \}_{AB} = 2 \eta^{\alpha \beta} \mI_{AB},
+\ee 
+where $A,B$ are spinor indices, $\alpha,\beta\in \{0,1\} \hat{=} \{\tau,\sigma\}$ worldsheet vector indices.\\
+The $\mpsi$ are chiral both in the sense that $\mpsi_\pm=\mpsi_\pm(\xi^\pm)$ and that $\mgamma \mpsi_\pm=\pm \psi_\pm$, where $\mgamma = \mgamma^0 \mgamma^1$. They have mass dimension $[\psi]=\half$ as opposed to bosons with $[X]=-1$.\\
+\\
+\begin{mybox}{Supersymmetry transformation}
+The full superstring action $S_{RNS} = S_P +S_F$ features \emph{supersymmetry} which relates $\mathbf{X}$ and $\mpsi$ via 
+\begin{align}
+\label{eq:stringSusy}
+\delta X^\mu &= i \sqrt{\frac{\alpha^\prime}{2} } \bar{ \epsilon}_A \psi^\mu_A = i \sqrt{\frac{\alpha^\prime}{2}} \left(\epsilon_+ \psi^\mu_- - \epsilon_- \psi^\mu_+\right),\nonumber \\
+\delta \psi^\mu_A &= \frac{\epsilon_B}{\sqrt{2 \alpha^\prime}} \gamma^\alpha_{AB} \partial_\alpha X^\mu = \pm \sqrt{\frac{2}{\alpha^\prime}} \epsilon_\mp \partial_\pm X^\mu,
+\end{align}
+with $\mep(\mxi) =(\epsilon_+,\epsilon_-)$ an infinitesimal Grassmann-valued Majorana spinor subject to the chirality condition 
+\be 
+\mgamma^\beta \mgamma^\alpha \partial_\beta \mep (\mxi) = 0=\partial_\mp \epsilon_\pm.
+\ee 
+\end{mybox}
+Outside superspace, i.e. for gauge-fixed action as in \ref{eq:stringFermion}, supersymmetry holds only on-shell. The associated conserved Noether charges $Q_A$ are spinorial and act as generators $\{Q_A,\bar{Q}_B\} =2 \gamma^a_{AB} P_a$ with the momentum operator $P_a$ generating translations.
+
+\subsection{Super-conformal invariance}
+Local diffeomorphism invariance combined with supersymmetry implies local supersymmetry. It give rise to \emph{supergravity} in which also the metric $h_{\alpha \beta}$ has a superpartner, the \emph{gravitino}.\\
+The full action $S_{RNS}$ then enjoys \emph{local super-Weyl} and \emph{diffeomorphism invariance}.\\
+Moving to flat gauge, only a \emph{residual super-conformal symmetry} generated by the energy-momentum tensor
+\be 
+T_{\pm \pm} = - \frac{1}{\alpha^\prime} \partial_\pm \mathbf{X}\cdot \partial_\pm \mathbf{X} - \frac{i}{2} \mpsi_\pm \cdot \partial_\pm \mpsi_\pm 
+\ee 
+and the \emph{supercurrent}
+\be 
+J_\pm = -\frac{1}{2 \alpha^\prime} \mpsi_\pm \cdot \partial_\pm \mathbf{X}
+\ee 
+remains in which supersymmetry is only chiral
+\be 
+\epsilon_\pm= \epsilon_\pm(\xi^\pm).
+\ee 
+$T_{\pm \pm}$ and $J_\pm$ obey the \emph{super-Virasoro constraints} 
+\be 
+T_{\pm \pm} \stackrel{!}{=}0, \quad J_\pm \stackrel{!}{=} 0.
+\ee 
+These must be imposed on solutions of the e.o.m.s even in flat gauge.
+
+\subsection{Ramond and Neveu-Schwarz sectors}
+All results derived for the bosonic string in \ref{sec:stringBosonic} remain valid. The fermionic eqution of motion follows from variation of $S_F$ \ref{eq:stringFermion} which, after integration by parts, yields
+\begin{align}
+\label{eq:stringFermionboundary}
+	\delta S_F &= - \frac{i}{2 \pi} \int_{\tau_i}^{\tau_f} \md \tau \left[\mpsi_+ \delta \mpsi+ - \mpsi_- \cdot \delta \mpsi_- \right] |^{\sigma=l}_0 \\
+	&\frac{i}{\pi} \int_\Sigma \md^2 \xi \left[\partial_- \mpsi_+\cdot \delta \mpsi_+ - \partial_+ \mpsi_- \cdot \delta \mpsi_-\right]\nonumber.
+\end{align}
+To avoid non-local physics, the boundary term has to vanish, i.e.
+\be 
+\mpsi_+ \delta \mpsi_+ - \mpsi_- \cdot \delta \mpsi_- |_0 \stackrel{!}{=} \mpsi_+ \delta \mpsi_+ - \mpsi_- \cdot \delta \mpsi_- |_{l}.
+\ee 
+For the closed sector, periodic boundaries $\mpsi^\mu_\pm(\sigma)=\pm \mpsi^\mu_\pm (\sigma+l)$ take care of this. Since $\mpsi^\mu_\pm$ are spinors on the worldsheet, there is a possibility of picking up a sign by walking around the string, corresponding to antiperiodic boundaries. Parametrizing 
+\bse 
+\psi_\pm(\sigma+l) = e^{2 \pi i \phi_\pm} \psi_\pm(\sigma),
+\ese 
+we call
+\begin{enumerate}
+\item $\phi_\pm=0$ the periodic \emph{Ramond sector}. It has an integer mode expansion (like bosonic strings) of the form
+\be
+\label{eq:stringR}
+\mpsi_\pm(\xi^\pm) = \sqrt{\frac{2\pi}{l}} \sum_{n \in \Z} \mathbf{b}^\pm_n e^{-i \frac{2 \pi}{l} n \xi^\pm}.
+\ee 
+Its degenerate vacuum $\ket{0}_R$ is a Majorana spinor with $2^{\frac{d}{2}}$ real components, furnishing a representation of the $d$-dimensional Clifford algebra. 
+\item $\phi_\pm = \half$ the antiperiodic \emph{Neveu-Schwarz sector}. It features a half-integer mode expansion
+\be 
+\label{eq:stringNS}
+\mpsi_\pm(\xi^\pm) = \sqrt{\frac{2 \pi}{l}} \sum_{n\in \Z+\half} \mathbf{b}^\pm_n e^{-i \frac{2\pi}{l} n \xi^\pm}.
+\ee 
+The vacuum $\ket{0}_{NS}$ is unique and a spacetime scalar.
+\item We can independently choose either boundary type for each of the two spinor components $\mpsi_+$ and $\mpsi_-$ of $\psi^\mu_A$, yielding four sectors total:\\
+The pure $R-R$ and $NS-NS$ sectors describe bosonic excitations, whereas mixed boundaries of the type $R-NS$ and $NS-R$ contain fermionic excitations.
+\end{enumerate}
+For the open string, the boundary terms in \ref{eq:stringFermionboundary} have to vanish separately. Derivation of the mode expansions yields identical results up to a change of period from $e^{ - \frac{2 \pi}{l} n \xi^\pm } \rightarrow e^{-i \frac{\pi}{l} n \xi^\pm}$.
+\\
+\\
+Contributions (per dimension) to the normal ordering constant $a$ for different strings are as follows
+\bse 
+\begin{tabular}{lll}
+	statistics & bosonic & fermionic \\
+	\toprule 
+	periodic & $+ \frac{1}{24}$ & $-\frac{1}{24}$ \\
+	antiperiodic & $-\frac{1}{48}$ & $+ \frac{1}{48}$ \\
+	\bottomrule 
+\end{tabular}
+\ese 
+
+
+\subsection{GSO projection} 
+The \emph{GSO projection} is a method to construct a consistent superstring theory by projecting out all but a subset of possible vertex operators in the worldsheet CFT. For consistency of the CFT on the worldsheet, the set $\mathbb{A}$ of operators retained must satisfy
+\begin{enumerate}
+\item \emph{Closure}:\\
+The OPE of any two operators $\phi_i,\phi_j$ in $\mathbb{A}$ may contain only operators $\phi_k\in \mathbb{A}$.
+\item \emph{Locality} \\
+No OPE of any two operators in $\mathbb{A}$ may suffer from branch cuts (absence of mondromies). This is necessary to ensure all OPEs are well-defined, i.e. single-value everywhere.
+\item \emph{Modular invariance}:\\
+The partition function on the two-torus of the theory containing only operators in $\mathbb{A}$ must be invariant under the action of modular group $PSL(2,\Z)$.
+\end{enumerate}
+Starting from the same worldsheet CFT, different GSO projections will lead to string theories with different physical particles. To build models of realistic string vacua, A GSO projection should eliminate the tachyonic ground state of the string and preserve spacetime supersymmetry.
+\subsubsection{Overview of possible theories}
+For the closed oriented superstring, GSO projection results in \emph{Type II A/B theory}. They feature equal numbers of bosons and fermions ($128$ each at the massless level) as required for supersymmetry, as well as two spin $3/2$ fields, the \emph{gravitinos} which imply \emph{local} supersymmetry. Thus, the low-energy limit of Type II is a supergravity Worldsheet consistency and vacuum stability imply $d=10$.\\
+\\
+There is one crucial difference between the Type II and the Type $0$ theories. In Type II, the ($NS,NS$) sector which contains the tachyonic ground stateis projected out. Type II is hence tachyon-free. Type $0$ theories still contain the $(NS,NS)$ sector and its tachyon. This does not render them inconsistent, but dynamically unstable; a universe described by Type $0$ rapidly decays at the beginning of the universe and plays no role in the sequel. Type $0$ can therefore be discarded.
+\\
+\\
+In total, there are only five consistent superstring theories known in $d=10$. They are listed in the following table along with some of their properties.
+\bse 
+\begin{tabular}{lllllll}
+	string theory & $\md$& SUSY generators & chiral & open strings & gauge group & tachyon \\
+	\toprule 
+	closed bosonic & $26$ & $N=0$ & no & no &none &yes \\
+	open bosonic & $26$& $N=0$ & no & yes &$U(1)$&yes \\
+	type I & $10$ & $N=(1,0)$ & yes& yes& $SO(32)$ & no \\
+	type IIA & $10$ & $N=(1,1)$ & no &no&$U(1)$ & no \\
+	type IIB & $10$ & $N=(2,0)$ & yes & no & none & no \\
+	heterotic HO & $10$ & $N=(1,0)$ & yes & no & $SO(32)$ & no\\
+	heterotic HE & $10$ & $N=(1,0)$ & yes & no &$E_8 \times E_8$ & no \\
+	M-theory & $11$ & $N=1$ & no & no & none & no \\	 
+	\bottomrule
+\end{tabular}
+\ese 
+The superstring was troubled by the existence of five separate theories until in $1995$, it was discovered at the beginning of the second superstring revolution that the theories are related by dualities and might be different limits of a single underlying so-called \emph{M-theory}. This remains a conjecture.
+
+
+
+\section{Compactification, T-duality, D-branes}
+The superstring in $d=10$ gives rise to a fully consistent theory of quantum gravity and Yang-Mills theory, unique up to dualities. It fulfills all prerequisites we pose on a unified theory of all four forces. The only problem is that spacetime does not exhibit $10$ large dimensions. To connect the superstring to observations thus requires investigating how the extra $6$ spatial dimensions might be compactified, i.e. wound up so tightly as to escape experiment.
+
+
+\subsection{Kaluza-Klein compactification}
+Compactification in superstring theory is the operation $\mR^{1,9}\rightarrow \mR^{1,3} \times \mathcal{M}^6$. The compactified manifold $\mathcal{M}^6$ is called \emph{internal space}. Its structure determines the value of the dilaton $\phi$.\\
+\\
+To see this, consider a massless scalar field theory $\partial_\mu \partial^\mu \phi(x^\mu)=0$ in $\mR^{1,d}$ with dimension $\md$ rolled up in a circle of radius $R$, i.e. $x^d= x^d +2 \pi R$. The corresponding compactification is $\mR^{1,d} \rightarrow \mR^{1,d-1} \times \mathbb{S}^{1}$ with internal space $\mathbb{S}^1$. For a diffeomorphism invariant theory, this has three consequences:
+\begin{enumerate}
+	\item The most general ansatz for $\phi(x^\mu)$ that respects the spacetime periodicity is
+	\be 
+	\phi(x^\mu) = \sum_{n\in\Z} \phi_n(x^j) e^{i \frac{n}{R} x^d},
+	\ee 
+	with $\mu \in \{0,1,\dots,d\}$, $j\in \{0,1,\dots,d-1\}$. Insertion into the e.o.m. $\partial^2 \phi(x^\mu)=0$ yields
+	\be 
+	\partial_j \partial^j \phi_n(x_j) = \frac{n^2}{R^2}\phi_n(x_j) \quad \forall n.
+	\ee 
+	Thus, we get an infinite collection of massive scalars $\phi_n(x^j)$ $\forall n \in\Z$ with $m^2 = \frac{n^2}{R^2}$ from the perspective of the $d$-dimensional theory. These constitute the \emph{Kaluza-Klein tower} of states. Only the zeroth Fourier-mode $\phi_0(x^j)$ is massless and independent of $x^d$. \\
+	\\
+	As $R\rightarrow 0$, the mass of even the lowest state diverges, $m^2_1 \rightarrow \infty$, meaning the entire tower disappears from the low-energy spectrum. At energies $m^2 \ll \frac{1 }{R}$,  the theory looks just $d$-dimensional. This is the realm of the \emph{low-energy effective field theory}.
+	\item There appears an \emph{extra $U(1)$ symmetry} in the $d$-dimensional theory.
+	\item From the $\md$-dimensional perspective, the $g_{dd}$-component of the full metric tensor behaves like a massless scalar field that determines the volume of $\mathbb{S}^1$. Such flat scalar fields whose vacuum expectation values determine geometric properties of the internal space are called \emph{moduli fields}.
+\end{enumerate}
+\subsubsection{On winding states}
+In the presence of compactified dimensions, there exist truly stringy \emph{winding states} stretching around the compact dimension. This is a specialty of string theory and not possible with point-particles. Such states are necessarily closed with independent left-/right-moving modes $\malpha^\pm_n$ and mass $M^2=\frac{\omega^2 R^2}{{\alpha^\prime}^2}$, where $\omega$ is the winding number. Winding costs energy due to the string tension.\\
+These states exhibit very special behaviour in the limit $R\rightarrow 0$. While the Kaluza-Klein tower (a purely field theoretic effect) disappears from the low-energy spectrum, which would make an originally $d+1$-dimensional field theory effectively $d$-dimensional upon compactification, the winding states become light and excitable due to $M^2\propto R^2$. Thus a string theory remains $d+1$-dimensional even after compactification to an internal space with $R\rightarrow 0$.
+\subsubsection{Other objects}
+One-dimensional compactification onto $\mathbb{S}^1$ can be generalized to a multi-dimensional compactification, .e.g. onto a torus $\mathbb{T}^d = \mathbb{S}^1 \times \dots \times \mathbb{S}^1$. Of course, toroidal compactification is yet another special case. The larger $d$, the more possibilities for general internal spaces $\mathcal{M}$ exist. Of special interest to the superstring are six-dimensional \emph{Calabi-Yau manifolds}, on which string propagation is successfully described by special internal CFTs, so called \emph{Gepner models}.
+
+
+\subsection{T-duality}
+\emph{T-duality} is the operation
+\bse 
+n \leftrightarrow \omega \quad \text{and} \quad R\leftrightarrow R^\prime= \frac{\alpha^\prime}{R},
+\ese 
+which exchanges the momenta of the Kaluza-Klein tower and the winding states. It is an exact symmetry that (for the closed bosonic string) acts as parity on right-moving modes of the compactified dimension $x^d$, i.e.
+\bse 
+p^d_L\rightarrow p^d_L, \quad p^d_R\rightarrow - p^d_R,
+\ese 
+which extends to
+\bse 
+X^d_L \rightarrow X^d_L, \quad X^d_R \rightarrow - X^d_R.
+\ese
+Physically, since the spectrum and all interactions are left invariant, $T$-duality relates processes at $R< \sqrt{\alpha^\prime}$ to those occuring at $R>\sqrt{\alpha^\prime}$. This establishes a minimal distance $R = \sqrt{\alpha^\prime}$, the \emph{self-dual radius}. There is no point to distances smaller than $R$ in string theory because we can always map all processes at smaller scales back to bigger distances.
+\subsubsection{Hands on}
+For Type IIA/B superstrings, T-duality similarly gives a sign to right-movers
+\bse 
+X^9_R \rightarrow -X^9_R,\quad \psi^9_R \rightarrow -\psi^9_R.
+\ese 
+It also flips their chirality and therefore transforms the various superstring sectors as
+\bse 
+(R^+, R^\pm) \rightarrow (R^+,R^\mp), \; (NS^+,R^\pm) \rightarrow (NS^+,R^\mp).
+\ese 
+This exchanges Type IIA and Type IIB theory!\\
+More precisely, Type IIB on $\mathbb{S}^1$ with radius $R$ under T-duality corresponds to Type IIA on $\tilde{\mathbb{S}}^1$ with radius $\frac{\alpha^\prime}{R}$.
+
+
+
+
+\subsection{D-branes as dynamical objects}
+\begin{mybox}{D-branes}
+\emph{D-branes} are dynamical objects that gravitate y coupling to closed strings in the NS-NS sector, i.e. they have mass. Moreover, they are \emph{charged} under R-R (i.e. periodic string) $p$-form potentials.
+\end{mybox}
+That D-branes must be dynamical is clear already from their momentum exchange with DD-branes. However, the linkage goes deeper. The worldvolume of a D-brane undergoes fluctuations. These are generated by the quantum fluctuations of open string excitations normal to the brane, which describe massless scalar fields propagating along the brane. These are the above-mentioned modulus fields whose vacuum expectation values determine the position of branes.
+\subsubsection{Solutions and tools}
+Describing D-branes via an open $+$ closed string CFT is adequate for small string coupling $g_s$ that allows for a perturbative expansion. For large $g_s$, branes attain large masses and start backreacting substantially on the geometry of ambient spacetime, thus forming so-called \emph{black-brane solutions} in supergravity (higher-dimensional generalizations of $d=4$ black hole solutions in Einstein gravity).\\
+\\
+\emph{Intersecting brane worlds} are an important tool in string phenomenology to make contact between $\mR^{1,9}$ and $\mR^{1,3}$. The key idea behind them is that various $D$-branes can intersect along some subspace that contains $\mR^{1,3}$, endowing this space with interesting gauge theories and matter content. \\
+In fact, the structure turns out to be naturally that of the standard model!
+A stack of three branes $D_A$, $D_B$, $D_C$ intersecting along $\mR^{1,3}$ gives rise to a $U(N_A) \times U(N_B)$ Yang-Mills theory plus one chiral fermion transforming in the bifundamental representation $(\bar{N}_A,N_B)$.\\
+For $N_A=3$, $N_B=2$, $N_C=1$, this reproduces the gauge group $SU(3)\times SU(2)\times U(1)_Y$ of the standard model.\\
+\\
+While the string consistency condition single out a unique theory (up to dualities) in $10$ dimensions, every $4$-dimensional effective theory obtained from this by compactification corresponds to a choice of vacuum, i.e. to a dynamical solution of the $10$-dimensional theory. The set of all $d=4$ -solutions is called the \emph{landscape of string vacua.}
 
 
 
@@ -569,20 +1061,57 @@ A key property of string
 
 
 
+\section{String theory in gravity}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+\subsection{Gravity in two dimensions}
+Gravity in two dimensions is trivial, this is what we want to discuss here.
+Note that the Riemann tensor in two dimensions has only one independent degree of freedom. This comes about because, even though the Christoffel symbols have $n=d^4=16$, the Riemann tensor is antisymmetric both under exchange of the first and last two indices. With out two-dimensional metric $h_{ab}$, we can then write
+\be
+R_{abcd}= \frac{\mathcal{R}}{2} (h_{ac} h_{bd} - h_{ad} h_{bc}).
+\ee  
+Calculating the Einstein tensor yields
+\be 
+G_{ab} = R_{ab} - \frac{h_{ab}}{2} \mathcal{R} = \frac{\mathcal{R}}{2} h_{ab} - \half h_{ab} 2 \frac{\mathcal{R}}{2} = 0.
+\ee 
+This is the reason why gravity in two dimensions is said to be trivial:\\
+The Einstein field equations reduce to
+\be 
+G_{ab}=8 \pi \mathcal{G} T_{ab}  \; \rightarrow \; T_{ab}=0.
+\ee 
+\subsubsection{The closed string}
+One can then derive that the $2$-dimensional Einstein-Hilbert term is conformally invariant for a closed string worldsheet. Note that in two dimensions under Weyl rescaling $h_{ab} \rightarrow e^{2 \omega (\tau,\sigma)} h_{ab}$ the product $\sqrt{-\det(h)} \mathcal{R}$ transforms as
+\bse 
+\sqrt{-\det(h)} \mathcal{R} \rightarrow \sqrt{-\det(h^\prime)} \mathcal{R}^\prime = \sqrt{-\det(h)} [\mathcal{R}-2 \nabla^2 \omega].
+\ese 
+Now, the Einstein-Hilbert term reads
+\be 
+S_{EH} [\mathbf{h}] = \frac{\lambda_{EH}}{4 \pi } \int_\Sigma \md \tau \md \sigma \sqrt{-\det(\mathbf{h})} \mathcal{R}.
+\ee 
+Hence under Weyl transformations the action changes as
+\begin{align*}
+S_{EH}[\mathbf{h}] \rightarrow S_{EH} [\mathbf{h}]^\prime &= \frac{\lambda_{EH}}{4 \pi} \int_\Sigma \md \tau \md \sigma \sqrt{-\det(\mathbf{h})} [\mathcal{R}-2\nabla^2\omega ]\\
+&= S_{EH}[\mathbf{h}] + \Delta S_{EH} [\mathbf{h}].
+\end{align*}
+Since the Ricci scalar changes only by a total derivative, it is easy to show that $\Delta S_{EH}[\mathbf{h}]$ vanishes for a closed string
+\begin{align*}
+	\Delta S_{EH}[\mathbf{h}] &= -\frac{\lambda_{EH}}{2 \pi} \int_\Sigma \md \tau \md \sigma \sqrt{-\det(\mathbf{h})} \nabla^2 \omega = -\frac{\lambda_{EH}}{2 \pi} \int_\Sigma \md *_2 \md \omega \\
+	&= -\frac{\lambda_{EH}}{2 \pi} \int_{\partial \Sigma} *_2 \md \omega = 0,
+\end{align*}
+where $*_2$ is the Hodge-Stern operator and we used that the worldsheet of a closed string has no boundary, i.e. $\partial \Sigma=0$.\\
+\\
+Note further that the conformal transformation behaviour for the Ricci scalar above implies that \emph{locally} every metric of signature $(-1,1)$ can be brought into the form $\text{diag}(\eta)=(-1,1)$ by Weyl rescalings and diffeomorphism invariance.\\
+This comes about since, for a two-dimensional space, we can always use a spacetime dependent rescaling $\omega(\tau,\sigma)$ of distances to locally remove any curvature and obtain flat space. Using the remaining diffeomorphism invariance, i.e. invariance of the action under coordinate transformations, we can reshape the metric. Note that diffeomorphisms do not enable us to change the metric's signature. The eigenvalues of a matric are a fundamental property that are shared among all representations of a matrix connected via coordinate transformations.
+\subsubsection{The open string}
+By contrast, for an open string worldsheet $\Sigma$ with boundary $\partial \Sigma$ only the combination
+\be 
+\chi = \frac{1}{4 \pi } \int_\Sigma \md^2 \xi \sqrt{-h}\mathcal{R} + \frac{1}{2 \pi} \int \md s \mathcal{K}
+\ee 
+is conformally invariant. Here the extrinsic curvature $ \mathcal{K}$ is defined as
+\be 
+\mathcal{K} = \pm t^a n_b \nabla_a t^b,
+\ee 
+with $t^a$ a unit vector tangent to the boundary and $n^a$ an outward unit vector orthogonal to $t^a$. The upper/lower sign refer to timelike/spacelike boundaries. Indeed this object is the \emph{Euler characteristic of a worldsheet with boundary.}\\
+Note that if we do the same calculation as above for the open string, $\Delta S_{EH}[\mathbf{h}]$ also vanishes but only after incorporating the extrinsic curvature term.
 
 
 
